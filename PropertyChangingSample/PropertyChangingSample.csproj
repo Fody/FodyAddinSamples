@@ -36,8 +36,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\NUnit.2.6.1\lib\nunit.framework.dll</HintPath>
     </Reference>
-    <Reference Include="PropertyChanging">
-      <HintPath>..\packages\PropertyChanging.Fody.1.13.0.0\Lib\NET40\PropertyChanging.dll</HintPath>
+    <Reference Include="PropertyChanging, Version=1.14.0.0, Culture=neutral, PublicKeyToken=1ca091877d12ca03, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\PropertyChanging.Fody.1.14.0.0\lib\NET40\PropertyChanging.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
