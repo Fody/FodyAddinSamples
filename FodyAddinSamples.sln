@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2010
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyChangedSample", "PropertyChangedSample\PropertyChangedSample.csproj", "{30155725-BC9A-4D44-9BB0-FB9910F25C5F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyChangingSample", "PropertyChangingSample\PropertyChangingSample.csproj", "{3A8FFC73-6FE5-4A41-A3BC-0FD3B940B503}"
@@ -33,6 +33,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{BCE0D2
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreezableSample", "FreezableSample\FreezableSample.csproj", "{6C55EDFD-1099-40C0-AF09-5B444473415C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncErrorHandler", "AsyncErrorHandler\AsyncErrorHandler.csproj", "{512F04A1-CDB9-4EBC-B6F1-BFA39C3EF4AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -96,6 +98,10 @@ Global
 		{6C55EDFD-1099-40C0-AF09-5B444473415C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C55EDFD-1099-40C0-AF09-5B444473415C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C55EDFD-1099-40C0-AF09-5B444473415C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{512F04A1-CDB9-4EBC-B6F1-BFA39C3EF4AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{512F04A1-CDB9-4EBC-B6F1-BFA39C3EF4AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{512F04A1-CDB9-4EBC-B6F1-BFA39C3EF4AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{512F04A1-CDB9-4EBC-B6F1-BFA39C3EF4AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
