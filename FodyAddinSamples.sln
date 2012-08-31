@@ -23,9 +23,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatelSample", "CatelSample\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtraConstraintsSample", "ExtraConstraintsSample\ExtraConstraintsSample.csproj", "{D28EBC67-D76E-497C-BD58-55D2A3384B1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodTimer", "MethodTimer\MethodTimer.csproj", "{0442EB29-A385-41FD-BBBF-936C562235A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodTimerSample", "MethodTimerSample\MethodTimerSample.csproj", "{0442EB29-A385-41FD-BBBF-936C562235A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodDecorator", "MethodDecorator\MethodDecorator.csproj", "{5B91D203-3CBF-4423-91EA-2055ACAF9B96}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodDecoratorSample", "MethodDecoratorSample\MethodDecoratorSample.csproj", "{5B91D203-3CBF-4423-91EA-2055ACAF9B96}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{BCE0D2A5-E903-4CC9-BEE3-B7BAB063655A}"
 	ProjectSection(SolutionItems) = preProject
@@ -34,7 +34,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{BCE0D2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreezableSample", "FreezableSample\FreezableSample.csproj", "{6C55EDFD-1099-40C0-AF09-5B444473415C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncErrorHandler", "AsyncErrorHandler\AsyncErrorHandler.csproj", "{512F04A1-CDB9-4EBC-B6F1-BFA39C3EF4AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncErrorHandlerSample", "AsyncErrorHandlerSample\AsyncErrorHandlerSample.csproj", "{512F04A1-CDB9-4EBC-B6F1-BFA39C3EF4AF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoOfSample", "InfoOfSample\InfoOfSample.csproj", "{420D73DF-F67E-4675-9DD2-B758409F5ADC}"
 EndProject

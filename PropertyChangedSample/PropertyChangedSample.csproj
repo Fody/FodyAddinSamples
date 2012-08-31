@@ -47,9 +47,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <None Include="FodyWeavers.xml">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="FodyWeavers.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Sample.cs" />
@@ -59,5 +57,5 @@
   <Target Name="BeforeBuild">
     <PepitaGet.RestorePackagesTask />
   </Target>
-  <Import Project="$(SolutionDir)\Tools\Fody\Fody.targets" />
+  <Import Project="$(ProjectPath)\..\..\Tools\Fody\Fody.targets" />
 </Project>
