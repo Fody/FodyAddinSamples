@@ -1,5 +1,6 @@
 using System;
 
-public class TimeAttribute : Attribute
+[AttributeUsage(AttributeTargets.Class | AttributeTargets.Method | AttributeTargets.Constructor)]
+internal class TimeAttribute : Attribute
 {
 }
