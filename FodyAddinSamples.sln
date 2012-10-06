@@ -42,6 +42,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicFodyAddinSample", "Bas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmptyConstructorSample", "EmptyConstructorSample\EmptyConstructorSample.csproj", "{A2AC0F68-6A82-40FB-B03E-70A6F8596DA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JetBrainsAnnotations", "JetBrainsAnnotations\JetBrainsAnnotations.csproj", "{88DA07C2-98E4-4DEB-A479-2B7CC2C86ABC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -119,6 +121,10 @@ Global
 		{A2AC0F68-6A82-40FB-B03E-70A6F8596DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2AC0F68-6A82-40FB-B03E-70A6F8596DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2AC0F68-6A82-40FB-B03E-70A6F8596DA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88DA07C2-98E4-4DEB-A479-2B7CC2C86ABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88DA07C2-98E4-4DEB-A479-2B7CC2C86ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88DA07C2-98E4-4DEB-A479-2B7CC2C86ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88DA07C2-98E4-4DEB-A479-2B7CC2C86ABC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
