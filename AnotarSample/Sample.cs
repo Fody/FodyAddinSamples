@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using Anotar;
 using NLog;
@@ -16,7 +15,7 @@ public class Sample
         var getLog = SetupNLog();
         MyMethod();
 
-        Assert.AreEqual("Method: MyMethod. Line: ~24. TheMessage", getLog());
+        Assert.AreEqual("Method: MyMethod. Line: ~23. TheMessage", getLog());
     }
 
     static void MyMethod()
