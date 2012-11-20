@@ -9,9 +9,8 @@ public class Sample
     [Test]
     public void Run()
     {
-        var infoAttribute = (AssemblyInformationalVersionAttribute)GetType().Assembly.GetCustomAttributes(typeof(AssemblyInformationalVersionAttribute), false).First();
+		var infoAttribute = (AssemblyInformationalVersionAttribute)GetType().Assembly.GetCustomAttributes(typeof(AssemblyInformationalVersionAttribute), false).First();
+		Assert.IsNotNullOrEmpty(infoAttribute.InformationalVersion);
         Debug.WriteLine(infoAttribute.InformationalVersion);
-        Assert.IsTrue(infoAttribute.InformationalVersion.Contains("/"));
-
     }
 }
