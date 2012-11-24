@@ -48,6 +48,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotarSample", "AnotarSampl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StampSample", "StampSample\StampSample.csproj", "{41BF1124-C14E-4A95-8508-E76D9EE3B8FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmutableSample", "ImmutableSample\ImmutableSample.csproj", "{43C79331-C17A-4F6D-ABF8-9ED9B91C03FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -137,6 +139,10 @@ Global
 		{41BF1124-C14E-4A95-8508-E76D9EE3B8FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41BF1124-C14E-4A95-8508-E76D9EE3B8FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41BF1124-C14E-4A95-8508-E76D9EE3B8FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43C79331-C17A-4F6D-ABF8-9ED9B91C03FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43C79331-C17A-4F6D-ABF8-9ED9B91C03FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43C79331-C17A-4F6D-ABF8-9ED9B91C03FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43C79331-C17A-4F6D-ABF8-9ED9B91C03FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
