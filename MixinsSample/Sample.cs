@@ -28,6 +28,6 @@ public class Sample
     public void Run()
     {
         var target = (IAddedFunc)new Target();
-        Debug.WriteLine(target.Func());
+        Assert.AreEqual("String from Mixin",target.Func());
     }
 }
