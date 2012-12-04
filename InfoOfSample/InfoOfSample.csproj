@@ -31,9 +31,9 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Reference Include="InfoOf, Version=0.6.0.0, Culture=neutral, PublicKeyToken=1ca091877d12ca03, processorArchitecture=MSIL">
+    <Reference Include="InfoOf, Version=0.7.0.0, Culture=neutral, PublicKeyToken=1ca091877d12ca03, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\InfoOf.Fody.0.6.0.0\Lib\NET40\InfoOf.dll</HintPath>
+      <HintPath>..\packages\InfoOf.Fody.0.7.0.0\lib\NET40\InfoOf.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\Packages\NUnit.2.6.1\lib\nunit.framework.dll</HintPath>

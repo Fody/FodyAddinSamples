@@ -31,9 +31,9 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Reference Include="Anotar, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Anotar, Version=0.10.0.0, Culture=neutral, PublicKeyToken=1d3f964f81f300dd, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Anotar.Fody.0.7.0.0\lib\NET40\Anotar.dll</HintPath>
+      <HintPath>..\packages\Anotar.Fody.0.10.0.0\lib\NET40\Anotar.dll</HintPath>
     </Reference>
     <Reference Include="NLog">
       <HintPath>..\packages\NLog.2.0.0.2000\lib\net40\NLog.dll</HintPath>
