@@ -31,8 +31,8 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Reference Include="Mixins.Fody">
-      <HintPath>..\packages\Mixins.Fody.0.0.1-alpha\lib\net40\Mixins.Fody.dll</HintPath>
+    <Reference Include="Mixins">
+      <HintPath>..\packages\Mixins.Fody.0.0.2-alpha\lib\net40\Mixins.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>

@@ -1,5 +1,4 @@
-﻿using System.Diagnostics;
-using Mixins.Fody;
+﻿using Mixins;
 using NUnit.Framework;
 
 public interface IAddedFunc
