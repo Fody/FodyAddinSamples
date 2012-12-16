@@ -38,6 +38,8 @@
 packages/
 ForSample/
 
+*test-results*
+
 # Visual Studio profiler
 *.psess
 *.vsp
