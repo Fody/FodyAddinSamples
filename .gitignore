@@ -44,6 +44,8 @@ ForSample/
 *.psess
 *.vsp
 
+*.userprefs
+
 # ReSharper is a .NET coding add-in
 _ReSharper*
 
