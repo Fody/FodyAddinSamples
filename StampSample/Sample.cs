@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿#if (!MONO)
+using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
 using NUnit.Framework;
@@ -14,3 +15,4 @@ public class Sample
         Debug.WriteLine(infoAttribute.InformationalVersion);
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if (!MONO)
 using System.Security;
 using NUnit.Framework;
 
@@ -24,3 +25,4 @@ public class EnumConstraintSample
     }
 }
 
+#endif

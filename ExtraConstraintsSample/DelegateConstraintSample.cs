@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if (!MONO)
+using System;
 using System.Diagnostics;
 using System.Security;
 using NUnit.Framework;
@@ -25,3 +26,4 @@ public class DelegateConstraintSample
     {
     }
 }
+#endif

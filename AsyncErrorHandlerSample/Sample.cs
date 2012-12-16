@@ -1,3 +1,4 @@
+#if (!MONO)
 using NUnit.Framework;
 
 [TestFixture]
@@ -11,3 +12,4 @@ public class Sample
         //run and have a look at the debug window
     }
 }
+#endif
