@@ -1,4 +1,7 @@
 #if (!MONO)
+using System;
+using System.Threading;
+using System.Threading.Tasks;
 using NUnit.Framework;
 
 [TestFixture]
@@ -8,8 +11,19 @@ public class Sample
     public async void Run()
     {
         var instance = new Target();
-        await instance.MethodWithThrow();
+        instance.MethodWithThrow();
         //run and have a look at the debug window
+        Thread.Sleep(10);
     }
 }
+
+public class Target
+{
+    public async Task MethodWithThrow()
+    {
+        await Task.Delay(1);
+        throw new Exception("MyExcpetion");
+    }
+}
+
 #endif
