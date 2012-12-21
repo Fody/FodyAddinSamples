@@ -31,6 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Reference Include="Obsolete, Version=1.4.2.0, Culture=neutral, PublicKeyToken=1ca091877d12ca03, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Obsolete.Fody.1.4.2.0\lib\NET40\Obsolete.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,9 +45,6 @@
     <None Include="FodyWeavers.xml" />
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.1\lib\nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="Obsolete">
-      <HintPath>..\packages\Obsolete.Fody.1.4.0.0\lib\NET40\Obsolete.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

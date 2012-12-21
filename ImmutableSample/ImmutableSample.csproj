@@ -34,6 +34,10 @@
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
+    <Reference Include="Immutable, Version=0.1.2.0, Culture=neutral, PublicKeyToken=1ca091877d12ca03, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Immutable.Fody.0.1.2.0\lib\NET40\Immutable.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
     </Reference>
@@ -45,9 +49,6 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <None Include="FodyWeavers.xml" />
-    <Reference Include="Immutable">
-      <HintPath>..\packages\Immutable.Fody.0.1.0.0\lib\NET40\Immutable.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Sample.cs" />

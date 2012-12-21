@@ -41,7 +41,7 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Reference Include="ExtraConstraints">
-      <HintPath>..\packages\ExtraConstraints.Fody.1.4.0.0\lib\portable-net4+sl4+wp7+win8\ExtraConstraints.dll</HintPath>
+      <HintPath>..\packages\ExtraConstraints.Fody.1.5.1.0\lib\portable-net4+sl4+wp7+win8\ExtraConstraints.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
