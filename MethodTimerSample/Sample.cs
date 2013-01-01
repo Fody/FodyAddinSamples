@@ -1,4 +1,5 @@
 ﻿using System.Threading;
+using MethodTimer;
 using NUnit.Framework;
 
 [TestFixture]
