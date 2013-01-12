@@ -1,1 +1,1 @@
-## A working sample for each  [Fody](https://github.com/SimonCropp/Fody/) Addin
+## A working sample for each  [Fody](https://github.com/Fody/Fody/) Addin
