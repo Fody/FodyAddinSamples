@@ -1,4 +1,4 @@
-﻿public class RefClass
+﻿public class ClassInRefenceAssembly
 {
     public static string SatHello()
     {
