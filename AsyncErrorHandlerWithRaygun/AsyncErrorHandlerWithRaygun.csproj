@@ -31,12 +31,9 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Reference Include="Mindscape.Raygun4Net, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Mindscape.Raygun4Net, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Mindscape.Raygun4Net.1.0.2\lib\net35\Mindscape.Raygun4Net.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Mindscape.Raygun4Net.1.0.3\lib\net35\Mindscape.Raygun4Net.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>

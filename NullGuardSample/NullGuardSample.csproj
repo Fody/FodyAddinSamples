@@ -31,9 +31,9 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Reference Include="NullGuard, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="NullGuard, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\NullGuard.Fody.0.2.0.0\lib\portable-net4+sl4+wp7+win8\NullGuard.dll</HintPath>
+      <HintPath>..\packages\NullGuard.Fody.0.3.0.0\lib\portable-net4+sl4+wp7+win8\NullGuard.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
