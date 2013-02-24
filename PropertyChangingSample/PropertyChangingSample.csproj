@@ -31,9 +31,9 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Reference Include="PropertyChanging, Version=1.18.2.0, Culture=neutral, PublicKeyToken=1ca091877d12ca03, processorArchitecture=MSIL">
+    <Reference Include="PropertyChanging, Version=1.19.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\PropertyChanging.Fody.1.18.2.0\lib\NET40\PropertyChanging.dll</HintPath>
+      <HintPath>..\packages\PropertyChanging.Fody.1.19.0.0\lib\NET40\PropertyChanging.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
