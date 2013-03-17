@@ -34,8 +34,10 @@
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
     </Reference>
-    <Reference Include="Scalpel">
-      <HintPath>..\packages\Scalpel.Fody.0.3.0.0\lib\NET40\Scalpel.dll</HintPath>
+    <Reference Include="Scalpel, Version=0.9.2.0, Culture=neutral, PublicKeyToken=1d3f964f81f300dd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Scalpel.Fody.0.9.2.0\lib\NET40\Scalpel.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
