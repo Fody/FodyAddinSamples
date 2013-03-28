@@ -11,6 +11,7 @@
     <RootNamespace>ValidarSample</RootNamespace>
     <AssemblyName>ValidarSample</AssemblyName>
     <FileAlignment>512</FileAlignment>
+    <FodyPath>..\packages\Fody.1.13.6.0</FodyPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -34,7 +35,7 @@
       <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="PropertyChanged">
-      <HintPath>..\packages\PropertyChanged.Fody.1.36.0.0\lib\NET40\PropertyChanged.dll</HintPath>
+      <HintPath>..\packages\PropertyChanged.Fody.1.36.1.0\Lib\NET40\PropertyChanged.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -44,6 +45,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <None Include="Fody.targets" />
     <None Include="FodyWeavers.xml" />
     <Reference Include="FluentValidation">
       <HintPath>..\packages\FluentValidation.3.4.6.0\lib\Net40\FluentValidation.dll</HintPath>
@@ -62,8 +64,5 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(ProjectDir)\..\Tools\Pepita\PepitaGet.targets" />
-  <Import Project="..\packages\Fody.1.13.2.0\Fody.targets" Condition="Exists('..\packages\Fody.1.13.2.0\Fody.targets')" />
-  <Target Name="FodyTargetsCheck" BeforeTargets="BeforeCompile">
-    <Error Condition="!Exists('..\packages\Fody.1.13.2.0\Fody.targets')" Text="Could not find Fody.targets. You either forget to check in the package or forgot to enable package restore." />
-  </Target>
+  <Import Project="Fody.targets" />
 </Project>

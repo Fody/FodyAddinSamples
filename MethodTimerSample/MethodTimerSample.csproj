@@ -11,6 +11,7 @@
     <RootNamespace>MethodTimerSample</RootNamespace>
     <AssemblyName>MethodTimerSample</AssemblyName>
     <FileAlignment>512</FileAlignment>
+    <FodyPath>..\packages\Fody.1.13.6.0</FodyPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -30,12 +31,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="Fody.targets" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
-    <Reference Include="MethodTimer, Version=1.11.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\MethodTimer.Fody.1.11.0.0\lib\portable-net4+sl4+wp7+win8\MethodTimer.dll</HintPath>
+    <Reference Include="MethodTimer">
+      <HintPath>..\packages\MethodTimer.Fody.1.11.1.0\Lib\portable-net4+sl4+wp7+win8\MethodTimer.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework, Version=2.6.2.12296, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
@@ -55,8 +56,5 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(ProjectDir)\..\Tools\Pepita\PepitaGet.targets" />
-  <Import Project="..\packages\Fody.1.13.2.0\Fody.targets" Condition="Exists('..\packages\Fody.1.13.2.0\Fody.targets')" />
-  <Target Name="FodyTargetsCheck" BeforeTargets="BeforeCompile">
-    <Error Condition="!Exists('..\packages\Fody.1.13.2.0\Fody.targets')" Text="Could not find Fody.targets. You either forget to check in the package or forgot to enable package restore." />
-  </Target>
+  <Import Project="Fody.targets" />
 </Project>
