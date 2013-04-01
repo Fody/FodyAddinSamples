@@ -31,7 +31,9 @@ public class Sample
 
 class Target
 {
+// ReSharper disable UnusedMember.Local
     void Method()
+// ReSharper restore UnusedMember.Local
     {
         
     }

@@ -7,10 +7,9 @@ public class ExplicitSample
     [Test]
     public void Run()
     {
-        var getLog = LogCaptureBuilder.SetupNLog();
         MyMethod();
 
-        Assert.AreEqual("Method: 'System.Void ExplicitSample::MyMethod()'. Line: ~18. TheMessage", getLog());
+        Assert.AreEqual("Method: 'System.Void ExplicitSample::MyMethod()'. Line: ~17. TheMessage", LogCaptureBuilder.LastMessage);
     }
 
     static void MyMethod()

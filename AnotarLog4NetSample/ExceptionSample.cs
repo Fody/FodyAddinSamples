@@ -1,5 +1,5 @@
 ﻿using System;
-using Anotar;
+using Anotar.Log4Net;
 using NUnit.Framework;
 
 [TestFixture]
@@ -8,7 +8,6 @@ public class ExceptionSample
     [Test]
     public void Run()
     {
-        var getLog = LogCaptureBuilder.SetupNLog();
         try
         {
            MyMethod();
@@ -17,7 +16,7 @@ public class ExceptionSample
         {
         }
 
-        Assert.AreEqual("Exception occurred in 'System.Void ExceptionSample::MyMethod()'. ", getLog());
+        Assert.AreEqual("Exception occurred in 'System.Void ExceptionSample::MyMethod()'. ", LogCaptureBuilder.LastMessage);
     }
 
     [LogToDebugOnException]
