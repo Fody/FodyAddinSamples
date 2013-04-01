@@ -38,12 +38,8 @@
   <ItemGroup>
     <None Include="Fody.targets" />
     <None Include="packages.config" />
-    <Reference Include="Anotar">
-      <HintPath>..\packages\Anotar.Fody.1.3.1.0\Lib\NET40\Anotar.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Anotar.NLog">
-      <HintPath>..\packages\Anotar.NLog.Fody.1.4.0.0\lib\portable-net4+sl4+wp7+win8\Anotar.NLog.dll</HintPath>
+      <HintPath>..\packages\Anotar.NLog.Fody.1.4.1.0\lib\portable-net4+sl4+wp7+win8\Anotar.NLog.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="NLog">
