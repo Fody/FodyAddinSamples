@@ -7,8 +7,8 @@
     <ProjectGuid>{6B557E56-19DD-4B54-BB60-6B1FC6A41356}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AnotarSample</RootNamespace>
-    <AssemblyName>AnotarSample</AssemblyName>
+    <RootNamespace>AnotarLog4NetSample</RootNamespace>
+    <AssemblyName>AnotarLog4NetSample</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProductVersion>12.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
