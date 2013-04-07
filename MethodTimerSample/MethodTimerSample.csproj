@@ -11,7 +11,7 @@
     <RootNamespace>MethodTimerSample</RootNamespace>
     <AssemblyName>MethodTimerSample</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <FodyPath>..\packages\Fody.1.13.6.0</FodyPath>
+    <FodyPath>..\packages\Fody.1.13.6.1</FodyPath>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -40,7 +40,7 @@
       <SubType>Designer</SubType>
     </None>
     <Reference Include="MethodTimer">
-      <HintPath>..\packages\MethodTimer.Fody.1.11.1.0\Lib\portable-net4+sl4+wp7+win8\MethodTimer.dll</HintPath>
+      <HintPath>..\packages\MethodTimer.Fody.1.11.1.2\Lib\portable-net4+sl4+wp7+win8\MethodTimer.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework, Version=2.6.2.12296, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">

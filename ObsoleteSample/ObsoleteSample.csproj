@@ -11,7 +11,7 @@
     <RootNamespace>ObsoleteSample</RootNamespace>
     <AssemblyName>ObsoleteSample</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <FodyPath>..\packages\Fody.1.13.6.0</FodyPath>
+    <FodyPath>..\packages\Fody.1.13.6.1</FodyPath>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -44,7 +44,7 @@
       <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="Obsolete">
-      <HintPath>..\packages\Obsolete.Fody.1.6.1.0\Lib\NET40\Obsolete.dll</HintPath>
+      <HintPath>..\packages\Obsolete.Fody.1.6.1.1\Lib\NET40\Obsolete.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />

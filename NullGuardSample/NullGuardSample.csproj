@@ -11,7 +11,7 @@
     <AssemblyName>NullGuardSample</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <FodyPath>..\packages\Fody.1.13.6.0</FodyPath>
+    <FodyPath>..\packages\Fody.1.13.6.1</FodyPath>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -37,7 +37,7 @@
     <None Include="Fody.targets" />
     <None Include="packages.config" />
     <Reference Include="NullGuard">
-      <HintPath>..\packages\NullGuard.Fody.0.5.1.0\Lib\portable-net4+sl4+wp7+win8\NullGuard.dll</HintPath>
+      <HintPath>..\packages\NullGuard.Fody.0.5.1.2\Lib\portable-net4+sl4+wp7+win8\NullGuard.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">

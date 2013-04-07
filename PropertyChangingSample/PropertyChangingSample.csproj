@@ -11,7 +11,7 @@
     <RootNamespace>PropertyChangingSample</RootNamespace>
     <AssemblyName>PropertyChangingSample</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <FodyPath>..\packages\Fody.1.13.6.0</FodyPath>
+    <FodyPath>..\packages\Fody.1.13.6.1</FodyPath>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -41,7 +41,7 @@
       <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="PropertyChanging">
-      <HintPath>..\packages\PropertyChanging.Fody.1.21.1.0\Lib\NET40\PropertyChanging.dll</HintPath>
+      <HintPath>..\packages\PropertyChanging.Fody.1.21.1.1\Lib\NET40\PropertyChanging.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />

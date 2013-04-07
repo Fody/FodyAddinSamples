@@ -12,7 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <ProductVersion>12.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <FodyPath>..\packages\Fody.1.13.6.0</FodyPath>
+    <FodyPath>..\packages\Fody.1.13.6.1</FodyPath>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -39,14 +39,15 @@
     <None Include="Fody.targets" />
     <None Include="packages.config" />
     <Reference Include="Anotar.Serilog">
-      <HintPath>..\packages\Anotar.Serilog.Fody.1.4.1.0\lib\portable-net4+sl4+wp7+win8\Anotar.Serilog.dll</HintPath>
+      <HintPath>..\packages\Anotar.Serilog.Fody.1.4.1.1\Lib\portable-net4+sl4+wp7+win8\Anotar.Serilog.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
     </Reference>
-    <Reference Include="Serilog">
-      <HintPath>..\packages\Serilog.0.1.11\lib\net45\Serilog.dll</HintPath>
+    <Reference Include="Serilog, Version=0.1.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Serilog.0.1.18\lib\net45\Serilog.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
