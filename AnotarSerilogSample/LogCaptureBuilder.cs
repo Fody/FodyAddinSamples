@@ -1,6 +1,5 @@
 ﻿using System;
 using Serilog;
-using Serilog.Events;
 
 public static class LogCaptureBuilder
 {
@@ -11,11 +10,11 @@ public static class LogCaptureBuilder
     {
         var eventSink = new EventSink
             {
-                Action = _ => LastMessage = _.MessageTemplate
+                Action = _ => LastMessage = _.MessageTemplate.Text
             };
         Log.Logger = new LoggerConfiguration()
-            .MinimumLevel(LogEventLevel.Verbose)
-            .WithSink(eventSink)
+            .MinimumLevel.Verbose()
+            .WriteTo.Sink(eventSink)
             .CreateLogger();
     }
 
