@@ -2,14 +2,14 @@
 using NUnit.Framework;
 
 [TestFixture]
-public class ExplicitSample
+public class MetroLogExplicitSample
 {
     [Test]
     public void Run()
     {
         MyMethod();
 
-        Assert.AreEqual("Method: 'System.Void ExplicitSample::MyMethod()'. Line: ~17. TheMessage", LogCaptureBuilder.LastMessage);
+        Assert.AreEqual("Method: 'System.Void MetroLogExplicitSample::MyMethod()'. Line: ~17. TheMessage", LogCaptureBuilder.LastMessage);
     }
 
     static void MyMethod()

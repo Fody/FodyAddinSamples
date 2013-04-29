@@ -1,9 +1,9 @@
 ﻿using System;
-using Anotar.Serilog;
+using Anotar.MetroLog;
 using NUnit.Framework;
 
 [TestFixture]
-public class ExceptionSample
+public class MetroLogExceptionSample
 {
     [Test]
     public void Run()
@@ -16,7 +16,7 @@ public class ExceptionSample
         {
         }
 
-        Assert.AreEqual("Exception occurred in 'System.Void ExceptionSample::MyMethod()'. ", LogCaptureBuilder.LastMessage);
+        Assert.AreEqual("Exception occurred in 'System.Void MetroLogExceptionSample::MyMethod()'. ", LogCaptureBuilder.LastMessage);
     }
 
     [LogToDebugOnException]

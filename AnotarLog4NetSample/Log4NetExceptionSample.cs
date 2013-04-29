@@ -1,9 +1,9 @@
 ﻿using System;
-using Anotar.MetroLog;
+using Anotar.Log4Net;
 using NUnit.Framework;
 
 [TestFixture]
-public class ExceptionSample
+public class Log4NetExceptionSample
 {
     [Test]
     public void Run()
@@ -16,7 +16,7 @@ public class ExceptionSample
         {
         }
 
-        Assert.AreEqual("Exception occurred in 'System.Void ExceptionSample::MyMethod()'. ", LogCaptureBuilder.LastMessage);
+        Assert.AreEqual("Exception occurred in 'System.Void Log4NetExceptionSample::MyMethod()'. ", LogCaptureBuilder.LastMessage);
     }
 
     [LogToDebugOnException]
