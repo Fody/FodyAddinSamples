@@ -39,7 +39,7 @@
     <None Include="Fody.targets" />
     <None Include="packages.config" />
     <Reference Include="Anotar.MetroLog">
-      <HintPath>..\packages\Anotar.MetroLog.Fody.1.5.1.0\Lib\portable-net4+sl4+wp7+win8\Anotar.MetroLog.dll</HintPath>
+      <HintPath>..\packages\Anotar.MetroLog.Fody.1.6.0.0\Lib\portable-net4+sl4+wp7+win8\Anotar.MetroLog.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="MetroLog">

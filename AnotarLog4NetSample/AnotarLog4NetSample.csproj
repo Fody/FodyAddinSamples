@@ -39,7 +39,7 @@
     <None Include="Fody.targets" />
     <None Include="packages.config" />
     <Reference Include="Anotar.Log4Net">
-      <HintPath>..\packages\Anotar.Log4Net.Fody.1.5.1.0\Lib\portable-net4+sl4+wp7+win8\Anotar.Log4Net.dll</HintPath>
+      <HintPath>..\packages\Anotar.Log4Net.Fody.1.7.0.0\Lib\portable-net4+sl4+wp7+win8\Anotar.Log4Net.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="log4net">
