@@ -3,7 +3,7 @@ using NUnit.Framework;
 using JetBrains.Annotations;
 
 [TestFixture]
-public class Sample
+public class JetBrainsAnnotationsSample
 {
     [Test]
     public void Run()

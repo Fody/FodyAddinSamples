@@ -13,7 +13,7 @@ public static class ModuleInitializer
 }
 
 [TestFixture]
-public class Sample
+public class CosturaSample
 {
     [Test]
     public void Run()

@@ -6,7 +6,7 @@ using Mindscape.Raygun4Net;
 using NUnit.Framework;
 
 [TestFixture]
-public class Sample
+public class AsyncErrorHandlerWithRaygun
 {
     [Test]
     public async void Run()

@@ -1,11 +1,10 @@
-#if (!MONO)
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 using NUnit.Framework;
 
 [TestFixture]
-public class Sample
+public class AsyncErrorHandlerSample
 {
     [Test]
     public async void Run()
@@ -25,5 +24,3 @@ public class Target
         throw new Exception("MyException");
     }
 }
-
-#endif

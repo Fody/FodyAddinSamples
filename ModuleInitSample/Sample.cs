@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 
 [TestFixture]
-public class Sample
+public class ModuleInitSample
 {
     [Test]
     public void Run()

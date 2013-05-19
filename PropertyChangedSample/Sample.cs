@@ -3,7 +3,7 @@ using System.ComponentModel;
 using NUnit.Framework;
 
 [TestFixture]
-public class Sample
+public class PropertyChangedSample
 {
     [Test]
     public void Run()

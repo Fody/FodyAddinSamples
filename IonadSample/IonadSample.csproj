@@ -4,45 +4,38 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{420D73DF-F67E-4675-9DD2-B758409F5ADC}</ProjectGuid>
+    <ProjectGuid>{59E8A4DE-795F-4FDB-A382-C6C32EF37D93}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>InfoOfSample</RootNamespace>
-    <AssemblyName>InfoOfSample</AssemblyName>
-    <FileAlignment>512</FileAlignment>
-    <ProductVersion>12.0.0</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <FodyPath>..\packages\Fody.1.13.8.0</FodyPath>
+    <RootNamespace>IonadSample</RootNamespace>
+    <AssemblyName>IonadSample</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile />
+    <FileAlignment>512</FileAlignment>
+    <FodyPath>..\packages\Fody.1.13.8.0</FodyPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>True</DebugSymbols>
+    <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>False</Optimize>
+    <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
-    <Optimize>True</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="Fody.targets" />
-    <None Include="packages.config" />
-    <Reference Include="InfoOf">
-      <HintPath>..\packages\InfoOf.Fody.0.9.2.0\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\InfoOf.dll</HintPath>
+    <Reference Include="Ionad">
+      <HintPath>..\packages\Ionad.Fody.0.1.0.0-alpha\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\Ionad.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="nunit.framework, Version=2.6.2.12296, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+    <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -52,18 +45,18 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <None Include="FodyWeavers.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Sample.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\InfoOfToReference\InfoOfToReference.csproj">
-      <Project>{550EA40C-E33E-479A-A32B-5BA880AFBEDA}</Project>
-      <Name>InfoOfToReference</Name>
-    </ProjectReference>
+    <Content Include="FodyWeavers.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Fody.targets" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(ProjectDir)\..\Tools\Pepita\PepitaGet.targets" />
+  <Import Project="$(SolutionDir)Tools\Pepita\PepitaGet.targets" />
   <Import Project="Fody.targets" />
 </Project>
