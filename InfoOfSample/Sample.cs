@@ -4,7 +4,7 @@ using System.Reflection;
 using NUnit.Framework;
 
 [TestFixture]
-public class Sample
+public class InfoOfSample
 {
     [Test]
     public void Run()

@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 
 [TestFixture]
-public class Sample
+public class VirtuositySample
 {
     [Test]
     public void Run()

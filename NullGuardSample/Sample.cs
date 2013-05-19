@@ -2,7 +2,7 @@
 using NUnit.Framework;
 
 [TestFixture]
-public class Sample
+public class NullGuardSample
 {
     [Test]
     public void Run()

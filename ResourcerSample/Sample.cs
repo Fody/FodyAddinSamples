@@ -1,9 +1,8 @@
-﻿
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using Resourcer;
 
 [TestFixture]
-public class Sample
+public class ResourcerSample
 {
     [Test]
     public void Run()

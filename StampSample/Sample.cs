@@ -5,7 +5,7 @@ using System.Reflection;
 using NUnit.Framework;
 
 [TestFixture]
-public class Sample
+public class StampSample
 {
     [Test]
     public void Run()

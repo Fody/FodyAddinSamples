@@ -3,7 +3,7 @@ using System.Linq;
 using NUnit.Framework;
 
 [TestFixture]
-public class Sample
+public class ObsoleteSample
 {
     [Test]
     public void Run()

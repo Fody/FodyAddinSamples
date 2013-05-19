@@ -21,7 +21,7 @@ public class Target
 
 
 [TestFixture]
-public class Sample
+public class MixinsSample
 {
     [Test]
     public void Run()
