@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ionad">
-      <HintPath>..\packages\Ionad.Fody.0.1.0.0-alpha\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\Ionad.dll</HintPath>
+      <HintPath>..\packages\Ionad.Fody.0.2.0.0\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\Ionad.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">
