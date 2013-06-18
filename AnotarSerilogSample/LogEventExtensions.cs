@@ -4,6 +4,7 @@ public static class LogEventExtensions
 {
     public static string Value(this LogEvent logEvent, string property)
     {
-        return (string)((ScalarValue)logEvent.Properties[property].Value).Value;
+        var logEventPropertyValue = (ScalarValue)logEvent.Properties[property];
+        return (string) logEventPropertyValue.Value;
     }
 }
