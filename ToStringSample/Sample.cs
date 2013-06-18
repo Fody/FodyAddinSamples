@@ -14,7 +14,7 @@ public class ToStringSample
 
                      };
         Debug.WriteLine(target.ToString());
-        Assert.AreEqual("{T: Person, GivenNames: \"John\", FamilyName: \"Smith\"}",target.ToString());
+        Assert.AreEqual("{T: \"Person\", GivenNames: \"John\", FamilyName: \"Smith\"}", target.ToString());
     }
 }
 
