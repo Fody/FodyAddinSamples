@@ -24,7 +24,7 @@ class Person
     public string GivenNames { get; set; }
     public string FamilyName { get; set; }
 
-      [IgnoerDuringToString]
+    [IgnoreDuringToString]
     public string FullName
     {
         get
