@@ -15,7 +15,7 @@ public class LogCaptureBuilder
             };
         var config = new LoggingConfiguration();
         config.LoggingRules.Add(new LoggingRule("*", LogLevel.Trace, actionTarget));
-        config.AddTarget("debuger", actionTarget);
+        config.AddTarget("debugger", actionTarget);
         LogManager.Configuration = config;
     }
 
