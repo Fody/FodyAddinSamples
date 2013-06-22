@@ -19,6 +19,6 @@ public class CosturaSample
     public void Run()
     {
         //Note that this will work even though CosturaAssemblyToReference.dll does not exists in the execution directory
-        Debug.WriteLine(ClassInRefenceAssembly.SatHello());
+        Debug.WriteLine(ClassInReferenceAssembly.SayHello());
     }
 }

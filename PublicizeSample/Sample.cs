@@ -12,18 +12,18 @@ public class PublicizeSample
         var targetType = typeof (Target);
 
         Assert.IsTrue(targetType.IsPublic);
-        var typeAttribue = GetEditorBrowdableAttribute(targetType);
-        Assert.IsNotNull(typeAttribue);
-        Assert.AreEqual(EditorBrowsableState.Advanced, typeAttribue.State);
+        var typeAttribute = GetEditorBrowsableAttribute(targetType);
+        Assert.IsNotNull(typeAttribute);
+        Assert.AreEqual(EditorBrowsableState.Advanced, typeAttribute.State);
 
         var methodInfo = targetType.GetMethod("Method");
         Assert.IsTrue(methodInfo.IsPublic);
-        var methodAttribue = GetEditorBrowdableAttribute(methodInfo);
-        Assert.IsNotNull(methodAttribue);
-        Assert.AreEqual(EditorBrowsableState.Advanced, methodAttribue.State);
+        var methodAttribute = GetEditorBrowsableAttribute(methodInfo);
+        Assert.IsNotNull(methodAttribute);
+        Assert.AreEqual(EditorBrowsableState.Advanced, methodAttribute.State);
     }
 
-    EditorBrowsableAttribute GetEditorBrowdableAttribute(MemberInfo memberInfo)
+    EditorBrowsableAttribute GetEditorBrowsableAttribute(MemberInfo memberInfo)
     {
         return (EditorBrowsableAttribute)memberInfo.GetCustomAttributes(typeof(EditorBrowsableAttribute), false).First();
     }

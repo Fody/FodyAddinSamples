@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{30155725-BC9A-4D44-9BB0-FB9910F25C5F}</ProjectGuid>
+    <ProjectGuid>{E3E24467-E188-453E-A07F-D44C30CC3F53}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PropertyChangedSample</RootNamespace>
-    <AssemblyName>PropertyChangedSample</AssemblyName>
+    <RootNamespace>AnotarCustomSample</RootNamespace>
+    <AssemblyName>AnotarCustomSample</AssemblyName>
     <FileAlignment>512</FileAlignment>
+    <ProductVersion>12.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
     <FodyPath>..\packages\Fody.1.13.8.0</FodyPath>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
@@ -37,12 +38,12 @@
   <ItemGroup>
     <None Include="Fody.targets" />
     <None Include="packages.config" />
-    <Reference Include="nunit.framework, Version=2.6.2.12296, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="PropertyChanged">
-      <HintPath>..\packages\PropertyChanged.Fody.1.38.6.0\Lib\NET35\PropertyChanged.dll</HintPath>
+    <Reference Include="Anotar.Custom">
+      <HintPath>..\packages\Anotar.Custom.Fody.1.9.0.0\Lib\portable-net4+sl4+wp7\Anotar.Custom.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -51,12 +52,14 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <None Include="FodyWeavers.xml">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="FodyWeavers.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sample.cs" />
+    <Compile Include="LogEntry.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="LoggerFactory.cs" />
+    <Compile Include="CustomExceptionSample.cs" />
+    <Compile Include="CustomExplicitSample.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(ProjectDir)\..\Tools\Pepita\PepitaGet.targets" />

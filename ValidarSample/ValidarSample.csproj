@@ -43,7 +43,7 @@
       <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="PropertyChanged">
-      <HintPath>..\packages\PropertyChanged.Fody.1.38.5.0\Lib\NET35\PropertyChanged.dll</HintPath>
+      <HintPath>..\packages\PropertyChanged.Fody.1.38.6.0\Lib\NET35\PropertyChanged.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />

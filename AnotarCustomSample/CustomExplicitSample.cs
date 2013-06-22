@@ -1,0 +1,20 @@
+﻿using Anotar.Custom;
+using NUnit.Framework;
+
+[TestFixture]
+public class CustomExplicitSample
+{
+    [Test]
+    public void Run()
+    {
+        MyMethod();
+
+        Assert.AreEqual("Method: 'System.Void CustomExplicitSample::MyMethod()'. Line: ~17. TheMessage", Logger.LastMessage.Format);
+    }
+
+    static void MyMethod()
+    {
+        Log.Debug("TheMessage");
+    }
+
+}
