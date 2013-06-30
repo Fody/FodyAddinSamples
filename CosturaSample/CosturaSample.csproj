@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyLocation.cs" />
+    <Compile Include="ModuleInitializer.cs" />
     <Compile Include="Sample.cs" />
   </ItemGroup>
   <ItemGroup>

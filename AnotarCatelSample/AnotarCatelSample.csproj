@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F06A4066-84D2-442F-8BCF-97E9E622A968}</ProjectGuid>
+    <ProjectGuid>{72575EAD-D0EC-483E-B7FD-1DAC33C13486}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AnotarMetroLogSample</RootNamespace>
-    <AssemblyName>AnotarMetroLogSample</AssemblyName>
+    <RootNamespace>AnotarCatelSample</RootNamespace>
+    <AssemblyName>AnotarCatelSample</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProductVersion>12.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
@@ -38,18 +38,12 @@
   <ItemGroup>
     <None Include="Fody.targets" />
     <None Include="packages.config" />
-    <Reference Include="Anotar.MetroLog">
-      <HintPath>..\packages\Anotar.MetroLog.Fody.2.0.0.0\Lib\portable-net45+wp8+win8\Anotar.MetroLog.dll</HintPath>
+    <Reference Include="Anotar.Catel">
+      <HintPath>..\packages\Anotar.Catel.Fody.2.0.0.0\Lib\portable-net4+sl4+wp7+windows8\Anotar.Catel.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="MetroLog">
-      <HintPath>..\packages\MetroLog.0.8.1.1\lib\net45\MetroLog.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroLog.NetFx">
-      <HintPath>..\packages\MetroLog.0.8.1.1\lib\net45\MetroLog.NetFx.dll</HintPath>
-    </Reference>
-    <Reference Include="NLog">
-      <HintPath>..\packages\NLog.2.0.1.2\lib\net45\NLog.dll</HintPath>
+    <Reference Include="Catel.Core">
+      <HintPath>..\packages\Catel.Core.3.6.1306291728-beta\lib\net45\Catel.Core.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
@@ -64,11 +58,11 @@
     <None Include="FodyWeavers.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActionTarget.cs" />
-    <Compile Include="MetroLogExceptionSample.cs" />
+    <Compile Include="ActionAppender.cs" />
+    <Compile Include="CatelExceptionSample.cs" />
     <Compile Include="LogCaptureBuilder.cs" />
     <Compile Include="ModuleInitializer.cs" />
-    <Compile Include="MetroLogExplicitSample.cs" />
+    <Compile Include="CatelExplicitSample.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(ProjectDir)\..\Tools\Pepita\PepitaGet.targets" />

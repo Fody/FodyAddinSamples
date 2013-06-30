@@ -9,7 +9,7 @@ public class MetroLogExplicitSample
     {
         MyMethod();
 
-        Assert.AreEqual("Method: 'System.Void MetroLogExplicitSample::MyMethod()'. Line: ~17. TheMessage", LogCaptureBuilder.LastMessage);
+        Assert.AreEqual("Method: 'Void MyMethod()'. Line: ~17. TheMessage", LogCaptureBuilder.LastMessage);
     }
 
     static void MyMethod()

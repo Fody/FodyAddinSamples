@@ -16,7 +16,7 @@ public class CustomExceptionSample
         {
         }
 
-        Assert.AreEqual("Exception occurred in 'System.Void CustomExceptionSample::MyMethod()'. ", Logger.LastMessage.Format);
+        Assert.AreEqual("Exception occurred in 'Void MyMethod()'. ", Logger.LastMessage.Format);
     }
 
     [LogToDebugOnException]

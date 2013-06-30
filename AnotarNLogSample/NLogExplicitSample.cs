@@ -9,7 +9,7 @@ public class NLogExplicitSample
     {
         MyMethod();
 
-        Assert.AreEqual("Method: 'System.Void NLogExplicitSample::MyMethod()'. Line: ~17. TheMessage", LogCaptureBuilder.LastMessage);
+        Assert.AreEqual("Method: 'Void MyMethod()'. Line: ~17. TheMessage", LogCaptureBuilder.LastMessage);
     }
 
     static void MyMethod()
