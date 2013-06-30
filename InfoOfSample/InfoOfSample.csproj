@@ -39,7 +39,7 @@
     <None Include="Fody.targets" />
     <None Include="packages.config" />
     <Reference Include="InfoOf">
-      <HintPath>..\packages\InfoOf.Fody.0.9.2.0\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\InfoOf.dll</HintPath>
+      <HintPath>..\packages\InfoOf.Fody.0.10.0.0\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\InfoOf.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework, Version=2.6.2.12296, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">

@@ -17,7 +17,7 @@ public class SerilogExceptionSample
         }
 
         var actual = LogCaptureBuilder.LastMessage.MessageTemplate.Text;
-        Assert.AreEqual("Exception occurred in 'System.Void SerilogExceptionSample::MyMethod()'. ", actual);
+        Assert.AreEqual("Exception occurred in 'Void MyMethod()'. ", actual);
     }
 
     [LogToDebugOnException]

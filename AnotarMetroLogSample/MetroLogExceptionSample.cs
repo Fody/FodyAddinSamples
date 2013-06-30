@@ -16,7 +16,7 @@ public class MetroLogExceptionSample
         {
         }
 
-        Assert.AreEqual("Exception occurred in 'System.Void MetroLogExceptionSample::MyMethod()'. ", LogCaptureBuilder.LastMessage);
+        Assert.AreEqual("Exception occurred in 'Void MyMethod()'. ", LogCaptureBuilder.LastMessage);
     }
 
     [LogToDebugOnException]

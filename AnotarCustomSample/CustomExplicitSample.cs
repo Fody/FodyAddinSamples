@@ -9,7 +9,7 @@ public class CustomExplicitSample
     {
         MyMethod();
 
-        Assert.AreEqual("Method: 'System.Void CustomExplicitSample::MyMethod()'. Line: ~17. TheMessage", Logger.LastMessage.Format);
+        Assert.AreEqual("Method: 'Void MyMethod()'. Line: ~17. TheMessage", Logger.LastMessage.Format);
     }
 
     static void MyMethod()

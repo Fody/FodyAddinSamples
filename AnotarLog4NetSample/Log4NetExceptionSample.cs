@@ -16,7 +16,7 @@ public class Log4NetExceptionSample
         {
         }
 
-        Assert.AreEqual("Exception occurred in 'System.Void Log4NetExceptionSample::MyMethod()'. ", LogCaptureBuilder.LastMessage);
+        Assert.AreEqual("Exception occurred in 'Void MyMethod()'. ", LogCaptureBuilder.LastMessage);
     }
 
     [LogToDebugOnException]

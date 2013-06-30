@@ -16,7 +16,7 @@ public class NLogExceptionSample
         {
         }
 
-        Assert.AreEqual("Exception occurred in 'System.Void NLogExceptionSample::MyMethod()'. ", LogCaptureBuilder.LastMessage);
+        Assert.AreEqual("Exception occurred in 'Void MyMethod()'. ", LogCaptureBuilder.LastMessage);
     }
 
     [LogToDebugOnException]
