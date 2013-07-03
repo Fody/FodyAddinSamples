@@ -8,7 +8,7 @@ public class ObsoleteSample
     [Test]
     public void Run()
     {
-        //ObsoleteExAttribute will have been conveted to an ObsoleteAttribute
+        //ObsoleteExAttribute will have been converted to an ObsoleteAttribute
         var obsoleteAttribute = (ObsoleteAttribute)typeof (TargetClass)
             .GetCustomAttributes(typeof (ObsoleteAttribute),false)
             .First();
