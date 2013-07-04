@@ -16,7 +16,7 @@ public class CatelExceptionSample
         {
         }
 
-        Assert.AreEqual("[CatelExceptionSample] Exception occurred in 'Void MyMethod()'.  | [Exception] System.Exception: Foo\r\n   at CatelExceptionSample.MyMethod() in c:\\Code\\FodyAddinSamples\\AnotarCatelSample\\CatelExceptionSample.cs:line 25", LogCaptureBuilder.LastMessage);
+        Assert.IsTrue( LogCaptureBuilder.LastMessage.StartsWith("[CatelExceptionSample] Exception occurred in 'Void MyMethod()'.  | [Exception] System.Exception: Foo\r\n   at CatelExceptionSample.MyMethod() in") );
     }
 
     [LogToDebugOnException]
