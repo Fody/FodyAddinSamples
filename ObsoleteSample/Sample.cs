@@ -13,7 +13,7 @@ public class ObsoleteSample
             .GetCustomAttributes(typeof (ObsoleteAttribute),false)
             .First();
 
-        var expectedMessage = "Decided this class was a bad idea. Please use 'NewTargetClass' instead. Will be treated as an error from version '3.0.0'. Will be removed in version '4.0.0'.";
+        var expectedMessage = "Decided this class was a bad idea. Please use `NewTargetClass` instead. Will be treated as an error from version 3.0.0. Will be removed in version 4.0.0.";
         Assert.AreEqual(expectedMessage, obsoleteAttribute.Message);
     }
 }
