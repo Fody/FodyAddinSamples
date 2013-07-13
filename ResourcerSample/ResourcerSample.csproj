@@ -35,7 +35,7 @@
       <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="Resourcer">
-      <HintPath>..\packages\Resourcer.Fody.0.0.4\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\Resourcer.dll</HintPath>
+      <HintPath>..\packages\Resourcer.Fody.0.0.5\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\Resourcer.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />

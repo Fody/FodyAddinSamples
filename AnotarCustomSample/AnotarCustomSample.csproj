@@ -39,7 +39,7 @@
     <None Include="Fody.targets" />
     <None Include="packages.config" />
     <Reference Include="Anotar.Custom">
-      <HintPath>..\packages\Anotar.Custom.Fody.2.0.4.0\Lib\portable-net4+sl4+wp7\Anotar.Custom.dll</HintPath>
+      <HintPath>..\packages\Anotar.Custom.Fody.2.0.6\Lib\portable-net4+sl4+wp7\Anotar.Custom.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">

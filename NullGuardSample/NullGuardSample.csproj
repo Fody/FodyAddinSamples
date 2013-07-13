@@ -37,7 +37,7 @@
     <None Include="Fody.targets" />
     <None Include="packages.config" />
     <Reference Include="NullGuard">
-      <HintPath>..\packages\NullGuard.Fody.0.6.2.0\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\NullGuard.dll</HintPath>
+      <HintPath>..\packages\NullGuard.Fody.0.6.3\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\NullGuard.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">
