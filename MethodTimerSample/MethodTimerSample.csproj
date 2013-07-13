@@ -40,7 +40,7 @@
       <SubType>Designer</SubType>
     </None>
     <Reference Include="MethodTimer">
-      <HintPath>..\packages\MethodTimer.Fody.1.11.3.0\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\MethodTimer.dll</HintPath>
+      <HintPath>..\packages\MethodTimer.Fody.1.11.4\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\MethodTimer.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework, Version=2.6.2.12296, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
