@@ -44,7 +44,7 @@
     </Reference>
     <Reference Include="Catel.Core, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Catel.Core.3.6.1307112354-beta\lib\net45\Catel.Core.dll</HintPath>
+      <HintPath>..\packages\Catel.Core.3.6.1307131351-beta\lib\net45\Catel.Core.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
