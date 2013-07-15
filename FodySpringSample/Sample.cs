@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FodySpring;
+﻿using FodySpring;
 using NUnit.Framework;
 
 namespace FodySpringSample
@@ -27,13 +22,13 @@ namespace FodySpringSample
     [Configurable]
     public class Entity
     {
-        private readonly int _value;
+        int value;
 
         public IService Service { get; set; }
 
         public Entity(int value)
         {
-            _value = value;
+            this.value = value;
         }
     }
 
@@ -44,7 +39,7 @@ namespace FodySpringSample
 
     public class Service : IService
     {
-        private readonly int _injectedValue;
+       int _injectedValue;
 
         public Service(int injectedValue)
         {
