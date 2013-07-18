@@ -19,6 +19,6 @@ public class Target
     //uncomment this and you will get a build error
     //void BadMethodWithFieldWrite()
     //{
-    //    Field = "sdf";
+    //    Field = "aString";
     //}
 }

@@ -14,7 +14,7 @@ namespace FodySpringSample
             Assert.IsNotNull(entity.Service);
             Assert.IsInstanceOf(typeof(Service), entity.Service);
 
-            // refer to springobjects.xml to see Service and Entity classes configuration
+            // refer to SpringObjects.xml to see Service and Entity classes configuration
             Assert.AreEqual(25, entity.Service.MultiplyBy(5));
         }
     }
@@ -39,16 +39,16 @@ namespace FodySpringSample
 
     public class Service : IService
     {
-       int _injectedValue;
+       int injectedValue;
 
         public Service(int injectedValue)
         {
-            _injectedValue = injectedValue;
+            this.injectedValue = injectedValue;
         }
 
         public int MultiplyBy(int value)
         {
-            return value * _injectedValue;
+            return value * injectedValue;
         }
     }
 }
