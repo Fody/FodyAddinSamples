@@ -31,9 +31,9 @@ namespace StilettoSample
             Assert.AreEqual(1, modules.Length);
 
             var module = modules[0];
-            var attrs = module.GetCustomAttributes(tAttr, false);
+            var attributes = module.GetCustomAttributes(tAttr, false);
 
-            Assert.IsNotEmpty(attrs);
+            Assert.IsNotEmpty(attributes);
         }
     }
 }
