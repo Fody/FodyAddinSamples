@@ -79,9 +79,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsableSample", "UsableSampl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Janitor", "Janitor\Janitor.csproj", "{6D96DD2E-3793-4342-A721-1A4AD3001ED7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FodySpringSample", "FodySpringSample\FodySpringSample.csproj", "{B4ADA34D-EF48-473F-A151-D00CD5CDCBC4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpringFodySample", "FodySpringSample\SpringFodySample.csproj", "{B4ADA34D-EF48-473F-A151-D00CD5CDCBC4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StilettoSample", "StilettoSample\StilettoSample.csproj", "{E079EA13-BA1F-4AA5-B5F4-3C197B3833C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutofacFodySample", "AutofacFodySample\AutofacFodySample.csproj", "{74C8670B-025C-4E5B-B83B-128D63FC217B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NinjectFodySample", "NinjectFodySample\NinjectFodySample.csproj", "{BD5EEC30-8817-45D6-9845-E8E6DEF77B5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -709,6 +713,36 @@ Global
 		{E079EA13-BA1F-4AA5-B5F4-3C197B3833C3}.Release|ARM.ActiveCfg = Release|Any CPU
 		{E079EA13-BA1F-4AA5-B5F4-3C197B3833C3}.Release|x64.ActiveCfg = Release|Any CPU
 		{E079EA13-BA1F-4AA5-B5F4-3C197B3833C3}.Release|x86.ActiveCfg = Release|Any CPU
+		{74C8670B-025C-4E5B-B83B-128D63FC217B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C8670B-025C-4E5B-B83B-128D63FC217B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C8670B-025C-4E5B-B83B-128D63FC217B}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{74C8670B-025C-4E5B-B83B-128D63FC217B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{74C8670B-025C-4E5B-B83B-128D63FC217B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{74C8670B-025C-4E5B-B83B-128D63FC217B}.DebugMono|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C8670B-025C-4E5B-B83B-128D63FC217B}.DebugMono|Any CPU.Build.0 = Debug|Any CPU
+		{74C8670B-025C-4E5B-B83B-128D63FC217B}.DebugMono|ARM.ActiveCfg = Debug|Any CPU
+		{74C8670B-025C-4E5B-B83B-128D63FC217B}.DebugMono|x64.ActiveCfg = Debug|Any CPU
+		{74C8670B-025C-4E5B-B83B-128D63FC217B}.DebugMono|x86.ActiveCfg = Debug|Any CPU
+		{74C8670B-025C-4E5B-B83B-128D63FC217B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C8670B-025C-4E5B-B83B-128D63FC217B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74C8670B-025C-4E5B-B83B-128D63FC217B}.Release|ARM.ActiveCfg = Release|Any CPU
+		{74C8670B-025C-4E5B-B83B-128D63FC217B}.Release|x64.ActiveCfg = Release|Any CPU
+		{74C8670B-025C-4E5B-B83B-128D63FC217B}.Release|x86.ActiveCfg = Release|Any CPU
+		{BD5EEC30-8817-45D6-9845-E8E6DEF77B5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD5EEC30-8817-45D6-9845-E8E6DEF77B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD5EEC30-8817-45D6-9845-E8E6DEF77B5D}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{BD5EEC30-8817-45D6-9845-E8E6DEF77B5D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BD5EEC30-8817-45D6-9845-E8E6DEF77B5D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BD5EEC30-8817-45D6-9845-E8E6DEF77B5D}.DebugMono|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD5EEC30-8817-45D6-9845-E8E6DEF77B5D}.DebugMono|Any CPU.Build.0 = Debug|Any CPU
+		{BD5EEC30-8817-45D6-9845-E8E6DEF77B5D}.DebugMono|ARM.ActiveCfg = Debug|Any CPU
+		{BD5EEC30-8817-45D6-9845-E8E6DEF77B5D}.DebugMono|x64.ActiveCfg = Debug|Any CPU
+		{BD5EEC30-8817-45D6-9845-E8E6DEF77B5D}.DebugMono|x86.ActiveCfg = Debug|Any CPU
+		{BD5EEC30-8817-45D6-9845-E8E6DEF77B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD5EEC30-8817-45D6-9845-E8E6DEF77B5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD5EEC30-8817-45D6-9845-E8E6DEF77B5D}.Release|ARM.ActiveCfg = Release|Any CPU
+		{BD5EEC30-8817-45D6-9845-E8E6DEF77B5D}.Release|x64.ActiveCfg = Release|Any CPU
+		{BD5EEC30-8817-45D6-9845-E8E6DEF77B5D}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

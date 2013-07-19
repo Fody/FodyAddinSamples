@@ -1,8 +1,14 @@
-﻿using Fody.DependencyInjection;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Fody.DependencyInjection;
+using Ninject;
+using Ninject.Selection.Heuristics;
 using NUnit.Framework;
-using Spring.Context.Support;
 
-namespace SpringFodySample
+namespace NinjectFodySample
 {
     [TestFixture]
     public class Sample
@@ -10,7 +16,11 @@ namespace SpringFodySample
         [TestFixtureSetUp]
         public void Setup()
         {
-            ConfigurableInjection.InitializeContainer(ContextRegistry.GetContext());
+            IKernel kernel = new StandardKernel();
+            kernel.Components.Add<IInjectionHeuristic, PropertyInjectionHeuristic>();
+            kernel.Bind<IService>().To<Service>().WithConstructorArgument("injectedValue", 5);
+
+            ConfigurableInjection.InitializeContainer(kernel);
         }
 
         [Test]
@@ -46,7 +56,7 @@ namespace SpringFodySample
 
     public class Service : IService
     {
-       int _injectedValue;
+        int _injectedValue;
 
         public Service(int injectedValue)
         {

@@ -1,8 +1,13 @@
-﻿using Fody.DependencyInjection;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Autofac;
+using Fody.DependencyInjection;
 using NUnit.Framework;
-using Spring.Context.Support;
 
-namespace SpringFodySample
+namespace AutofacFodySample
 {
     [TestFixture]
     public class Sample
@@ -10,19 +15,22 @@ namespace SpringFodySample
         [TestFixtureSetUp]
         public void Setup()
         {
-            ConfigurableInjection.InitializeContainer(ContextRegistry.GetContext());
+            var builder = new ContainerBuilder();
+            builder.RegisterType<Service>().As<IService>()
+                .WithParameter("injectedValue", 5); ;
+
+            ConfigurableInjection.InitializeContainer(builder.Build());
         }
 
         [Test]
-        public void SpringServiceIsInjected()
+        public void AutofacServiceIsInjected()
         {
             var entity = new Entity(5);
 
-            Assert.IsNotNull(entity.InjectedService);
-            Assert.IsInstanceOf(typeof(Service), entity.InjectedService);
+            Assert.IsNotNull(entity.Service);
+            Assert.IsInstanceOf(typeof(Service), entity.Service);
 
-            // refer to springobjects.xml to see Service and Entity classes configuration
-            Assert.AreEqual(25, entity.InjectedService.MultiplyBy(5));
+            Assert.AreEqual(25, entity.Service.MultiplyBy(5));
         }
     }
 
@@ -31,7 +39,7 @@ namespace SpringFodySample
     {
         int value;
 
-        public IService InjectedService { get; set; }
+        public IService Service { get; set; }
 
         public Entity(int value)
         {
@@ -46,7 +54,7 @@ namespace SpringFodySample
 
     public class Service : IService
     {
-       int _injectedValue;
+        int _injectedValue;
 
         public Service(int injectedValue)
         {
@@ -58,4 +66,5 @@ namespace SpringFodySample
             return value * _injectedValue;
         }
     }
+
 }
