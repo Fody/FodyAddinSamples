@@ -37,7 +37,6 @@
 ##  If you have NuGet Package Restore enabled, uncomment this
 packages/
 ForSample/
-graphviz/
 
 *test-results*
 

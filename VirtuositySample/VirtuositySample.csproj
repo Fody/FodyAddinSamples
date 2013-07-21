@@ -11,7 +11,7 @@
     <RootNamespace>VirtuositySample</RootNamespace>
     <AssemblyName>VirtuositySample</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <FodyPath>..\packages\Fody.1.13.11.1</FodyPath>
+    <FodyPath>..\packages\Fody.1.13.12</FodyPath>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>

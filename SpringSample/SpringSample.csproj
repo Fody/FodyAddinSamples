@@ -7,11 +7,11 @@
     <ProjectGuid>{B4ADA34D-EF48-473F-A151-D00CD5CDCBC4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FodySpringSample</RootNamespace>
-    <AssemblyName>FodySpringSample</AssemblyName>
+    <RootNamespace>SpringFodySample</RootNamespace>
+    <AssemblyName>SpringFodySample</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <FodyPath>..\packages\Fody.1.13.11.1</FodyPath>
+    <FodyPath>..\packages\Fody.1.13.12</FodyPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,13 +31,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+    <Reference Include="Common.Logging, Version=2.1.2.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Common.Logging.1.2.0\lib\1.0\Common.Logging.dll</HintPath>
     </Reference>
-    <Reference Include="FodySpring">
-      <HintPath>..\packages\Spring.Fody.1.0.5\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\FodySpring.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="FodyDependencyInjection, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Spring.Fody.1.0.6\Lib\FodyDependencyInjection.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
@@ -69,5 +69,4 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(ProjectDir)\..\Tools\Pepita\PepitaGet.targets" />
   <Import Project="Fody.targets" />
-  
 </Project>

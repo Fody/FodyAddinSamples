@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+  <object name="Entity" type="SpringFodySample.Entity, SpringFodySample" singleton="false">
+    <property name="InjectedService" ref="Service" />
+  </object>
+
+  <object name="Service" type="SpringFodySample.Service, SpringFodySample">
+    <constructor-arg name="injectedValue" value="5" />
+  </object>
+
+</objects>
