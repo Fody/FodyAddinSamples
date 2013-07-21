@@ -1,0 +1,10 @@
+digraph G0 {
+  cluster = "true";
+  IPump -> Thermosiphon;
+  Sample -> CoffeeMaker;
+  Thermosiphon -> IHeater;
+  N1 [label="Lazy<IHeater>"];
+  CoffeeMaker -> N1;
+  CoffeeMaker -> IPump;
+  N1 -> IHeater;
+}
