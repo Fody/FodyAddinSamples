@@ -2,60 +2,57 @@
 using NUnit.Framework;
 using Spring.Context.Support;
 
-namespace SpringFodySample
+[TestFixture]
+public class SpringSample
 {
-    [TestFixture]
-    public class Sample
+    [TestFixtureSetUp]
+    public void Setup()
     {
-        [TestFixtureSetUp]
-        public void Setup()
-        {
-            ConfigurableInjection.InitializeContainer(ContextRegistry.GetContext());
-        }
-
-        [Test]
-        public void SpringServiceIsInjected()
-        {
-            var entity = new Entity(5);
-
-            Assert.IsNotNull(entity.InjectedService);
-            Assert.IsInstanceOf(typeof(Service), entity.InjectedService);
-
-            // refer to springobjects.xml to see Service and Entity classes configuration
-            Assert.AreEqual(25, entity.InjectedService.MultiplyBy(5));
-        }
+        ConfigurableInjection.InitializeContainer(ContextRegistry.GetContext());
     }
 
-    [Configurable]
-    public class Entity
+    [Test]
+    public void SpringServiceIsInjected()
     {
-        int value;
+        var entity = new Entity(5);
 
-        public IService InjectedService { get; set; }
+        Assert.IsNotNull(entity.InjectedService);
+        Assert.IsInstanceOf(typeof(Service), entity.InjectedService);
 
-        public Entity(int value)
-        {
-            this.value = value;
-        }
+        // refer to springobjects.xml to see Service and Entity classes configuration
+        Assert.AreEqual(25, entity.InjectedService.MultiplyBy(5));
+    }
+}
+
+[Configurable]
+public class Entity
+{
+    int value;
+
+    public IService InjectedService { get; set; }
+
+    public Entity(int value)
+    {
+        this.value = value;
+    }
+}
+
+public interface IService
+{
+    int MultiplyBy(int value);
+}
+
+public class Service : IService
+{
+    int injectedValue;
+
+    public Service(int injectedValue)
+    {
+        this.injectedValue = injectedValue;
     }
 
-    public interface IService
+    public int MultiplyBy(int value)
     {
-        int MultiplyBy(int value);
-    }
-
-    public class Service : IService
-    {
-       int _injectedValue;
-
-        public Service(int injectedValue)
-        {
-            _injectedValue = injectedValue;
-        }
-
-        public int MultiplyBy(int value)
-        {
-            return value * _injectedValue;
-        }
+        return value * injectedValue;
     }
 }

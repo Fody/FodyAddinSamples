@@ -3,32 +3,29 @@ using Ninject;
 using Ninject.Components;
 using Ninject.Selection.Heuristics;
 
-namespace NinjectFodySample
+/// <summary>
+/// This class is NOT required by Ninject.Fody, this is only used to avoid using [Inject] attributes
+/// </summary>
+public class PropertyInjectionHeuristic : NinjectComponent, IInjectionHeuristic
 {
-    /// <summary>
-    /// This class is NOT required by Ninject.Fody, this is only used to avoid using [Inject] attributes
-    /// </summary>
-    public class PropertyInjectionHeuristic : NinjectComponent, IInjectionHeuristic
+    IKernel kernel;
+
+    public PropertyInjectionHeuristic(IKernel kernel)
     {
-        private readonly IKernel kernel;
+        this.kernel = kernel;
+    }
 
-        public PropertyInjectionHeuristic(IKernel kernel)
+    public bool ShouldInject(MemberInfo member)
+    {
+        var propertyInfo = member.ReflectedType.GetProperty(member.Name);
+
+        if (propertyInfo != null && propertyInfo.CanWrite)
         {
-            this.kernel = kernel;
+            var service = kernel.TryGet(propertyInfo.PropertyType);
+
+            return service != null;
         }
 
-        public bool ShouldInject(MemberInfo member)
-        {
-            var propertyInfo = member.ReflectedType.GetProperty(member.Name);
-
-            if (propertyInfo != null && propertyInfo.CanWrite)
-            {
-                object service = kernel.TryGet(propertyInfo.PropertyType);
-
-                return service != null;
-            }
-
-            return false;
-        }
+        return false;
     }
 }
