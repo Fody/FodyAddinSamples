@@ -14,7 +14,7 @@ public class MetroLogExplicitSample
 
     static void MyMethod()
     {
-        Log.Debug("TheMessage");
+        LogTo.Debug("TheMessage");
     }
 
 }

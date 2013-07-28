@@ -24,7 +24,7 @@ public class NinjectSample
         Assert.IsNotNull(entity.InjectedService);
         Assert.IsInstanceOf(typeof(Service), entity.InjectedService);
 
-        // refer to springobjects.xml to see Service and Entity classes configuration
+        // refer to springObjects.xml to see Service and Entity classes configuration
         Assert.AreEqual(25, entity.InjectedService.MultiplyBy(5));
     }
 }

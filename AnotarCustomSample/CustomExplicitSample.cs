@@ -14,7 +14,7 @@ public class CustomExplicitSample
 
     static void MyMethod()
     {
-        Log.Debug("TheMessage");
+        LogTo.Debug("TheMessage");
     }
 
 }
