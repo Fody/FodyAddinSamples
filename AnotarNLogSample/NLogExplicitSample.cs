@@ -14,7 +14,7 @@ public class NLogExplicitSample
 
     static void MyMethod()
     {
-        Log.Debug("TheMessage");
+        LogTo.Debug("TheMessage");
     }
 
 }
