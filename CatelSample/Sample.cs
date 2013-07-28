@@ -10,12 +10,12 @@ public class Sample
         var target = new Target();
         var property1Changed = false;
         target.PropertyChanged+=(sender, args) => property1Changed = true;
-        target.Propert1 = "New Value";
+        target.Property1 = "New Value";
         Assert.IsTrue(property1Changed);
     }
 }
 
-public class Target: DataObjectBase
+public class Target: ModelBase
 {
-    public string Propert1 { get; set; }
+    public string Property1 { get; set; }
 }
