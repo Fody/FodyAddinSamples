@@ -39,7 +39,7 @@
     <None Include="Fody.targets" />
     <None Include="packages.config" />
     <Reference Include="Anotar.Serilog">
-      <HintPath>..\packages\Anotar.Serilog.Fody.2.1.0\Lib\portable-net45+win8+wp8\Anotar.Serilog.dll</HintPath>
+      <HintPath>..\packages\Anotar.Serilog.Fody.2.2.0\Lib\portable-net45+win8+wp8\Anotar.Serilog.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">
