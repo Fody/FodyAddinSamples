@@ -11,7 +11,7 @@
     <AssemblyName>Janitor</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <FodyPath>..\packages\Fody.1.13.12</FodyPath>
+    <FodyPath>..\packages\Fody.1.14.0</FodyPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,9 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Janitor, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Janitor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=d34c7d3bba3746e6, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Janitor.Fody.0.2.1\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\Janitor.dll</HintPath>
+      <HintPath>..\packages\Janitor.Fody.0.3.0\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\Janitor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">
