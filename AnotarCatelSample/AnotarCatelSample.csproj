@@ -39,7 +39,7 @@
     <None Include="Fody.targets" />
     <None Include="packages.config" />
     <Reference Include="Anotar.Catel">
-      <HintPath>..\packages\Anotar.Catel.Fody.2.2.0\Lib\portable-net4+sl4+wp7+windows8\Anotar.Catel.dll</HintPath>
+      <HintPath>..\packages\Anotar.Catel.Fody.2.3.0.0\Lib\portable-net4+sl4+wp7+windows8\Anotar.Catel.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Catel.Core, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
