@@ -53,7 +53,7 @@
     </Reference>
     <Reference Include="Stiletto, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Stiletto.0.2.1.2\Lib\net40\Stiletto.dll</HintPath>
+      <HintPath>..\packages\Stiletto.0.3.0.1\Lib\net40\Stiletto.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
