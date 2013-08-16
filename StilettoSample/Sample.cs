@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using NUnit.Framework;
 using Stiletto;
+using Stiletto.Internal.Loaders.Codegen;
 
 namespace StilettoSample
 {
@@ -25,7 +26,7 @@ namespace StilettoSample
             // Modules that have been woven by Stiletto have a [ProcessedAssembly] attribute.
             // Other code that minimizes reflection at runtime is also generated.
 
-            var tAttr = typeof (Stiletto.Internal.Plugins.Codegen.ProcessedAssemblyAttribute);
+            var tAttr = typeof (ProcessedAssemblyAttribute);
             var assembly = Assembly.GetExecutingAssembly();
             var modules = assembly.GetModules();
             Assert.AreEqual(1, modules.Length);
