@@ -11,7 +11,7 @@
     <RootNamespace>CaselessSample</RootNamespace>
     <AssemblyName>CaselessSample</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <FodyPath>..\packages\Fody.1.14.0</FodyPath>
+    <FodyPath>..\packages\Fody.1.15.0.0</FodyPath>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
