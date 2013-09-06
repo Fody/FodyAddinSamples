@@ -11,7 +11,7 @@
     <RootNamespace>MethodDecoratorSample</RootNamespace>
     <AssemblyName>MethodDecoratorSample</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <FodyPath>..\packages\Fody.1.16.0.0</FodyPath>
+    <FodyPath>..\packages\Fody.1.17.0.0</FodyPath>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
