@@ -12,7 +12,7 @@ namespace RemoveReferenceSample
         /// </summary>
         public DummyClass()
         {
-            XDocument xmlDoc = XDocument.Load(@"dummy.xml");
+            var xmlDoc = XDocument.Load(@"dummy.xml");
         }
     }
 }
