@@ -9,4 +9,4 @@ using RemoveReference;
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
-[assembly: RemoveReference("System.Xml.Linq, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e")]
+[assembly: RemoveReference("System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")]
