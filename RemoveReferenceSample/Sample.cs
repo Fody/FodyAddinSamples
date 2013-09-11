@@ -16,9 +16,9 @@ namespace RemoveReferenceSample
         [Test]
         public void Run()
         {
-            Assembly assembly = Assembly.GetExecutingAssembly();
+            var assembly = Assembly.GetExecutingAssembly();
 
-            Assert.IsTrue(!assembly.GetReferencedAssemblies().Any(x => x.Name == "System.Xml.Linq"));
+            Assert.IsTrue(assembly.GetReferencedAssemblies().All(x => x.Name != "System.Xml.Linq"));
         }
     }
 }
