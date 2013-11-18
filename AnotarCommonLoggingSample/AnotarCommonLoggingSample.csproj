@@ -12,7 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <ProductVersion>12.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <FodyPath>..\packages\Fody.1.17.0.0</FodyPath>
+    <FodyPath>..\packages\Fody.1.17.4.0</FodyPath>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -39,14 +39,15 @@
     <None Include="Fody.targets" />
     <None Include="packages.config" />
     <Reference Include="Anotar.CommonLogging">
-      <HintPath>..\packages\Anotar.CommonLogging.Fody.2.3.0.0\Lib\net40\Anotar.CommonLogging.dll</HintPath>
+      <HintPath>..\packages\Anotar.CommonLogging.Fody.2.6.0.0\Lib\portable-net4+sl4+wp7+windows8\Anotar.CommonLogging.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Common.Logging">
       <HintPath>..\packages\Common.Logging.2.1.2\lib\net40\Common.Logging.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
+    <Reference Include="nunit.framework, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

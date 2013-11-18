@@ -12,7 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <ProductVersion>12.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <FodyPath>..\packages\Fody.1.17.0.0</FodyPath>
+    <FodyPath>..\packages\Fody.1.17.4.0</FodyPath>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -39,15 +39,16 @@
     <None Include="Fody.targets" />
     <None Include="packages.config" />
     <Reference Include="Anotar.NLog">
-      <HintPath>..\packages\Anotar.NLog.Fody.2.3.0.0\Lib\portable-net4+sl4+wp7\Anotar.NLog.dll</HintPath>
+      <HintPath>..\packages\Anotar.NLog.Fody.2.6.0.0\Lib\portable-net4+sl4+wp7+windows8\Anotar.NLog.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="NLog, Version=2.0.1.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+    <Reference Include="NLog, Version=2.1.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\NLog.2.0.1.2\lib\net45\NLog.dll</HintPath>
+      <HintPath>..\packages\NLog.2.1.0\lib\net45\NLog.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
+    <Reference Include="nunit.framework, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

@@ -12,7 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <ProductVersion>12.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <FodyPath>..\packages\Fody.1.17.0.0</FodyPath>
+    <FodyPath>..\packages\Fody.1.17.4.0</FodyPath>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -37,9 +37,11 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="Fody.targets" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <Reference Include="Anotar.MetroLog">
-      <HintPath>..\packages\Anotar.MetroLog.Fody.2.3.0.0\Lib\portable-net45+wp8+win8\Anotar.MetroLog.dll</HintPath>
+      <HintPath>..\packages\Anotar.MetroLog.Fody.2.6.0.0\Lib\portable-net4+sl4+wp7+windows8\Anotar.MetroLog.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="MetroLog">
@@ -48,11 +50,9 @@
     <Reference Include="MetroLog.NetFx">
       <HintPath>..\packages\MetroLog.0.8.1.1\lib\net45\MetroLog.NetFx.dll</HintPath>
     </Reference>
-    <Reference Include="NLog">
-      <HintPath>..\packages\NLog.2.0.1.2\lib\net45\NLog.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
+    <Reference Include="nunit.framework, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
