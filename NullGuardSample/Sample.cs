@@ -5,6 +5,7 @@ using NUnit.Framework;
 public class NullGuardSample
 {
     [Test]
+    [Explicit]
     public void Run()
     {
         var targetClass = new TargetClass();

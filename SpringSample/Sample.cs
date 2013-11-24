@@ -5,15 +5,12 @@ using Spring.Context.Support;
 [TestFixture]
 public class SpringSample
 {
-    [TestFixtureSetUp]
-    public void Setup()
-    {
-        ConfigurableInjection.InitializeContainer(ContextRegistry.GetContext());
-    }
 
     [Test]
+    [Explicit]
     public void SpringServiceIsInjected()
     {
+        ConfigurableInjection.InitializeContainer(ContextRegistry.GetContext());
         var entity = new Entity(5);
 
         Assert.IsNotNull(entity.InjectedService);

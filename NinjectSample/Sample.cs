@@ -6,19 +6,15 @@ using NUnit.Framework;
 [TestFixture]
 public class NinjectSample
 {
-    [TestFixtureSetUp]
-    public void Setup()
+
+    [Test]
+    public void SpringServiceIsInjected()
     {
         IKernel kernel = new StandardKernel();
         kernel.Components.Add<IInjectionHeuristic, PropertyInjectionHeuristic>();
         kernel.Bind<IService>().To<Service>().WithConstructorArgument("injectedValue", 5);
 
         ConfigurableInjection.InitializeContainer(kernel);
-    }
-
-    [Test]
-    public void SpringServiceIsInjected()
-    {
         var entity = new Entity(5);
 
         Assert.IsNotNull(entity.InjectedService);

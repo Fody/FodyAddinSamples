@@ -5,19 +5,15 @@ using NUnit.Framework;
 [TestFixture]
 public class AutofacSample
 {
-    [TestFixtureSetUp]
-    public void Setup()
+
+    [Test]
+    public void AutofacServiceIsInjected()
     {
         var builder = new ContainerBuilder();
         builder.RegisterType<Service>().As<IService>()
             .WithParameter("injectedValue", 5); 
 
         ConfigurableInjection.InitializeContainer(builder.Build());
-    }
-
-    [Test]
-    public void AutofacServiceIsInjected()
-    {
         var entity = new Entity(5);
 
         Assert.IsNotNull(entity.Service);
