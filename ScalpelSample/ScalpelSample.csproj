@@ -38,7 +38,7 @@
       <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="Scalpel">
-      <HintPath>..\packages\Scalpel.Fody.0.12.4.0\Lib\NET35\Scalpel.dll</HintPath>
+      <HintPath>..\packages\Scalpel.Fody.1.0.0.0\Lib\NET35\Scalpel.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
