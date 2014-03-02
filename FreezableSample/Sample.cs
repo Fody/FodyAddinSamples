@@ -7,6 +7,7 @@ public class FreezableSample
     [Test]
     public void Run()
     {
+        // ReSharper disable once UseObjectOrCollectionInitializer
         var person = new Person();
 
         // Set a value before freeze
