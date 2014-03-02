@@ -37,7 +37,9 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="Fody.targets" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <Reference Include="Anotar.Splat">
       <HintPath>..\packages\Anotar.Splat.Fody.2.8.0.0\Lib\Net45\Anotar.Splat.dll</HintPath>
       <Private>False</Private>
