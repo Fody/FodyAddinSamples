@@ -39,7 +39,7 @@
       <SubType>Designer</SubType>
     </None>
     <Reference Include="Anotar.MetroLog">
-      <HintPath>..\packages\Anotar.MetroLog.Fody.2.7.4.0\Lib\portable-net4+sl4+wp7+windows8\Anotar.MetroLog.dll</HintPath>
+      <HintPath>..\packages\Anotar.MetroLog.Fody.2.8.2.0\Lib\portable-net4+sl4+wp7+windows8\Anotar.MetroLog.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="MetroLog, Version=0.8.5.0, Culture=neutral, PublicKeyToken=ba4ace74c3b410f3, processorArchitecture=MSIL">

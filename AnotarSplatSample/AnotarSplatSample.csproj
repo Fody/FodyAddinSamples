@@ -38,6 +38,10 @@
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
+    <Reference Include="Anotar.NLog">
+      <HintPath>..\packages\Anotar.NLog.Fody.2.8.2.0\Lib\portable-net4+sl4+wp7+windows8\Anotar.NLog.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Anotar.Splat">
       <HintPath>..\packages\Anotar.Splat.Fody.2.8.0.0\Lib\Net45\Anotar.Splat.dll</HintPath>
       <Private>False</Private>
