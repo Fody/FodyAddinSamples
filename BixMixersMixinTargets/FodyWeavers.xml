@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Weavers>
+  <Bix.Mixers>
+    <bmfc:BixMixersConfig xmlns:bmfc="urn:Bix:Mixers:Fody:Config">
+      <MixCommandConfig d4p1:type="bmfc:InterfaceMixinConfigType" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <!-- Add an InterfaceMixinMap element for each mixin interface definition -->
+        <InterfaceMixinMap
+          Interface="BixMixersMixinDefinitions.IMixinDefinition, BixMixersMixinDefinitions"
+          Mixin="BixMixersMixinImplementations.MixinImplementation, BixMixersMixinImplementations"/>
+      </MixCommandConfig>
+    </bmfc:BixMixersConfig>
+  </Bix.Mixers>
+</Weavers>
