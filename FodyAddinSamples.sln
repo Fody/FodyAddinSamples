@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyChangedSample", "PropertyChangedSample\PropertyChangedSample.csproj", "{30155725-BC9A-4D44-9BB0-FB9910F25C5F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyChangingSample", "PropertyChangingSample\PropertyChangingSample.csproj", "{3A8FFC73-6FE5-4A41-A3BC-0FD3B940B503}"
@@ -102,11 +104,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotarSplatSample", "AnotarSplatSample\AnotarSplatSample.csproj", "{DB9C09EA-1D8A-4200-A34D-1D7228F3A8EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BixMixersSample", "BixMixersSample\BixMixersSample.csproj", "{C6AF01CA-5BD2-4839-AF0D-D2EECD94E418}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{0F80BEC8-5F8F-4F3C-99F2-73CC7D57BF39}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\packages.config = .nuget\packages.config
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BixMixers", "BixMixers", "{723CD8E0-A463-41C5-8D1A-F05ABFF6861C}"
 EndProject

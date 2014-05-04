@@ -40,7 +40,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MixinImplementation.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BixMixersMixinDefinitions\BixMixersMixinDefinitions.csproj">
@@ -53,11 +52,4 @@
     <PostBuildEvent>md "$(SolutionDir)Tools"
 copy "$(TargetPath)" "$(SolutionDir)Tools"</PostBuildEvent>
   </PropertyGroup>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

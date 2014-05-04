@@ -1,22 +1,19 @@
 ﻿using BixMixersMixinDefinitions;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace BixMixersMixinImplementations
 {
     public class MixinImplementation : IMixinDefinition
     {
-        #region Mixin Interface
 
-        public int Property { get { return this.Field; } }
+        public int Property { get { return Field; } }
 
         public List<string> Method(int arg0, params string[] args)
         {
-            var strings = new List<string>(args.Length + 1);
-            strings.Add(arg0.ToString());
+            var strings = new List<string>(args.Length + 1) {arg0.ToString()};
             strings.AddRange(args);
-            this.OnAFunnyThingHappened(new UnhandledExceptionEventArgs(new InvalidOperationException("Funny"), false));
+            OnAFunnyThingHappened(new UnhandledExceptionEventArgs(new InvalidOperationException("Funny"), false));
             return strings;
         }
 
@@ -24,17 +21,15 @@ namespace BixMixersMixinImplementations
         protected virtual void OnAFunnyThingHappened(UnhandledExceptionEventArgs e)
         {
             if (e == null) { throw new ArgumentNullException("e"); }
-            var eventHandler = this.AFunnyThingHappened;
+            var eventHandler = AFunnyThingHappened;
             if (eventHandler != null) { eventHandler(this, e); }
         }
 
-        #endregion
 
-        #region Other Stuff
 
         public int Field;
 
-        public SomeDelegateType SomeDelegate { get { return (arg0) => arg0; } }
+        public SomeDelegateType SomeDelegate { get { return arg0 => arg0; } }
 
         [Flags]
         public enum Attributes
@@ -66,6 +61,5 @@ namespace BixMixersMixinImplementations
             if (eventHandler != null) { eventHandler(typeof(MixinImplementation), e); }
         }
 
-        #endregion
     }
 }

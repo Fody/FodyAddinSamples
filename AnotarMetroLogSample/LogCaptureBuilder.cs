@@ -13,7 +13,10 @@ public static class LogCaptureBuilder
                 Action = _ => LastMessage = _.Message
             };
 
-        LogManagerFactory.DefaultConfiguration = new LoggingConfiguration();
+        LogManagerFactory.DefaultConfiguration = new LoggingConfiguration
+            {
+                IsEnabled = true
+            };
         LogManagerFactory.DefaultConfiguration.AddTarget(LogLevel.Debug, target);
     }
 

@@ -14,6 +14,7 @@ public class EmptyConstructorSample
 
 public class Target
 {
+// ReSharper disable once UnusedParameter.Local
     public Target(int foo)
     {
         
