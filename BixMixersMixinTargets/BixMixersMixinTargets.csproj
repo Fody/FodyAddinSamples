@@ -31,9 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bix.Mixers.Fody, Version=0.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bix.Mixers.Fody, Version=0.1.2.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Bix.Mixers.Fody.0.1.1.0\lib\net45\Bix.Mixers.Fody.dll</HintPath>
+      <HintPath>..\packages\Bix.Mixers.Fody.0.1.2.0\lib\net45\Bix.Mixers.Fody.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
