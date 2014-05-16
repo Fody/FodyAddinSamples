@@ -6,8 +6,9 @@ namespace BixMixersMixinImplementations
 {
     public class MixinImplementation : IMixinDefinition
     {
+        public int Property { get { return int.MinValue; } }
 
-        public int Property { get { return Field; } }
+        int IMixinDefinition.Property { get { return Field; } }
 
         public List<string> Method(int arg0, params string[] args)
         {
@@ -24,8 +25,6 @@ namespace BixMixersMixinImplementations
             var eventHandler = AFunnyThingHappened;
             if (eventHandler != null) { eventHandler(this, e); }
         }
-
-
 
         public int Field;
 
@@ -60,6 +59,5 @@ namespace BixMixersMixinImplementations
             var eventHandler = NestedThingsHappened;
             if (eventHandler != null) { eventHandler(typeof(MixinImplementation), e); }
         }
-
     }
 }

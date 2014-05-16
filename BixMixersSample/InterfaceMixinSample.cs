@@ -12,6 +12,7 @@ namespace BixMixersSample
         public void MixinWorksAsExpected()
         {
             var target = new MixinTarget();
+            var targetAsInterface = target as IMixinDefinition;
 
             // show that the interface is implemented
             Assert.That(target, Is.InstanceOf<IMixinDefinition>());
@@ -19,12 +20,14 @@ namespace BixMixersSample
             // show that the existing property was untouched
             Assert.That(target.NonMixinProperty == 5);
 
-            // show that the mixin property and field are available
-            Assert.That(target.Field == 0);
-            Assert.That(target.Property == 0);
+            // show that the mixin property and field are available, including the explicitly implemented property
+            Assert.That(target.Field, Is.EqualTo(0));
+            Assert.That(target.Property, Is.EqualTo(int.MinValue));
+            Assert.That(targetAsInterface.Property, Is.EqualTo(0));
             target.Field = 3209;
             Assert.That(target.Field, Is.EqualTo(3209));
-            Assert.That(target.Property, Is.EqualTo(3209));
+            Assert.That(target.Property, Is.EqualTo(int.MinValue));
+            Assert.That(targetAsInterface.Property, Is.EqualTo(3209));
 
             // show that the event calls delegate as expected and that the method is called correctly
             var callCount = 0;

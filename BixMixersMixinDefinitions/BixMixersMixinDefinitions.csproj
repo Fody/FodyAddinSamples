@@ -42,4 +42,13 @@
     <Compile Include="IMixinDefinition.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>rem Copying this assembly is needed as a work-around for Bix.Mixers issue #1
+md "$(SolutionDir)Tools"
+copy "$(TargetPath)" "$(SolutionDir)Tools"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
