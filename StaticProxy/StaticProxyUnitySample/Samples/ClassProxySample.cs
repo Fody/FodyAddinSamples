@@ -1,9 +1,7 @@
 ﻿namespace StaticProxyUnitySample.Samples
 {
     using Microsoft.Practices.Unity;
-
     using NUnit.Framework;
-
     using Unity.StaticProxyExtension;
 
     [TestFixture]
@@ -17,7 +15,7 @@
                 container.AddNewExtension<StaticProxyExtension>();
                 container.RegisterType<ClassToProxy, ClassToProxy>(new Intercept<ConsoleLogInterceptor>());
                 
-                int result = container.Resolve<ClassToProxy>().Multiply(2, 5);
+                var result = container.Resolve<ClassToProxy>().Multiply(2, 5);
 
                 Assert.AreEqual(result, 10);
             }

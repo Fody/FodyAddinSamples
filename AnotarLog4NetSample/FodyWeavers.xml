@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Weavers>
-  <Anotar.Log4Net/>
   <ModuleInit />
+  <Anotar.Log4Net />
 </Weavers>

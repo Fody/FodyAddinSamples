@@ -10,8 +10,8 @@ public class SerilogExplicitSample
         MyMethod();
 
         var lastMessage = LogCaptureBuilder.LastMessage;
-        Assert.AreEqual("Void MyMethod()", lastMessage.Value("MethodName"));
-        Assert.AreEqual("20", lastMessage.Value("LineNumber"));
+        Assert.AreEqual("Void MyMethod()", lastMessage.MethodName());
+        Assert.AreEqual(20, lastMessage.LineNumber());
         Assert.AreEqual("TheMessage", lastMessage.MessageTemplate.Text);
     }
 

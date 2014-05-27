@@ -7,7 +7,7 @@ public class ConsoleLogInterceptor : IDynamicInterceptor
 {
     public void Intercept(IInvocation invocation)
     {
-        string arguments = string.Join(", ", invocation.Arguments.Select(FormatArgumentValue));
+        var arguments = string.Join(", ", invocation.Arguments.Select(FormatArgumentValue));
 
         Console.WriteLine("Intercepting {0}({1})", invocation.Method.Name, arguments);
 
@@ -19,12 +19,12 @@ public class ConsoleLogInterceptor : IDynamicInterceptor
         }
         else
         {
-            string returnValue = FormatArgumentValue(invocation.ReturnValue);
+            var returnValue = FormatArgumentValue(invocation.ReturnValue);
             Console.WriteLine("Method {0} returned {1}", invocation.Method.Name, returnValue);
         }
     }
 
-    private static string FormatArgumentValue(object value)
+    static string FormatArgumentValue(object value)
     {
         if (value == null)
         {

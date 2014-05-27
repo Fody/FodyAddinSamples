@@ -19,7 +19,7 @@
                     new Intercept<ConsoleLogInterceptor>(),
                     new Intercept<MultiplyingInterceptor>());
 
-                int result = container.Resolve<IInterfaceToProxy>().Multiply(2, 5);
+                var result = container.Resolve<IInterfaceToProxy>().Multiply(2, 5);
 
                 Assert.AreEqual(result, 10);
             }

@@ -17,7 +17,7 @@
                         .By<ConsoleLogInterceptor>()
                         .By<MultiplyingInterceptor>());
 
-                int result = kernel.Get<IInterfaceToProxy>().Multiply(2, 5);
+                var result = kernel.Get<IInterfaceToProxy>().Multiply(2, 5);
 
                 Assert.AreEqual(result, 10);
             }
