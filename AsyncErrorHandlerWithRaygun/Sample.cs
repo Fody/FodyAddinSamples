@@ -12,7 +12,7 @@ public class AsyncErrorHandlerWithRaygun
     public async void Run()
     {
         var instance = new Target();
-        instance.MethodWithThrow();
+        await instance.MethodWithThrow();
         //run and have a look at your Raygun dashboard
         Thread.Sleep(10);
     }

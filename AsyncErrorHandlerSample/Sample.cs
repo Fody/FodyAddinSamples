@@ -7,7 +7,7 @@ using NUnit.Framework;
 public class AsyncErrorHandlerSample
 {
     [Test]
-    public async void Run()
+    public void Run()
     {
         var instance = new Target();
         instance.MethodWithThrow();
