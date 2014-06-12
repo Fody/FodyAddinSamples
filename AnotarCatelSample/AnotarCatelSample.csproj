@@ -38,8 +38,8 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Reference Include="Anotar.Catel">
-      <HintPath>..\packages\Anotar.Catel.Fody.2.10.1\Lib\portable-net45+sl5+wp8+win8\Anotar.Catel.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\Anotar.Catel.Fody.2.10.2\Lib\portable-net4+sl5+wp8+win8+wpa81+MonoAndroid16+MonoTouch40\Anotar.Catel.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Catel.Core, Version=3.9.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
