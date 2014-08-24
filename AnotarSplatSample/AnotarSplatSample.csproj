@@ -44,7 +44,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Anotar.Splat">
-      <HintPath>..\packages\Anotar.Splat.Fody.2.10.2\Lib\portable-net4+sl5+wp8+win8+wpa81+MonoAndroid16+MonoTouch40\Anotar.Splat.dll</HintPath>
+      <HintPath>..\packages\Anotar.Splat.Fody.2.11.0\Lib\Anotar.Splat.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="NLog">
@@ -54,9 +54,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
     </Reference>
-    <Reference Include="Splat, Version=1.3.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Splat.1.3.3\lib\Net45\Splat.dll</HintPath>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.4.0\lib\Net45\Splat.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
