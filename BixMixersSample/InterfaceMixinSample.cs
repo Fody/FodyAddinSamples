@@ -29,6 +29,14 @@ namespace BixMixersSample
             Assert.That(target.Property, Is.EqualTo(int.MinValue));
             Assert.That(targetAsInterface.Property, Is.EqualTo(3209));
 
+            // show that a generic method call works
+            var expectedValue = string.Format("Input has type {0} and string converted value 42", typeof(int).FullName);
+            Assert.That(target.GenericMethod(42), Is.EqualTo(expectedValue));
+            expectedValue = string.Format("Input has type {0} and string converted value 42", typeof(long).FullName);
+            Assert.That(target.GenericMethod(42L), Is.EqualTo(expectedValue));
+            expectedValue = string.Format("Input has type {0} and string converted value forty-two", typeof(string).FullName);
+            Assert.That(target.GenericMethod("forty-two"), Is.EqualTo(expectedValue));
+
             // show that the event calls delegate as expected and that the method is called correctly
             var callCount = 0;
             EventHandler<UnhandledExceptionEventArgs> eventHandler = (sender, e) =>
@@ -72,11 +80,13 @@ namespace BixMixersSample
             Assert.That(nestedEventArgs.Things, Is.EqualTo(MixinTarget.Attributes.Nothing));
 
             // show that the static field acts as expected
+            MixinTarget.StaticField = 0;
             Assert.That(MixinTarget.StaticField, Is.EqualTo(0));
             MixinTarget.StaticField = 9;
             Assert.That(MixinTarget.StaticField, Is.EqualTo(9));
 
             // show that the static auto-property acts as expected
+            MixinTarget.StaticProperty = 0;
             Assert.That(MixinTarget.StaticProperty, Is.EqualTo(0));
             MixinTarget.StaticProperty = 5648;
             Assert.That(MixinTarget.StaticProperty, Is.EqualTo(5648));
@@ -100,6 +110,16 @@ namespace BixMixersSample
             length = MixinTarget.StaticMethod(null);
             Assert.That(staticCallCount, Is.EqualTo(1));
             Assert.That(length, Is.EqualTo(0));
+
+            // play around with a generic nested type
+            var nestedTarget = new MixinTarget.NestedGenericType<int, string>(42, "forty-two");
+            Assert.That(nestedTarget.Dee, Is.EqualTo(42));
+            Assert.That(nestedTarget.Dum, Is.EqualTo("forty-two"));
+
+            // more play, add in generic method with partially closed generic return type
+            var wibblyWobbly = target.GetAThing(989);
+            Assert.That(wibblyWobbly.Dee, Is.EqualTo("canned spam"));
+            Assert.That(wibblyWobbly.Dum, Is.EqualTo(989));
         }
     }
 }

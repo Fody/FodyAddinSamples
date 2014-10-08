@@ -59,5 +59,30 @@ namespace BixMixersMixinImplementations
             var eventHandler = NestedThingsHappened;
             if (eventHandler != null) { eventHandler(typeof(MixinImplementation), e); }
         }
+
+        public string GenericMethod<T>(T input)
+        {
+            return string.Format(
+                "Input has type {0} and string converted value {1}",
+                typeof(T).FullName,
+                input == null ? "<null>" : input.ToString());
+        }
+
+        public class NestedGenericType<TWeedleDee, TWeedleDum>
+        {
+            public NestedGenericType(TWeedleDee dee, TWeedleDum dum)
+            {
+                this.Dee = dee;
+                this.Dum = dum;
+            }
+
+            public TWeedleDee Dee { get; private set; }
+            public TWeedleDum Dum { get; private set; }
+        }
+
+        public NestedGenericType<string, T> GetAThing<T>(T thingDum)
+        {
+            return new NestedGenericType<string, T>("canned spam", thingDum);
+        }
     }
 }
