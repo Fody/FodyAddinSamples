@@ -120,6 +120,9 @@ namespace BixMixersSample
             var wibblyWobbly = target.GetAThing(989);
             Assert.That(wibblyWobbly.Dee, Is.EqualTo("canned spam"));
             Assert.That(wibblyWobbly.Dum, Is.EqualTo(989));
+
+            // show that a field that is initialized with an object initializer works
+            Assert.That(target.FieldWithObjectInitializer.ObjectInitializableInt, Is.EqualTo(300));
         }
     }
 }
