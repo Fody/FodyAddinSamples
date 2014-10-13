@@ -84,5 +84,12 @@ namespace BixMixersMixinImplementations
         {
             return new NestedGenericType<string, T>("canned spam", thingDum);
         }
+
+        public class NestedType
+        {
+            public int ObjectInitializableInt { get; set; }
+        }
+
+        public NestedType FieldWithObjectInitializer = new NestedType { ObjectInitializableInt = 300 };
     }
 }
