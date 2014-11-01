@@ -11,8 +11,27 @@ namespace BixMixersSample
         [Test]
         public void MixinWorksAsExpected()
         {
+            // reset a couple of static value counters that are used in the test in case the test runs multiple times
+            MixinTarget.InstanceConstructorCalledCount = 0;
+            MixinTarget.MixinImplementationConstructorCallCount = 0;
+
+            // create the target object and an interface reference to it
             var target = new MixinTarget();
             var targetAsInterface = target as IMixinDefinition;
+
+            // show that static constructor worked as expected
+            Assert.That(MixinTarget.NonMixinStaticValue, Is.EqualTo(34));
+            Assert.That(MixinTarget.MixinStaticConstructorInitializedValue, Is.EqualTo(8978));
+
+            // show that constructor worked as expected
+            Assert.That(target.NonMixinValue, Is.EqualTo(532));
+            Assert.That(target.MixinConstructorInitializedValue, Is.EqualTo(9843));
+
+            // the called constructor chained into another constructor, so this should be two
+            Assert.That(MixinTarget.InstanceConstructorCalledCount, Is.EqualTo(2));
+
+            // even though two target instance constructors ran, the code for the mixin implemenation constructor will have only run once
+            Assert.That(MixinTarget.MixinImplementationConstructorCallCount, Is.EqualTo(1));
 
             // show that the interface is implemented
             Assert.That(target, Is.InstanceOf<IMixinDefinition>());
