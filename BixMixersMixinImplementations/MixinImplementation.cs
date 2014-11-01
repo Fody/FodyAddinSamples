@@ -6,6 +6,21 @@ namespace BixMixersMixinImplementations
 {
     public class MixinImplementation : IMixinDefinition
     {
+        static MixinImplementation()
+        {
+            MixinStaticConstructorInitializedValue = 8978;
+        }
+
+        public MixinImplementation()
+        {
+            ++MixinImplementationConstructorCallCount;
+            this.MixinConstructorInitializedValue = 9843;
+        }
+
+        public static int MixinStaticConstructorInitializedValue;
+        public int MixinConstructorInitializedValue;
+        public static int MixinImplementationConstructorCallCount;
+
         public int Property { get { return int.MinValue; } }
 
         int IMixinDefinition.Property { get { return Field; } }
