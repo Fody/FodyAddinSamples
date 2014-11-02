@@ -14,7 +14,7 @@ namespace BixMixersMixinImplementations
         public MixinImplementation()
         {
             ++MixinImplementationConstructorCallCount;
-            this.MixinConstructorInitializedValue = 9843;
+            MixinConstructorInitializedValue = 9843;
         }
 
         public static int MixinStaticConstructorInitializedValue;
@@ -87,8 +87,8 @@ namespace BixMixersMixinImplementations
         {
             public NestedGenericType(TWeedleDee dee, TWeedleDum dum)
             {
-                this.Dee = dee;
-                this.Dum = dum;
+                Dee = dee;
+                Dum = dum;
             }
 
             public TWeedleDee Dee { get; private set; }

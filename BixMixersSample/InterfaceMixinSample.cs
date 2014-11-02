@@ -17,7 +17,7 @@ namespace BixMixersSample
 
             // create the target object and an interface reference to it
             var target = new MixinTarget();
-            var targetAsInterface = target as IMixinDefinition;
+            var targetAsInterface = (IMixinDefinition)target;
 
             // show that static constructor worked as expected
             Assert.That(MixinTarget.NonMixinStaticValue, Is.EqualTo(34));

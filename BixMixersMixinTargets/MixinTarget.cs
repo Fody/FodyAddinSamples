@@ -16,7 +16,7 @@ namespace BixMixersMixinTargets
         public MixinTarget(int value)
         {
             ++InstanceConstructorCalledCount;
-            this.NonMixinValue = value;
+            NonMixinValue = value;
         }
 
         public int NonMixinProperty { get { return 5; } }
