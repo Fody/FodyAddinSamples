@@ -38,7 +38,7 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Reference Include="Anotar.NLog">
-      <HintPath>..\packages\Anotar.NLog.Fody.2.11.1\Lib\Anotar.NLog.dll</HintPath>
+      <HintPath>..\packages\Anotar.NLog.Fody.2.12.0\Lib\Anotar.NLog.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="NLog, Version=3.1.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
