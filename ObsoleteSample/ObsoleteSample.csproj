@@ -11,7 +11,7 @@
     <RootNamespace>ObsoleteSample</RootNamespace>
     <AssemblyName>ObsoleteSample</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>9dcaa31d</NuGetPackageImportStamp>
   </PropertyGroup>

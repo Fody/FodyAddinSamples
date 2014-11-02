@@ -11,7 +11,7 @@
     <RootNamespace>PropertyChangingSample</RootNamespace>
     <AssemblyName>PropertyChangingSample</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>54b11aa2</NuGetPackageImportStamp>
   </PropertyGroup>

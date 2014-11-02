@@ -11,7 +11,7 @@
     <RootNamespace>JetBrainsAnnotations</RootNamespace>
     <AssemblyName>JetBrainsAnnotations</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>9c46a734</NuGetPackageImportStamp>
   </PropertyGroup>

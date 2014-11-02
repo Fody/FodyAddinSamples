@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>StaticProxyNinjectSample</RootNamespace>
     <AssemblyName>StaticProxyNinjectSample</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>ff816516</NuGetPackageImportStamp>
     <TargetFrameworkProfile />

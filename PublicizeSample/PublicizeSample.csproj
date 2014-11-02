@@ -11,7 +11,7 @@
     <RootNamespace>PublicizeSample</RootNamespace>
     <AssemblyName>PublicizeSample</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>aaa13f8b</NuGetPackageImportStamp>
   </PropertyGroup>

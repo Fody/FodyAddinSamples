@@ -11,7 +11,7 @@
     <RootNamespace>ExtraConstraintsSample</RootNamespace>
     <AssemblyName>ExtraConstraintsSample</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>f63fc2ba</NuGetPackageImportStamp>
   </PropertyGroup>
