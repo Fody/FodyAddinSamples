@@ -92,6 +92,35 @@ public class AsyncErrorHandlerSample
         return array[0];
     }
 
+    [ArraySliceBehavior(OptimizationMode.None)]
+    private void ReduceStepWithSlicesNoOptimization(ArraySlice<double> first, ArraySlice<double> second)
+    {
+        int length = first.Length;
+        for (int i = 0; i < length; i++)
+            first[i] = first[i] + second[i];
+    }
+
+    [ArraySliceBehavior(OptimizationMode.None)]
+    protected double ReduceWithSlicesNoOptimization(ArraySlice<double> array)
+    {
+        Stopwatch watch = new Stopwatch();
+        watch.Start();
+
+        int lenght = array.Length;
+        do
+        {
+            var size = lenght / 2;
+            ReduceStepWithSlicesNoOptimization(new ArraySlice<double>(array.Array, 0, size), new ArraySlice<double>(array.Array, size, size));
+            lenght /= 2;
+        }
+        while (lenght > 1);
+
+        watch.Stop();
+        Console.WriteLine(string.Format("Reduced with unoptimized ArraySlice: '{0}' elements in {1}ms.", array.Length, watch.ElapsedMilliseconds));
+
+        return array[0];
+    }
+
     [Test]
     public void Run()
     {
@@ -109,9 +138,13 @@ public class AsyncErrorHandlerSample
             data[i] = 1;
         double withRecursiveSlices = ReduceRecursiveWithSlices(data);
 
+        for (int i = 0; i < data.Length; i++)
+            data[i] = 1;
+        double withSlicesWithoutOptimization = ReduceWithSlicesNoOptimization(data);
 
         Assert.AreEqual(withArrays, withSlices);
         Assert.AreEqual(withSlices, withRecursiveSlices);
+        Assert.AreEqual(withSlices, withSlicesWithoutOptimization);
 
         Console.WriteLine("Timings are not representative when run in debug mode or under tests.");
     }
