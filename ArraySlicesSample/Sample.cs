@@ -1,32 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using NUnit.Framework;
 using System.Diagnostics;
 
 [TestFixture]
 public class AsyncErrorHandlerSample
 {
-    private void ReduceStepWithArrays(double[] array, int lenght)
+    void ReduceStepWithArrays(double[] array, int length)
     {
-        int size = lenght / 2;
-        for (int i = 0; i < size; i++)
+        var size = length/2;
+        for (var i = 0; i < size; i++)
+        {
             array[i] = array[i] + array[size + i];
+        }
     }
 
-    protected double ReduceWithArrays(double[] array)
+    double ReduceWithArrays(double[] array)
     {
-        Stopwatch watch = new Stopwatch();
+        var watch = new Stopwatch();
         watch.Start();
 
-        int lenght = array.Length;
+        var length = array.Length;
         do
         {
-            ReduceStepWithArrays(array, lenght);
-            lenght /= 2;
-        }
-        while (lenght > 1);
+            ReduceStepWithArrays(array, length);
+            length /= 2;
+        } while (length > 1);
 
         watch.Stop();
         Console.WriteLine(string.Format("Reduced with Arrays: '{0}' elements in {1}ms.", array.Length, watch.ElapsedMilliseconds));
@@ -34,26 +32,27 @@ public class AsyncErrorHandlerSample
         return array[0];
     }
 
-    private void ReduceStepWithSlices(ArraySlice<double> first, ArraySlice<double> second)
+    void ReduceStepWithSlices(ArraySlice<double> first, ArraySlice<double> second)
     {
-        int length = first.Length;
-        for (int i = 0; i < length; i++)
+        var length = first.Length;
+        for (var i = 0; i < length; i++)
+        {
             first[i] = first[i] + second[i];
+        }
     }
 
-    protected double ReduceWithSlices(ArraySlice<double> array)
+    double ReduceWithSlices(ArraySlice<double> array)
     {
-        Stopwatch watch = new Stopwatch();
+        var watch = new Stopwatch();
         watch.Start();
 
-        int lenght = array.Length;
+        var length = array.Length;
         do
         {
-            var size = lenght / 2;
+            var size = length/2;
             ReduceStepWithSlices(new ArraySlice<double>(array.Array, 0, size), new ArraySlice<double>(array.Array, size, size));
-            lenght /= 2;
-        }
-        while (lenght > 1);
+            length /= 2;
+        } while (length > 1);
 
         watch.Stop();
         Console.WriteLine(string.Format("Reduced with ArraySlice: '{0}' elements in {1}ms.", array.Length, watch.ElapsedMilliseconds));
@@ -61,15 +60,17 @@ public class AsyncErrorHandlerSample
         return array[0];
     }
 
-    private void ReduceRecursiveStepWithSlices(ArraySlice<double> first, ArraySlice<double> second)
+    void ReduceRecursiveStepWithSlices(ArraySlice<double> first, ArraySlice<double> second)
     {
-        int length = first.Length;
+        var length = first.Length;
         if (length > 1)
         {
-            for (int i = 0; i < length; i++)
+            for (var i = 0; i < length; i++)
+            {
                 first[i] = first[i] + second[i];
+            }
 
-            var size = length / 2;
+            var size = length/2;
             ReduceRecursiveStepWithSlices(new ArraySlice<double>(first, 0, size), new ArraySlice<double>(first, size, size));
         }
         else
@@ -78,12 +79,12 @@ public class AsyncErrorHandlerSample
         }
     }
 
-    protected double ReduceRecursiveWithSlices(ArraySlice<double> array)
+    double ReduceRecursiveWithSlices(ArraySlice<double> array)
     {
-        Stopwatch watch = new Stopwatch();
+        var watch = new Stopwatch();
         watch.Start();
 
-        var size = array.Length / 2;
+        var size = array.Length/2;
         ReduceRecursiveStepWithSlices(new ArraySlice<double>(array, 0, size), new ArraySlice<double>(array, size, size));
 
         watch.Stop();
@@ -93,27 +94,28 @@ public class AsyncErrorHandlerSample
     }
 
     [ArraySliceBehavior(OptimizationMode.None)]
-    private void ReduceStepWithSlicesNoOptimization(ArraySlice<double> first, ArraySlice<double> second)
+    void ReduceStepWithSlicesNoOptimization(ArraySlice<double> first, ArraySlice<double> second)
     {
-        int length = first.Length;
-        for (int i = 0; i < length; i++)
+        var length = first.Length;
+        for (var i = 0; i < length; i++)
+        {
             first[i] = first[i] + second[i];
+        }
     }
 
     [ArraySliceBehavior(OptimizationMode.None)]
-    protected double ReduceWithSlicesNoOptimization(ArraySlice<double> array)
+    double ReduceWithSlicesNoOptimization(ArraySlice<double> array)
     {
-        Stopwatch watch = new Stopwatch();
+        var watch = new Stopwatch();
         watch.Start();
 
-        int lenght = array.Length;
+        var length = array.Length;
         do
         {
-            var size = lenght / 2;
+            var size = length/2;
             ReduceStepWithSlicesNoOptimization(new ArraySlice<double>(array.Array, 0, size), new ArraySlice<double>(array.Array, size, size));
-            lenght /= 2;
-        }
-        while (lenght > 1);
+            length /= 2;
+        } while (length > 1);
 
         watch.Stop();
         Console.WriteLine(string.Format("Reduced with unoptimized ArraySlice: '{0}' elements in {1}ms.", array.Length, watch.ElapsedMilliseconds));
@@ -124,23 +126,31 @@ public class AsyncErrorHandlerSample
     [Test]
     public void Run()
     {
-        double[] data = new double[1024 * 4096];
+        var data = new double[1024*4096];
 
-        for (int i = 0; i < data.Length; i++)
+        for (var i = 0; i < data.Length; i++)
+        {
             data[i] = 1;
+        }
         var withArrays = ReduceWithArrays(data);
 
-        for (int i = 0; i < data.Length; i++)
+        for (var i = 0; i < data.Length; i++)
+        {
             data[i] = 1;
-        double withSlices = ReduceWithSlices(data);
+        }
+        var withSlices = ReduceWithSlices(data);
 
-        for (int i = 0; i < data.Length; i++)
+        for (var i = 0; i < data.Length; i++)
+        {
             data[i] = 1;
-        double withRecursiveSlices = ReduceRecursiveWithSlices(data);
+        }
+        var withRecursiveSlices = ReduceRecursiveWithSlices(data);
 
-        for (int i = 0; i < data.Length; i++)
+        for (var i = 0; i < data.Length; i++)
+        {
             data[i] = 1;
-        double withSlicesWithoutOptimization = ReduceWithSlicesNoOptimization(data);
+        }
+        var withSlicesWithoutOptimization = ReduceWithSlicesNoOptimization(data);
 
         Assert.AreEqual(withArrays, withSlices);
         Assert.AreEqual(withSlices, withRecursiveSlices);
