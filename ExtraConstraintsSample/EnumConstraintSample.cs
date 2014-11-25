@@ -1,5 +1,6 @@
 #if (!MONO)
 using System.Security;
+using ExtraConstraints;
 using NUnit.Framework;
 
 [TestFixture]
@@ -20,7 +21,7 @@ public class EnumConstraintSample
         MethodWithEnumConstraint(MyEnum.Value);
     }
 
-    public void MethodWithEnumConstraint<[EnumConstraint] T>(T value)
+    public void MethodWithEnumConstraint<[EnumConstraint(typeof(MyEnum))] T>(T value)
     {
     }
 }

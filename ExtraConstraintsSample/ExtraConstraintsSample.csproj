@@ -66,8 +66,6 @@
   <ItemGroup>
     <Compile Include="DelegateConstraintSample.cs" />
     <Compile Include="MyEnum.cs" />
-    <Compile Include="DelegateConstraintAttribute.cs" />
-    <Compile Include="EnumConstraintAttribute.cs" />
     <Compile Include="EnumConstraintSample.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

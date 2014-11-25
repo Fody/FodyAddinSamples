@@ -2,6 +2,7 @@
 using System;
 using System.Diagnostics;
 using System.Security;
+using ExtraConstraints;
 using NUnit.Framework;
 
 [TestFixture]
@@ -22,7 +23,7 @@ public class DelegateConstraintSample
         MethodWithDelegateConstraint<Action>(() => Debug.WriteLine("foo"));
     }
 
-    public void MethodWithDelegateConstraint<[DelegateConstraint] T>(T value)
+    public void MethodWithDelegateConstraint<[DelegateConstraint(typeof(Action))] T>(T value)
     {
     }
 }
