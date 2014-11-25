@@ -93,7 +93,7 @@ public class AsyncErrorHandlerSample
         return array[0];
     }
 
-    [ArraySliceBehavior(OptimizationMode.None)]
+    [ArraySliceDoNotOptimize]
     void ReduceStepWithSlicesNoOptimization(ArraySlice<double> first, ArraySlice<double> second)
     {
         var length = first.Length;
@@ -103,7 +103,7 @@ public class AsyncErrorHandlerSample
         }
     }
 
-    [ArraySliceBehavior(OptimizationMode.None)]
+    [ArraySliceDoNotOptimize]
     double ReduceWithSlicesNoOptimization(ArraySlice<double> array)
     {
         var watch = new Stopwatch();

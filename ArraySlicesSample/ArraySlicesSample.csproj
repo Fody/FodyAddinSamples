@@ -36,8 +36,8 @@
   <ItemGroup>
     <Reference Include="Corvalius.ArraySlice, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d25f25c3d70e51b3, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ArraySlice.Fody.0.4.0\Lib\portable-net40+sl5+wp8+win8\Corvalius.ArraySlice.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\ArraySlice.Fody.0.5.10\Lib\net35\Corvalius.ArraySlice.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
