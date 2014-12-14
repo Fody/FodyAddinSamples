@@ -41,7 +41,7 @@
       <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="PropertyChanging">
-      <HintPath>..\packages\PropertyChanging.Fody.1.26.0.0\Lib\portable-net4+sl4+wp8+win8+wpa81+MonoAndroid16+MonoTouch40\PropertyChanging.dll</HintPath>
+      <HintPath>..\packages\PropertyChanging.Fody.1.27.0.0\Lib\portable-net4+sl4+wp8+win8+wpa81+MonoAndroid16+MonoTouch40\PropertyChanging.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
