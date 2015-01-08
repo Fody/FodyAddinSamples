@@ -22,9 +22,13 @@ public class CustomProvider : ILogProvider, ILog
         return true;
     }
 
-    public void Log<TException>(LogLevel logLevel, Func<string> messageFunc, TException exception) where TException : Exception
+    public bool Log(LogLevel logLevel, Func<string> messageFunc, Exception exception) 
     {
-        LastMessage = messageFunc();
+        if (messageFunc != null)
+        {
+            LastMessage = messageFunc();
+        }
         LastException = exception;
+        return true;
     }
 }

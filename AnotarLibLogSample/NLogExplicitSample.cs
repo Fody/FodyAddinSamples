@@ -2,7 +2,7 @@
 using NUnit.Framework;
 
 [TestFixture]
-public class NLogExplicitSample
+public class LibLogExplicitSample
 {
     [Test]
     public void Run()
