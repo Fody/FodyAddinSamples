@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Anotar.LibLog">
-      <HintPath>..\packages\Anotar.LibLog.Fody.2.13.0\Lib\Anotar.LibLog.dll</HintPath>
+      <HintPath>..\packages\Anotar.LibLog.Fody.2.13.1\Lib\Anotar.LibLog.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">

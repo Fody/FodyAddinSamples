@@ -38,7 +38,7 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Reference Include="Anotar.Log4Net">
-      <HintPath>..\packages\Anotar.Log4Net.Fody.2.13.0\Lib\Anotar.Log4Net.dll</HintPath>
+      <HintPath>..\packages\Anotar.Log4Net.Fody.2.13.1\Lib\Anotar.Log4Net.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">

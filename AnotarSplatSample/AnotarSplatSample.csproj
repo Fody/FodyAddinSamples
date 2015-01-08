@@ -40,7 +40,7 @@
       <SubType>Designer</SubType>
     </None>
     <Reference Include="Anotar.Splat">
-      <HintPath>..\packages\Anotar.Splat.Fody.2.13.0\Lib\Anotar.Splat.dll</HintPath>
+      <HintPath>..\packages\Anotar.Splat.Fody.2.13.1\Lib\Anotar.Splat.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">

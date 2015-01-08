@@ -24,6 +24,9 @@
 // SOFTWARE.
 //===============================================================================
 
+// ReSharper disable SuggestVarOrType_SimpleTypes
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable ArrangeThisQualifier
 #pragma warning disable 1591
 
 namespace AnotarLibLogSample.Logging
