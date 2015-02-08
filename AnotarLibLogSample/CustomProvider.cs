@@ -13,16 +13,17 @@ public class CustomProvider : ILogProvider, ILog
         return this;
     }
 
-    public bool Log(LogLevel logLevel, Func<string> messageFunc)
+    public IDisposable OpenNestedContext(string message)
     {
-        if (messageFunc != null)
-        {
-            LastMessage = messageFunc();
-        }
-        return true;
+        throw new NotImplementedException();
     }
 
-    public bool Log(LogLevel logLevel, Func<string> messageFunc, Exception exception) 
+    public IDisposable OpenMappedContext(string key, string value)
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool Log(LogLevel logLevel, Func<string> messageFunc, Exception exception = null, params object[] formatParameters)
     {
         if (messageFunc != null)
         {

@@ -30,7 +30,7 @@ namespace BixMixersSample
             // the called constructor chained into another constructor, so this should be two
             Assert.That(MixinTarget.InstanceConstructorCalledCount, Is.EqualTo(2));
 
-            // even though two target instance constructors ran, the code for the mixin implemenation constructor will have only run once
+            // even though two target instance constructors ran, the code for the mixin implementation constructor will have only run once
             Assert.That(MixinTarget.MixinImplementationConstructorCallCount, Is.EqualTo(1));
 
             // show that the interface is implemented
