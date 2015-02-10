@@ -3,7 +3,7 @@ using NUnit.Framework;
 using System.Diagnostics;
 
 [TestFixture]
-public class AsyncErrorHandlerSample
+public class ArraySlicesSample
 {
     void ReduceStepWithArrays(double[] array, int length)
     {

@@ -28,6 +28,8 @@
 
 // Define LIBLOG_PORTABLE conditional compilation symbol for PCL compatibility
 
+// ReSharper disable SuggestVarOrType_SimpleTypes
+// ReSharper disable ArrangeThisQualifier
 #pragma warning disable 1591
 
 namespace AnotarLibLogSample.Logging
