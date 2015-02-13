@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Diagnostics;
-using ArxOne.Weavisor.Advice;
+using ArxOne.MrAdvice.Advice;
 using NUnit.Framework;
 
-public class WeavisorSample
+public class MrAdviceSample
 {
     public static bool beforeReceived;
     public static bool afterReceived;
@@ -30,13 +30,13 @@ public class MyAdvice : Attribute, IMethodAdvice
     {
         // do things you want here
         Trace.WriteLine("Before");
-        WeavisorSample.beforeReceived = true;
+        MrAdviceSample.beforeReceived = true;
 
         // this calls the original method
         context.Proceed();
 
         // do other things here
         Trace.WriteLine("Before");
-        WeavisorSample.afterReceived = true;
+        MrAdviceSample.afterReceived = true;
     }
 }

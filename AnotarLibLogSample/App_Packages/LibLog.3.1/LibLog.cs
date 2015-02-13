@@ -30,6 +30,8 @@
 
 // ReSharper disable SuggestVarOrType_SimpleTypes
 // ReSharper disable ArrangeThisQualifier
+// ReSharper disable UnusedParameter.Local
+// ReSharper disable SuggestVarOrType_BuiltInTypes
 #pragma warning disable 1591
 
 namespace AnotarLibLogSample.Logging
