@@ -12,7 +12,7 @@ public class ConfigureAwaitSample
     {
         var beforeAwaitId = Thread.CurrentThread.ManagedThreadId;
         await Task.Delay(30);
-        Assert.AreNotEqual(Thread.CurrentThread.ManagedThreadId,beforeAwaitId);
+        Assert.AreNotEqual(Thread.CurrentThread.ManagedThreadId, beforeAwaitId);
     }
 }
 
