@@ -20,7 +20,7 @@ public class ObsoleteSample
 
 [ObsoleteEx(
     Message = "Decided this class was a bad idea.",
-    Replacement = "NewTargetClass",
+    ReplacementTypeOrMember = "NewTargetClass",
     TreatAsErrorFromVersion = "3.0")]
 public class TargetClass
 {
