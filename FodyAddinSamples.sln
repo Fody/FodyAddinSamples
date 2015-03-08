@@ -128,6 +128,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotarLibLogSample", "Anota
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigureAwaitSample", "ConfigureAwaitSample\ConfigureAwaitSample.csproj", "{6807248F-3004-4365-8F53-25B6CE6E973B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotarNServiceBusSample", "AnotarNServiceBusSample\AnotarNServiceBusSample.csproj", "{BF156E66-47CC-48A1-B924-FF164C578321}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -994,6 +996,21 @@ Global
 		{6807248F-3004-4365-8F53-25B6CE6E973B}.Release|ARM.ActiveCfg = Release|Any CPU
 		{6807248F-3004-4365-8F53-25B6CE6E973B}.Release|x64.ActiveCfg = Release|Any CPU
 		{6807248F-3004-4365-8F53-25B6CE6E973B}.Release|x86.ActiveCfg = Release|Any CPU
+		{BF156E66-47CC-48A1-B924-FF164C578321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF156E66-47CC-48A1-B924-FF164C578321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF156E66-47CC-48A1-B924-FF164C578321}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{BF156E66-47CC-48A1-B924-FF164C578321}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BF156E66-47CC-48A1-B924-FF164C578321}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BF156E66-47CC-48A1-B924-FF164C578321}.DebugMono|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF156E66-47CC-48A1-B924-FF164C578321}.DebugMono|Any CPU.Build.0 = Debug|Any CPU
+		{BF156E66-47CC-48A1-B924-FF164C578321}.DebugMono|ARM.ActiveCfg = Debug|Any CPU
+		{BF156E66-47CC-48A1-B924-FF164C578321}.DebugMono|x64.ActiveCfg = Debug|Any CPU
+		{BF156E66-47CC-48A1-B924-FF164C578321}.DebugMono|x86.ActiveCfg = Debug|Any CPU
+		{BF156E66-47CC-48A1-B924-FF164C578321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF156E66-47CC-48A1-B924-FF164C578321}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF156E66-47CC-48A1-B924-FF164C578321}.Release|ARM.ActiveCfg = Release|Any CPU
+		{BF156E66-47CC-48A1-B924-FF164C578321}.Release|x64.ActiveCfg = Release|Any CPU
+		{BF156E66-47CC-48A1-B924-FF164C578321}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1017,6 +1034,7 @@ Global
 		{36F8A22F-DB4A-462A-AE9A-A9B6E5FD8127} = {20419C58-D62B-44E0-BC1B-520859C0B75F}
 		{140273EA-BDDD-4892-8B4F-DD94D738CA7F} = {20419C58-D62B-44E0-BC1B-520859C0B75F}
 		{8F17B3BA-44DC-458B-82D3-4DECECF90ADF} = {53B9C4BF-BA86-4007-9E31-484B50F67DC6}
+		{BF156E66-47CC-48A1-B924-FF164C578321} = {53B9C4BF-BA86-4007-9E31-484B50F67DC6}
 	EndGlobalSection
 	GlobalSection(CodealikeProperties) = postSolution
 		SolutionGuid = 2f38512b-20a3-4f87-a0bf-c9e919c18c12
