@@ -37,8 +37,8 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Reference Include="Anotar.Catel">
-      <HintPath>..\packages\Anotar.Catel.Fody.2.16.2\Lib\Anotar.Catel.dll</HintPath>
+    <Reference Include="Anotar.Catel, Version=0.0.0.0, Culture=neutral, PublicKeyToken=9d5b24f0733c26f7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Anotar.Catel.Fody.2.16.4\Lib\Anotar.Catel.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Catel.Core, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">

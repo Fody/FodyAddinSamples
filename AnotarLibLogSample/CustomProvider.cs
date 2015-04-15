@@ -8,9 +8,9 @@ public class CustomProvider : ILogProvider, ILog
     [ThreadStatic]
     public static Exception LastException;
 
-    public ILog GetLogger(string name)
+    public Logger GetLogger(string name)
     {
-        return this;
+        return Log;
     }
 
     public IDisposable OpenNestedContext(string message)
