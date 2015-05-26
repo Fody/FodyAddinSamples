@@ -15,9 +15,9 @@ namespace ReactiveUISample
             [Reactive]public int Value1 { get; set; }       // Auto-generate the equivalent behavior that you see below for Value2
 
             // The normal way of implementing these properties follows
-            private int _value2;
+            int value2;
 
-            public int Value2 { get { return _value2; } set { this.RaiseAndSetIfChanged(ref _value2, value); } }
+            public int Value2 { get { return value2; } set { this.RaiseAndSetIfChanged(ref value2, value); } }
 
             [ObservableAsProperty]public extern int Value3 { get; }
 
@@ -34,15 +34,15 @@ namespace ReactiveUISample
         /// </summary>
         public class View : ReactiveObject
         {
-            private readonly ViewModel _model;
+            ViewModel model;
 
             public View(ViewModel model)
             {
-                _model = model;
+                this.model = model;
 
-                this.WhenAnyValue(m => m._model.Value1).Subscribe(x => Console.WriteLine("value1 ={0}", x));
-                this.WhenAnyValue(m => m._model.Value2).Subscribe(x => Console.WriteLine("value2 ={0}", x));
-                this.WhenAnyValue(m => m._model.Value3).Subscribe(x => Console.WriteLine("value3 ={0}", x));
+                this.WhenAnyValue(m => m.model.Value1).Subscribe(x => Console.WriteLine("value1 ={0}", x));
+                this.WhenAnyValue(m => m.model.Value2).Subscribe(x => Console.WriteLine("value2 ={0}", x));
+                this.WhenAnyValue(m => m.model.Value3).Subscribe(x => Console.WriteLine("value3 ={0}", x));
             }
         }
 
@@ -63,11 +63,11 @@ namespace ReactiveUISample
         /// The purpose of this sample is to demonstrate parity between doing things manually vs. using the plugin.
         /// Credit to @jcmm33 for providing this example.
         /// </summary>
-        static void Main(string[] args)
+        static void Main()
         {
-            ViewModel vm = new ViewModel();
+            var vm = new ViewModel();
 
-            View v = new View(vm);
+            var v = new View(vm);
 
             vm.Value1 = 2;
             vm.Value2 = 2;

@@ -6,18 +6,18 @@ namespace CommanderSample
 {
     public class SampleViewModel : INotifyPropertyChanged
     {
-        private int _ticks;
+        int ticks;
 
         public int Ticks
         {
-            get { return _ticks; }
+            get { return ticks; }
             set
             {
-                if (_ticks == value)
+                if (ticks == value)
                 {
                     return;
                 }
-                _ticks = value;
+                ticks = value;
                 OnPropertyChanged();
             }
         }

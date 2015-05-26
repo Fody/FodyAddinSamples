@@ -40,6 +40,11 @@
 // ReSharper disable SuggestVarOrType_SimpleTypes
 // ReSharper disable SuggestVarOrType_Elsewhere
 // ReSharper disable SuggestVarOrType_BuiltInTypes
+// ReSharper disable InconsistentNaming
+// ReSharper disable RedundantUsingDirective
+// ReSharper disable IdentifierTypo
+// ReSharper disable StringLiteralTypo
+// ReSharper disable RedundantNameQualifier
 #pragma warning disable 1591
 
 // If you copied this file manually, you need to change all "YourRootNameSpace" so not to clash with other libraries
