@@ -36,14 +36,12 @@
 // Define LIBLOG_PROVIDERS_ONLY if your library provides its own logging API and you just want to use the
 // LibLog providers internally to provide built in support for popular logging frameworks.
 
-// ReSharper disable PartialTypeWithSinglePart
+// ReSharper disable InconsistentNaming
 // ReSharper disable SuggestVarOrType_SimpleTypes
+// ReSharper disable RedundantUsingDirective
 // ReSharper disable SuggestVarOrType_Elsewhere
 // ReSharper disable SuggestVarOrType_BuiltInTypes
-// ReSharper disable InconsistentNaming
-// ReSharper disable RedundantUsingDirective
 // ReSharper disable IdentifierTypo
-// ReSharper disable StringLiteralTypo
 // ReSharper disable RedundantNameQualifier
 #pragma warning disable 1591
 
