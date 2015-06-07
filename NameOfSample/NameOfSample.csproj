@@ -32,8 +32,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Name.Of, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NameOf.Fody.0.8.1\lib\Name.Of.dll</HintPath>
+    <Reference Include="Name.Of">
+      <HintPath>..\packages\NameOf.Fody.0.8.4\lib\Name.Of.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">
