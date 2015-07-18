@@ -39,7 +39,7 @@
     </Reference>
     <Reference Include="ReactiveUI.Fody.Helpers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ReactiveUI.Fody.1.0.51\lib\net45\ReactiveUI.Fody.Helpers.dll</HintPath>
+      <HintPath>..\packages\ReactiveUI.Fody.1.1.1\lib\net45\ReactiveUI.Fody.Helpers.dll</HintPath>
     </Reference>
     <Reference Include="Splat, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

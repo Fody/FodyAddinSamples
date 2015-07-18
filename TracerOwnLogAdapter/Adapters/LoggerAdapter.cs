@@ -18,23 +18,23 @@ namespace TracerOwnLogAdapter.Adapters
         public void TraceEnter(string methodInfo, string[] paramNames, object[] paramValues)
         {
             //do the actual logging
-            DoLog(String.Format("Entered into {0} {1} ({2})", type.FullName, methodInfo, BuildParameterInfo(paramNames, paramValues)));
+            DoLog(string.Format("Entered into {0} {1} ({2})", type.FullName, methodInfo, BuildParameterInfo(paramNames, paramValues)));
         }
 
         public void TraceLeave(string methodInfo, long numberOfTicks, string[] paramNames, object[] paramValues)
         {
             //do the actual logging
-            DoLog(String.Format("Returned from {0} {1} ({2})", type.FullName, methodInfo, BuildParameterInfo(paramNames, paramValues)));
+            DoLog(string.Format("Returned from {0} {1} ({2})", type.FullName, methodInfo, BuildParameterInfo(paramNames, paramValues)));
         }
 
         public void MyLogSomethingImportant(string methodInfo, int importantValue, string message)
         {
-            DoLog(String.Format("Returned from {0} {1} (Msg={2}, ImportantValue is {3})", type.FullName, methodInfo, message, importantValue));
+            DoLog(string.Format("Returned from {0} {1} (Msg={2}, ImportantValue is {3})", type.FullName, methodInfo, message, importantValue));
         }
 
         string BuildParameterInfo(string[] paramNames, object[] paramValues)
         {
-            if (paramNames == null) return String.Empty;
+            if (paramNames == null) return string.Empty;
 
             var parameters = new StringBuilder();
             for (var i = 0; i < paramNames.Length; i++)

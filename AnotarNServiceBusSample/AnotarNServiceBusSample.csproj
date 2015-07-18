@@ -32,11 +32,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Anotar.NServiceBus">
-      <HintPath>..\packages\Anotar.NServiceBus.Fody.2.17.0\Lib\Anotar.NServiceBus.dll</HintPath>
+      <HintPath>..\packages\Anotar.NServiceBus.Fody.2.18.0\Lib\Anotar.NServiceBus.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="NServiceBus.Core">
-      <HintPath>..\packages\NServiceBus.5.2.0\lib\net45\NServiceBus.Core.dll</HintPath>
+    <Reference Include="NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NServiceBus.5.2.3\lib\net45\NServiceBus.Core.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
