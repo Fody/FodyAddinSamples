@@ -46,9 +46,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Tracer.Log4net, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Tracer.Log4net, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Tracer.Log4Net.Fody.1.1.0\lib\net40\Tracer.Log4net.dll</HintPath>
+      <HintPath>..\packages\Tracer.Log4Net.Fody.1.1.1\lib\net40\Tracer.Log4net.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
