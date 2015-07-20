@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using AutoLazy;
 using NUnit.Framework;
 
@@ -8,13 +7,13 @@ namespace AutoLazySample
     [TestFixture]
     public class LazyInstanceSample
     {
-        private int _getGuidStringCallCount;
-        private int _guidStringCallCount;
+        int getGuidStringCallCount;
+        int guidStringCallCount;
 
         [Lazy]
         public string GetGuidString()
         {
-            ++_getGuidStringCallCount;
+            ++getGuidStringCallCount;
             return Guid.NewGuid().ToString();
         }
 
@@ -24,7 +23,7 @@ namespace AutoLazySample
         {
             get
             {
-                ++_guidStringCallCount;
+                ++guidStringCallCount;
                 return Guid.NewGuid().ToString();
             }
         }
@@ -32,23 +31,23 @@ namespace AutoLazySample
         [Test]
         public void GetGuidStringShouldBeCalledOnlyOnce()
         {
-            Assert.AreEqual(0, _getGuidStringCallCount);
+            Assert.AreEqual(0, getGuidStringCallCount);
             var first = GetGuidString();
-            Assert.AreEqual(1, _getGuidStringCallCount);
+            Assert.AreEqual(1, getGuidStringCallCount);
             var second = GetGuidString();
             Assert.AreEqual(first, second);
-            Assert.AreEqual(1, _getGuidStringCallCount);
+            Assert.AreEqual(1, getGuidStringCallCount);
         }
 
         [Test]
         public void GuidStringShouldBeCalledOnlyOnce()
         {
-            Assert.AreEqual(0, _guidStringCallCount);
+            Assert.AreEqual(0, guidStringCallCount);
             var first = GuidString;
-            Assert.AreEqual(1, _guidStringCallCount);
+            Assert.AreEqual(1, guidStringCallCount);
             var second = GuidString;
             Assert.AreEqual(first, second);
-            Assert.AreEqual(1, _guidStringCallCount);
+            Assert.AreEqual(1, guidStringCallCount);
         }
     }
 }
