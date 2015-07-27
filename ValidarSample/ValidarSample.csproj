@@ -56,7 +56,7 @@
     <Reference Include="System.Xml" />
     <None Include="FodyWeavers.xml" />
     <Reference Include="Validar">
-      <HintPath>..\packages\Validar.Fody.1.4.7.0\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\Validar.dll</HintPath>
+      <HintPath>..\packages\Validar.Fody.1.4.8.0\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\Validar.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

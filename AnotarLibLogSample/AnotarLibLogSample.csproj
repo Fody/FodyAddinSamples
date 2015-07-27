@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Anotar.LibLog">
-      <HintPath>..\packages\Anotar.LibLog.Fody.2.18.0\Lib\Anotar.LibLog.dll</HintPath>
+      <HintPath>..\packages\Anotar.LibLog.Fody.2.18.1\Lib\Anotar.LibLog.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">
@@ -58,7 +58,9 @@
     <Content Include="FodyWeavers.xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.1.29.0\build\Fody.targets" Condition="Exists('..\packages\Fody.1.29.0\build\Fody.targets')" />
