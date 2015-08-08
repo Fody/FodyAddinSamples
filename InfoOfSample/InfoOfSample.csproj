@@ -37,8 +37,8 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Reference Include="InfoOf">
-      <HintPath>..\packages\InfoOf.Fody.1.0.0.0\Lib\portable-net4+sl5+wp8+win8+wpa81+MonoAndroid16+MonoTouch40\InfoOf.dll</HintPath>
+    <Reference Include="InfoOf, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\InfoOf.Fody.1.0.2.0\Lib\portable-net4+sl5+wp8+win8+wpa81+MonoAndroid16+MonoTouch40\InfoOf.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">

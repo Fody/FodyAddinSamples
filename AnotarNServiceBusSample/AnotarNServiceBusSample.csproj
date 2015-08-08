@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Anotar.NServiceBus, Version=0.0.0.0, Culture=neutral, PublicKeyToken=9d5b24f0733c26f7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Anotar.NServiceBus.Fody.2.18.3\Lib\Anotar.NServiceBus.dll</HintPath>
+      <HintPath>..\packages\Anotar.NServiceBus.Fody.2.18.4\Lib\Anotar.NServiceBus.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
