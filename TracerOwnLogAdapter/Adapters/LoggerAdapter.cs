@@ -21,7 +21,7 @@ namespace TracerOwnLogAdapter.Adapters
             DoLog(string.Format("Entered into {0} {1} ({2})", type.FullName, methodInfo, BuildParameterInfo(paramNames, paramValues)));
         }
 
-        public void TraceLeave(string methodInfo, long numberOfTicks, string[] paramNames, object[] paramValues)
+        public void TraceLeave(string methodInfo, long start, long finish, string[] paramNames, object[] paramValues)
         {
             //do the actual logging
             DoLog(string.Format("Returned from {0} {1} ({2})", type.FullName, methodInfo, BuildParameterInfo(paramNames, paramValues)));
@@ -29,7 +29,7 @@ namespace TracerOwnLogAdapter.Adapters
 
         public void MyLogSomethingImportant(string methodInfo, int importantValue, string message)
         {
-            DoLog(string.Format("Returned from {0} {1} (Msg={2}, ImportantValue is {3})", type.FullName, methodInfo, message, importantValue));
+            DoLog($"Returned from {type.FullName} {methodInfo} (Msg={message}, ImportantValue is {importantValue})");
         }
 
         string BuildParameterInfo(string[] paramNames, object[] paramValues)

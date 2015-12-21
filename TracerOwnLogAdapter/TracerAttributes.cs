@@ -4,7 +4,7 @@
 namespace TracerAttributes
 {
     //This one is required for the attributes to avoid referencing anything from tracer in the production code
-    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = true, Inherited = true)]
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = true)]
     public class TraceOn : Attribute
     {
         public TraceTarget Target { get; set; }
@@ -18,7 +18,7 @@ namespace TracerAttributes
         }
     }
 
-    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = true, Inherited = true)]
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = true)]
     public class NoTrace : Attribute
     {
     }
