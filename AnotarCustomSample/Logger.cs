@@ -22,6 +22,5 @@ public class Logger
         };
     }
 
-    public bool IsDebugEnabled { get { return true; } }
-
+    public bool IsDebugEnabled => true;
 }

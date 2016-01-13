@@ -2,6 +2,7 @@
 using Ninject;
 using Ninject.Selection.Heuristics;
 using NUnit.Framework;
+// ReSharper disable NotAccessedField.Local
 
 [TestFixture]
 public class NinjectSample

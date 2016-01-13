@@ -41,6 +41,11 @@
 // ReSharper disable RedundantUsingDirective
 // ReSharper disable SuggestVarOrType_Elsewhere
 // ReSharper disable SuggestVarOrType_BuiltInTypes
+// ReSharper disable ConvertPropertyToExpressionBody
+// ReSharper disable UseNullPropagation
+// ReSharper disable UnusedMember.Global
+// ReSharper disable ConvertToAutoProperty
+// ReSharper disable ConvertToAutoPropertyWhenPossible
 #pragma warning disable 1591
 
 // If you copied this file manually, you need to change all "YourRootNameSpace" so not to clash with other libraries

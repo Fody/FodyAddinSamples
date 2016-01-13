@@ -21,9 +21,6 @@ namespace TracerLog4NetSample
             events.ForEach(item => Debug.Print(item));
         }
 
-        public int EventCount
-        {
-            get { return events.Count; }
-        }
+        public int EventCount => events.Count;
     }
 }

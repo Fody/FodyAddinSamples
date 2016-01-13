@@ -1,5 +1,6 @@
 ﻿using Tracer.Log4Net;
 using TracerAttributes;
+// ReSharper disable RedundantAssignment
 
 namespace TracerLog4NetSample
 {

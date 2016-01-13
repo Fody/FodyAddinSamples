@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using Fody.DependencyInjection;
 using NUnit.Framework;
+// ReSharper disable NotAccessedField.Local
 
 [TestFixture]
 public class AutofacSample

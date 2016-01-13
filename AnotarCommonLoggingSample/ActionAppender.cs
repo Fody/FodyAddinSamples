@@ -317,7 +317,7 @@ public class ActionLog : ILog
     }
 
     public bool IsTraceEnabled { get; private set; }
-    public bool IsDebugEnabled { get { return true; } }
+    public bool IsDebugEnabled => true;
     public bool IsErrorEnabled { get; private set; }
     public bool IsFatalEnabled { get; private set; }
     public bool IsInfoEnabled { get; private set; }

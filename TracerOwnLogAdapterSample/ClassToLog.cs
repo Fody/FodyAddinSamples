@@ -1,5 +1,6 @@
 using TracerAttributes;
 using TracerOwnLogAdapter;
+// ReSharper disable RedundantAssignment
 
 namespace TracerOwnLogAdapterSample
 {

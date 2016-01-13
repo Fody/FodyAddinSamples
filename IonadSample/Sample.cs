@@ -8,10 +8,7 @@ public static class DateTimeSubstitute
 {
     public static DateTime Current;
 
-    public static DateTime Now
-    {
-        get { return Current; }
-    }
+    public static DateTime Now => Current;
 }
 
 [TestFixture]

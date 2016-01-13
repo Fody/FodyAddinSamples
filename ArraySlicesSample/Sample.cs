@@ -27,7 +27,7 @@ public class ArraySlicesSample
         } while (length > 1);
 
         watch.Stop();
-        Console.WriteLine(string.Format("Reduced with Arrays: '{0}' elements in {1}ms.", array.Length, watch.ElapsedMilliseconds));
+        Console.WriteLine($"Reduced with Arrays: '{array.Length}' elements in {watch.ElapsedMilliseconds}ms.");
 
         return array[0];
     }
@@ -55,7 +55,7 @@ public class ArraySlicesSample
         } while (length > 1);
 
         watch.Stop();
-        Console.WriteLine(string.Format("Reduced with ArraySlice: '{0}' elements in {1}ms.", array.Length, watch.ElapsedMilliseconds));
+        Console.WriteLine($"Reduced with ArraySlice: '{array.Length}' elements in {watch.ElapsedMilliseconds}ms.");
 
         return array[0];
     }
@@ -89,7 +89,7 @@ public class ArraySlicesSample
 
         watch.Stop();
 
-        Console.WriteLine(string.Format("Reduced with ArraySlice-Recursive: '{0}' elements in {1}ms.", array.Length, watch.ElapsedMilliseconds));
+        Console.WriteLine("Reduced with ArraySlice-Recursive: '{array.Length}' elements in {watch.ElapsedMilliseconds}ms.");
         return array[0];
     }
 
@@ -118,7 +118,7 @@ public class ArraySlicesSample
         } while (length > 1);
 
         watch.Stop();
-        Console.WriteLine(string.Format("Reduced with unoptimized ArraySlice: '{0}' elements in {1}ms.", array.Length, watch.ElapsedMilliseconds));
+        Console.WriteLine("Reduced with unoptimized ArraySlice: '{array.Length}' elements in {watch.ElapsedMilliseconds}ms.");
 
         return array[0];
     }

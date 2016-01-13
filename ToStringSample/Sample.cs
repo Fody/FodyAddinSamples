@@ -25,11 +25,5 @@ class Person
     public string FamilyName { get; set; }
 
     [IgnoreDuringToString]
-    public string FullName
-    {
-        get
-        {
-            return string.Format("{0} {1}", GivenNames, FamilyName);
-        }
-    }
+    public string FullName => $"{GivenNames} {FamilyName}";
 }
