@@ -75,16 +75,15 @@
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Fody.1.29.3\build\dotnet\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.1.29.3\build\dotnet\Fody.targets'))" />
     <Error Condition="!Exists('..\packages\Fielder.Fody.1.0.11\build\dotnet\Fielder.Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fielder.Fody.1.0.11\build\dotnet\Fielder.Fody.targets'))" />
     <Error Condition="!Exists('..\packages\Validar.Fody.1.4.10.0\build\dotnet\Validar.Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Validar.Fody.1.4.10.0\build\dotnet\Validar.Fody.targets'))" />
+    <Error Condition="!Exists('..\packages\Fody.1.29.4\build\dotnet\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.1.29.4\build\dotnet\Fody.targets'))" />
   </Target>
-  <Import Project="..\packages\Fody.1.29.3\build\dotnet\Fody.targets" Condition="Exists('..\packages\Fody.1.29.3\build\dotnet\Fody.targets')" />
   <Import Project="..\packages\Fielder.Fody.1.0.11\build\dotnet\Fielder.Fody.targets" Condition="Exists('..\packages\Fielder.Fody.1.0.11\build\dotnet\Fielder.Fody.targets')" />
   <Import Project="..\packages\Validar.Fody.1.4.10.0\build\dotnet\Validar.Fody.targets" Condition="Exists('..\packages\Validar.Fody.1.4.10.0\build\dotnet\Validar.Fody.targets')" />
+  <Import Project="..\packages\Fody.1.29.4\build\dotnet\Fody.targets" Condition="Exists('..\packages\Fody.1.29.4\build\dotnet\Fody.targets')" />
 </Project>
