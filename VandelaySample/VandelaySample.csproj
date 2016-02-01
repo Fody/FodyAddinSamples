@@ -52,7 +52,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Sample.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -73,11 +72,4 @@
     <Error Condition="!Exists('..\packages\Vandelay.Fody.0.2.1.2\build\dotnet\Vandelay.Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Vandelay.Fody.0.2.1.2\build\dotnet\Vandelay.Fody.targets'))" />
   </Target>
   <Import Project="..\packages\Vandelay.Fody.0.2.1.2\build\dotnet\Vandelay.Fody.targets" Condition="Exists('..\packages\Vandelay.Fody.0.2.1.2\build\dotnet\Vandelay.Fody.targets')" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

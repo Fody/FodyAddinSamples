@@ -46,6 +46,7 @@
 // ReSharper disable UnusedMember.Global
 // ReSharper disable ConvertToAutoProperty
 // ReSharper disable ConvertToAutoPropertyWhenPossible
+// ReSharper disable ArrangeTypeMemberModifiers
 #pragma warning disable 1591
 
 // If you copied this file manually, you need to change all "YourRootNameSpace" so not to clash with other libraries
