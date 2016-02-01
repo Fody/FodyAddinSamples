@@ -125,6 +125,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLazySample", "AutoLazyS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SealSample", "SealSample\SealSample.csproj", "{9C4A6E5C-86E3-4840-9A30-4A291C658123}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VandelaySample", "VandelaySample\VandelaySample.csproj", "{160BCFD8-6BA6-4317-8EFC-8E77159B0378}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1015,6 +1017,30 @@ Global
 		{9C4A6E5C-86E3-4840-9A30-4A291C658123}.Release|x64.Build.0 = Release|Any CPU
 		{9C4A6E5C-86E3-4840-9A30-4A291C658123}.Release|x86.ActiveCfg = Release|Any CPU
 		{9C4A6E5C-86E3-4840-9A30-4A291C658123}.Release|x86.Build.0 = Release|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.Debug|ARM.Build.0 = Debug|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.Debug|x64.Build.0 = Debug|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.Debug|x86.Build.0 = Debug|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.DebugMono|Any CPU.ActiveCfg = Debug|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.DebugMono|Any CPU.Build.0 = Debug|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.DebugMono|ARM.ActiveCfg = Debug|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.DebugMono|ARM.Build.0 = Debug|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.DebugMono|x64.ActiveCfg = Debug|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.DebugMono|x64.Build.0 = Debug|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.DebugMono|x86.ActiveCfg = Debug|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.DebugMono|x86.Build.0 = Debug|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.Release|ARM.ActiveCfg = Release|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.Release|ARM.Build.0 = Release|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.Release|x64.ActiveCfg = Release|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.Release|x64.Build.0 = Release|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.Release|x86.ActiveCfg = Release|Any CPU
+		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
