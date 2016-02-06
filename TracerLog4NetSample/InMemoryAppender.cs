@@ -13,7 +13,7 @@ namespace TracerLog4NetSample
 
         protected override void Append(LoggingEvent loggingEvent)
         {
-            events.Add(string.Format("{0} {1} {2}", loggingEvent.LoggerName, loggingEvent.LocationInformation.MethodName,  loggingEvent.RenderedMessage));
+            events.Add($"{loggingEvent.LoggerName} {loggingEvent.LocationInformation.MethodName} {loggingEvent.RenderedMessage}");
         }
 
         public void PrintToDebug()

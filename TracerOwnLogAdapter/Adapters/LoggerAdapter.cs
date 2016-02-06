@@ -18,13 +18,13 @@ namespace TracerOwnLogAdapter.Adapters
         public void TraceEnter(string methodInfo, string[] paramNames, object[] paramValues)
         {
             //do the actual logging
-            DoLog(string.Format("Entered into {0} {1} ({2})", type.FullName, methodInfo, BuildParameterInfo(paramNames, paramValues)));
+            DoLog($"Entered into {type.FullName} {methodInfo} ({BuildParameterInfo(paramNames, paramValues)})");
         }
 
         public void TraceLeave(string methodInfo, long start, long finish, string[] paramNames, object[] paramValues)
         {
             //do the actual logging
-            DoLog(string.Format("Returned from {0} {1} ({2})", type.FullName, methodInfo, BuildParameterInfo(paramNames, paramValues)));
+            DoLog($"Returned from {type.FullName} {methodInfo} ({BuildParameterInfo(paramNames, paramValues)})");
         }
 
         public void MyLogSomethingImportant(string methodInfo, int importantValue, string message)
@@ -47,7 +47,7 @@ namespace TracerOwnLogAdapter.Adapters
 
         void DoLog(string message)
         {
-            //do the actual logging in your favourite logging framework
+            //do the actual logging in your favorite logging framework
 
             
             LoggedLines.Add(message);

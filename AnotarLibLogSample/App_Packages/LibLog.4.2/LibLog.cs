@@ -47,6 +47,7 @@
 // ReSharper disable ConvertToAutoProperty
 // ReSharper disable ConvertToAutoPropertyWhenPossible
 // ReSharper disable ArrangeTypeMemberModifiers
+// ReSharper disable InconsistentNaming
 #pragma warning disable 1591
 
 // If you copied this file manually, you need to change all "YourRootNameSpace" so not to clash with other libraries
