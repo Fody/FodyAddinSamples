@@ -44,8 +44,8 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="ToString, Version=1.7.2.0, Culture=neutral, PublicKeyToken=15432f00798e61a4, processorArchitecture=MSIL">
-      <HintPath>..\packages\ToString.Fody.1.7.2.0\Lib\dotnet\ToString.dll</HintPath>
+    <Reference Include="ToString, Version=1.7.3.0, Culture=neutral, PublicKeyToken=15432f00798e61a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\ToString.Fody.1.7.3.0\lib\dotnet\ToString.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -63,9 +63,7 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\ToString.Fody.1.7.2.0\build\dotnet\ToString.Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\ToString.Fody.1.7.2.0\build\dotnet\ToString.Fody.targets'))" />
     <Error Condition="!Exists('..\packages\Fody.1.29.4\build\dotnet\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.1.29.4\build\dotnet\Fody.targets'))" />
   </Target>
-  <Import Project="..\packages\ToString.Fody.1.7.2.0\build\dotnet\ToString.Fody.targets" Condition="Exists('..\packages\ToString.Fody.1.7.2.0\build\dotnet\ToString.Fody.targets')" />
   <Import Project="..\packages\Fody.1.29.4\build\dotnet\Fody.targets" Condition="Exists('..\packages\Fody.1.29.4\build\dotnet\Fody.targets')" />
 </Project>

@@ -44,8 +44,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
     </Reference>
-    <Reference Include="PropertyChanged, Version=1.50.3.0, Culture=neutral, PublicKeyToken=ee3ee20bcf148ddd, processorArchitecture=MSIL">
-      <HintPath>..\packages\PropertyChanged.Fody.1.50.3\Lib\portable-net4+sl4+wp8+win8+wpa81+MonoAndroid16+MonoTouch40\PropertyChanged.dll</HintPath>
+    <Reference Include="PropertyChanged, Version=1.50.4.0, Culture=neutral, PublicKeyToken=ee3ee20bcf148ddd, processorArchitecture=MSIL">
+      <HintPath>..\packages\PropertyChanged.Fody.1.50.4\lib\dotnet\PropertyChanged.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -56,8 +56,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <None Include="FodyWeavers.xml" />
-    <Reference Include="Validar, Version=1.4.10.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Validar.Fody.1.4.10.0\Lib\dotnet\Validar.dll</HintPath>
+    <Reference Include="Validar, Version=1.4.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Validar.Fody.1.4.11.0\lib\dotnet\Validar.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -79,11 +79,7 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Fielder.Fody.1.0.11\build\dotnet\Fielder.Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fielder.Fody.1.0.11\build\dotnet\Fielder.Fody.targets'))" />
-    <Error Condition="!Exists('..\packages\Validar.Fody.1.4.10.0\build\dotnet\Validar.Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Validar.Fody.1.4.10.0\build\dotnet\Validar.Fody.targets'))" />
     <Error Condition="!Exists('..\packages\Fody.1.29.4\build\dotnet\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.1.29.4\build\dotnet\Fody.targets'))" />
   </Target>
-  <Import Project="..\packages\Fielder.Fody.1.0.11\build\dotnet\Fielder.Fody.targets" Condition="Exists('..\packages\Fielder.Fody.1.0.11\build\dotnet\Fielder.Fody.targets')" />
-  <Import Project="..\packages\Validar.Fody.1.4.10.0\build\dotnet\Validar.Fody.targets" Condition="Exists('..\packages\Validar.Fody.1.4.10.0\build\dotnet\Validar.Fody.targets')" />
   <Import Project="..\packages\Fody.1.29.4\build\dotnet\Fody.targets" Condition="Exists('..\packages\Fody.1.29.4\build\dotnet\Fody.targets')" />
 </Project>

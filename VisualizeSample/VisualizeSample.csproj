@@ -44,8 +44,8 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Visualize, Version=0.4.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Visualize.Fody.0.4.4.0\Lib\dotnet\Visualize.dll</HintPath>
+    <Reference Include="Visualize, Version=0.4.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Visualize.Fody.0.4.5.0\lib\dotnet\Visualize.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -65,9 +65,7 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Visualize.Fody.0.4.4.0\build\dotnet\Visualize.Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Visualize.Fody.0.4.4.0\build\dotnet\Visualize.Fody.targets'))" />
     <Error Condition="!Exists('..\packages\Fody.1.29.4\build\dotnet\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.1.29.4\build\dotnet\Fody.targets'))" />
   </Target>
-  <Import Project="..\packages\Visualize.Fody.0.4.4.0\build\dotnet\Visualize.Fody.targets" Condition="Exists('..\packages\Visualize.Fody.0.4.4.0\build\dotnet\Visualize.Fody.targets')" />
   <Import Project="..\packages\Fody.1.29.4\build\dotnet\Fody.targets" Condition="Exists('..\packages\Fody.1.29.4\build\dotnet\Fody.targets')" />
 </Project>

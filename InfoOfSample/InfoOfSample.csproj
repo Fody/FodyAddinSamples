@@ -38,8 +38,8 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Reference Include="InfoOf, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\InfoOf.Fody.1.0.3.0\Lib\dotnet\InfoOf.dll</HintPath>
+    <Reference Include="InfoOf, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\InfoOf.Fody.1.0.4.0\lib\dotnet\InfoOf.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">
@@ -69,9 +69,7 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\InfoOf.Fody.1.0.3.0\build\dotnet\InfoOf.Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\InfoOf.Fody.1.0.3.0\build\dotnet\InfoOf.Fody.targets'))" />
     <Error Condition="!Exists('..\packages\Fody.1.29.4\build\dotnet\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.1.29.4\build\dotnet\Fody.targets'))" />
   </Target>
-  <Import Project="..\packages\InfoOf.Fody.1.0.3.0\build\dotnet\InfoOf.Fody.targets" Condition="Exists('..\packages\InfoOf.Fody.1.0.3.0\build\dotnet\InfoOf.Fody.targets')" />
   <Import Project="..\packages\Fody.1.29.4\build\dotnet\Fody.targets" Condition="Exists('..\packages\Fody.1.29.4\build\dotnet\Fody.targets')" />
 </Project>

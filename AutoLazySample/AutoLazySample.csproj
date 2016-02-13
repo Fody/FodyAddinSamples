@@ -32,8 +32,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AutoLazy, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoLazy.Fody.1.2.0\lib\net40\AutoLazy.dll</HintPath>
+    <Reference Include="AutoLazy, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoLazy.Fody.1.2.1\lib\net40\AutoLazy.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="nunit.framework">
