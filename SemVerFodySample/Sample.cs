@@ -8,17 +8,15 @@ using NUnit.Framework;
 [TestFixture]
 public class Sample
 {
-  [Test]
-  public void Run()
-  {
-    var assembly = this.GetType()
-                       .Assembly;
-    var fileVersionInfo = FileVersionInfo.GetVersionInfo(assembly.Location);
-    var fileVersion = fileVersionInfo.FileVersion;
+    [Test]
+    public void Run()
+    {
+        var assembly = GetType().Assembly;
+        var fileVersionInfo = FileVersionInfo.GetVersionInfo(assembly.Location);
+        var fileVersion = fileVersionInfo.FileVersion;
 
-    Assert.IsNotNullOrEmpty(fileVersion);
-    Assert.AreEqual(fileVersion,
-                    "0.1.0.0");
-    Debug.WriteLine(fileVersion);
-  }
+        Assert.IsNotNullOrEmpty(fileVersion);
+        Assert.AreEqual(fileVersion, "0.1.0.0");
+        Debug.WriteLine(fileVersion);
+    }
 }
