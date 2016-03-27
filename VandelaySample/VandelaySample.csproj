@@ -45,8 +45,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="Vandelay, Version=0.2.2.0, Culture=neutral, PublicKeyToken=d34c7d3bba3746e6, processorArchitecture=MSIL">
-      <HintPath>..\packages\Vandelay.Fody.0.2.2.0\lib\dotnet\Vandelay.dll</HintPath>
+    <Reference Include="Vandelay, Version=0.2.2.1, Culture=neutral, PublicKeyToken=d34c7d3bba3746e6, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vandelay.Fody.0.2.2.1\lib\dotnet\Vandelay.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -69,7 +69,5 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Fody.1.29.4\build\dotnet\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.1.29.4\build\dotnet\Fody.targets'))" />
-    <Error Condition="!Exists('..\packages\Vandelay.Fody.0.2.2.0\build\dotnet\Vandelay.Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Vandelay.Fody.0.2.2.0\build\dotnet\Vandelay.Fody.targets'))" />
   </Target>
-  <Import Project="..\packages\Vandelay.Fody.0.2.2.0\build\dotnet\Vandelay.Fody.targets" Condition="Exists('..\packages\Vandelay.Fody.0.2.2.0\build\dotnet\Vandelay.Fody.targets')" />
 </Project>
