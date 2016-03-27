@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Anotar.LibLog, Version=0.0.0.0, Culture=neutral, PublicKeyToken=9d5b24f0733c26f7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Anotar.LibLog.Fody.2.20.0\Lib\Anotar.LibLog.dll</HintPath>
+      <HintPath>..\packages\Anotar.LibLog.Fody.3.0.0\lib\Anotar.LibLog.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">

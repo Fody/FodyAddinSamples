@@ -68,7 +68,7 @@ public class ActionLog : ILog
 
     public void Debug(object message)
     {
-        throw new NotImplementedException();
+        LogCaptureBuilder.LastMessage = message.ToString();
     }
 
     public void Debug(object message, Exception exception)

@@ -43,8 +43,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
     </Reference>
-    <Reference Include="Obsolete, Version=4.0.4.0, Culture=neutral, PublicKeyToken=1ca091877d12ca03, processorArchitecture=MSIL">
-      <HintPath>..\packages\Obsolete.Fody.4.0.4\lib\dotnet\Obsolete.dll</HintPath>
+    <Reference Include="Obsolete, Version=4.0.5.0, Culture=neutral, PublicKeyToken=1ca091877d12ca03, processorArchitecture=MSIL">
+      <HintPath>..\packages\Obsolete.Fody.4.0.5\lib\dotnet\Obsolete.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
