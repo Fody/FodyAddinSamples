@@ -31,24 +31,19 @@
 // Define LIBLOG_PUBLIC to enable ability to GET a logger (LogProvider.For<>() etc) from outside this library. NOTE:
 // this can have unintended consequences of consumers of your library using your library to resolve a logger. If the
 // reason is because you want to open this functionality to other projects within your solution,
-// consider [InternalVisibleTo] instead.
-// 
+// consider [InternalsVisibleTo] instead.
+//
 // Define LIBLOG_PROVIDERS_ONLY if your library provides its own logging API and you just want to use the
 // LibLog providers internally to provide built in support for popular logging frameworks.
 
-// ReSharper disable RedundantNameQualifier
-// ReSharper disable SuggestVarOrType_SimpleTypes
+#pragma warning disable 1591
+
+using System.Diagnostics.CodeAnalysis;
 // ReSharper disable RedundantUsingDirective
 // ReSharper disable SuggestVarOrType_Elsewhere
-// ReSharper disable SuggestVarOrType_BuiltInTypes
-// ReSharper disable ConvertPropertyToExpressionBody
-// ReSharper disable UseNullPropagation
-// ReSharper disable UnusedMember.Global
-// ReSharper disable ConvertToAutoProperty
-// ReSharper disable ConvertToAutoPropertyWhenPossible
-// ReSharper disable ArrangeTypeMemberModifiers
-// ReSharper disable InconsistentNaming
-#pragma warning disable 1591
+
+[assembly: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "AnotarLibLogSample.Logging")]
+[assembly: SuppressMessage("Microsoft.Design", "CA1026:DefaultParametersShouldNotBeUsed", Scope = "member", Target = "AnotarLibLogSample.Logging.Logger.#Invoke(AnotarLibLogSample.Logging.LogLevel,System.Func`1<System.String>,System.Exception,System.Object[])")]
 
 // If you copied this file manually, you need to change all "YourRootNameSpace" so not to clash with other libraries
 // that use LibLog
@@ -59,6 +54,7 @@ namespace AnotarLibLogSample.Logging
 #endif
 {
     using System.Collections.Generic;
+    using System.Diagnostics.CodeAnalysis;
 #if LIBLOG_PROVIDERS_ONLY
     using AnotarLibLogSample.LibLog.LogProviders;
 #else
@@ -101,7 +97,7 @@ namespace AnotarLibLogSample.Logging
         /// <remarks>
         /// Note to implementers: the message func should not be called if the loglevel is not enabled
         /// so as not to incur performance penalties.
-        /// 
+        ///
         /// To check IsEnabled call Log with only LogLevel and check the return value, no event will be written.
         /// </remarks>
         bool Log(LogLevel logLevel, Func<string> messageFunc, Exception exception = null, params object[] formatParameters );
@@ -438,6 +434,7 @@ namespace AnotarLibLogSample.Logging
         private static dynamic s_currentLogProvider;
         private static Action<ILogProvider> s_onCurrentLogProviderSet;
 
+        [SuppressMessage("Microsoft.Performance", "CA1810:InitializeReferenceTypeStaticFieldsInline")]
         static LogProvider()
         {
             IsDisabled = false;
@@ -463,10 +460,10 @@ namespace AnotarLibLogSample.Logging
         public static bool IsDisabled { get; set; }
 
         /// <summary>
-        /// Sets an action that is invoked when a consumer of your library has called SetCurrentLogProvider. It is 
+        /// Sets an action that is invoked when a consumer of your library has called SetCurrentLogProvider. It is
         /// important that hook into this if you are using child libraries (especially ilmerged ones) that are using
         /// LibLog (or other logging abstraction) so you adapt and delegate to them.
-        /// <see cref="SetCurrentLogProvider"/> 
+        /// <see cref="SetCurrentLogProvider"/>
         /// </summary>
         internal static Action<ILogProvider> OnCurrentLogProviderSet
         {
@@ -546,7 +543,7 @@ namespace AnotarLibLogSample.Logging
         static ILog GetLogger(string name)
         {
             ILogProvider logProvider = CurrentLogProvider ?? ResolveLogProvider();
-            return logProvider == null 
+            return logProvider == null
                 ? NoOpLogger.Instance
                 : (ILog)new LoggerExecutionWrapper(logProvider.GetLogger(name), () => IsDisabled);
         }
@@ -556,6 +553,7 @@ namespace AnotarLibLogSample.Logging
         /// </summary>
         /// <param name="message">A message.</param>
         /// <returns>An <see cref="IDisposable"/> that closes context when disposed.</returns>
+        [SuppressMessage("Microsoft.Naming", "CA2204:Literals should be spelled correctly", MessageId = "SetCurrentLogProvider")]
 #if LIBLOG_PUBLIC
         public
 #else
@@ -563,11 +561,11 @@ namespace AnotarLibLogSample.Logging
 #endif
         static IDisposable OpenNestedContext(string message)
         {
-            if(CurrentLogProvider == null)
-            {
-                throw new InvalidOperationException(NullLogProvider);
-            }
-            return CurrentLogProvider.OpenNestedContext(message);
+            ILogProvider logProvider = CurrentLogProvider ?? ResolveLogProvider();
+
+            return logProvider == null
+                ? new DisposableAction(() => { })
+                : logProvider.OpenNestedContext(message);
         }
 
         /// <summary>
@@ -576,6 +574,7 @@ namespace AnotarLibLogSample.Logging
         /// <param name="key">A key.</param>
         /// <param name="value">A value.</param>
         /// <returns>An <see cref="IDisposable"/> that closes context when disposed.</returns>
+        [SuppressMessage("Microsoft.Naming", "CA2204:Literals should be spelled correctly", MessageId = "SetCurrentLogProvider")]
 #if LIBLOG_PUBLIC
         public
 #else
@@ -583,11 +582,11 @@ namespace AnotarLibLogSample.Logging
 #endif
         static IDisposable OpenMappedContext(string key, string value)
         {
-            if (CurrentLogProvider == null)
-            {
-                throw new InvalidOperationException(NullLogProvider);
-            }
-            return CurrentLogProvider.OpenMappedContext(key, value);
+            ILogProvider logProvider = CurrentLogProvider ?? ResolveLogProvider();
+
+            return logProvider == null
+                ? new DisposableAction(() => { })
+                : logProvider.OpenMappedContext(key, value);
         }
 #endif
 
@@ -630,6 +629,8 @@ namespace AnotarLibLogSample.Logging
         }
 #endif
 
+        [SuppressMessage("Microsoft.Globalization", "CA1303:Do not pass literals as localized parameters", MessageId = "System.Console.WriteLine(System.String,System.Object,System.Object)")]
+        [SuppressMessage("Microsoft.Design", "CA1031:DoNotCatchGeneralExceptionTypes")]
         internal static ILogProvider ResolveLogProvider()
         {
             try
@@ -687,6 +688,7 @@ namespace AnotarLibLogSample.Logging
             get { return _logger; }
         }
 
+        [SuppressMessage("Microsoft.Design", "CA1031:DoNotCatchGeneralExceptionTypes")]
         public bool Log(LogLevel logLevel, Func<string> messageFunc, Exception exception = null, params object[] formatParameters)
         {
             if (_getIsDisabled())
@@ -733,6 +735,7 @@ namespace AnotarLibLogSample.Logging.LogProviders
 {
     using System;
     using System.Collections.Generic;
+    using System.Diagnostics.CodeAnalysis;
 #if !LIBLOG_PORTABLE
     using System.Diagnostics;
 #endif
@@ -756,7 +759,7 @@ namespace AnotarLibLogSample.Logging.LogProviders
 
         protected LogProviderBase()
         {
-            _lazyOpenNdcMethod 
+            _lazyOpenNdcMethod
                 = new Lazy<OpenNdc>(GetOpenNdcMethod);
             _lazyOpenMdcMethod
                = new Lazy<OpenMdc>(GetOpenMdcMethod);
@@ -790,6 +793,8 @@ namespace AnotarLibLogSample.Logging.LogProviders
         private readonly Func<string, object> _getLoggerByNameDelegate;
         private static bool s_providerIsAvailableOverride = true;
 
+        [SuppressMessage("Microsoft.Naming", "CA2204:Literals should be spelled correctly", MessageId = "LogManager")]
+        [SuppressMessage("Microsoft.Naming", "CA2204:Literals should be spelled correctly", MessageId = "NLog")]
         public NLogLogProvider()
         {
             if (!IsLoggerAvailable())
@@ -873,6 +878,7 @@ namespace AnotarLibLogSample.Logging.LogProviders
                 _logger = logger;
             }
 
+            [SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
             public bool Log(LogLevel logLevel, Func<string> messageFunc, Exception exception, params object[] formatParameters)
             {
                 if (messageFunc == null)
@@ -933,6 +939,7 @@ namespace AnotarLibLogSample.Logging.LogProviders
                 return false;
             }
 
+            [SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
             private bool LogException(LogLevel logLevel, Func<string> messageFunc, Exception exception)
             {
                 switch (logLevel)
@@ -1009,6 +1016,7 @@ namespace AnotarLibLogSample.Logging.LogProviders
         private readonly Func<string, object> _getLoggerByNameDelegate;
         private static bool s_providerIsAvailableOverride = true;
 
+        [SuppressMessage("Microsoft.Naming", "CA2204:Literals should be spelled correctly", MessageId = "LogManager")]
         public Log4NetLogProvider()
         {
             if (!IsLoggerAvailable())
@@ -1036,28 +1044,56 @@ namespace AnotarLibLogSample.Logging.LogProviders
 
         protected override OpenNdc GetOpenNdcMethod()
         {
-            Type ndcContextType = Type.GetType("log4net.NDC, log4net");
-            MethodInfo pushMethod = ndcContextType.GetMethodPortable("Push", typeof(string));
-            ParameterExpression messageParam = Expression.Parameter(typeof(string), "message");
-            MethodCallExpression pushMethodCall = Expression.Call(null, pushMethod, messageParam);
-            return Expression.Lambda<OpenNdc>(pushMethodCall, messageParam).Compile();
+            Type logicalThreadContextType = Type.GetType("log4net.LogicalThreadContext, log4net");
+            PropertyInfo stacksProperty = logicalThreadContextType.GetPropertyPortable("Stacks");
+            Type logicalThreadContextStacksType = stacksProperty.PropertyType;
+            PropertyInfo stacksIndexerProperty = logicalThreadContextStacksType.GetPropertyPortable("Item");
+            Type stackType = stacksIndexerProperty.PropertyType;
+            MethodInfo pushMethod = stackType.GetMethodPortable("Push");
+
+            ParameterExpression messageParameter =
+                Expression.Parameter(typeof(string), "message");
+
+            // message => LogicalThreadContext.Stacks.Item["NDC"].Push(message);
+            MethodCallExpression callPushBody =
+                Expression.Call(
+                    Expression.Property(Expression.Property(null, stacksProperty),
+                                        stacksIndexerProperty,
+                                        Expression.Constant("NDC")),
+                    pushMethod,
+                    messageParameter);
+
+            OpenNdc result =
+                Expression.Lambda<OpenNdc>(callPushBody, messageParameter)
+                          .Compile();
+
+            return result;
         }
 
         protected override OpenMdc GetOpenMdcMethod()
         {
-            Type mdcContextType = Type.GetType("log4net.MDC, log4net");
+            Type logicalThreadContextType = Type.GetType("log4net.LogicalThreadContext, log4net");
+            PropertyInfo propertiesProperty = logicalThreadContextType.GetPropertyPortable("Properties");
+            Type logicalThreadContextPropertiesType = propertiesProperty.PropertyType;
+            PropertyInfo propertiesIndexerProperty = logicalThreadContextPropertiesType.GetPropertyPortable("Item");
 
-            MethodInfo setMethod = mdcContextType.GetMethodPortable("Set", typeof(string), typeof(string));
-            MethodInfo removeMethod = mdcContextType.GetMethodPortable("Remove", typeof(string));
+            MethodInfo removeMethod = logicalThreadContextPropertiesType.GetMethodPortable("Remove");
+
             ParameterExpression keyParam = Expression.Parameter(typeof(string), "key");
             ParameterExpression valueParam = Expression.Parameter(typeof(string), "value");
 
-            MethodCallExpression setMethodCall = Expression.Call(null, setMethod, keyParam, valueParam);
-            MethodCallExpression removeMethodCall = Expression.Call(null, removeMethod, keyParam);
+            MemberExpression propertiesExpression = Expression.Property(null, propertiesProperty);
+
+            // (key, value) => LogicalThreadContext.Properties.Item[key] = value;
+            BinaryExpression setProperties = Expression.Assign(Expression.Property(propertiesExpression, propertiesIndexerProperty, keyParam), valueParam);
+
+            // key => LogicalThreadContext.Properties.Remove(key);
+            MethodCallExpression removeMethodCall = Expression.Call(propertiesExpression, removeMethod, keyParam);
 
             Action<string, string> set = Expression
-                .Lambda<Action<string, string>>(setMethodCall, keyParam, valueParam)
+                .Lambda<Action<string, string>>(setProperties, keyParam, valueParam)
                 .Compile();
+
             Action<string> remove = Expression
                 .Lambda<Action<string>>(removeMethodCall, keyParam)
                 .Compile();
@@ -1097,6 +1133,7 @@ namespace AnotarLibLogSample.Logging.LogProviders
             private readonly Func<object, object, bool> _isEnabledForDelegate;
             private readonly Action<object, Type, object, string, Exception> _logDelegate;
 
+            [SuppressMessage("Microsoft.Naming", "CA2204:Literals should be spelled correctly", MessageId = "ILogger")]
             internal Log4NetLogger(dynamic logger)
             {
                 _logger = logger.Logger;
@@ -1196,7 +1233,7 @@ namespace AnotarLibLogSample.Logging.LogProviders
                 return true;
             }
 
-            private bool IsInTypeHierarchy(Type currentType, Type checkType)
+            private static bool IsInTypeHierarchy(Type currentType, Type checkType)
             {
                 while (currentType != null && currentType != typeof(object))
                 {
@@ -1247,10 +1284,11 @@ namespace AnotarLibLogSample.Logging.LogProviders
         private static readonly Action<string, string, int> WriteLogEntry;
         private static readonly Func<string, int, bool> ShouldLogEntry;
 
+        [SuppressMessage("Microsoft.Performance", "CA1810:InitializeReferenceTypeStaticFieldsInline")]
         static EntLibLogProvider()
         {
-            LogEntryType = Type.GetType(string.Format(TypeTemplate, "LogEntry"));
-            LoggerType = Type.GetType(string.Format(TypeTemplate, "Logger"));
+            LogEntryType = Type.GetType(string.Format(CultureInfo.InvariantCulture, TypeTemplate, "LogEntry"));
+            LoggerType = Type.GetType(string.Format(CultureInfo.InvariantCulture, TypeTemplate, "Logger"));
             TraceEventTypeType = TraceEventTypeValues.Type;
             if (LogEntryType == null
                  || TraceEventTypeType == null
@@ -1262,6 +1300,7 @@ namespace AnotarLibLogSample.Logging.LogProviders
             ShouldLogEntry = GetShouldLogEntry();
         }
 
+        [SuppressMessage("Microsoft.Naming", "CA2204:Literals should be spelled correctly", MessageId = "EnterpriseLibrary")]
         public EntLibLogProvider()
         {
             if (!IsLoggerAvailable())
@@ -1336,7 +1375,7 @@ namespace AnotarLibLogSample.Logging.LogProviders
             Expression severityParameter, ParameterExpression logNameParameter)
         {
             var entryType = LogEntryType;
-            MemberInitExpression memberInit = Expression.MemberInit(Expression.New(entryType), 
+            MemberInitExpression memberInit = Expression.MemberInit(Expression.New(entryType),
                 Expression.Bind(entryType.GetPropertyPortable("Message"), message),
                 Expression.Bind(entryType.GetPropertyPortable("Severity"), severityParameter),
                 Expression.Bind(
@@ -1414,6 +1453,7 @@ namespace AnotarLibLogSample.Logging.LogProviders
         private readonly Func<string, object> _getLoggerByNameDelegate;
         private static bool s_providerIsAvailableOverride = true;
 
+        [SuppressMessage("Microsoft.Naming", "CA2204:Literals should be spelled correctly", MessageId = "Serilog")]
         public SerilogLogProvider()
         {
             if (!IsLoggerAvailable())
@@ -1453,7 +1493,7 @@ namespace AnotarLibLogSample.Logging.LogProviders
         {
             Type ndcContextType = Type.GetType("Serilog.Context.LogContext, Serilog.FullNetFx");
             MethodInfo pushPropertyMethod = ndcContextType.GetMethodPortable(
-                "PushProperty", 
+                "PushProperty",
                 typeof(string),
                 typeof(object),
                 typeof(bool));
@@ -1469,7 +1509,7 @@ namespace AnotarLibLogSample.Logging.LogProviders
                     valueParam,
                     destructureObjectParam)
                 .Compile();
-            
+
             return (key, value) => pushProperty(key, value, false);
         }
 
@@ -1487,7 +1527,7 @@ namespace AnotarLibLogSample.Logging.LogProviders
             ParameterExpression destructureObjectsParam = Expression.Parameter(typeof(bool), "destructureObjects");
             MethodCallExpression methodCall = Expression.Call(null, method, new Expression[]
             {
-                propertyNameParam, 
+                propertyNameParam,
                 valueParam,
                 destructureObjectsParam
             });
@@ -1497,7 +1537,7 @@ namespace AnotarLibLogSample.Logging.LogProviders
                 valueParam,
                 destructureObjectsParam)
                 .Compile();
-            return name => func("Name", name, false);
+            return name => func("SourceContext", name, false);
         }
 
         internal class SerilogLogger
@@ -1513,6 +1553,11 @@ namespace AnotarLibLogSample.Logging.LogProviders
             private static readonly Action<object, object, string, object[]> Write;
             private static readonly Action<object, object, Exception, string, object[]> WriteException;
 
+            [SuppressMessage("Microsoft.Design", "CA1065:DoNotRaiseExceptionsInUnexpectedLocations")]
+            [SuppressMessage("Microsoft.Performance", "CA1810:InitializeReferenceTypeStaticFieldsInline")]
+            [SuppressMessage("Microsoft.Naming", "CA2204:Literals should be spelled correctly", MessageId = "ILogger")]
+            [SuppressMessage("Microsoft.Naming", "CA2204:Literals should be spelled correctly", MessageId = "LogEventLevel")]
+            [SuppressMessage("Microsoft.Naming", "CA2204:Literals should be spelled correctly", MessageId = "Serilog")]
             static SerilogLogger()
             {
                 var logEventLevelType = Type.GetType("Serilog.Events.LogEventLevel, Serilog");
@@ -1553,7 +1598,7 @@ namespace AnotarLibLogSample.Logging.LogProviders
                     messageParam,
                     propertyValuesParam);
                 var expression = Expression.Lambda<Action<object, object, string, object[]>>(
-                    writeMethodExp, 
+                    writeMethodExp,
                     instanceParam,
                     levelParam,
                     messageParam,
@@ -1562,7 +1607,7 @@ namespace AnotarLibLogSample.Logging.LogProviders
 
                 // Action<object, object, string, Exception> WriteException =
                 // (logger, level, exception, message) => { ((ILogger)logger).Write(level, exception, message, new object[]); }
-                MethodInfo writeExceptionMethodInfo = loggerType.GetMethodPortable("Write", 
+                MethodInfo writeExceptionMethodInfo = loggerType.GetMethodPortable("Write",
                     logEventLevelType,
                     typeof(Exception),
                     typeof(string),
@@ -1576,7 +1621,7 @@ namespace AnotarLibLogSample.Logging.LogProviders
                     messageParam,
                     propertyValuesParam);
                 WriteException = Expression.Lambda<Action<object, object, Exception, string, object[]>>(
-                    writeMethodExp, 
+                    writeMethodExp,
                     instanceParam,
                     levelParam,
                     exceptionParam,
@@ -1591,111 +1636,56 @@ namespace AnotarLibLogSample.Logging.LogProviders
 
             public bool Log(LogLevel logLevel, Func<string> messageFunc, Exception exception, params object[] formatParameters)
             {
+                var translatedLevel = TranslateLevel(logLevel);
                 if (messageFunc == null)
                 {
-                    return IsEnabled(_logger, logLevel);
+                    return IsEnabled(_logger, translatedLevel);
                 }
+
+                if (!IsEnabled(_logger, translatedLevel))
+                {
+                    return false;
+                }
+
                 if (exception != null)
                 {
-                    return LogException(logLevel, messageFunc, exception, formatParameters);
+                    LogException(translatedLevel, messageFunc, exception, formatParameters);
+                }
+                else
+                {
+                    LogMessage(translatedLevel, messageFunc, formatParameters);
                 }
 
-                switch (logLevel)
-                {
-                    case LogLevel.Debug:
-                        if (IsEnabled(_logger, DebugLevel))
-                        {
-                            Write(_logger, DebugLevel, messageFunc(), formatParameters);
-                            return true;
-                        }
-                        break;
-                    case LogLevel.Info:
-                        if (IsEnabled(_logger, InformationLevel))
-                        {
-                            Write(_logger, InformationLevel, messageFunc(), formatParameters);
-                            return true;
-                        }
-                        break;
-                    case LogLevel.Warn:
-                        if (IsEnabled(_logger, WarningLevel))
-                        {
-                            Write(_logger, WarningLevel, messageFunc(), formatParameters);
-                            return true;
-                        }
-                        break;
-                    case LogLevel.Error:
-                        if (IsEnabled(_logger, ErrorLevel))
-                        {
-                            Write(_logger, ErrorLevel, messageFunc(), formatParameters);
-                            return true;
-                        }
-                        break;
-                    case LogLevel.Fatal:
-                        if (IsEnabled(_logger, FatalLevel))
-                        {
-                            Write(_logger, FatalLevel, messageFunc(), formatParameters);
-                            return true;
-                        }
-                        break;
-                    default:
-                        if (IsEnabled(_logger, VerboseLevel))
-                        {
-                            Write(_logger, VerboseLevel, messageFunc(), formatParameters);
-                            return true;
-                        }
-                        break;
-                }
-                return false;
+                return true;
             }
 
-            private bool LogException(LogLevel logLevel, Func<string> messageFunc, Exception exception, object[] formatParams)
+            private void LogMessage(object translatedLevel, Func<string> messageFunc, object[] formatParameters)
+            {
+                Write(_logger, translatedLevel, messageFunc(), formatParameters);
+            }
+
+            private void LogException(object logLevel, Func<string> messageFunc, Exception exception, object[] formatParams)
+            {
+                WriteException(_logger, logLevel, exception, messageFunc(), formatParams);
+            }
+
+            private static object TranslateLevel(LogLevel logLevel)
             {
                 switch (logLevel)
                 {
-                    case LogLevel.Debug:
-                        if (IsEnabled(_logger, DebugLevel))
-                        {
-                            WriteException(_logger, DebugLevel, exception, messageFunc(), formatParams);
-                            return true;
-                        }
-                        break;
-                    case LogLevel.Info:
-                        if (IsEnabled(_logger, InformationLevel))
-                        {
-                            WriteException(_logger, InformationLevel, exception, messageFunc(), formatParams);
-                            return true;
-                        }
-                        break;
-                    case LogLevel.Warn:
-                        if (IsEnabled(_logger, WarningLevel))
-                        {
-                            WriteException(_logger, WarningLevel, exception, messageFunc(), formatParams);
-                            return true;
-                        }
-                        break;
-                    case LogLevel.Error:
-                        if (IsEnabled(_logger, ErrorLevel))
-                        {
-                            WriteException(_logger, ErrorLevel, exception, messageFunc(), formatParams);
-                            return true;
-                        }
-                        break;
                     case LogLevel.Fatal:
-                        if (IsEnabled(_logger, FatalLevel))
-                        {
-                            WriteException(_logger, FatalLevel, exception, messageFunc(), formatParams);
-                            return true;
-                        }
-                        break;
+                        return FatalLevel;
+                    case LogLevel.Error:
+                        return ErrorLevel;
+                    case LogLevel.Warn:
+                        return WarningLevel;
+                    case LogLevel.Info:
+                        return InformationLevel;
+                    case LogLevel.Trace:
+                        return VerboseLevel;
                     default:
-                        if (IsEnabled(_logger, VerboseLevel))
-                        {
-                            WriteException(_logger, VerboseLevel, exception, messageFunc(), formatParams);
-                            return true;
-                        }
-                        break;
+                        return DebugLevel;
                 }
-                return false;
             }
         }
     }
@@ -1767,7 +1757,7 @@ namespace AnotarLibLogSample.Logging.LogProviders
 
             MethodInfo method = logManagerType.GetMethodPortable(
                 "Write",
-                logMessageSeverityType, typeof(string), typeof(int), typeof(Exception), typeof(bool), 
+                logMessageSeverityType, typeof(string), typeof(int), typeof(Exception), typeof(bool),
                 logWriteModeType, typeof(string), typeof(string), typeof(string), typeof(string), typeof(object[]));
 
             var callDelegate = (WriteDelegate)method.CreateDelegate(typeof(WriteDelegate));
@@ -1809,7 +1799,7 @@ namespace AnotarLibLogSample.Logging.LogProviders
                 return true;
             }
 
-            private int ToLogMessageSeverity(LogLevel logLevel)
+            private static int ToLogMessageSeverity(LogLevel logLevel)
             {
                 switch (logLevel)
                 {
@@ -1841,6 +1831,7 @@ namespace AnotarLibLogSample.Logging.LogProviders
         internal static readonly int Error;
         internal static readonly int Critical;
 
+        [SuppressMessage("Microsoft.Performance", "CA1810:InitializeReferenceTypeStaticFieldsInline")]
         static TraceEventTypeValues()
         {
             var assembly = typeof(Uri).GetAssemblyPortable(); // This is to get to the System.dll assembly in a PCL compatible way.
@@ -1864,9 +1855,9 @@ namespace AnotarLibLogSample.Logging.LogProviders
 
         /// <summary>
         /// Some logging frameworks support structured logging, such as serilog. This will allow you to add names to structured data in a format string:
-        /// For example: Log("Log message to {user}", user). This only works with serilog, but as the user of LibLog, you don't know if serilog is actually 
-        /// used. So, this class simulates that. it will replace any text in {curly braces} with an index number. 
-        /// 
+        /// For example: Log("Log message to {user}", user). This only works with serilog, but as the user of LibLog, you don't know if serilog is actually
+        /// used. So, this class simulates that. it will replace any text in {curly braces} with an index number.
+        ///
         /// "Log {message} to {user}" would turn into => "Log {0} to {1}". Then the format parameters are handled using regular .net string.Format.
         /// </summary>
         /// <param name="messageBuilder">The message builder.</param>
@@ -1919,7 +1910,7 @@ namespace AnotarLibLogSample.Logging.LogProviders
         internal static MethodInfo GetMethodPortable(this Type type, string name)
         {
 #if LIBLOG_PORTABLE
-            return type.GetRuntimeMethod(name, new Type[]{});
+            return type.GetRuntimeMethods().SingleOrDefault(m => m.Name == name);
 #else
             return type.GetMethod(name);
 #endif
