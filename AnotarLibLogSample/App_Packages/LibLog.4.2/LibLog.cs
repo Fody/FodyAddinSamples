@@ -41,6 +41,9 @@
 using System.Diagnostics.CodeAnalysis;
 // ReSharper disable RedundantUsingDirective
 // ReSharper disable SuggestVarOrType_Elsewhere
+// ReSharper disable SuggestVarOrType_SimpleTypes
+// ReSharper disable SuggestVarOrType_BuiltInTypes
+// ReSharper disable UnusedMember.Local
 
 [assembly: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "AnotarLibLogSample.Logging")]
 [assembly: SuppressMessage("Microsoft.Design", "CA1026:DefaultParametersShouldNotBeUsed", Scope = "member", Target = "AnotarLibLogSample.Logging.Logger.#Invoke(AnotarLibLogSample.Logging.LogLevel,System.Func`1<System.String>,System.Exception,System.Object[])")]

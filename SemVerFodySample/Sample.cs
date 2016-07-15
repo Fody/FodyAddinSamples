@@ -15,7 +15,8 @@ public class Sample
         var fileVersionInfo = FileVersionInfo.GetVersionInfo(assembly.Location);
         var fileVersion = fileVersionInfo.FileVersion;
 
-        Assert.IsNotNullOrEmpty(fileVersion);
+        Assert.IsNotEmpty(fileVersion);
+        Assert.IsNotNull(fileVersion);
         Assert.AreEqual(fileVersion, "0.1.0.0");
         Debug.WriteLine(fileVersion);
     }

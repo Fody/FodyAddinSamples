@@ -8,7 +8,7 @@ using NUnit.Framework;
 public class ConfigureAwaitSample
 {
     [Test]
-    public async void Run()
+    public async Task Run()
     {
         var beforeAwaitId = Thread.CurrentThread.ManagedThreadId;
         await Task.Delay(30);

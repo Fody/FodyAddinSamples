@@ -1,5 +1,4 @@
-﻿#if (!MONO)
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
 using NUnit.Framework;
@@ -11,8 +10,8 @@ public class StampSample
     public void Run()
     {
 		var infoAttribute = (AssemblyInformationalVersionAttribute)GetType().Assembly.GetCustomAttributes(typeof(AssemblyInformationalVersionAttribute), false).First();
-		Assert.IsNotNullOrEmpty(infoAttribute.InformationalVersion);
+		Assert.IsNotNull(infoAttribute.InformationalVersion);
+		Assert.IsNotEmpty(infoAttribute.InformationalVersion);
         Debug.WriteLine(infoAttribute.InformationalVersion);
     }
 }
-#endif

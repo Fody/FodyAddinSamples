@@ -1,5 +1,4 @@
-﻿#if (!MONO)
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.Security;
 using ExtraConstraints;
@@ -9,12 +8,10 @@ using NUnit.Framework;
 public class DelegateConstraintSample
 {
     [Test]
-    [ExpectedException(
-        ExpectedException = typeof (VerificationException),
-        ExpectedMessage = "Method DelegateConstraintSample.MethodWithDelegateConstraint: type argument 'System.Int32' violates the constraint of type parameter 'T'.")]
     public void InvalidDelegateConstraint()
     {
-        MethodWithDelegateConstraint(10);
+        var exception = Assert.Throws<VerificationException>(() => MethodWithDelegateConstraint(10));
+        Assert.AreEqual("Method DelegateConstraintSample.MethodWithDelegateConstraint: type argument 'System.Int32' violates the constraint of type parameter 'T'.", exception.Message);
     }
 
     [Test]
@@ -27,4 +24,3 @@ public class DelegateConstraintSample
     {
     }
 }
-#endif

@@ -1,4 +1,3 @@
-#if (!MONO)
 using System.Security;
 using ExtraConstraints;
 using NUnit.Framework;
@@ -7,12 +6,10 @@ using NUnit.Framework;
 public class EnumConstraintSample
 {
     [Test]
-    [ExpectedException(
-        ExpectedException = typeof (VerificationException),
-        ExpectedMessage = "Method EnumConstraintSample.MethodWithEnumConstraint: type argument 'System.Int32' violates the constraint of type parameter 'T'.")]
     public void InvalidEnumConstraint()
     {
-        MethodWithEnumConstraint(10);
+        var exception = Assert.Throws<VerificationException>(() => MethodWithEnumConstraint(10));
+        Assert.AreEqual("Method EnumConstraintSample.MethodWithEnumConstraint: type argument 'System.Int32' violates the constraint of type parameter 'T'.", exception.Message);
     }
 
     [Test]
@@ -26,4 +23,3 @@ public class EnumConstraintSample
     }
 }
 
-#endif
