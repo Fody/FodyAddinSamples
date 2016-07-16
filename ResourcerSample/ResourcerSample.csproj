@@ -38,7 +38,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Resourcer, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Resourcer.Fody.1.4.1\lib\portable-net45+netcore45+wpa81+wp8\Resourcer.dll</HintPath>
+      <HintPath>..\packages\Resourcer.Fody.1.4.2\lib\portable-net45+netcore45+wpa81+wp8\Resourcer.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />

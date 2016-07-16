@@ -1,5 +1,4 @@
 using System;
-using System.Threading;
 using System.Threading.Tasks;
 using NUnit.Framework;
 
@@ -7,12 +6,11 @@ using NUnit.Framework;
 public class AsyncErrorHandlerSample
 {
     [Test]
-    public void Run()
+    public Task Run()
     {
         var instance = new Target();
-        instance.MethodWithThrow();
+        return instance.MethodWithThrow();
         //run and have a look at the debug window
-        Thread.Sleep(10);
     }
 }
 
