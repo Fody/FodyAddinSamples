@@ -40,8 +40,8 @@
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
-    <Reference Include="Anotar.Log4Net, Version=0.0.0.0, Culture=neutral, PublicKeyToken=9d5b24f0733c26f7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Anotar.Log4Net.Fody.3.0.0\lib\Anotar.Log4Net.dll</HintPath>
+    <Reference Include="Anotar.Log4Net, Version=3.1.0.0, Culture=neutral, PublicKeyToken=9d5b24f0733c26f7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Anotar.Log4Net.Fody.3.1.0\lib\Anotar.Log4Net.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
