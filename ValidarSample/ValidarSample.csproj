@@ -56,8 +56,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <None Include="FodyWeavers.xml" />
-    <Reference Include="Validar, Version=1.4.11.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Validar.Fody.1.4.11.0\lib\dotnet\Validar.dll</HintPath>
+    <Reference Include="Validar, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Validar.Fody.1.5.0\lib\dotnet\Validar.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
