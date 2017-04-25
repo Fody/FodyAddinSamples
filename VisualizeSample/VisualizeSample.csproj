@@ -40,8 +40,8 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Visualize, Version=0.4.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Visualize.Fody.0.4.5.0\lib\dotnet\Visualize.dll</HintPath>
+    <Reference Include="Visualize, Version=0.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Visualize.Fody.0.5.0\lib\dotnet\Visualize.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
