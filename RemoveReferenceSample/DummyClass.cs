@@ -12,6 +12,7 @@ namespace RemoveReferenceSample
         /// </summary>
         public DummyClass()
         {
+            // ReSharper disable once UnusedVariable
             var xmlDoc = XDocument.Load(@"dummy.xml");
         }
     }

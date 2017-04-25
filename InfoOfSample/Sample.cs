@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Reflection;
 using NUnit.Framework;
+// ReSharper disable UnusedVariable
 
 [TestFixture]
 public class InfoOfSample

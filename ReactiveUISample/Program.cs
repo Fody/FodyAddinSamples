@@ -2,6 +2,7 @@
 using System.Reactive.Linq;
 using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
+// ReSharper disable UnusedVariable
 
 class Program
 {

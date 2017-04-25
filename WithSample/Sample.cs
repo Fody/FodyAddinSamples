@@ -16,8 +16,8 @@ public class Target
 {
     public Target(int intValue, string stringValue)
     {
-        this.IntValue = intValue;
-        this.StringValue = stringValue;
+        IntValue = intValue;
+        StringValue = stringValue;
     }
 
     public int IntValue { get; }
