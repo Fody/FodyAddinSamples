@@ -40,8 +40,8 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="ToString, Version=1.7.3.0, Culture=neutral, PublicKeyToken=15432f00798e61a4, processorArchitecture=MSIL">
-      <HintPath>..\packages\ToString.Fody.1.7.3.0\lib\dotnet\ToString.dll</HintPath>
+    <Reference Include="ToString, Version=1.8.0.0, Culture=neutral, PublicKeyToken=15432f00798e61a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\ToString.Fody.1.8.0\lib\dotnet\ToString.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
