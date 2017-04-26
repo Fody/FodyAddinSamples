@@ -20,7 +20,7 @@ class Program
         public int Value2
         {
             get { return value2; }
-            set { this.RaiseAndSetIfChanged(ref value2, value); }
+            set { IReactiveObjectExtensions.RaiseAndSetIfChanged(this, ref value2, value); }
         }
 
         [ObservableAsProperty]
