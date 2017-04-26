@@ -6,7 +6,7 @@ using NUnit.Framework;
 public class CosturaSample
 {
 
-    [TestFixtureSetUp]
+    [OneTimeSetUp]
     public void Setup()
     {
         var path = Path.Combine(AssemblyLocation.CurrentDirectory(), "CosturaAssemblyToReference.dll");

@@ -24,7 +24,7 @@ class Program
         }
 
         [ObservableAsProperty]
-        public extern int Value3 { get; }
+        public int Value3 { get; }
 
         public ViewModel()
         {
