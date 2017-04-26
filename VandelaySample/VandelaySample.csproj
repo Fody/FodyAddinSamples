@@ -40,8 +40,8 @@
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Vandelay, Version=0.2.2.1, Culture=neutral, PublicKeyToken=d34c7d3bba3746e6, processorArchitecture=MSIL">
-      <HintPath>..\packages\Vandelay.Fody.0.2.2.1\lib\dotnet\Vandelay.dll</HintPath>
+    <Reference Include="Vandelay, Version=0.3.1.0, Culture=neutral, PublicKeyToken=d34c7d3bba3746e6, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vandelay.Fody.0.3.1.0\lib\dotnet\Vandelay.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
