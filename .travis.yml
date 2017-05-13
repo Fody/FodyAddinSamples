@@ -1,0 +1,4 @@
+language: csharp
+solution: FodyAddinSamples.sln
+install:
+  - nuget restore FodyAddinSamples.sln
