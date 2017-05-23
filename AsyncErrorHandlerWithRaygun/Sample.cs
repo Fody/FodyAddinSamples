@@ -8,12 +8,18 @@ using NUnit.Framework;
 public class AsyncErrorHandlerWithRaygun
 {
     [Test]
-    public async void Run()
+    public async Task Run()
     {
-        var instance = new Target();
-        await instance.MethodWithThrow();
-        //run and have a look at your Raygun dashboard
-        Thread.Sleep(10);
+        try
+        {
+            var instance = new Target();
+            await instance.MethodWithThrow().ConfigureAwait(false);
+            //run and have a look at your Raygun dashboard
+            Thread.Sleep(10);
+        }
+        catch
+        {
+        }
     }
 }
 

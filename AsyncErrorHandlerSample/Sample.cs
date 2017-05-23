@@ -6,11 +6,18 @@ using NUnit.Framework;
 public class AsyncErrorHandlerSample
 {
     [Test]
-    public Task Run()
+    public async Task Run()
     {
+        try
+        {
+
         var instance = new Target();
-        return instance.MethodWithThrow();
+        await instance.MethodWithThrow().ConfigureAwait(false);
         //run and have a look at the debug window
+        }
+        catch
+        {
+        }
     }
 }
 
