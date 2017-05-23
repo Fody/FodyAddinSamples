@@ -9,7 +9,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="NUnit" Version="3.6.1" />
-    <PackageReference Include="Fody" version="2.0.9" />
+    <PackageReference Include="Fody" version="2.0.10" />
     <PackageReference Include="ToString.Fody" version="1.8.0" />
   </ItemGroup>
 </Project>
