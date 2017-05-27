@@ -42,6 +42,7 @@ using System.Diagnostics.CodeAnalysis;
 // ReSharper disable CommentTypo
 // ReSharper disable UnusedMember.Local
 // ReSharper disable ArrangeThisQualifier
+// ReSharper disable UseNullPropagation
 
 [assembly: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "AnotarLibLogSample.Logging")]
 [assembly: SuppressMessage("Microsoft.Design", "CA1026:DefaultParametersShouldNotBeUsed", Scope = "member", Target = "AnotarLibLogSample.Logging.Logger.#Invoke(AnotarLibLogSample.Logging.LogLevel,System.Func`1<System.String>,System.Exception,System.Object[])")]
