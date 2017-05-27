@@ -10,6 +10,6 @@
     <PackageReference Include="Fody" version="2.0.10" />
     <PackageReference Include="Validar.Fody" version="1.5.1" />
     <PackageReference Include="PropertyChanged.Fody" version="2.0.1" />
-    <PackageReference Include="FluentValidation" version="6.4.1" />
+    <PackageReference Include="FluentValidation" version="7.0.2" />
   </ItemGroup>
 </Project>
