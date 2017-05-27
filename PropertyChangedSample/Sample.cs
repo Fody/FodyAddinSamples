@@ -19,6 +19,10 @@ public class PropertyChangedSample
 
 public class Person : INotifyPropertyChanged
 {
+    public Person()
+    {
+        GivenNames = "sdfsdf";
+    }
     public event PropertyChangedEventHandler PropertyChanged;
 
     public string GivenNames { get; set; }

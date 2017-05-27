@@ -8,6 +8,6 @@
   <ItemGroup>
     <PackageReference Include="NUnit" Version="3.6.1" />
     <PackageReference Include="Fody" version="2.0.10" />
-    <PackageReference Include="PropertyChanged.Fody" version="2.0.0-beta001" />
+    <PackageReference Include="PropertyChanged.Fody" version="2.0.1" />
   </ItemGroup>
 </Project>

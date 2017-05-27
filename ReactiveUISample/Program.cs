@@ -54,7 +54,7 @@ class Program
 
     /// <summary>
     /// Program should print out:
-    /// 
+    ///
     /// value1 =0
     /// value2 =0
     /// value3 =0
@@ -64,10 +64,10 @@ class Program
     /// value1 =3
     /// value2 =3
     /// value3 =30
-    /// 
+    ///
     /// The purpose of this sample is to demonstrate parity between doing things manually vs. using the plugin.
     /// </summary>
-    static void Main()
+    public static void Main()
     {
         var vm = new ViewModel();
 
