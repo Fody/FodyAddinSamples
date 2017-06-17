@@ -6,8 +6,8 @@
     <DebugSymbols>True</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="NUnit" Version="3.6.1" />
-    <PackageReference Include="Fody" version="2.0.10" />
-    <PackageReference Include="PropertyChanged.Fody" version="2.0.1" />
+    <PackageReference Include="NUnit" Version="3.7.1" />
+    <PackageReference Include="Fody" version="2.1.0" />
+    <PackageReference Include="PropertyChanged.Fody" version="2.1.2" />
   </ItemGroup>
 </Project>

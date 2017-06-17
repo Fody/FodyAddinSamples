@@ -8,9 +8,9 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Costura.Fody" Version="1.5.1" />
-    <PackageReference Include="Fody" version="2.0.10" />
-    <PackageReference Include="NUnit" Version="3.6.1" />
+    <PackageReference Include="Costura.Fody" Version="1.6.2" />
+    <PackageReference Include="Fody" version="2.1.0" />
+    <PackageReference Include="NUnit" Version="3.7.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CosturaAssemblyToReference\CosturaAssemblyToReference.csproj" />
