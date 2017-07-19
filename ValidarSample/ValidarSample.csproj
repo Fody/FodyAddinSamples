@@ -7,9 +7,9 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="NUnit" Version="3.7.1" />
-    <PackageReference Include="Fody" version="2.1.0" />
+    <PackageReference Include="Fody" version="2.1.2" />
     <PackageReference Include="Validar.Fody" version="1.5.1" />
-    <PackageReference Include="PropertyChanged.Fody" version="2.1.2" />
+    <PackageReference Include="PropertyChanged.Fody" version="2.1.3" />
     <PackageReference Include="FluentValidation" version="7.0.3" />
   </ItemGroup>
 </Project>

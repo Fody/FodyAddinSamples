@@ -9,7 +9,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="AsyncErrorHandler.Fody" Version="1.1.0" />
-    <PackageReference Include="Fody" version="2.1.0" />
+    <PackageReference Include="Fody" version="2.1.2" />
     <PackageReference Include="NUnit" Version="3.7.1" />
   </ItemGroup>
 </Project>

@@ -7,7 +7,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="NUnit" Version="3.7.1" />
-    <PackageReference Include="Fody" version="2.1.0" />
+    <PackageReference Include="Fody" version="2.1.2" />
     <PackageReference Include="PropertyChanging.Fody" version="1.28.0" />
   </ItemGroup>
 </Project>

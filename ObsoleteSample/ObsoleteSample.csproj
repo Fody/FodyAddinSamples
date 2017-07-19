@@ -8,7 +8,7 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Fody" version="2.1.0" />
+    <PackageReference Include="Fody" version="2.1.2" />
     <PackageReference Include="NUnit" Version="3.7.1" />
     <PackageReference Include="Obsolete.Fody" version="4.2.2" />
   </ItemGroup>
