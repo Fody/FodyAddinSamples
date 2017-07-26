@@ -10,7 +10,7 @@
   <ItemGroup>
     <PackageReference Include="Fody" version="2.1.2" />
     <PackageReference Include="NUnit" Version="3.7.1" />
-    <PackageReference Include="ReactiveUI.Fody" version="2.2.10" />
+    <PackageReference Include="ReactiveUI.Fody" version="2.2.11" />
     <PackageReference Include="ReactiveUI" version="7.4.0" />
   </ItemGroup>
 </Project>
