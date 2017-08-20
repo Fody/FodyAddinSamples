@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
-    <TargetFrameworks>net462</TargetFrameworks>
+    <TargetFrameworks>net462;netstandard2.0</TargetFrameworks>
     <DebugType>full</DebugType>
     <DebugSymbols>True</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="NUnit" Version="3.7.1" />
-    <PackageReference Include="Fody" version="2.1.2" />
-    <PackageReference Include="PropertyChanging.Fody" version="1.28.0" />
+    <PackageReference Include="NUnit" Version="3.*" />
+    <PackageReference Include="Fody" version="*" />
+    <PackageReference Include="PropertyChanging.Fody" version="*" />
   </ItemGroup>
 </Project>

@@ -1,15 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
-    <TargetFrameworks>net462</TargetFrameworks>
+    <TargetFrameworks>net462;netstandard2.0</TargetFrameworks>
     <DebugType>full</DebugType>
     <DebugSymbols>True</DebugSymbols>
-    <WarningLevel>4</WarningLevel>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Fody" version="2.0.8" />
-    <PackageReference Include="NUnit" Version="3.6.1" />
-    <PackageReference Include="Seal.Fody" version="1.0.3" />
+    <PackageReference Include="Fody" version="*" />
+    <PackageReference Include="NUnit" Version="3.*" />
+    <PackageReference Include="Seal.Fody" version="*" />
   </ItemGroup>
 </Project>

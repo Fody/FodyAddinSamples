@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
-    <TargetFrameworks>net462</TargetFrameworks>
+    <TargetFrameworks>net462;netstandard2.0</TargetFrameworks>
     <DebugType>full</DebugType>
     <DebugSymbols>True</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="NUnit" Version="3.7.1" />
-    <PackageReference Include="Fody" version="2.1.2" />
-    <PackageReference Include="Validar.Fody" version="1.5.1" />
-    <PackageReference Include="PropertyChanged.Fody" version="2.1.3" />
-    <PackageReference Include="FluentValidation" version="7.1.1" />
+    <PackageReference Include="NUnit" Version="3.*" />
+    <PackageReference Include="Fody" version="*" />
+    <PackageReference Include="Validar.Fody" version="*" />
+    <PackageReference Include="PropertyChanged.Fody" version="*" />
+    <PackageReference Include="FluentValidation" version="*" />
   </ItemGroup>
 </Project>
