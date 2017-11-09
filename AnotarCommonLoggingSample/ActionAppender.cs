@@ -332,4 +332,6 @@ public class ActionLog : ILog
     {
         get { throw new NotImplementedException(); }
     }
+
+    public INestedVariablesContext NestedThreadVariablesContext { get; }
 }
