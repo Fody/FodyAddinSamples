@@ -4,8 +4,10 @@
     <TargetFrameworks>net462;netcoreapp2.0</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="AsyncErrorHandler.Fody" Version="*" />
-    <PackageReference Include="Fody" version="*" />
-    <PackageReference Include="NUnit" Version="*" />
+    <PackageReference Include="AsyncErrorHandler.Fody" Version="1.1.0" />
+    <PackageReference Include="Fody" version="2.2.1" />
+    <PackageReference Include="NUnit" Version="3.9.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.9.0" />
   </ItemGroup>
 </Project>
