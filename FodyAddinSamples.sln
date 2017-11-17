@@ -1,19 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 14.0.25420.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyChangedSample", "PropertyChangedSample\PropertyChangedSample.csproj", "{30155725-BC9A-4D44-9BB0-FB9910F25C5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyChangedSample", "PropertyChangedSample\PropertyChangedSample.csproj", "{30155725-BC9A-4D44-9BB0-FB9910F25C5F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyChangingSample", "PropertyChangingSample\PropertyChangingSample.csproj", "{3A8FFC73-6FE5-4A41-A3BC-0FD3B940B503}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtuositySample", "VirtuositySample\VirtuositySample.csproj", "{E96A3336-ED6A-4E01-9A05-7799B8309517}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleInitSample", "ModuleInitSample\ModuleInitSample.csproj", "{BE0CC5E8-5D02-49D8-A36D-51A442E66536}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModuleInitSample", "ModuleInitSample\ModuleInitSample.csproj", "{BE0CC5E8-5D02-49D8-A36D-51A442E66536}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicizeSample", "PublicizeSample\PublicizeSample.csproj", "{784796C0-7499-4093-9E64-D8AC3913CF54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FielderSample", "FielderSample\FielderSample.csproj", "{620BF562-66FD-437F-9BD3-97A711E0D0C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FielderSample", "FielderSample\FielderSample.csproj", "{620BF562-66FD-437F-9BD3-97A711E0D0C5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObsoleteSample", "ObsoleteSample\ObsoleteSample.csproj", "{2B9C2341-8EF3-4954-B616-001A6DCA68B7}"
 EndProject
@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaselessSample", "CaselessS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtraConstraintsSample", "ExtraConstraintsSample\ExtraConstraintsSample.csproj", "{D28EBC67-D76E-497C-BD58-55D2A3384B1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodTimerSample", "MethodTimerSample\MethodTimerSample.csproj", "{0442EB29-A385-41FD-BBBF-936C562235A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MethodTimerSample", "MethodTimerSample\MethodTimerSample.csproj", "{0442EB29-A385-41FD-BBBF-936C562235A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreezableSample", "FreezableSample\FreezableSample.csproj", "{6C55EDFD-1099-40C0-AF09-5B444473415C}"
 EndProject
@@ -45,7 +45,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosturaSample", "CosturaSam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosturaAssemblyToReference", "CosturaAssemblyToReference\CosturaAssemblyToReference.csproj", "{84D7F752-71BE-45D1-89B1-6514508CC5EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotarLog4NetSample", "AnotarLog4NetSample\AnotarLog4NetSample.csproj", "{6B557E56-19DD-4B54-BB60-6B1FC6A41356}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnotarLog4NetSample", "AnotarLog4NetSample\AnotarLog4NetSample.csproj", "{6B557E56-19DD-4B54-BB60-6B1FC6A41356}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotarMetroLogSample", "AnotarMetroLogSample\AnotarMetroLogSample.csproj", "{F06A4066-84D2-442F-8BCF-97E9E622A968}"
 EndProject
@@ -59,9 +59,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToStringSample", "ToStringS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualizeSample", "VisualizeSample\VisualizeSample.csproj", "{57B98150-BE57-4470-B0CA-27A5EC0691F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotarCustomSample", "AnotarCustomSample\AnotarCustomSample.csproj", "{E3E24467-E188-453E-A07F-D44C30CC3F53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnotarCustomSample", "AnotarCustomSample\AnotarCustomSample.csproj", "{E3E24467-E188-453E-A07F-D44C30CC3F53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotarCatelSample", "AnotarCatelSample\AnotarCatelSample.csproj", "{72575EAD-D0EC-483E-B7FD-1DAC33C13486}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnotarCatelSample", "AnotarCatelSample\AnotarCatelSample.csproj", "{72575EAD-D0EC-483E-B7FD-1DAC33C13486}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JanitorSample", "JanitorSample\JanitorSample.csproj", "{6D96DD2E-3793-4342-A721-1A4AD3001ED7}"
 EndProject
@@ -69,13 +69,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Anotar", "Anotar", "{53B9C4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatelSample", "CatelSample\CatelSample.csproj", "{D13DF2A9-BEB9-472A-96FA-6B644EDEAA79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotarCommonLoggingSample", "AnotarCommonLoggingSample\AnotarCommonLoggingSample.csproj", "{B1B7867B-53A8-4F67-B370-EA2BE4FA305D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnotarCommonLoggingSample", "AnotarCommonLoggingSample\AnotarCommonLoggingSample.csproj", "{B1B7867B-53A8-4F67-B370-EA2BE4FA305D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmptyStringGuardSample", "EmptyStringGuardSample\EmptyStringGuardSample.csproj", "{3CAE53E5-51EE-40CC-B7E6-3BCD509C9029}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotarSplatSample", "AnotarSplatSample\AnotarSplatSample.csproj", "{DB9C09EA-1D8A-4200-A34D-1D7228F3A8EF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotarLibLogSample", "AnotarLibLogSample\AnotarLibLogSample.csproj", "{8F17B3BA-44DC-458B-82D3-4DECECF90ADF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotarNServiceBusSample", "AnotarNServiceBusSample\AnotarNServiceBusSample.csproj", "{BF156E66-47CC-48A1-B924-FF164C578321}"
 EndProject
@@ -447,16 +445,6 @@ Global
 		{DB9C09EA-1D8A-4200-A34D-1D7228F3A8EF}.Release|ARM.ActiveCfg = Release|Any CPU
 		{DB9C09EA-1D8A-4200-A34D-1D7228F3A8EF}.Release|x64.ActiveCfg = Release|Any CPU
 		{DB9C09EA-1D8A-4200-A34D-1D7228F3A8EF}.Release|x86.ActiveCfg = Release|Any CPU
-		{8F17B3BA-44DC-458B-82D3-4DECECF90ADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8F17B3BA-44DC-458B-82D3-4DECECF90ADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8F17B3BA-44DC-458B-82D3-4DECECF90ADF}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{8F17B3BA-44DC-458B-82D3-4DECECF90ADF}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{8F17B3BA-44DC-458B-82D3-4DECECF90ADF}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{8F17B3BA-44DC-458B-82D3-4DECECF90ADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8F17B3BA-44DC-458B-82D3-4DECECF90ADF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8F17B3BA-44DC-458B-82D3-4DECECF90ADF}.Release|ARM.ActiveCfg = Release|Any CPU
-		{8F17B3BA-44DC-458B-82D3-4DECECF90ADF}.Release|x64.ActiveCfg = Release|Any CPU
-		{8F17B3BA-44DC-458B-82D3-4DECECF90ADF}.Release|x86.ActiveCfg = Release|Any CPU
 		{BF156E66-47CC-48A1-B924-FF164C578321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BF156E66-47CC-48A1-B924-FF164C578321}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF156E66-47CC-48A1-B924-FF164C578321}.Debug|ARM.ActiveCfg = Debug|Any CPU
@@ -522,8 +510,10 @@ Global
 		{72575EAD-D0EC-483E-B7FD-1DAC33C13486} = {53B9C4BF-BA86-4007-9E31-484B50F67DC6}
 		{B1B7867B-53A8-4F67-B370-EA2BE4FA305D} = {53B9C4BF-BA86-4007-9E31-484B50F67DC6}
 		{DB9C09EA-1D8A-4200-A34D-1D7228F3A8EF} = {53B9C4BF-BA86-4007-9E31-484B50F67DC6}
-		{8F17B3BA-44DC-458B-82D3-4DECECF90ADF} = {53B9C4BF-BA86-4007-9E31-484B50F67DC6}
 		{BF156E66-47CC-48A1-B924-FF164C578321} = {53B9C4BF-BA86-4007-9E31-484B50F67DC6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {345B3A84-DB0C-4BB3-AD82-EDA762D35493}
 	EndGlobalSection
 	GlobalSection(CodealikeProperties) = postSolution
 		SolutionGuid = 2f38512b-20a3-4f87-a0bf-c9e919c18c12

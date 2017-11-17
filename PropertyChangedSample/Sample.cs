@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.ComponentModel;
 using NUnit.Framework;
 
 [TestFixture]
@@ -15,18 +14,4 @@ public class PropertyChangedSample
         Assert.Contains("FamilyName",propertyNotifications);
         Assert.Contains("FullName", propertyNotifications);
     }
-}
-
-public class Person : INotifyPropertyChanged
-{
-    public Person()
-    {
-        GivenNames = "sdfsdf";
-    }
-    public event PropertyChangedEventHandler PropertyChanged;
-
-    public string GivenNames { get; set; }
-    public string FamilyName { get; set; }
-
-    public string FullName => $"{GivenNames} {FamilyName}";
 }

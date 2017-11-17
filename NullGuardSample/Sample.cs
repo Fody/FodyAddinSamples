@@ -16,6 +16,6 @@ public class TargetClass
 {
     public void Method(string param)
     {
-        
+
     }
 }

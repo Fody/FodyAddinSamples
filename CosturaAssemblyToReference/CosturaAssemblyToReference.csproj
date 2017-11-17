@@ -2,9 +2,5 @@
 <Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
     <TargetFrameworks>net462</TargetFrameworks>
-    <DebugType>full</DebugType>
-    <DebugSymbols>True</DebugSymbols>
-    <WarningLevel>4</WarningLevel>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
 </Project>
