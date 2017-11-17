@@ -8,8 +8,8 @@
     <PackageReference Include="NUnit" Version="3.9.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.9.0" />
-    <PackageReference Include="Anotar.Splat.Fody" version="*" />
-    <PackageReference Include="Splat" version="*" />
-    <PackageReference Include="ModuleInit.Fody" version="*" />
+    <PackageReference Include="Anotar.Splat.Fody" version="3.3.1" />
+    <PackageReference Include="Splat" version="2.0.0" />
+    <PackageReference Include="ModuleInit.Fody" version="1.6.0" />
   </ItemGroup>
 </Project>

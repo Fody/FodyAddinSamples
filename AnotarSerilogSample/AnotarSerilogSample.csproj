@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
-    <TargetFrameworks>net462;netcoreapp2.0</TargetFrameworks>
+    <TargetFrameworks>net462</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Fody" version="2.2.1" />
     <PackageReference Include="NUnit" Version="3.9.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.9.0" />
-    <PackageReference Include="Anotar.Serilog.Fody" version="*" />
-    <PackageReference Include="Serilog" version="*" />
-    <PackageReference Include="ModuleInit.Fody" version="*" />
+    <PackageReference Include="Anotar.Serilog.Fody" version="3.3.1" />
+    <PackageReference Include="Serilog" version="2.5.0" />
+    <PackageReference Include="ModuleInit.Fody" version="1.6.0" />
   </ItemGroup>
 </Project>
