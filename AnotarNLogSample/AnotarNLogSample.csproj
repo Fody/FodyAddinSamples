@@ -10,6 +10,6 @@
     <PackageReference Include="NUnit3TestAdapter" Version="3.9.0" />
     <PackageReference Include="Anotar.NLog.Fody" version="3.3.1" />
     <PackageReference Include="NLog" version="4.4.12" />
-    <PackageReference Include="ModuleInit.Fody" version="1.6.0" />
+    <PackageReference Include="ModuleInit.Fody" version="1.7.0" />
   </ItemGroup>
 </Project>

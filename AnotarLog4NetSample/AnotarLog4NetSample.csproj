@@ -10,6 +10,6 @@
     <PackageReference Include="NUnit3TestAdapter" Version="3.9.0" />
     <PackageReference Include="Anotar.Log4Net.Fody" version="3.3.1" />
     <PackageReference Include="log4net" version="2.0.8" />
-    <PackageReference Include="ModuleInit.Fody" version="1.6.0" />
+    <PackageReference Include="ModuleInit.Fody" version="1.7.0" />
   </ItemGroup>
 </Project>

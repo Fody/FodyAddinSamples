@@ -11,6 +11,6 @@
     <PackageReference Include="Anotar.CommonLogging.Fody" version="3.3.1" />
     <PackageReference Include="Common.Logging.Core" version="3.4.1" />
     <PackageReference Include="Common.Logging" version="3.4.1" />
-    <PackageReference Include="ModuleInit.Fody" version="1.6.0" />
+    <PackageReference Include="ModuleInit.Fody" version="1.7.0" />
   </ItemGroup>
 </Project>
