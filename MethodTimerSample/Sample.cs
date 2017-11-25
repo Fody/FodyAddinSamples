@@ -9,8 +9,7 @@ public class MethodTimerSample
     [Time]
     public void MyMethod()
     {
-        //Run and have a look in your debug window
+        //Run and have a look in the debug window
         Thread.Sleep(1500);
     }
-
 }
