@@ -13,7 +13,7 @@
 *.ncrunchsolution
 *.ncrunchproject
 
-
+.idea
 *.dll
 *.pdb
 
