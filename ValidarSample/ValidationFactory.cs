@@ -8,8 +8,7 @@ public static class ValidationFactory
 
     public static IValidator GetValidator(Type modelType)
     {
-        IValidator validator;
-        if (!validators.TryGetValue(modelType.TypeHandle, out validator))
+        if (!validators.TryGetValue(modelType.TypeHandle, out var validator))
         {
             var typeName = modelType.Name + "Validator";
             var type = modelType.Assembly.GetType(modelType.Namespace + "." + typeName, true);
