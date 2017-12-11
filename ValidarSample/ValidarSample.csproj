@@ -9,7 +9,7 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.9.0" />
     <PackageReference Include="Validar.Fody" version="1.6.0" />
-    <PackageReference Include="PropertyChanged.Fody" version="2.2.2" />
+    <PackageReference Include="PropertyChanged.Fody" version="2.2.4" />
     <PackageReference Include="FluentValidation" version="7.2.1" />
   </ItemGroup>
 </Project>
