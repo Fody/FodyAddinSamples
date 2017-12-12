@@ -1,11 +1,10 @@
 ﻿using System;
 using Anotar.CommonLogging;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class CommonLoggingExceptionSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         try
@@ -16,7 +15,7 @@ public class CommonLoggingExceptionSample
         {
         }
 
-        Assert.AreEqual("Exception occurred in 'Void MyMethod()'. ", LogCaptureBuilder.LastMessage);
+        Assert.Equal("Exception occurred in 'Void MyMethod()'. ", LogCaptureBuilder.LastMessage);
     }
 
     [LogToDebugOnException]
@@ -24,5 +23,4 @@ public class CommonLoggingExceptionSample
     {
         throw new Exception("Foo");
     }
-
 }

@@ -1,11 +1,10 @@
 ﻿using System.Threading;
 using MethodTimer;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class MethodTimerSample
 {
-    [Test]
+    [Fact]
     [Time]
     public void MyMethod()
     {

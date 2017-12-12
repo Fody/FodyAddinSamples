@@ -1,11 +1,10 @@
 ﻿using System;
 using Anotar.Catel;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class CatelExceptionSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         try
@@ -16,7 +15,7 @@ public class CatelExceptionSample
         {
         }
 
-        Assert.IsTrue( LogCaptureBuilder.LastMessage.StartsWith("Exception occurred in 'Void MyMethod()'.  | [Exception] System.Exception: Foo\r\n   at CatelExceptionSample.MyMethod() in") );
+        Assert.StartsWith("Exception occurred in 'Void MyMethod()'.  | [Exception] System.Exception: Foo\r\n   at CatelExceptionSample.MyMethod() in", LogCaptureBuilder.LastMessage);
     }
 
     [LogToDebugOnException]
@@ -24,5 +23,4 @@ public class CatelExceptionSample
     {
         throw new Exception("Foo");
     }
-
 }

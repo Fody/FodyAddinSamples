@@ -1,11 +1,10 @@
 ﻿using System;
 using Anotar.Serilog;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class SerilogExceptionSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         try
@@ -17,7 +16,7 @@ public class SerilogExceptionSample
         }
 
         var actual = LogCaptureBuilder.LastMessage.MessageTemplate.Text;
-        Assert.AreEqual("Exception occurred in 'Void MyMethod()'. ", actual);
+        Assert.Equal("Exception occurred in 'Void MyMethod()'. ", actual);
     }
 
     [LogToDebugOnException]

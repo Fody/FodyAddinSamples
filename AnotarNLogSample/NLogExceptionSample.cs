@@ -1,11 +1,10 @@
 ﻿using System;
 using Anotar.NLog;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class NLogExceptionSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         try
@@ -16,7 +15,7 @@ public class NLogExceptionSample
         {
         }
 
-        Assert.AreEqual("Exception occurred in 'Void MyMethod()'. ", LogCaptureBuilder.LastMessage);
+        Assert.Equal("Exception occurred in 'Void MyMethod()'. ", LogCaptureBuilder.LastMessage);
     }
 
     [LogToDebugOnException]

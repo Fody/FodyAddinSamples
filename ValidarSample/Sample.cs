@@ -1,10 +1,9 @@
 ﻿using System.ComponentModel;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class ValidarSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         var person = new Person();
@@ -13,16 +12,14 @@ public class ValidarSample
         var personAsDataErrorInfo = (IDataErrorInfo)person;
 
         //values will be invalid to start with
-        Assert.AreEqual("'Given Names' should not be empty.", personAsDataErrorInfo["GivenNames"]);
-        Assert.AreEqual("'Family Name' should not be empty.", personAsDataErrorInfo["FamilyName"]);
+        Assert.Equal("'Given Names' should not be empty.", personAsDataErrorInfo["GivenNames"]);
+        Assert.Equal("'Family Name' should not be empty.", personAsDataErrorInfo["FamilyName"]);
 
         //Set to some valid values
         person.FamilyName = "Smith";
         person.GivenNames = "John";
 
-        Assert.IsEmpty(personAsDataErrorInfo["GivenNames"]);
-        Assert.IsEmpty(personAsDataErrorInfo["FamilyName"]);
+        Assert.Empty(personAsDataErrorInfo["GivenNames"]);
+        Assert.Empty(personAsDataErrorInfo["FamilyName"]);
     }
-
 }
-

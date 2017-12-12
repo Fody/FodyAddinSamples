@@ -1,10 +1,9 @@
 ﻿using System.Diagnostics;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class ToStringSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         var target = new Person
@@ -14,7 +13,7 @@ public class ToStringSample
 
                      };
         Debug.WriteLine(target.ToString());
-        Assert.AreEqual("{T: \"Person\", GivenNames: \"John\", FamilyName: \"Smith\"}", target.ToString());
+        Assert.Equal("{T: \"Person\", GivenNames: \"John\", FamilyName: \"Smith\"}", target.ToString());
     }
 }
 

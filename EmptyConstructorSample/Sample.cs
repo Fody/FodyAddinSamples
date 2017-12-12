@@ -1,14 +1,13 @@
 ﻿using System;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class EmptyConstructorSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         var target = Activator.CreateInstance<Target>();
-        Assert.IsNotNull(target);
+        Assert.NotNull(target);
     }
 }
 
@@ -17,6 +16,5 @@ public class Target
 // ReSharper disable once UnusedParameter.Local
     public Target(int foo)
     {
-
     }
 }

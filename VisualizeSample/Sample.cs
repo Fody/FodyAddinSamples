@@ -1,23 +1,22 @@
 ﻿using System.Diagnostics;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class VisualizeSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         var person = new Person
                      {
-                         FamilyName = "Smith", 
+                         FamilyName = "Smith",
                          GivenNames = "John James"
                      };
         //Set a breakpoint here and look at person int he debugger
         Debug.WriteLine(person);
     }
-
 }
-public class Person 
+
+public class Person
 {
     public string GivenNames { get; set; }
     public string FamilyName { get; set; }

@@ -1,11 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class PropertyChangingSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         var target = new Person();

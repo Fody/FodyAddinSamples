@@ -1,18 +1,17 @@
 ﻿using Anotar.Serilog;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class SerilogExplicitSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         MyMethod();
 
         var lastMessage = LogCaptureBuilder.LastMessage;
-        Assert.AreEqual("Void MyMethod()", lastMessage.MethodName());
-        Assert.AreEqual(20, lastMessage.LineNumber());
-        Assert.AreEqual("TheMessage", lastMessage.MessageTemplate.Text);
+        Assert.Equal("Void MyMethod()", lastMessage.MethodName());
+        Assert.Equal(19, lastMessage.LineNumber());
+        Assert.Equal("TheMessage", lastMessage.MessageTemplate.Text);
     }
 
     static void MyMethod()

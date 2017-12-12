@@ -1,26 +1,25 @@
 ﻿using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class PublicizeSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         var targetType = typeof (Target);
 
-        Assert.IsTrue(targetType.IsPublic);
+        Assert.True(targetType.IsPublic);
         var typeAttribute = GetEditorBrowsableAttribute(targetType);
-        Assert.IsNotNull(typeAttribute);
-        Assert.AreEqual(EditorBrowsableState.Advanced, typeAttribute.State);
+        Assert.NotNull(typeAttribute);
+        Assert.Equal(EditorBrowsableState.Advanced, typeAttribute.State);
 
         var methodInfo = targetType.GetMethod("Method");
-        Assert.IsTrue(methodInfo.IsPublic);
+        Assert.True(methodInfo.IsPublic);
         var methodAttribute = GetEditorBrowsableAttribute(methodInfo);
-        Assert.IsNotNull(methodAttribute);
-        Assert.AreEqual(EditorBrowsableState.Advanced, methodAttribute.State);
+        Assert.NotNull(methodAttribute);
+        Assert.Equal(EditorBrowsableState.Advanced, methodAttribute.State);
     }
 
     EditorBrowsableAttribute GetEditorBrowsableAttribute(MemberInfo memberInfo)
@@ -35,6 +34,5 @@ class Target
     void Method()
 // ReSharper restore UnusedMember.Local
     {
-        
     }
 }

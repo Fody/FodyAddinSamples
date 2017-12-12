@@ -1,102 +1,101 @@
-﻿using NUnit.Framework;
+﻿using Xunit;
 using FactoryId;
 using System;
 using static ColorEnum;
 
-[TestFixture]
 public class FactoriesSampleInt
 {
-    [Test]
+    [Fact]
     public void FactoryEnumAuto()
     {
         ColorInt mycolor = null;
 
         mycolor = ColorInt.Factory(Black);
-        Assert.IsNotNull(mycolor as ColorIntBlack);
+        Assert.NotNull(mycolor as ColorIntBlack);
 
         mycolor = ColorInt.Factory(White);
-        Assert.IsNotNull(mycolor as ColorIntWhite);
+        Assert.NotNull(mycolor as ColorIntWhite);
 
         mycolor = ColorInt.Factory(Red);
-        Assert.IsNotNull(mycolor as ColorIntRed);
+        Assert.NotNull(mycolor as ColorIntRed);
 
         mycolor = ColorInt.Factory(Green);
-        Assert.IsNotNull(mycolor as ColorIntGreen);
+        Assert.NotNull(mycolor as ColorIntGreen);
 
         mycolor = ColorInt.Factory(Blue);
-        Assert.IsNotNull(mycolor as ColorIntBlue);
+        Assert.NotNull(mycolor as ColorIntBlue);
     }
 
-    [Test]
+    [Fact]
     public void FactoryEnumAutoValues()
     {
         ColorInt mycolor = null;
         mycolor = ColorInt.Factory(Black);
-        Assert.AreEqual(mycolor.Content, "0x000000");
+        Assert.Equal("0x000000", mycolor.Content);
 
         mycolor = ColorInt.Factory(White);
-        Assert.AreEqual(mycolor.Content, "0xFFFFFF");
+        Assert.Equal("0xFFFFFF", mycolor.Content);
 
         mycolor = ColorInt.Factory(Red);
-        Assert.AreEqual(mycolor.Content, "0xFF0000");
+        Assert.Equal("0xFF0000", mycolor.Content);
 
         mycolor = ColorInt.Factory(Green);
-        Assert.AreEqual(mycolor.Content, "0x00FF00");
+        Assert.Equal("0x00FF00", mycolor.Content);
 
         mycolor = ColorInt.Factory(Blue);
-        Assert.AreEqual(mycolor.Content, "0x0000FF");
+        Assert.Equal("0x0000FF", mycolor.Content);
     }
 
-    [Test]
+    [Fact]
     public void FactoryEnumAutoGetKey()
     {
         foreach (ColorEnum v in Enum.GetValues(typeof(ColorEnum)))
         {
             var color = ColorInt.Factory(v);
-            Assert.AreEqual(color.Key, v);
+            Assert.Equal(color.Key, v);
         }
 
     }
 
-    [Test]
+    [Fact]
     public void FactoryInt()
     {
         SomeColor mycolor = null;
 
         mycolor = SomeColor.Factory(0x000000);
-        Assert.IsNotNull(mycolor as SomeColorBlack);
+        Assert.NotNull(mycolor as SomeColorBlack);
 
         mycolor = SomeColor.Factory(0xffffff);
-        Assert.IsNotNull(mycolor as SomeColorWhite);
+        Assert.NotNull(mycolor as SomeColorWhite);
 
         mycolor = SomeColor.Factory(0xff0000);
-        Assert.IsNotNull(mycolor as SomeColorRed);
+        Assert.NotNull(mycolor as SomeColorRed);
 
         mycolor = SomeColor.Factory(0x00ff00);
-        Assert.IsNotNull(mycolor as SomeColorGreen);
+        Assert.NotNull(mycolor as SomeColorGreen);
 
         mycolor = SomeColor.Factory(0x0000ff);
-        Assert.IsNotNull(mycolor as SomeColorBlue);
+        Assert.NotNull(mycolor as SomeColorBlue);
     }
 
-    [Test]
+    [Fact]
     public void FactoryIntValues()
     {
         SomeColor mycolor = null;
         mycolor = SomeColor.Factory(0x000000);
-        Assert.AreEqual(mycolor.Content, "0x000000");
+        Assert.Equal("0x000000", mycolor.Content);
 
         mycolor = SomeColor.Factory(0xFFFFFF);
-        Assert.AreEqual(mycolor.Content, "0xFFFFFF");
+        Assert.Equal("0xFFFFFF", mycolor.Content);
 
         mycolor = SomeColor.Factory(0xFF0000);
-        Assert.AreEqual(mycolor.Content, "0xFF0000");
+        Assert.Equal("0xFF0000", mycolor.Content);
 
         mycolor = SomeColor.Factory(0x00FF00);
-        Assert.AreEqual(mycolor.Content, "0x00FF00");
+        Assert.Equal("0x00FF00", mycolor.Content);
 
         mycolor = SomeColor.Factory(0x0000FF);
-        Assert.AreEqual(mycolor.Content, "0x0000FF");
+        Assert.Equal("0x0000FF", mycolor.Content);
     }
 }
 

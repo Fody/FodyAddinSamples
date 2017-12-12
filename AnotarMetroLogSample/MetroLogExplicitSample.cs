@@ -1,15 +1,14 @@
 ﻿using Anotar.MetroLog;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class MetroLogExplicitSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         MyMethod();
 
-        Assert.AreEqual("Method: 'Void MyMethod()'. Line: ~17. TheMessage", LogCaptureBuilder.LastMessage);
+        Assert.Equal("Method: 'Void MyMethod()'. Line: ~16. TheMessage", LogCaptureBuilder.LastMessage);
     }
 
     static void MyMethod()

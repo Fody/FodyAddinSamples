@@ -1,16 +1,17 @@
-﻿using NUnit.Framework;
+﻿using Xunit;
 
-[TestFixture]
 public class VirtuositySample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
-        Assert.IsTrue(GetType().GetMethod("Method").IsVirtual);
+        Assert.True(typeof(Target).GetMethod("Method").IsVirtual);
     }
+}
 
+public class Target
+{
     public void Method()
     {
     }
-
 }

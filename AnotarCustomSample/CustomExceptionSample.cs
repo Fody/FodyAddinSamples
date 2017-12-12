@@ -1,11 +1,10 @@
 ﻿using System;
 using Anotar.Custom;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class CustomExceptionSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         try
@@ -16,7 +15,7 @@ public class CustomExceptionSample
         {
         }
 
-        Assert.AreEqual("Exception occurred in 'Void MyMethod()'. ", Logger.LastMessage.Format);
+        Assert.Equal("Exception occurred in 'Void MyMethod()'. ", Logger.LastMessage.Format);
     }
 
     [LogToDebugOnException]
@@ -24,5 +23,4 @@ public class CustomExceptionSample
     {
         throw new Exception("Foo");
     }
-
 }

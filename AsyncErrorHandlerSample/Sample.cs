@@ -1,11 +1,10 @@
 using System;
 using System.Threading.Tasks;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class AsyncErrorHandlerSample
 {
-    [Test]
+    [Fact]
     public async Task Run()
     {
         try

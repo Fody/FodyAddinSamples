@@ -1,17 +1,15 @@
-﻿using NUnit.Framework;
+﻿using Xunit;
 
-[TestFixture]
 public class FielderSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
-        Assert.IsNotNull(typeof(Target).GetProperty("MemberToConvert"));
+        Assert.NotNull(typeof(Target).GetProperty("MemberToConvert"));
     }
 }
 
 public class Target
 {
-
     public string MemberToConvert;
 }

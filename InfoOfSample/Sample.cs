@@ -1,19 +1,18 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Reflection;
-using NUnit.Framework;
+using Xunit;
 // ReSharper disable UnusedVariable
 
-[TestFixture]
 public class InfoOfSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
-        Assert.IsNotNull(Info.OfMethod("InfoOfToReference", "InternalClass", "Method"));
+        Assert.NotNull(Info.OfMethod("InfoOfToReference", "InternalClass", "Method"));
     }
 
-    [Test]
+    [Fact]
     public void PerfWithInfoOf()
     {
         var stopwatch = Stopwatch.StartNew();
@@ -27,7 +26,7 @@ public class InfoOfSample
         Debug.WriteLine(stopwatch.ElapsedMilliseconds);
     }
 
-    [Test]
+    [Fact]
     public void PerfWithReflection()
     {
         var stopwatch = Stopwatch.StartNew();

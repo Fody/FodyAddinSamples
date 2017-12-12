@@ -1,14 +1,13 @@
 ﻿using System;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class BasicFodyAddinSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         var type = GetType().Assembly.GetType("Hello");
         var instance = (dynamic) Activator.CreateInstance(type);
-        Assert.AreEqual("Hello World", instance.World());
+        Assert.Equal("Hello World", instance.World());
     }
 }

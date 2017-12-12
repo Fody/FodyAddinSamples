@@ -1,19 +1,16 @@
 ﻿using System.Diagnostics;
 using System.IO;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class CosturaSample
 {
-
-    [OneTimeSetUp]
-    public void Setup()
+    public CosturaSample()
     {
         var path = Path.Combine(AssemblyLocation.CurrentDirectory(), "CosturaAssemblyToReference.dll");
         File.Delete(path);
     }
 
-    [Test]
+    [Fact]
     public void Run()
     {
         //Note that this will work even though CosturaAssemblyToReference.dll does not exists in the execution directory

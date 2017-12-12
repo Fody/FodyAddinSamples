@@ -1,10 +1,9 @@
 ﻿using System;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class FreezableSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         // ReSharper disable once UseObjectOrCollectionInitializer

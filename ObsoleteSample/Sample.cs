@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Linq;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class ObsoleteSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         //ObsoleteExAttribute will have been converted to an ObsoleteAttribute
@@ -14,7 +13,7 @@ public class ObsoleteSample
             .First();
 
         var expectedMessage = "Decided this class was a bad idea. Use `NewTargetClass` instead. Will be treated as an error from version 3.0.0. Will be removed in version 4.0.0.";
-        Assert.AreEqual(expectedMessage, obsoleteAttribute.Message);
+        Assert.Equal(expectedMessage, obsoleteAttribute.Message);
     }
 }
 

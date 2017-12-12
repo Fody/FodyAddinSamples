@@ -1,20 +1,19 @@
 ﻿using System;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class EmptyStringGuardSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         var targetClass = new TargetClass();
         Assert.Throws<ArgumentException>(() => targetClass.Method(string.Empty));
     }
 }
+
 public class TargetClass
 {
     public void Method(string param)
     {
-
     }
 }

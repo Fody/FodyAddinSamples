@@ -2,25 +2,24 @@
 using System.Diagnostics;
 using System.Security;
 using ExtraConstraints;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class DelegateConstraintSample
 {
-    [Test]
+    [Fact]
     public void InvalidDelegateConstraint()
     {
         var exception = Assert.Throws<VerificationException>(() => MethodWithDelegateConstraint(10));
-        Assert.AreEqual("Method DelegateConstraintSample.MethodWithDelegateConstraint: type argument 'System.Int32' violates the constraint of type parameter 'T'.", exception.Message);
+        Assert.Equal("Method DelegateConstraintSample.MethodWithDelegateConstraint: type argument 'System.Int32' violates the constraint of type parameter 'T'.", exception.Message);
     }
 
-    [Test]
+    [Fact]
     public void ValidDelegateConstraint()
     {
         MethodWithDelegateConstraint<Action>(() => Debug.WriteLine("foo"));
     }
 
-    public void MethodWithDelegateConstraint<[DelegateConstraint(typeof(Action))] T>(T value)
+    void MethodWithDelegateConstraint<[DelegateConstraint(typeof(Action))] T>(T value)
     {
     }
 }

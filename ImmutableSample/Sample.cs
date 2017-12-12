@@ -1,14 +1,12 @@
-﻿using NUnit.Framework;
+﻿using Xunit;
 
-[TestFixture]
 public class ImmutableSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
-        Assert.IsTrue(typeof(Target).GetField("Field").IsInitOnly);
+        Assert.True(typeof(Target).GetField("Field").IsInitOnly);
     }
-
 }
 
 [Immutable]

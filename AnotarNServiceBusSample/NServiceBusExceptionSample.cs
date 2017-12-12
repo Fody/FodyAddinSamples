@@ -1,11 +1,10 @@
 ﻿using System;
 using Anotar.NServiceBus;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class NServiceBusExceptionSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         try
@@ -16,7 +15,7 @@ public class NServiceBusExceptionSample
         {
         }
 
-        Assert.AreEqual("Exception occurred in 'Void MyMethod()'. ", LogCaptureBuilder.LastMessage);
+        Assert.Equal("Exception occurred in 'Void MyMethod()'. ", LogCaptureBuilder.LastMessage);
     }
 
     [LogToDebugOnException]

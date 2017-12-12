@@ -1,13 +1,12 @@
-﻿using NUnit.Framework;
+﻿using Xunit;
 
-[TestFixture]
 public class CaselessSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         var string1 = "samplestring";
         var string2 = "SampleString";
-        Assert.IsTrue(string2 == string1);
+        Assert.True(string2 == string1);
     }
 }

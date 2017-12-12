@@ -1,12 +1,11 @@
-﻿using NUnit.Framework;
+﻿using Xunit;
 
-[TestFixture]
 public class ModuleInitSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         //ModuleInitializer.Initialize will have been called when this assembly was loaded.
-        Assert.IsTrue(ModuleInitializer.InitializeCalled);
+        Assert.True(ModuleInitializer.InitializeCalled);
     }
 }

@@ -1,16 +1,15 @@
 ﻿using System;
-using NUnit.Framework;
+using Xunit;
 // ReSharper disable NotAccessedField.Local
 
-[TestFixture]
 public class JanitorSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         var disposable = new Disposable();
         disposable.Dispose();
-        Assert.IsTrue(DisposeTracker.HasDisposedBeenCalled);
+        Assert.True(DisposeTracker.HasDisposedBeenCalled);
     }
 
     public class Disposable : IDisposable
@@ -27,5 +26,4 @@ public class JanitorSample
             //must be empty
         }
     }
-
 }
