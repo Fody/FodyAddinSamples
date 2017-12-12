@@ -3,6 +3,8 @@
   <PropertyGroup>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <LangVersion>latest</LangVersion>
-    <NoWarn>CS0067</NoWarn>
+    <NoWarn>CS0067,NU1701</NoWarn>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
 </Project>
