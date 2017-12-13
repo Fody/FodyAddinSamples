@@ -6,5 +6,6 @@
     <NoWarn>CS0067,NU1701</NoWarn>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
 </Project>
