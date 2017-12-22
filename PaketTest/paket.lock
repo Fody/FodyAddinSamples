@@ -1,5 +1,0 @@
-NUGET
-  remote: https://api.nuget.org/v3/index.json
-    Fody (2.3.3)
-    NullGuard.Fody (1.6.3)
-      Fody (>= 2.1.2)
