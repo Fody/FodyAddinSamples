@@ -5,10 +5,9 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Caseless.Fody" Version="1.7.1" />
-    <PackageReference Include="Fody" version="2.2.1" />
+    <PackageReference Include="Fody" version="2.3.3" />
     <PackageReference Include="xunit" Version="2.3.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
-    <PackageReference Include="NUnit3TestAdapter" Version="3.9.0" />
   </ItemGroup>
 </Project>

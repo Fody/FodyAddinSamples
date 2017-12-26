@@ -79,8 +79,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnotarNServiceBusSample", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReactiveUISample", "ReactiveUISample\ReactiveUISample.csproj", "{62938BCE-4D8E-464F-B3A9-579D5E3B1BC0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VandelaySample", "VandelaySample\VandelaySample.csproj", "{160BCFD8-6BA6-4317-8EFC-8E77159B0378}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NullGuardSample", "NullGuardSample\NullGuardSample.csproj", "{F82F7891-C5D2-4D02-A766-8ADEBAAE3DFF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryIdSample", "FactoryIdSample\FactoryIdSample.csproj", "{8F6B76B9-FD57-4F27-B669-6E9704796BC4}"
@@ -245,6 +243,9 @@ Global
 		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{160BCFD8-6BA6-4317-8EFC-8E77159B0378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62938BCE-4D8E-464F-B3A9-579D5E3B1BC0}.Release|ARM.ActiveCfg = Release|Any CPU
+		{62938BCE-4D8E-464F-B3A9-579D5E3B1BC0}.Release|x64.ActiveCfg = Release|Any CPU
+		{62938BCE-4D8E-464F-B3A9-579D5E3B1BC0}.Release|x86.ActiveCfg = Release|Any CPU
 		{F82F7891-C5D2-4D02-A766-8ADEBAAE3DFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F82F7891-C5D2-4D02-A766-8ADEBAAE3DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F82F7891-C5D2-4D02-A766-8ADEBAAE3DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
