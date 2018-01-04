@@ -3,7 +3,7 @@ using NServiceBus.Logging;
 
 public class LogCaptureBuilder
 {
-    [ThreadStatic] 
+    [ThreadStatic]
     public static string LastMessage;
 
     public static void Init()

@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Security;
 using ExtraConstraints;
 using Xunit;
+// ReSharper disable UnusedParameter.Local
 
 public class DelegateConstraintSample
 {

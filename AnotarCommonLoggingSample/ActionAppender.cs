@@ -323,15 +323,9 @@ public class ActionLog : ILog
     public bool IsInfoEnabled { get; private set; }
     public bool IsWarnEnabled { get; private set; }
 
-    public IVariablesContext GlobalVariablesContext
-    {
-        get { throw new NotImplementedException(); }
-    }
+    public IVariablesContext GlobalVariablesContext => throw new NotImplementedException();
 
-    public IVariablesContext ThreadVariablesContext
-    {
-        get { throw new NotImplementedException(); }
-    }
+    public IVariablesContext ThreadVariablesContext => throw new NotImplementedException();
 
     public INestedVariablesContext NestedThreadVariablesContext { get; }
 }

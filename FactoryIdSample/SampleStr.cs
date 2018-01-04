@@ -6,29 +6,26 @@ public class FactoriesSampleStr
     [Fact]
     public void FactoryStrAuto()
     {
-        Color mycolor = null;
+        var color = Color.Factory("Black");
+        Assert.NotNull(color as ColorBlack);
 
-        mycolor = Color.Factory("Black");
-        Assert.NotNull(mycolor as ColorBlack);
+        color = Color.Factory("White");
+        Assert.NotNull(color as ColorWhite);
 
-        mycolor = Color.Factory("White");
-        Assert.NotNull(mycolor as ColorWhite);
+        color = Color.Factory("Red");
+        Assert.NotNull(color as ColorRed);
 
-        mycolor = Color.Factory("Red");
-        Assert.NotNull(mycolor as ColorRed);
+        color = Color.Factory("Green");
+        Assert.NotNull(color as ColorGreen);
 
-        mycolor = Color.Factory("Green");
-        Assert.NotNull(mycolor as ColorGreen);
-
-        mycolor = Color.Factory("Blue");
-        Assert.NotNull(mycolor as ColorBlue);
+        color = Color.Factory("Blue");
+        Assert.NotNull(color as ColorBlue);
     }
 
     [Fact]
     public void FactoryStrAutoValues()
     {
-        Color mycolor = null;
-        mycolor = Color.Factory("Black");
+        var mycolor = Color.Factory("Black");
         Assert.Equal("0x000000", mycolor.Content);
 
         mycolor = Color.Factory("White");
@@ -58,42 +55,39 @@ public class FactoriesSampleStr
     [Fact]
     public void FactoryStr()
     {
-        SpanishColor mycolor = null;
+        var color = SpanishColor.Factory("Black");
+        Assert.NotNull(color as ColorNegro);
 
-        mycolor = SpanishColor.Factory("Black");
-        Assert.NotNull(mycolor as ColorNegro);
+        color = SpanishColor.Factory("White");
+        Assert.NotNull(color as ColorBlanco);
 
-        mycolor = SpanishColor.Factory("White");
-        Assert.NotNull(mycolor as ColorBlanco);
+        color = SpanishColor.Factory("Red");
+        Assert.NotNull(color as ColorRojo);
 
-        mycolor = SpanishColor.Factory("Red");
-        Assert.NotNull(mycolor as ColorRojo);
+        color = SpanishColor.Factory("Green");
+        Assert.NotNull(color as ColorVerde);
 
-        mycolor = SpanishColor.Factory("Green");
-        Assert.NotNull(mycolor as ColorVerde);
-
-        mycolor = SpanishColor.Factory("Blue");
-        Assert.NotNull(mycolor as ColorAzul);
+        color = SpanishColor.Factory("Blue");
+        Assert.NotNull(color as ColorAzul);
     }
 
     [Fact]
     public void FactoryStrValues()
     {
-        SpanishColor mycolor = null;
-        mycolor = SpanishColor.Factory("Black");
-        Assert.Equal("0x000000", mycolor.Content);
+        var color = SpanishColor.Factory("Black");
+        Assert.Equal("0x000000", color.Content);
 
-        mycolor = SpanishColor.Factory("White");
-        Assert.Equal("0xFFFFFF", mycolor.Content);
+        color = SpanishColor.Factory("White");
+        Assert.Equal("0xFFFFFF", color.Content);
 
-        mycolor = SpanishColor.Factory("Red");
-        Assert.Equal("0xFF0000", mycolor.Content);
+        color = SpanishColor.Factory("Red");
+        Assert.Equal("0xFF0000", color.Content);
 
-        mycolor = SpanishColor.Factory("Green");
-        Assert.Equal("0x00FF00", mycolor.Content);
+        color = SpanishColor.Factory("Green");
+        Assert.Equal("0x00FF00", color.Content);
 
-        mycolor = SpanishColor.Factory("Blue");
-        Assert.Equal("0x0000FF", mycolor.Content);
+        color = SpanishColor.Factory("Blue");
+        Assert.Equal("0x0000FF", color.Content);
     }
 
     public static string[] ColorKeys = {"Black", "White", "Red", "Green", "Blue"};

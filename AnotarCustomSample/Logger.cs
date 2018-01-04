@@ -10,15 +10,17 @@ public class Logger
         {
             Format = format,
             Params = args,
-        };   
+        };
     }
+
     public void Debug(string format)
     {
         LastMessage = new LogEntry
         {
             Format = format,
-        };   
+        };
     }
+
     public void Debug(Exception exception, string format, params object[] args)
     {
         LastMessage = new LogEntry

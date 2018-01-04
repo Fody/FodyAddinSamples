@@ -2,34 +2,35 @@
 using FactoryId;
 using System;
 using static ColorEnum;
+// ReSharper disable JoinDeclarationAndInitializer
 
 public class FactoriesSampleInt
 {
     [Fact]
     public void FactoryEnumAuto()
     {
-        ColorInt mycolor = null;
+        ColorInt color;
 
-        mycolor = ColorInt.Factory(Black);
-        Assert.NotNull(mycolor as ColorIntBlack);
+        color = ColorInt.Factory(Black);
+        Assert.NotNull(color as ColorIntBlack);
 
-        mycolor = ColorInt.Factory(White);
-        Assert.NotNull(mycolor as ColorIntWhite);
+        color = ColorInt.Factory(White);
+        Assert.NotNull(color as ColorIntWhite);
 
-        mycolor = ColorInt.Factory(Red);
-        Assert.NotNull(mycolor as ColorIntRed);
+        color = ColorInt.Factory(Red);
+        Assert.NotNull(color as ColorIntRed);
 
-        mycolor = ColorInt.Factory(Green);
-        Assert.NotNull(mycolor as ColorIntGreen);
+        color = ColorInt.Factory(Green);
+        Assert.NotNull(color as ColorIntGreen);
 
-        mycolor = ColorInt.Factory(Blue);
-        Assert.NotNull(mycolor as ColorIntBlue);
+        color = ColorInt.Factory(Blue);
+        Assert.NotNull(color as ColorIntBlue);
     }
 
     [Fact]
     public void FactoryEnumAutoValues()
     {
-        ColorInt mycolor = null;
+        ColorInt mycolor;
         mycolor = ColorInt.Factory(Black);
         Assert.Equal("0x000000", mycolor.Content);
 
@@ -60,7 +61,7 @@ public class FactoriesSampleInt
     [Fact]
     public void FactoryInt()
     {
-        SomeColor mycolor = null;
+        SomeColor mycolor;
 
         mycolor = SomeColor.Factory(0x000000);
         Assert.NotNull(mycolor as SomeColorBlack);
@@ -81,7 +82,7 @@ public class FactoriesSampleInt
     [Fact]
     public void FactoryIntValues()
     {
-        SomeColor mycolor = null;
+        SomeColor mycolor;
         mycolor = SomeColor.Factory(0x000000);
         Assert.Equal("0x000000", mycolor.Content);
 

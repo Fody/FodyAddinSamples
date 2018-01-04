@@ -4,7 +4,7 @@ using NLog.Config;
 
 public class LogCaptureBuilder
 {
-    [ThreadStatic] 
+    [ThreadStatic]
     public static string LastMessage;
 
     public static void Init()

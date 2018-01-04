@@ -19,8 +19,8 @@ class Program
 
         public int Value2
         {
-            get { return value2; }
-            set { IReactiveObjectExtensions.RaiseAndSetIfChanged(this, ref value2, value); }
+            get => value2;
+            set => IReactiveObjectExtensions.RaiseAndSetIfChanged(this, ref value2, value);
         }
 
         [ObservableAsProperty]
