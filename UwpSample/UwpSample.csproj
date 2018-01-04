@@ -112,7 +112,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Fody">
-      <Version>2.3.6</Version>
+      <Version>2.3.15</Version>
     </PackageReference>
     <PackageReference Include="PropertyChanged.Fody">
       <Version>2.2.4</Version>
