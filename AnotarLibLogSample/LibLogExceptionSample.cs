@@ -1,11 +1,10 @@
 ﻿using System;
 using Anotar.LibLog;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class LibLogExceptionSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         try
@@ -16,8 +15,8 @@ public class LibLogExceptionSample
         {
         }
 
-        Assert.AreEqual("Exception occurred in 'Void MyMethod()'. ", CustomProvider.LastMessage);
-        Assert.IsNotNull(CustomProvider.LastException);
+        Assert.Equal("Exception occurred in 'Void MyMethod()'. ", CustomProvider.LastMessage);
+        Assert.NotNull(CustomProvider.LastException);
     }
 
     [LogToDebugOnException]
@@ -25,5 +24,4 @@ public class LibLogExceptionSample
     {
         throw new Exception("Foo");
     }
-
 }

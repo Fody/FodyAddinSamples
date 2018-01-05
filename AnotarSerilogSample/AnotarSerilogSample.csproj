@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
-    <TargetFrameworks>net47</TargetFrameworks>
+    <TargetFrameworks>net47;netcoreapp2.0</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Fody" version="2.3.15" />
     <PackageReference Include="xunit" Version="2.3.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
-    <PackageReference Include="Anotar.Serilog.Fody" version="3.3.1" />
+    <PackageReference Include="Anotar.Serilog.Fody" version="4.0.0" />
     <PackageReference Include="Serilog" version="2.6.0" />
     <PackageReference Include="ModuleInit.Fody" version="1.7.0" />
   </ItemGroup>

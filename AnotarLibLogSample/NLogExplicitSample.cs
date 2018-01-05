@@ -1,20 +1,18 @@
 ﻿using Anotar.LibLog;
-using NUnit.Framework;
+using Xunit;
 
-[TestFixture]
 public class LibLogExplicitSample
 {
-    [Test]
+    [Fact]
     public void Run()
     {
         MyMethod();
 
-        Assert.AreEqual("Method: 'Void MyMethod()'. Line: ~17. TheMessage", CustomProvider.LastMessage);
+        Assert.Equal("Method: 'Void MyMethod()'. Line: ~17. TheMessage", CustomProvider.LastMessage);
     }
 
     static void MyMethod()
     {
         LogTo.Debug("TheMessage");
     }
-
 }
