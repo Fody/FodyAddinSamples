@@ -11,7 +11,7 @@ public class VisualizeSample
                          FamilyName = "Smith",
                          GivenNames = "John James"
                      };
-        //Set a breakpoint here and look at person int he debugger
+        //Set a breakpoint here and look at person in the debugger
         Debug.WriteLine(person);
     }
 }
