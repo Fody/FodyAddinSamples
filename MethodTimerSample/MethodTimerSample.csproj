@@ -4,8 +4,8 @@
     <TargetFrameworks>net47;netcoreapp2.0</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Fody" version="2.3.15" />
-    <PackageReference Include="MethodTimer.Fody" version="2.0.1" />
+    <PackageReference Include="Fody" version="2.3.20" />
+    <PackageReference Include="MethodTimer.Fody" version="2.0.2" />
     <PackageReference Include="xunit" Version="2.3.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
