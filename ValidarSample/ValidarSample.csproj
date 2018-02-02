@@ -4,12 +4,12 @@
     <TargetFrameworks>net47</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Fody" version="2.3.21" />
+    <PackageReference Include="Fody" version="2.3.24" />
     <PackageReference Include="xunit" Version="2.3.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
     <PackageReference Include="Validar.Fody" version="1.6.1" />
     <PackageReference Include="PropertyChanged.Fody" version="2.2.5" />
-    <PackageReference Include="FluentValidation" version="7.3.4" />
+    <PackageReference Include="FluentValidation" version="7.4.0" />
   </ItemGroup>
 </Project>
