@@ -102,9 +102,6 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
-  <PropertyGroup>
-    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
-  </PropertyGroup>
   <ItemGroup>
     <Compile Include="Person.cs" />
     <Compile Include="Sample.cs" />
