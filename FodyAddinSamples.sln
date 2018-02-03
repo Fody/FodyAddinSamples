@@ -75,8 +75,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NullGuardSample", "NullGuar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OldProjectFormat", "OldProjectFormat\OldProjectFormat.csproj", "{200CE2D2-FE22-48BF-8F58-58B3B7FC1549}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UwpSample", "UwpSample\UwpSample.csproj", "{AF82393C-1FF9-4EBE-9D9D-8703F95DB788}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -286,11 +284,6 @@ Global
 		{200CE2D2-FE22-48BF-8F58-58B3B7FC1549}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{200CE2D2-FE22-48BF-8F58-58B3B7FC1549}.Release|Any CPU.Build.0 = Release|Any CPU
 		{200CE2D2-FE22-48BF-8F58-58B3B7FC1549}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
-		{AF82393C-1FF9-4EBE-9D9D-8703F95DB788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AF82393C-1FF9-4EBE-9D9D-8703F95DB788}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AF82393C-1FF9-4EBE-9D9D-8703F95DB788}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AF82393C-1FF9-4EBE-9D9D-8703F95DB788}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AF82393C-1FF9-4EBE-9D9D-8703F95DB788}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
