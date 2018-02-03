@@ -1,4 +1,7 @@
 language: csharp
-solution: FodyAddinSamples.sln
-install:
-  - nuget restore FodyAddinSamples.sln
+dist: trusty
+sudo: required
+mono: none
+dotnet: 2.0.0
+script:
+  - ./build.sh --quiet verify
