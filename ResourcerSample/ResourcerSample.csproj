@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='ReleaseNetCore'">
+    <TargetFrameworks>netcoreapp2.0</TargetFrameworks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'!='ReleaseNetCore'">
     <TargetFrameworks>net47;netcoreapp2.0</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
