@@ -3,5 +3,7 @@ dist: trusty
 sudo: required
 mono: none
 dotnet: 2.0.0
+before_install:
+  - chmod +x ./build.sh
 script:
   - ./build.sh --quiet verify
