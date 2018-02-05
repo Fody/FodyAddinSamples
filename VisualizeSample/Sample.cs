@@ -12,7 +12,7 @@ public class VisualizeSample
                          GivenNames = "John James"
                      };
         //Set a breakpoint here and look at person in the debugger
-        Debug.WriteLine(person);
+        Trace.WriteLine(person);
     }
 }
 

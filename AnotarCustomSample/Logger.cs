@@ -2,6 +2,7 @@ using System;
 
 public class Logger
 {
+    [ThreadStatic]
     public static LogEntry LastMessage;
 
     public void Debug(string format, params object[] args)
