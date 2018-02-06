@@ -6,3 +6,5 @@ before_build:
 - ps: nuget restore
 build:
   verbosity: minimal
+configuration:
+  - Release
