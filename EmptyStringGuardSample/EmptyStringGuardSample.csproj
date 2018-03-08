@@ -4,8 +4,8 @@
     <TargetFrameworks>net47</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Fody" version="2.3.24" />
-    <PackageReference Include="EmptyStringGuard.Fody" version="1.1.0" />
+    <PackageReference Include="Fody" Version="2.3.24" />
+    <PackageReference Include="EmptyStringGuard.Fody" Version="1.1.0" />
     <PackageReference Include="xunit" Version="2.3.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />

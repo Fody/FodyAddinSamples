@@ -4,12 +4,12 @@
     <TargetFrameworks>net47;netcoreapp2.0</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Fody" version="2.2.1" />
+    <PackageReference Include="Fody" Version="2.2.1" />
     <PackageReference Include="xunit" Version="2.3.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
-    <PackageReference Include="Portable.Ninject" version="*" />
-    <PackageReference Include="Ninject.Extensions.StaticProxy" version="*" />
-    <PackageReference Include="StaticProxy.Interceptor.Fody" version="*" />
+    <PackageReference Include="Portable.Ninject" Version="*" />
+    <PackageReference Include="Ninject.Extensions.StaticProxy" Version="*" />
+    <PackageReference Include="StaticProxy.Interceptor.Fody" Version="*" />
   </ItemGroup>
 </Project>

@@ -5,12 +5,12 @@
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Fody" version="2.4.1" />
+    <PackageReference Include="Fody" Version="2.4.1" />
     <PackageReference Include="xunit" Version="2.3.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.6.0" />
-    <PackageReference Include="Anotar.Splat.Fody" version="4.1.0" />
-    <PackageReference Include="Splat" version="2.0.0" />
-    <PackageReference Include="ModuleInit.Fody" version="1.7.1" />
+    <PackageReference Include="Anotar.Splat.Fody" Version="4.1.0" />
+    <PackageReference Include="Splat" Version="2.0.0" />
+    <PackageReference Include="ModuleInit.Fody" Version="1.7.1" />
   </ItemGroup>
 </Project>
