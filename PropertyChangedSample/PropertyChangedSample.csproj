@@ -4,7 +4,7 @@
     <TargetFrameworks>net47;netcoreapp2.0</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Fody" Version="2.4.4" />
+    <PackageReference Include="Fody" Version="2.4.5" />
     <PackageReference Include="PropertyChanged.Fody" Version="2.2.9" />
     <PackageReference Include="xunit" Version="2.3.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
