@@ -1,6 +1,4 @@
-﻿#if NET47
-
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 public partial class SampleForm: Form
 {
@@ -9,6 +7,3 @@ public partial class SampleForm: Form
         InitializeComponent();
     }
 }
-
-
-#endif

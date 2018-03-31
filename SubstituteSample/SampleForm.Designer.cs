@@ -1,6 +1,4 @@
-﻿#if NET47
-
-partial class SampleForm
+﻿partial class SampleForm
 {
     /// <summary>
     /// Required designer variable.
@@ -52,4 +50,3 @@ partial class SampleForm
 
     public System.Windows.Forms.Label label1;
 }
-#endif

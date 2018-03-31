@@ -23,9 +23,7 @@ public class MyComponentResourceManager : ComponentResourceManager
 
     public override void ApplyResources(object value, string objectName, CultureInfo culture)
     {
-#if NET47
         ((dynamic)value).Text = GetString($"{objectName}.Text", culture);
-#endif
     }
 
     public override string GetString(string name, CultureInfo culture)

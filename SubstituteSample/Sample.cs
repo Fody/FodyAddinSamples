@@ -19,7 +19,6 @@ public class SubstituteSamples
         Assert.Equal("Override: String1 => Deutsch", target);
     }
 
-#if NET47
     [Fact]
     public void ComponentResourceManager()
     {
@@ -34,5 +33,4 @@ public class SubstituteSamples
         Assert.Equal("Override: $this.Text => Deutsch", target.Text);
         Assert.Equal("Override: label1.Text => Textfeld", target.label1.Text);
     }
-#endif
 }
