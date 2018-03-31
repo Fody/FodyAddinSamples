@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net4.7;Netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net47</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Fody" Version="*" />
+    <PackageReference Include="Fody" Version="2.*" />
     <PackageReference Include="Throttle.Fody" Version="*" />
     <PackageReference Include="TomsToolbox.Desktop" Version="*" />
     <PackageReference Include="xunit" Version="2.3.1" />
@@ -15,9 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="WindowsBase">
-      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\WindowsBase.dll</HintPath>
-    </Reference>
+    <Reference Include="WindowsBase" Condition="'$(TargetFramework)'=='net47'" />
   </ItemGroup>
 
 </Project>

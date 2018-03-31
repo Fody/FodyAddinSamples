@@ -1,8 +1,9 @@
 ﻿using System;
+#if NET47
 using System.Threading;
 using System.Windows.Threading;
-
 using Throttle;
+#endif
 
 using Xunit;
 
@@ -10,6 +11,12 @@ using TomsToolbox.Desktop;
 
 public class ThrottleSample
 {
+    [Fact]
+    public void Dummy()
+    {
+    }
+
+#if NET47
     int throttledCalls;
 
     [Fact]
@@ -53,5 +60,6 @@ public class ThrottleSample
     {
         Interlocked.Increment(ref throttledCalls);
     }
+#endif
 }
 
