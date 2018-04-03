@@ -34,8 +34,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BasicFodyAddin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=409b3227471b0f0d, processorArchitecture=MSIL">
-      <HintPath>..\packages\BasicFodyAddin.Fody.1.0.4\lib\net452\BasicFodyAddin.dll</HintPath>
+    <Reference Include="BasicFodyAddin, Version=1.1.0.0, Culture=neutral, PublicKeyToken=409b3227471b0f0d, processorArchitecture=MSIL">
+      <HintPath>..\packages\BasicFodyAddin.Fody.1.1.0\lib\net452\BasicFodyAddin.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
