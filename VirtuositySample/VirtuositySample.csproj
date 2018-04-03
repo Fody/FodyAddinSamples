@@ -8,6 +8,6 @@
     <PackageReference Include="xunit" Version="2.3.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.6.1" />
-    <PackageReference Include="Virtuosity.Fody" Version="1.20.2" />
+    <PackageReference Include="Virtuosity.Fody" Version="1.21.0" />
   </ItemGroup>
 </Project>
