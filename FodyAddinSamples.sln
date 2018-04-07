@@ -83,6 +83,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThrottleSample", "ThrottleS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JetBrainsAnnotationsSample", "JetBrainsAnnotationsSample\JetBrainsAnnotationsSample.csproj", "{A6BE1003-D4E6-456B-B344-84F7F999C71B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EquatableSample", "EquatableSample\EquatableSample.csproj", "{B4591EF0-A99D-45C0-AE15-3CFAAB6E0B2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -312,6 +314,11 @@ Global
 		{A6BE1003-D4E6-456B-B344-84F7F999C71B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6BE1003-D4E6-456B-B344-84F7F999C71B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A6BE1003-D4E6-456B-B344-84F7F999C71B}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
+		{B4591EF0-A99D-45C0-AE15-3CFAAB6E0B2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4591EF0-A99D-45C0-AE15-3CFAAB6E0B2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4591EF0-A99D-45C0-AE15-3CFAAB6E0B2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4591EF0-A99D-45C0-AE15-3CFAAB6E0B2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4591EF0-A99D-45C0-AE15-3CFAAB6E0B2A}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
