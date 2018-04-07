@@ -85,6 +85,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JetBrainsAnnotationsSample"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EquatableSample", "EquatableSample\EquatableSample.csproj", "{B4591EF0-A99D-45C0-AE15-3CFAAB6E0B2A}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoPropertiesSample", "AutoPropertiesSample\AutoPropertiesSample.csproj", "{E78315ED-32B7-4E4D-B4E4-0E7025339EB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -319,6 +321,11 @@ Global
 		{B4591EF0-A99D-45C0-AE15-3CFAAB6E0B2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4591EF0-A99D-45C0-AE15-3CFAAB6E0B2A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B4591EF0-A99D-45C0-AE15-3CFAAB6E0B2A}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
+		{E78315ED-32B7-4E4D-B4E4-0E7025339EB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E78315ED-32B7-4E4D-B4E4-0E7025339EB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E78315ED-32B7-4E4D-B4E4-0E7025339EB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E78315ED-32B7-4E4D-B4E4-0E7025339EB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E78315ED-32B7-4E4D-B4E4-0E7025339EB9}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
