@@ -7,6 +7,6 @@
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
-    <Configurations>Debug;Release;ReleaseNetCore</Configurations>
+    <Configurations>Debug;Release</Configurations>
   </PropertyGroup>
 </Project>
