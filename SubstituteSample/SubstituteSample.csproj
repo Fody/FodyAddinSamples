@@ -3,10 +3,11 @@
 
   <PropertyGroup>
     <TargetFrameworks>net47</TargetFrameworks>
+    <Tags>TE</Tags>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Fody" Version="3.0.1" />
+    <PackageReference Include="Fody" Version="3.*" />
     <PackageReference Include="Substitute.Fody" Version="*" />
     <PackageReference Include="xunit" Version="2.3.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
@@ -23,9 +24,6 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Update="SampleForm.cs">
-      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
 
