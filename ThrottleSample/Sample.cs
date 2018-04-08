@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Threading;
 using System.Windows.Threading;
-
 using Throttle;
-
 using Xunit;
-
 using TomsToolbox.Desktop;
 
 public class ThrottleSample
@@ -31,7 +28,7 @@ public class ThrottleSample
             Delay(5);
             Assert.Equal(0, throttledCalls);
             Delay(20);
-            Assert.Equal(1, throttledCalls); 
+            Assert.Equal(1, throttledCalls);
 
             dispatcher.BeginInvokeShutdown(DispatcherPriority.ApplicationIdle);
         });

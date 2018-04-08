@@ -4,11 +4,11 @@
     <TargetFrameworks>net47</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Costura.Fody" Version="1.6.2" />
-    <PackageReference Include="Fody" Version="2.4.6" />
+    <PackageReference Include="Costura.Fody" Version="2.0.0" />
+    <PackageReference Include="Fody" Version="3.0.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.0" />
     <PackageReference Include="xunit" Version="2.3.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.6.1" />
     <ProjectReference Include="..\CosturaAssemblyToReference\CosturaAssemblyToReference.csproj" />
   </ItemGroup>
   <ItemGroup>
