@@ -3,6 +3,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>net47</TargetFrameworks>
+    <Tags>TE</Tags>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,9 +24,6 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Update="SampleForm.cs">
-      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
 

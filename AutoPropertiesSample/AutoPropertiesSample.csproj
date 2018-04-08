@@ -3,6 +3,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>net47</TargetFrameworks>
+    <Tags>TE</Tags>
   </PropertyGroup>
 
   <ItemGroup>
