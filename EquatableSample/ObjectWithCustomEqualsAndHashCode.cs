@@ -1,16 +1,13 @@
 ﻿using System;
-
 using Equatable;
-
 using Xunit;
-
 using Target = ObjectWithCustomEqualsAndHashCode;
 
 [ImplementsEquatable]
 public class ObjectWithCustomEqualsAndHashCode
 {
     [Equals]
-    public string _field;
+    public string field;
 
     [Equals]
     public int Property1 { get; set; }
@@ -20,13 +17,13 @@ public class ObjectWithCustomEqualsAndHashCode
     public bool Property3 { get; set; }
 
     [CustomEquals]
-    private bool CustomEquals(ObjectWithCustomEqualsAndHashCode other)
+    bool CustomEquals(ObjectWithCustomEqualsAndHashCode other)
     {
         return Equals(Property2, other.Property2);
     }
 
     [CustomGetHashCode]
-    private int CustomGetHashCode()
+    int CustomGetHashCode()
     {
         return Property2.GetHashCode();
     }
@@ -44,7 +41,7 @@ public class ObjectWithCustomEqualsAndHashCode
     {
         var left = new Target
         {
-            _field = "test",
+            field = "test",
             Property1 = 5,
             Property2 = 3.5,
             Property3 = false
@@ -52,7 +49,7 @@ public class ObjectWithCustomEqualsAndHashCode
 
         var right = new Target
         {
-            _field = "test",
+            field = "test",
             Property1 = 5,
             Property2 = 3.5,
             Property3 = false
@@ -67,7 +64,7 @@ public class ObjectWithCustomEqualsAndHashCode
     {
         var left = new Target
         {
-            _field = "test",
+            field = "test",
             Property1 = 5,
             Property2 = 3.5,
             Property3 = true
@@ -75,7 +72,7 @@ public class ObjectWithCustomEqualsAndHashCode
 
         var right = new Target
         {
-            _field = "test",
+            field = "test",
             Property1 = 5,
             Property2 = 3.5,
             Property3 = false
@@ -90,7 +87,7 @@ public class ObjectWithCustomEqualsAndHashCode
     {
         var left = new Target
         {
-            _field = "test",
+            field = "test",
             Property1 = 5,
             Property2 = 4.5,
             Property3 = true
@@ -98,7 +95,7 @@ public class ObjectWithCustomEqualsAndHashCode
 
         var right = new Target
         {
-            _field = "test",
+            field = "test",
             Property1 = 5,
             Property2 = 3.5,
             Property3 = false
@@ -113,7 +110,7 @@ public class ObjectWithCustomEqualsAndHashCode
     {
         var left = new Target
         {
-            _field = "test",
+            field = "test",
             Property1 = 4,
             Property2 = 4.5,
             Property3 = true
@@ -121,7 +118,7 @@ public class ObjectWithCustomEqualsAndHashCode
 
         var right = new Target
         {
-            _field = "test",
+            field = "test",
             Property1 = 5,
             Property2 = 3.5,
             Property3 = false
@@ -136,7 +133,7 @@ public class ObjectWithCustomEqualsAndHashCode
     {
         var left = new Target
         {
-            _field = "test",
+            field = "test",
             Property1 = 5,
             Property2 = 3.5,
             Property3 = false
@@ -144,7 +141,7 @@ public class ObjectWithCustomEqualsAndHashCode
 
         var right = new Target
         {
-            _field = "test1",
+            field = "test1",
             Property1 = 5,
             Property2 = 3.5,
             Property3 = false
@@ -159,7 +156,7 @@ public class ObjectWithCustomEqualsAndHashCode
     {
         var left = new Target
         {
-            _field = "test",
+            field = "test",
             Property1 = 5,
             Property2 = 3.5,
             Property3 = false
@@ -167,7 +164,7 @@ public class ObjectWithCustomEqualsAndHashCode
 
         var right = new Target
         {
-            _field = "Test",
+            field = "Test",
             Property1 = 5,
             Property2 = 3.5,
             Property3 = false
@@ -177,4 +174,3 @@ public class ObjectWithCustomEqualsAndHashCode
         Assert.NotEqual(left.GetHashCode(), right.GetHashCode());
     }
 }
-

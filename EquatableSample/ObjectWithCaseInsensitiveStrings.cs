@@ -1,9 +1,6 @@
 ﻿using System;
-
 using Equatable;
-
 using Xunit;
-
 using Target = ObjectWithCaseInsensitiveStrings;
 
 [ImplementsEquatable]
@@ -120,4 +117,3 @@ public class ObjectWithCaseInsensitiveStrings
         Assert.NotEqual(left.GetHashCode(), right.GetHashCode());
     }
 }
-

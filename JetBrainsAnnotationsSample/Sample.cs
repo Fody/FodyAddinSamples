@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Globalization;
 using System.IO;
-
 using JetBrains.Annotations;
-
 using Xunit;
 
 public class JetBrainsAnnotationsSample
@@ -39,4 +37,3 @@ public class JetBrainsAnnotationsSample
         return string.Format(CultureInfo.CurrentCulture, format, args);
     }
 }
-

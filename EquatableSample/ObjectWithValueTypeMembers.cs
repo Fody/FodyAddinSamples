@@ -1,16 +1,13 @@
 ﻿using System;
-
 using Equatable;
-
 using Xunit;
-
 using Target = ObjectWithValueTypeMembers;
 
 [ImplementsEquatable]
 public class ObjectWithValueTypeMembers
 {
     [Equals]
-    public string _field;
+    public string field;
 
     [Equals]
     public int Property1 { get; set; }
@@ -19,7 +16,6 @@ public class ObjectWithValueTypeMembers
     public double Property2 { get; set; }
 
     public bool Property3 { get; set; }
-
 
     [Fact]
     public void ImplementsIEquatable()
@@ -34,7 +30,7 @@ public class ObjectWithValueTypeMembers
     {
         var left = new Target
         {
-            _field = "test",
+            field = "test",
             Property1 = 5,
             Property2 = 3.5,
             Property3 = false
@@ -42,7 +38,7 @@ public class ObjectWithValueTypeMembers
 
         var right = new Target
         {
-            _field = "test",
+            field = "test",
             Property1 = 5,
             Property2 = 3.5,
             Property3 = false
@@ -57,7 +53,7 @@ public class ObjectWithValueTypeMembers
     {
         var left = new Target
         {
-            _field = "test",
+            field = "test",
             Property1 = 5,
             Property2 = 3.5,
             Property3 = true
@@ -65,7 +61,7 @@ public class ObjectWithValueTypeMembers
 
         var right = new Target
         {
-            _field = "test",
+            field = "test",
             Property1 = 5,
             Property2 = 3.5,
             Property3 = false
@@ -80,7 +76,7 @@ public class ObjectWithValueTypeMembers
     {
         var left = new Target
         {
-            _field = "test",
+            field = "test",
             Property1 = 5,
             Property2 = 4.5,
             Property3 = true
@@ -88,7 +84,7 @@ public class ObjectWithValueTypeMembers
 
         var right = new Target
         {
-            _field = "test",
+            field = "test",
             Property1 = 5,
             Property2 = 3.5,
             Property3 = false
@@ -103,7 +99,7 @@ public class ObjectWithValueTypeMembers
     {
         var left = new Target
         {
-            _field = "test",
+            field = "test",
             Property1 = 4,
             Property2 = 4.5,
             Property3 = true
@@ -111,7 +107,7 @@ public class ObjectWithValueTypeMembers
 
         var right = new Target
         {
-            _field = "test",
+            field = "test",
             Property1 = 5,
             Property2 = 3.5,
             Property3 = false
@@ -126,7 +122,7 @@ public class ObjectWithValueTypeMembers
     {
         var left = new Target
         {
-            _field = "test",
+            field = "test",
             Property1 = 5,
             Property2 = 3.5,
             Property3 = false
@@ -134,7 +130,7 @@ public class ObjectWithValueTypeMembers
 
         var right = new Target
         {
-            _field = "test1",
+            field = "test1",
             Property1 = 5,
             Property2 = 3.5,
             Property3 = false
@@ -149,7 +145,7 @@ public class ObjectWithValueTypeMembers
     {
         var left = new Target
         {
-            _field = "test",
+            field = "test",
             Property1 = 5,
             Property2 = 3.5,
             Property3 = false
@@ -157,7 +153,7 @@ public class ObjectWithValueTypeMembers
 
         var right = new Target
         {
-            _field = "Test",
+            field = "Test",
             Property1 = 5,
             Property2 = 3.5,
             Property3 = false
@@ -172,7 +168,7 @@ public class ObjectWithValueTypeMembers
     {
         var left = new Target
         {
-            _field = "test",
+            field = "test",
             Property1 = 5,
             Property2 = 3.5,
             Property3 = false

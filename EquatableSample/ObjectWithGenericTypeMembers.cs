@@ -1,9 +1,6 @@
 ﻿using System;
-
 using Equatable;
-
 using Xunit;
-
 using Target = ObjectWithGenericTypeMembers;
 
 // [ImplementsEquatable] => show a warning, if not annotated.
@@ -80,4 +77,3 @@ public class ObjectWithGenericTypeMembers
         Assert.NotEqual(left.GetHashCode(), right.GetHashCode());
     }
 }
-

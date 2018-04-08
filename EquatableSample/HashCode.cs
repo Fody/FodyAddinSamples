@@ -22,7 +22,9 @@ public class HashCode
     public static int GetHashCode(object value)
     {
         if (value == null)
+        {
             return 0;
+        }
 
         return value.GetHashCode();
     }
@@ -30,9 +32,10 @@ public class HashCode
     public static int GetStringHashCode(string value, StringComparer comparer)
     {
         if (value == null)
+        {
             return 0;
+        }
 
         return comparer.GetHashCode(value);
     }
 }
-
