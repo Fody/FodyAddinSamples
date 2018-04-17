@@ -1,6 +1,4 @@
-﻿
-using System.Reflection.Emit;
-using InlineIL;
+﻿using static InlineIL.IL.Emit;
 
 namespace InlineILSample
 {
@@ -9,14 +7,14 @@ namespace InlineILSample
         public static void InitStruct<T>(ref T value)
             where T : struct
         {
-            IL.Push(ref value);
+            Ldarg(nameof(value));
 
-            IL.Emit(OpCodes.Ldc_I4_0);
+            Ldc_I4_0();
 
-            IL.Emit(OpCodes.Sizeof, typeof(T));
+            Sizeof(typeof(T));
 
-            IL.Emit(OpCodes.Unaligned, 1);
-            IL.Emit(OpCodes.Initblk);
+            Unaligned(1);
+            Initblk();
         }
     }
 }
