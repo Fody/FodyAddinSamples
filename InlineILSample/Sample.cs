@@ -1,29 +1,26 @@
 ﻿using System;
 using Xunit;
 
-namespace InlineILSample
+public class Sample
 {
-    public class Sample
+    [Fact]
+    public void Run()
     {
-        [Fact]
-        public void Run()
+        var item = new MyStruct
         {
-            var item = new MyStruct
-            {
-                Int = 42,
-                Guid = Guid.NewGuid()
-            };
+            Int = 42,
+            Guid = Guid.NewGuid()
+        };
 
-            ZeroInit.InitStruct(ref item);
+        ZeroInit.InitStruct(ref item);
 
-            Assert.Equal(0, item.Int);
-            Assert.Equal(Guid.Empty, item.Guid);
-        }
+        Assert.Equal(0, item.Int);
+        Assert.Equal(Guid.Empty, item.Guid);
+    }
 
-        struct MyStruct
-        {
-            public int Int;
-            public Guid Guid;
-        }
+    struct MyStruct
+    {
+        public int Int;
+        public Guid Guid;
     }
 }
