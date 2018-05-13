@@ -84,6 +84,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThrottleSample", "ThrottleS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatelSample", "CatelSample\CatelSample.csproj", "{8D381E80-E9BB-4B8E-AF8A-819C3534176C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncErrorHandlerSample", "AsyncErrorHandlerSample\AsyncErrorHandlerSample.csproj", "{5C630FF9-40D2-49EF-B15F-C4C3CFDCE61E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncErrorHandlerWithRaygun", "AsyncErrorHandlerWithRaygun\AsyncErrorHandlerWithRaygun.csproj", "{BDCC4528-3433-4A5D-AE2C-4A369C16FFB1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssertMessageSample", "AssertMessageSample\AssertMessageSample.csproj", "{647244C5-731E-4909-A523-87EEE85A4DD2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -322,6 +328,24 @@ Global
 		{8D381E80-E9BB-4B8E-AF8A-819C3534176C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8D381E80-E9BB-4B8E-AF8A-819C3534176C}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
 		{8D381E80-E9BB-4B8E-AF8A-819C3534176C}.ReleaseNetCore|Any CPU.Build.0 = Release|Any CPU
+		{5C630FF9-40D2-49EF-B15F-C4C3CFDCE61E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C630FF9-40D2-49EF-B15F-C4C3CFDCE61E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C630FF9-40D2-49EF-B15F-C4C3CFDCE61E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C630FF9-40D2-49EF-B15F-C4C3CFDCE61E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C630FF9-40D2-49EF-B15F-C4C3CFDCE61E}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
+		{5C630FF9-40D2-49EF-B15F-C4C3CFDCE61E}.ReleaseNetCore|Any CPU.Build.0 = Release|Any CPU
+		{BDCC4528-3433-4A5D-AE2C-4A369C16FFB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDCC4528-3433-4A5D-AE2C-4A369C16FFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDCC4528-3433-4A5D-AE2C-4A369C16FFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDCC4528-3433-4A5D-AE2C-4A369C16FFB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDCC4528-3433-4A5D-AE2C-4A369C16FFB1}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
+		{BDCC4528-3433-4A5D-AE2C-4A369C16FFB1}.ReleaseNetCore|Any CPU.Build.0 = Release|Any CPU
+		{647244C5-731E-4909-A523-87EEE85A4DD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{647244C5-731E-4909-A523-87EEE85A4DD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{647244C5-731E-4909-A523-87EEE85A4DD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{647244C5-731E-4909-A523-87EEE85A4DD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{647244C5-731E-4909-A523-87EEE85A4DD2}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
+		{647244C5-731E-4909-A523-87EEE85A4DD2}.ReleaseNetCore|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
