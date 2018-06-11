@@ -4,7 +4,7 @@
     <TargetFrameworks>net47;netcoreapp2.1</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Anotar.CommonLogging.Fody" Version="4.4.0" />
+    <PackageReference Include="Anotar.CommonLogging.Fody" Version="4.5.0" />
     <PackageReference Include="Fody" Version="3.0.3" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.0" />
     <PackageReference Include="xunit" Version="2.3.1" />
