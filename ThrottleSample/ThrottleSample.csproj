@@ -1,22 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFrameworks>net471</TargetFrameworks>
     <Tags>TE</Tags>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="Fody" Version="3.0.3" />
     <PackageReference Include="Throttle.Fody" Version="1.1.0" />
-    <PackageReference Include="TomsToolbox.Desktop" Version="1.0.69" />
+    <PackageReference Include="TomsToolbox.Desktop" Version="1.0.70" />
     <PackageReference Include="xunit" Version="2.3.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.2" />
   </ItemGroup>
-
   <ItemGroup>
     <Reference Include="WindowsBase" />
   </ItemGroup>
-
 </Project>
