@@ -31,6 +31,6 @@ public class SubstituteSamples
         target = new SampleForm();
 
         Assert.Equal("Override: $this.Text => Deutsch", target.Text);
-        Assert.Equal("Override: label1.Text => Textfeld", target.label1.Text);
+        Assert.Equal("Override: label1.Text => TextField", target.label1.Text);
     }
 }
