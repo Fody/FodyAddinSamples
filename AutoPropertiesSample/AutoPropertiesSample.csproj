@@ -5,9 +5,9 @@
     <Tags>TE</Tags>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Fody" Version="3.1.0" />
-    <PackageReference Include="PropertyChanged.Fody" Version="2.5.7" />
-    <PackageReference Include="AutoProperties.Fody" Version="1.10.0" />
+    <PackageReference Include="Fody" Version="3.1.3" />
+    <PackageReference Include="PropertyChanged.Fody" Version="2.5.8" />
+    <PackageReference Include="AutoProperties.Fody" Version="1.13.0" />
     <PackageReference Include="xunit" Version="2.3.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.2" />
