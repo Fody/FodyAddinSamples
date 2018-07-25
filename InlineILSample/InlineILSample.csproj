@@ -4,7 +4,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Fody" Version="3.1.3" />
-    <PackageReference Include="InlineIL.Fody" Version="0.6.2" />
+    <PackageReference Include="InlineIL.Fody" Version="0.6.3" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
     <PackageReference Include="xunit" Version="2.4.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
