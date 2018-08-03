@@ -2,8 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net471</TargetFrameworks>
-    <Tags>TE</Tags>
+    <TargetFrameworks>net472</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
