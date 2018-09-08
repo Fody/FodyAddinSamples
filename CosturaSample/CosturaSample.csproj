@@ -5,10 +5,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Costura.Fody" Version="3.1.0" />
-    <PackageReference Include="Fody" Version="3.1.7">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
+    <PackageReference Include="Fody" Version="3.2.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
     <PackageReference Include="xunit" Version="2.4.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />

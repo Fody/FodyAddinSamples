@@ -10,7 +10,7 @@ public class JetBrainsAnnotationsSample
     public void Run()
     {
         var outputFolder = Path.GetDirectoryName(new Uri(GetType().Assembly.CodeBase).LocalPath);
-        var projectFolder = Path.GetFullPath(Path.Combine(outputFolder, @"..", @"..", @".."));
+        var projectFolder = Path.GetFullPath(Path.Combine(outputFolder, "..", "..", ".."));
 
         var expected = File.ReadAllText(Path.Combine(projectFolder, "JetBrainsAnnotationsSample.ExternalAnnotations.Expected.xml"));
         var generatedFileName = Path.Combine(projectFolder, "JetBrainsAnnotationsSample.ExternalAnnotations.xml");
