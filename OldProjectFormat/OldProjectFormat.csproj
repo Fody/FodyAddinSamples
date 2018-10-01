@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\BasicFodyAddin.Fody.1.1.3\build\BasicFodyAddin.Fody.props" Condition="Exists('..\packages\BasicFodyAddin.Fody.1.1.3\build\BasicFodyAddin.Fody.props')" />
   <Import Project="..\packages\xunit.runner.visualstudio.2.4.0\build\net20\xunit.runner.visualstudio.props" Condition="Exists('..\packages\xunit.runner.visualstudio.2.4.0\build\net20\xunit.runner.visualstudio.props')" />
   <Import Project="..\packages\xunit.core.2.4.0\build\xunit.core.props" Condition="Exists('..\packages\xunit.core.2.4.0\build\xunit.core.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -35,8 +36,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BasicFodyAddin, Version=1.1.2.0, Culture=neutral, PublicKeyToken=409b3227471b0f0d, processorArchitecture=MSIL">
-      <HintPath>..\packages\BasicFodyAddin.Fody.1.1.2\lib\net452\BasicFodyAddin.dll</HintPath>
+    <Reference Include="BasicFodyAddin, Version=1.1.3.0, Culture=neutral, PublicKeyToken=409b3227471b0f0d, processorArchitecture=MSIL">
+      <HintPath>..\packages\BasicFodyAddin.Fody.1.1.3\lib\net452\BasicFodyAddin.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -76,8 +77,9 @@
     <Error Condition="!Exists('..\packages\xunit.core.2.4.0\build\xunit.core.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.4.0\build\xunit.core.props'))" />
     <Error Condition="!Exists('..\packages\xunit.core.2.4.0\build\xunit.core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.4.0\build\xunit.core.targets'))" />
     <Error Condition="!Exists('..\packages\xunit.runner.visualstudio.2.4.0\build\net20\xunit.runner.visualstudio.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.runner.visualstudio.2.4.0\build\net20\xunit.runner.visualstudio.props'))" />
-    <Error Condition="!Exists('..\packages\Fody.3.2.5\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.3.2.5\build\Fody.targets'))" />
+    <Error Condition="!Exists('..\packages\Fody.3.2.6\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.3.2.6\build\Fody.targets'))" />
+    <Error Condition="!Exists('..\packages\BasicFodyAddin.Fody.1.1.3\build\BasicFodyAddin.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\BasicFodyAddin.Fody.1.1.3\build\BasicFodyAddin.Fody.props'))" />
   </Target>
   <Import Project="..\packages\xunit.core.2.4.0\build\xunit.core.targets" Condition="Exists('..\packages\xunit.core.2.4.0\build\xunit.core.targets')" />
-  <Import Project="..\packages\Fody.3.2.5\build\Fody.targets" Condition="Exists('..\packages\Fody.3.2.5\build\Fody.targets')" />
+  <Import Project="..\packages\Fody.3.2.6\build\Fody.targets" Condition="Exists('..\packages\Fody.3.2.6\build\Fody.targets')" />
 </Project>

@@ -4,8 +4,8 @@
     <TargetFrameworks>net472;netcoreapp2.1</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="EmptyConstructor.Fody" Version="1.4.2" />
-    <PackageReference Include="Fody" Version="3.2.5">
+    <PackageReference Include="EmptyConstructor.Fody" Version="1.4.3" />
+    <PackageReference Include="Fody" Version="3.2.6">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
