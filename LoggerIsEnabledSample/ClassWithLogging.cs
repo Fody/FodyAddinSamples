@@ -1,12 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
-using Moq;
-using System;
-using System.Linq.Expressions;
-using Xunit;
 
 namespace LoggerIsEnabledSample
 {
-
     public class ClassWithLogging
     {
         private readonly ILogger<ClassWithLogging> _logger;
