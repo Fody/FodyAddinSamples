@@ -16,6 +16,7 @@ public class MyComponentResourceManager : ComponentResourceManager
     {
     }
 
+    // a substitute must implement all (even implicit) used methods of the substituted type.
     public new void ApplyResources(object value, string objectName)
     {
         base.ApplyResources(value, objectName);
@@ -39,6 +40,7 @@ public class MyResourceManager : ResourceManager
     {
 
     }
+
     public override string GetString(string name, CultureInfo culture)
     {
         return $"Override: {name} => {base.GetString(name, culture)}";
