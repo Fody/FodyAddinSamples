@@ -49,13 +49,13 @@ public class AutoPropertiesInterceptor
     [Fact]
     public void Run()
     {
-        Assert.Equal(8, Property1);
-        Assert.Equal("9", Property2);
+        Assert.Equal(10, Property1);
+        Assert.Equal("11", Property2);
 
         Property1 = 42;
 
         Assert.Equal(45, Property1);
-        Assert.Equal("9", Property2);
+        Assert.Equal("11", Property2);
 
         Property2 = "44";
 
