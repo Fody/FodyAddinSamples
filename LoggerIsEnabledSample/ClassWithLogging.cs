@@ -4,7 +4,7 @@ namespace LoggerIsEnabledSample
 {
     public class ClassWithLogging
     {
-        private readonly ILogger<ClassWithLogging> _logger;
+        ILogger<ClassWithLogging> _logger;
 
         public ClassWithLogging(ILogger<ClassWithLogging> logger)
         {

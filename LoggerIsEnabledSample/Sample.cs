@@ -8,7 +8,7 @@ namespace LoggerIsEnabledSample
 {
     public class Sample
     {
-        private readonly Expression<Action<ILogger<ClassWithLogging>>> _logAction = x => x.Log(It.IsAny<LogLevel>(), 0, It.IsAny<object>(), It.IsAny<Exception>(), It.IsAny<Func<object, Exception, string>>());
+        Expression<Action<ILogger<ClassWithLogging>>> _logAction = x => x.Log(It.IsAny<LogLevel>(), 0, It.IsAny<object>(), It.IsAny<Exception>(), It.IsAny<Func<object, Exception, string>>());
 
         [Fact]
         public void LogTrace_With_IsEnabled_True_Will_Call_Log_Method()

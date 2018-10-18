@@ -4,16 +4,16 @@
     <TargetFrameworks>net472;netcoreapp2.1</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Anotar.CommonLogging.Fody" Version="4.6.6" />
+    <PackageReference Include="Anotar.CommonLogging.Fody" Version="4.6.7" />
     <PackageReference Include="Fody" Version="3.2.10">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
     <PackageReference Include="xunit" Version="2.4.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
     <PackageReference Include="Common.Logging.Core" Version="3.4.1" />
     <PackageReference Include="Common.Logging" Version="3.4.1" />
-    <PackageReference Include="ModuleInit.Fody" Version="1.8.2" />
+    <PackageReference Include="ModuleInit.Fody" Version="1.8.3" />
   </ItemGroup>
 </Project>
