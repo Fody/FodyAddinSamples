@@ -6,7 +6,7 @@
   <ItemGroup>
     <PackageReference Include="AsyncErrorHandler.Fody" Version="1.2.2" />
     <PackageReference Include="Mindscape.Raygun4Net" Version="5.6.0" />
-    <PackageReference Include="Fody" Version="3.2.6">
+    <PackageReference Include="Fody" Version="3.2.10">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
