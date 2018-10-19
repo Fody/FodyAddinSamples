@@ -1,19 +1,16 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace LoggerIsEnabledSample
+public class ClassWithLogging
 {
-    public class ClassWithLogging
+    ILogger<ClassWithLogging> logger;
+
+    public ClassWithLogging(ILogger<ClassWithLogging> logger)
     {
-        ILogger<ClassWithLogging> _logger;
+        this.logger = logger;
+    }
 
-        public ClassWithLogging(ILogger<ClassWithLogging> logger)
-        {
-            _logger = logger;
-        }
-
-        public void LogTrace()
-        {
-            _logger.LogTrace("message");
-        }
+    public void LogTrace()
+    {
+        logger.LogTrace("message");
     }
 }
