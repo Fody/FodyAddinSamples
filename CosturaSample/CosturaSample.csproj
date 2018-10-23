@@ -4,7 +4,7 @@
     <TargetFrameworks>net472</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Costura.Fody" Version="3.1.5" />
+    <PackageReference Include="Costura.Fody" Version="3.1.6" />
     <PackageReference Include="Fody" Version="3.2.11">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
