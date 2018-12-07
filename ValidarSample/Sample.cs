@@ -12,8 +12,8 @@ public class ValidarSample
         var personAsDataErrorInfo = (IDataErrorInfo)person;
 
         //values will be invalid to start with
-        Assert.Equal("'Given Names' should not be empty.", personAsDataErrorInfo["GivenNames"]);
-        Assert.Equal("'Family Name' should not be empty.", personAsDataErrorInfo["FamilyName"]);
+        Assert.Equal("'Given Names' must not be empty.", personAsDataErrorInfo["GivenNames"]);
+        Assert.Equal("'Family Name' must not be empty.", personAsDataErrorInfo["FamilyName"]);
 
         //Set to some valid values
         person.FamilyName = "Smith";
