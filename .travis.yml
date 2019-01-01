@@ -2,8 +2,6 @@ language: csharp
 dist: xenial
 sudo: required
 mono: none
-dotnet: 2.2.100
-before_install:
-  - chmod +x ./build.sh
+dotnet: 2.2
 script:
-  - ./build.sh --quiet verify
+  - dotnet test
