@@ -2,6 +2,8 @@ language: csharp
 dist: xenial
 sudo: required
 mono: none
+env:
+  - MSBUILDDISABLENODEREUSE=1
 dotnet: 2.2
 script:
   - dotnet build /p:Configuration=ReleaseNetCore /p:Platform="Any CPU" --framework netcoreapp2.2 -nodereuse:false
