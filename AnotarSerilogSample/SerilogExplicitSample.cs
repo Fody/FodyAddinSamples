@@ -12,7 +12,7 @@ namespace AnotarSerilogSample
 
             var lastMessage = LogCaptureBuilder.LastMessage;
             Assert.Equal("Void MyMethod()", lastMessage.MethodName());
-            Assert.Equal(19, lastMessage.LineNumber());
+            Assert.Equal(21, lastMessage.LineNumber());
             Assert.Equal("TheMessage", lastMessage.MessageTemplate.Text);
         }
 

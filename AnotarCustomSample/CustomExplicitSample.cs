@@ -10,7 +10,7 @@ namespace AnotarCustomSample
         {
             MyMethod();
 
-            Assert.Equal("Method: 'Void MyMethod()'. Line: ~16. TheMessage", Logger.LastMessage.Format);
+            Assert.Equal("Method: 'Void MyMethod()'. Line: ~18. TheMessage", Logger.LastMessage.Format);
         }
 
         static void MyMethod()

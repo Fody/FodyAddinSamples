@@ -43,7 +43,7 @@ namespace AnotarCatelSample
         {
             MyMethod();
 
-            Assert.Equal("Method: 'Void MyMethod()'. Line: ~49. TheMessage", LastMessage);
+            Assert.Equal("Method: 'Void MyMethod()'. Line: ~51. TheMessage", LastMessage);
         }
 
         static void MyMethod()
