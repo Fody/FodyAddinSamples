@@ -7,4 +7,4 @@ env:
 dotnet: 2.2
 script:
   - dotnet build /p:Configuration=ReleaseNetCore /p:Platform="Any CPU" --framework netcoreapp2.2 -nodereuse:false
-  - dotnet test --no-build --configuration ReleaseNetCore --framework netcoreapp2.2
+  - dotnet test --no-build --configuration ReleaseNetCore --framework netcoreapp2.2 -nodereuse:false
