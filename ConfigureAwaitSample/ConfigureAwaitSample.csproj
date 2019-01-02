@@ -4,7 +4,7 @@
     <TargetFrameworks>net472;netcoreapp2.2</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Fody" Version="3.3.4">
+    <PackageReference Include="Fody" Version="3.3.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
@@ -14,6 +14,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
-    <PackageReference Include="ConfigureAwait.Fody" Version="2.1.4" />
+    <PackageReference Include="ConfigureAwait.Fody" Version="3.0.0" />
   </ItemGroup>
 </Project>

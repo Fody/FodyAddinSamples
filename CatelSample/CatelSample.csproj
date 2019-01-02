@@ -4,7 +4,7 @@
     <TargetFrameworks>net472;netcoreapp2.2</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Fody" Version="3.3.3">
+    <PackageReference Include="Fody" Version="3.3.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
@@ -14,7 +14,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Catel.Fody" Version="3.5.0" />
+    <PackageReference Include="Catel.Fody" Version="3.6.0" />
     <PackageReference Include="Catel.Core" Version="5.8.0" />
   </ItemGroup>
   <ItemGroup>

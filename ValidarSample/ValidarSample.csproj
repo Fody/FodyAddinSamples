@@ -4,8 +4,8 @@
     <TargetFrameworks>net472;netcoreapp2.2</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="FluentValidation" Version="8.1.0" />
-    <PackageReference Include="Fody" Version="3.3.3">
+    <PackageReference Include="FluentValidation" Version="8.1.2" />
+    <PackageReference Include="Fody" Version="3.3.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>

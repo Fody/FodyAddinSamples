@@ -6,7 +6,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Anotar.Splat.Fody" Version="4.6.7" />
-    <PackageReference Include="Fody" Version="3.3.3">
+    <PackageReference Include="Fody" Version="3.3.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
@@ -16,7 +16,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Splat" Version="5.1.4" />
-    <PackageReference Include="ModuleInit.Fody" Version="1.8.3" />
+    <PackageReference Include="Splat" Version="5.2.1" />
+    <PackageReference Include="ModuleInit.Fody" Version="1.9.0" />
   </ItemGroup>
 </Project>
