@@ -2,27 +2,30 @@
 using Anotar.Serilog;
 using Xunit;
 
-public class SerilogExceptionSample
+namespace AnotarSerilogSample
 {
-    [Fact]
-    public void Run()
+    public class SerilogExceptionSample
     {
-        try
+        [Fact]
+        public void Run()
         {
-           MyMethod();
+            try
+            {
+                MyMethod();
+            }
+            catch
+            {
+            }
+
+            var actual = LogCaptureBuilder.LastMessage.MessageTemplate.Text;
+            Assert.Equal("Exception occurred in 'Void MyMethod()'. ", actual);
         }
-        catch
+
+        [LogToDebugOnException]
+        static void MyMethod()
         {
+            throw new Exception("Foo");
         }
 
-        var actual = LogCaptureBuilder.LastMessage.MessageTemplate.Text;
-        Assert.Equal("Exception occurred in 'Void MyMethod()'. ", actual);
     }
-
-    [LogToDebugOnException]
-    static void MyMethod()
-    {
-        throw new Exception("Foo");
-    }
-
 }

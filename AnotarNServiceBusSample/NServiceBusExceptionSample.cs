@@ -2,26 +2,29 @@
 using Anotar.NServiceBus;
 using Xunit;
 
-public class NServiceBusExceptionSample
+namespace AnotarNServiceBusSample
 {
-    [Fact]
-    public void Run()
+    public class NServiceBusExceptionSample
     {
-        try
+        [Fact]
+        public void Run()
         {
-           MyMethod();
+            try
+            {
+                MyMethod();
+            }
+            catch
+            {
+            }
+
+            Assert.Equal("Exception occurred in 'Void MyMethod()'. ", LogCaptureBuilder.LastMessage);
         }
-        catch
+
+        [LogToDebugOnException]
+        static void MyMethod()
         {
+            throw new Exception("Foo");
         }
 
-        Assert.Equal("Exception occurred in 'Void MyMethod()'. ", LogCaptureBuilder.LastMessage);
     }
-
-    [LogToDebugOnException]
-    static void MyMethod()
-    {
-        throw new Exception("Foo");
-    }
-
 }

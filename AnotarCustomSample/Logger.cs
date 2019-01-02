@@ -1,36 +1,39 @@
 using System;
 
-public class Logger
+namespace AnotarCustomSample
 {
-    [ThreadStatic]
-    public static LogEntry LastMessage;
-
-    public void Debug(string format, params object[] args)
+    public class Logger
     {
-        LastMessage = new LogEntry
-        {
-            Format = format,
-            Params = args,
-        };
-    }
+        [ThreadStatic]
+        public static LogEntry LastMessage;
 
-    public void Debug(string format)
-    {
-        LastMessage = new LogEntry
+        public void Debug(string format, params object[] args)
         {
-            Format = format,
-        };
-    }
+            LastMessage = new LogEntry
+            {
+                Format = format,
+                Params = args,
+            };
+        }
 
-    public void Debug(Exception exception, string format, params object[] args)
-    {
-        LastMessage = new LogEntry
+        public void Debug(string format)
         {
-            Format = format,
-            Params = args,
-            Exception = exception
-        };
-    }
+            LastMessage = new LogEntry
+            {
+                Format = format,
+            };
+        }
 
-    public bool IsDebugEnabled => true;
+        public void Debug(Exception exception, string format, params object[] args)
+        {
+            LastMessage = new LogEntry
+            {
+                Format = format,
+                Params = args,
+                Exception = exception
+            };
+        }
+
+        public bool IsDebugEnabled => true;
+    }
 }

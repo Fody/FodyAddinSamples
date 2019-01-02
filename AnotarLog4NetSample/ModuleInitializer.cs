@@ -1,7 +1,10 @@
-﻿public static class ModuleInitializer
+﻿namespace AnotarLog4NetSample
 {
-    public static void Initialize()
+    public static class ModuleInitializer
     {
-        LogCaptureBuilder.Init();
+        public static void Initialize()
+        {
+            LogCaptureBuilder.Init();
+        }
     }
 }

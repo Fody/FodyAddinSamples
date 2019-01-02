@@ -2,25 +2,28 @@
 using Anotar.Log4Net;
 using Xunit;
 
-public class Log4NetExceptionSample
+namespace AnotarLog4NetSample
 {
-    [Fact]
-    public void Run()
+    public class Log4NetExceptionSample
     {
-        try
+        [Fact]
+        public void Run()
         {
-           MyMethod();
-        }
-        catch
-        {
+            try
+            {
+                MyMethod();
+            }
+            catch
+            {
+            }
+
+            Assert.Equal("Exception occurred in 'Void MyMethod()'. ", LogCaptureBuilder.LastMessage);
         }
 
-        Assert.Equal("Exception occurred in 'Void MyMethod()'. ", LogCaptureBuilder.LastMessage);
-    }
-
-    [LogToDebugOnException]
-    static void MyMethod()
-    {
-        throw new Exception("Foo");
+        [LogToDebugOnException]
+        static void MyMethod()
+        {
+            throw new Exception("Foo");
+        }
     }
 }

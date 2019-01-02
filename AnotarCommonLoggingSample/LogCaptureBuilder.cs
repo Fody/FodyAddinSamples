@@ -1,14 +1,17 @@
 ﻿using System;
 using Common.Logging;
 
-public static class LogCaptureBuilder
+namespace AnotarCommonLoggingSample
 {
-    [ThreadStatic]
-    public static string LastMessage;
-
-    public static void Init()
+    public static class LogCaptureBuilder
     {
-        LogManager.Adapter = new ActionAdapter();
+        [ThreadStatic]
+        public static string LastMessage;
 
+        public static void Init()
+        {
+            LogManager.Adapter = new ActionAdapter();
+
+        }
     }
 }

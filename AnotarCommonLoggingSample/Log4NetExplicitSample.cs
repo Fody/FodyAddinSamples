@@ -1,18 +1,21 @@
 ﻿using Anotar.CommonLogging;
 using Xunit;
 
-public class CommonLoggingExplicitSample
+namespace AnotarCommonLoggingSample
 {
-    [Fact]
-    public void Run()
+    public class CommonLoggingExplicitSample
     {
-        MyMethod();
+        [Fact]
+        public void Run()
+        {
+            MyMethod();
 
-        Assert.Equal("Method: 'Void MyMethod()'. Line: ~16. TheMessage", LogCaptureBuilder.LastMessage);
-    }
+            Assert.Equal("Method: 'Void MyMethod()'. Line: ~16. TheMessage", LogCaptureBuilder.LastMessage);
+        }
 
-    static void MyMethod()
-    {
-        LogTo.Debug("TheMessage");
+        static void MyMethod()
+        {
+            LogTo.Debug("TheMessage");
+        }
     }
 }

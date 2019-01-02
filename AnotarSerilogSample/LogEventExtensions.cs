@@ -1,15 +1,18 @@
 ﻿using Serilog.Events;
 
-public static class LogEventExtensions
+namespace AnotarSerilogSample
 {
-    public static string MethodName(this LogEvent logEvent)
+    public static class LogEventExtensions
     {
-        var logEventPropertyValue = (ScalarValue)logEvent.Properties["MethodName"];
-        return (string) logEventPropertyValue.Value;
-    }
-    public static int LineNumber(this LogEvent logEvent)
-    {
-        var logEventPropertyValue = (ScalarValue)logEvent.Properties["LineNumber"];
-        return (int) logEventPropertyValue.Value;
+        public static string MethodName(this LogEvent logEvent)
+        {
+            var logEventPropertyValue = (ScalarValue)logEvent.Properties["MethodName"];
+            return (string) logEventPropertyValue.Value;
+        }
+        public static int LineNumber(this LogEvent logEvent)
+        {
+            var logEventPropertyValue = (ScalarValue)logEvent.Properties["LineNumber"];
+            return (int) logEventPropertyValue.Value;
+        }
     }
 }

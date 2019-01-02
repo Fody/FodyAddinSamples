@@ -1,8 +1,11 @@
 ﻿using System;
 
-public class LogEntry
+namespace AnotarCustomSample
 {
-    public string Format;
-    public object[] Params;
-    public Exception Exception;
+    public class LogEntry
+    {
+        public string Format;
+        public object[] Params;
+        public Exception Exception;
+    }
 }

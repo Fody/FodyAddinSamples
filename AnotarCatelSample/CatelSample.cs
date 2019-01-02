@@ -3,49 +3,52 @@ using Anotar.Catel;
 using Catel.Logging;
 using Xunit;
 
-public class CatelSample
+namespace AnotarCatelSample
 {
-    [ThreadStatic]
-    public static string LastMessage;
-
-    static CatelSample()
+    public class CatelSample
     {
-        LogManager.AddListener(new LogListener
-        {
-            Action = (s, @event) => { LastMessage = s; }
-        });
-    }
+        [ThreadStatic]
+        public static string LastMessage;
 
-    [Fact]
-    public void RunException()
-    {
-        try
+        static CatelSample()
         {
-            MyExceptionMethod();
-        }
-        catch
-        {
+            LogManager.AddListener(new LogListener
+            {
+                Action = (s, @event) => { LastMessage = s; }
+            });
         }
 
-        Assert.StartsWith("Exception occurred in 'Void MyExceptionMethod()'", LastMessage);
-    }
+        [Fact]
+        public void RunException()
+        {
+            try
+            {
+                MyExceptionMethod();
+            }
+            catch
+            {
+            }
 
-    [LogToDebugOnException]
-    static void MyExceptionMethod()
-    {
-        throw new Exception("Foo");
-    }
+            Assert.StartsWith("Exception occurred in 'Void MyExceptionMethod()'", LastMessage);
+        }
 
-    [Fact]
-    public void RunExplicit()
-    {
-        MyMethod();
+        [LogToDebugOnException]
+        static void MyExceptionMethod()
+        {
+            throw new Exception("Foo");
+        }
 
-        Assert.Equal("Method: 'Void MyMethod()'. Line: ~49. TheMessage", LastMessage);
-    }
+        [Fact]
+        public void RunExplicit()
+        {
+            MyMethod();
 
-    static void MyMethod()
-    {
-        LogTo.Debug("TheMessage");
+            Assert.Equal("Method: 'Void MyMethod()'. Line: ~49. TheMessage", LastMessage);
+        }
+
+        static void MyMethod()
+        {
+            LogTo.Debug("TheMessage");
+        }
     }
 }

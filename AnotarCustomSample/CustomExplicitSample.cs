@@ -1,18 +1,21 @@
 ﻿using Anotar.Custom;
 using Xunit;
 
-public class CustomExplicitSample
+namespace AnotarCustomSample
 {
-    [Fact]
-    public void Run()
+    public class CustomExplicitSample
     {
-        MyMethod();
+        [Fact]
+        public void Run()
+        {
+            MyMethod();
 
-        Assert.Equal("Method: 'Void MyMethod()'. Line: ~16. TheMessage", Logger.LastMessage.Format);
-    }
+            Assert.Equal("Method: 'Void MyMethod()'. Line: ~16. TheMessage", Logger.LastMessage.Format);
+        }
 
-    static void MyMethod()
-    {
-        LogTo.Debug("TheMessage");
+        static void MyMethod()
+        {
+            LogTo.Debug("TheMessage");
+        }
     }
 }

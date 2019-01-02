@@ -1,12 +1,15 @@
 ﻿using Splat;
 
-public class Logger : ILogger
+namespace AnotarSplatSample
 {
-    public void Write(string message, LogLevel logLevel)
+    public class Logger : ILogger
     {
-        LogCaptureBuilder.LastMessage = message;
+        public void Write(string message, LogLevel logLevel)
+        {
+            LogCaptureBuilder.LastMessage = message;
+        }
+
+        public LogLevel Level { get; set; }
+
     }
-
-    public LogLevel Level { get; set; }
-
 }

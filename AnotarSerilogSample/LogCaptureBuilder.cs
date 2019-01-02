@@ -2,21 +2,24 @@
 using Serilog;
 using Serilog.Events;
 
-public static class LogCaptureBuilder
+namespace AnotarSerilogSample
 {
-    [ThreadStatic]
-    public static LogEvent LastMessage;
-
-    public static void Init()
+    public static class LogCaptureBuilder
     {
-        var eventSink = new EventSink
+        [ThreadStatic]
+        public static LogEvent LastMessage;
+
+        public static void Init()
+        {
+            var eventSink = new EventSink
             {
                 Action = _ => LastMessage = _
             };
-        Log.Logger = new LoggerConfiguration()
-            .MinimumLevel.Verbose()
-            .WriteTo.Sink(eventSink)
-            .CreateLogger();
-    }
+            Log.Logger = new LoggerConfiguration()
+                .MinimumLevel.Verbose()
+                .WriteTo.Sink(eventSink)
+                .CreateLogger();
+        }
 
+    }
 }

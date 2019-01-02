@@ -2,25 +2,28 @@
 using Anotar.Custom;
 using Xunit;
 
-public class CustomExceptionSample
+namespace AnotarCustomSample
 {
-    [Fact]
-    public void Run()
+    public class CustomExceptionSample
     {
-        try
+        [Fact]
+        public void Run()
         {
-           MyMethod();
-        }
-        catch
-        {
+            try
+            {
+                MyMethod();
+            }
+            catch
+            {
+            }
+
+            Assert.Equal("Exception occurred in 'Void MyMethod()'. ", Logger.LastMessage.Format);
         }
 
-        Assert.Equal("Exception occurred in 'Void MyMethod()'. ", Logger.LastMessage.Format);
-    }
-
-    [LogToDebugOnException]
-    static void MyMethod()
-    {
-        throw new Exception("Foo");
+        [LogToDebugOnException]
+        static void MyMethod()
+        {
+            throw new Exception("Foo");
+        }
     }
 }

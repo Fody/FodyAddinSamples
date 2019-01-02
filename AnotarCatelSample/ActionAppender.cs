@@ -1,12 +1,15 @@
 ﻿using System;
 using Catel.Logging;
 
-public class LogListener : LogListenerBase
+namespace AnotarCatelSample
 {
-    public Action<string, LogEvent> Action;
-
-    protected override void Write(ILog log, string message, LogEvent logEvent, object extraData, LogData logData, DateTime time)
+    public class LogListener : LogListenerBase
     {
-        Action(message, logEvent);
+        public Action<string, LogEvent> Action;
+
+        protected override void Write(ILog log, string message, LogEvent logEvent, object extraData, LogData logData, DateTime time)
+        {
+            Action(message, logEvent);
+        }
     }
 }

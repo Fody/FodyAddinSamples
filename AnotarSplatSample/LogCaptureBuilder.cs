@@ -1,21 +1,24 @@
 ﻿using System;
 using Splat;
 
-public class LogCaptureBuilder
+namespace AnotarSplatSample
 {
-    [ThreadStatic]
-    public static string LastMessage;
-
-    static Logger currentLogger = new Logger();
-
-    public static void Init()
+    public class LogCaptureBuilder
     {
-        Locator.CurrentMutable.Register(() => new FuncLogManager(GetLogger), typeof(ILogManager));
-    }
+        [ThreadStatic]
+        public static string LastMessage;
 
-    static IFullLogger GetLogger(Type arg)
-    {
-        return new WrappingFullLogger(currentLogger, arg);
-    }
+        static Logger currentLogger = new Logger();
 
+        public static void Init()
+        {
+            Locator.CurrentMutable.Register(() => new FuncLogManager(GetLogger), typeof(ILogManager));
+        }
+
+        static IFullLogger GetLogger(Type arg)
+        {
+            return new WrappingFullLogger(currentLogger, arg);
+        }
+
+    }
 }

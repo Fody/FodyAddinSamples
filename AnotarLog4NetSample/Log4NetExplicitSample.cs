@@ -1,18 +1,21 @@
 ﻿using Anotar.Log4Net;
 using Xunit;
 
-public class Log4NetExplicitSample
+namespace AnotarLog4NetSample
 {
-    [Fact]
-    public void Run()
+    public class Log4NetExplicitSample
     {
-        MyMethod();
+        [Fact]
+        public void Run()
+        {
+            MyMethod();
 
-        Assert.Equal("Method: 'Void MyMethod()'. Line: ~16. TheMessage", LogCaptureBuilder.LastMessage);
-    }
+            Assert.Equal("Method: 'Void MyMethod()'. Line: ~16. TheMessage", LogCaptureBuilder.LastMessage);
+        }
 
-    static void MyMethod()
-    {
-        LogTo.Debug("TheMessage");
+        static void MyMethod()
+        {
+            LogTo.Debug("TheMessage");
+        }
     }
 }

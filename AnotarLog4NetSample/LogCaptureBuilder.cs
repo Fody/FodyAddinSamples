@@ -2,20 +2,23 @@
 using System.Reflection;
 using log4net.Config;
 
-public static class LogCaptureBuilder
+namespace AnotarLog4NetSample
 {
-    [ThreadStatic]
-    public static string LastMessage;
-
-    public static void Init()
+    public static class LogCaptureBuilder
     {
-        var target = new ActionAppender
-        {
-            Action = _ => LastMessage = _.RenderedMessage
-        };
+        [ThreadStatic]
+        public static string LastMessage;
 
-        var executingAssembly = Assembly.GetExecutingAssembly();
-        var repository = log4net.LogManager.GetRepository(executingAssembly);
-        BasicConfigurator.Configure(repository, target);
+        public static void Init()
+        {
+            var target = new ActionAppender
+            {
+                Action = _ => LastMessage = _.RenderedMessage
+            };
+
+            var executingAssembly = Assembly.GetExecutingAssembly();
+            var repository = log4net.LogManager.GetRepository(executingAssembly);
+            BasicConfigurator.Configure(repository, target);
+        }
     }
 }

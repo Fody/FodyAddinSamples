@@ -1,14 +1,17 @@
 ﻿using System;
 using NServiceBus.Logging;
 
-public class LogCaptureBuilder
+namespace AnotarNServiceBusSample
 {
-    [ThreadStatic]
-    public static string LastMessage;
-
-    public static void Init()
+    public class LogCaptureBuilder
     {
-        LogManager.UseFactory(new LogCapture(s => LastMessage = s));
-    }
+        [ThreadStatic]
+        public static string LastMessage;
 
+        public static void Init()
+        {
+            LogManager.UseFactory(new LogCapture(s => LastMessage = s));
+        }
+
+    }
 }

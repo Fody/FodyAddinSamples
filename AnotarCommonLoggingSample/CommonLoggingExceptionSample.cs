@@ -2,25 +2,28 @@
 using Anotar.CommonLogging;
 using Xunit;
 
-public class CommonLoggingExceptionSample
+namespace AnotarCommonLoggingSample
 {
-    [Fact]
-    public void Run()
+    public class CommonLoggingExceptionSample
     {
-        try
+        [Fact]
+        public void Run()
         {
-           MyMethod();
-        }
-        catch
-        {
+            try
+            {
+                MyMethod();
+            }
+            catch
+            {
+            }
+
+            Assert.Equal("Exception occurred in 'Void MyMethod()'. ", LogCaptureBuilder.LastMessage);
         }
 
-        Assert.Equal("Exception occurred in 'Void MyMethod()'. ", LogCaptureBuilder.LastMessage);
-    }
-
-    [LogToDebugOnException]
-    static void MyMethod()
-    {
-        throw new Exception("Foo");
+        [LogToDebugOnException]
+        static void MyMethod()
+        {
+            throw new Exception("Foo");
+        }
     }
 }

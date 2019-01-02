@@ -1,9 +1,12 @@
 ﻿
 // ReSharper disable UnusedTypeParameter
-public class LoggerFactory
+namespace AnotarCustomSample
 {
-    public static Logger GetLogger<T>()
+    public class LoggerFactory
     {
-        return new Logger();
+        public static Logger GetLogger<T>()
+        {
+            return new Logger();
+        }
     }
 }

@@ -2,21 +2,24 @@
 using NLog;
 using NLog.Config;
 
-public class LogCaptureBuilder
+namespace AnotarNLogSample
 {
-    [ThreadStatic]
-    public static string LastMessage;
-
-    public static void Init()
+    public class LogCaptureBuilder
     {
-        var actionTarget = new ActionTarget
+        [ThreadStatic]
+        public static string LastMessage;
+
+        public static void Init()
+        {
+            var actionTarget = new ActionTarget
             {
                 Action = _ => LastMessage = _.Message
             };
-        var config = new LoggingConfiguration();
-        config.LoggingRules.Add(new LoggingRule("*", LogLevel.Trace, actionTarget));
-        config.AddTarget("debugger", actionTarget);
-        LogManager.Configuration = config;
-    }
+            var config = new LoggingConfiguration();
+            config.LoggingRules.Add(new LoggingRule("*", LogLevel.Trace, actionTarget));
+            config.AddTarget("debugger", actionTarget);
+            LogManager.Configuration = config;
+        }
 
+    }
 }

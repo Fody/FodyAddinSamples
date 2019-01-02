@@ -2,12 +2,15 @@
 using Serilog.Core;
 using Serilog.Events;
 
-public sealed class EventSink : ILogEventSink
+namespace AnotarSerilogSample
 {
-
-    public Action<LogEvent> Action;
-    public void Emit(LogEvent logEvent)
+    public sealed class EventSink : ILogEventSink
     {
-        Action(logEvent);
+
+        public Action<LogEvent> Action;
+        public void Emit(LogEvent logEvent)
+        {
+            Action(logEvent);
+        }
     }
 }
