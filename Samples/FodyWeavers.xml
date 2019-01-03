@@ -12,10 +12,12 @@
   <Anotar.Custom />
   <Anotar.LibLog />
   <Anotar.CommonLogging />
+  <BasicFodyAddin />
   <ConfigureAwait />
   <Janitor />
   <MethodTimer />
   <ModuleInit />
+  <Obsolete />
   <PropertyChanging />
   <PropertyChanged />
   <Resourcer />

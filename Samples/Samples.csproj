@@ -14,12 +14,14 @@
     <PackageReference Include="Anotar.Catel.Fody" Version="4.6.7" />
     <PackageReference Include="Anotar.NServiceBus.Fody" Version="4.6.7" />
     <PackageReference Include="Anotar.Serilog.Fody" Version="4.6.7" />
+    <PackageReference Include="BasicFodyAddin.Fody" Version="1.1.4" />
     <PackageReference Include="Fody" Version="3.3.5" />
     <PackageReference Include="Serilog" Version="2.7.1" />
     <PackageReference Include="MethodTimer.Fody" Version="2.2.2" />
     <PackageReference Include="ConfigureAwait.Fody" Version="3.0.0" />
     <PackageReference Include="Catel.Core" Version="5.8.0" />
     <PackageReference Include="NLog" Version="4.5.11" />
+    <PackageReference Include="Obsolete.Fody" Version="4.4.3" />
     <PackageReference Include="LibLog" Version="5.0.4" />
     <PackageReference Include="PropertyChanged.Fody" Version="2.6.0" />
     <PackageReference Include="PropertyChanging.Fody" Version="1.29.3" />
