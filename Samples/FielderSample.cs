@@ -7,9 +7,9 @@ public class FielderSample
     {
         Assert.NotNull(typeof(Target).GetProperty("MemberToConvert"));
     }
-}
 
-public class Target
-{
-    public string MemberToConvert;
+    public class Target
+    {
+        public string MemberToConvert;
+    }
 }
