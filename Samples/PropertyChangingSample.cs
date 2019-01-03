@@ -14,14 +14,14 @@ public class PropertyChangingSample
         Assert.Contains("FamilyName", propertyNotifications);
         Assert.Contains("FullName", propertyNotifications);
     }
-}
 
-public class Person : INotifyPropertyChanging
-{
-    public event PropertyChangingEventHandler PropertyChanging;
+    public class Person : INotifyPropertyChanging
+    {
+        public event PropertyChangingEventHandler PropertyChanging;
 
-    public string GivenNames { get; set; }
-    public string FamilyName { get; set; }
+        public string GivenNames { get; set; }
+        public string FamilyName { get; set; }
 
-    public string FullName => $"{GivenNames} {FamilyName}";
+        public string FullName => $"{GivenNames} {FamilyName}";
+    }
 }

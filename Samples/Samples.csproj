@@ -21,6 +21,8 @@
     <PackageReference Include="Catel.Core" Version="5.8.0" />
     <PackageReference Include="NLog" Version="4.5.11" />
     <PackageReference Include="LibLog" Version="5.0.4" />
+    <PackageReference Include="PropertyChanged.Fody" Version="2.6.0" />
+    <PackageReference Include="PropertyChanging.Fody" Version="1.29.3" />
     <PackageReference Include="log4net" Version="2.0.8" />
     <PackageReference Include="Common.Logging.Core" Version="3.4.1" />
     <PackageReference Include="Common.Logging" Version="3.4.1" />

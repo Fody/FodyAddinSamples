@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel;
 using Xunit;
 
 public class PropertyChangedSample
@@ -12,5 +13,15 @@ public class PropertyChangedSample
         target.FamilyName = "Smith";
         Assert.Contains("FamilyName", propertyNotifications);
         Assert.Contains("FullName", propertyNotifications);
+    }
+
+    public class Person : INotifyPropertyChanged
+    {
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public string GivenNames { get; set; }
+        public string FamilyName { get; set; }
+
+        public string FullName => $"{GivenNames} {FamilyName}";
     }
 }

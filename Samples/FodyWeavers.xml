@@ -16,6 +16,8 @@
   <Janitor />
   <MethodTimer />
   <ModuleInit />
+  <PropertyChanging />
+  <PropertyChanged />
   <Resourcer />
   <Virtuosity />
   <Visualize />
