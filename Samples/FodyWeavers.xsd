@@ -17,6 +17,7 @@
         <xs:element name="BasicFodyAddin" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Caseless" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="ConfigureAwait" minOccurs="0" maxOccurs="1" type="xs:anyType" />
+        <xs:element name="EmptyConstructor" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="ExtraConstraints" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Freezable" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="InfoOf" minOccurs="0" maxOccurs="1" type="xs:anyType" />

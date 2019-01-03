@@ -16,6 +16,7 @@
   <BasicFodyAddin />
   <Caseless />
   <ConfigureAwait />
+  <EmptyConstructor />
   <ExtraConstraints />
   <Freezable />
   <InfoOf />

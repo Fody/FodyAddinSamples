@@ -9,12 +9,12 @@ public class EmptyConstructorSample
         var target = Activator.CreateInstance<Target>();
         Assert.NotNull(target);
     }
-}
 
-public class Target
-{
-// ReSharper disable once UnusedParameter.Local
-    public Target(int foo)
+    public class Target
     {
+// ReSharper disable once UnusedParameter.Local
+        public Target(int foo)
+        {
+        }
     }
 }
