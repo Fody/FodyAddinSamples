@@ -49,9 +49,7 @@
     <PackageReference Include="Visualize.Fody" Version="1.1.4" />
     <PackageReference Include="Validar.Fody" Version="1.7.4" />
     <PackageReference Include="Publicize.Fody" Version="1.7.0" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="ToString.Fody" Version="1.10.5" />
     <ProjectReference Include="..\InfoOfToReference\InfoOfToReference.csproj" />
   </ItemGroup>
 </Project>
