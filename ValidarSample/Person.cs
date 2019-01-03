@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using Validar;
 
 [InjectValidation]
 public class Person : INotifyPropertyChanged
