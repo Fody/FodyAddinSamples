@@ -21,7 +21,6 @@
   <Freezable />
   <InfoOf />
   <Janitor />
-  <LoggerIsEnabled />
   <MethodTimer />
   <ModuleInit />
   <Obsolete />
