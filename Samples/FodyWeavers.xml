@@ -12,8 +12,10 @@
   <Anotar.Custom />
   <Anotar.LibLog />
   <Anotar.CommonLogging />
+  <AsyncErrorHandler />
   <BasicFodyAddin />
   <ConfigureAwait />
+  <ExtraConstraints />
   <Janitor />
   <MethodTimer />
   <ModuleInit />

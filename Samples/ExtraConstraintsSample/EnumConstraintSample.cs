@@ -21,4 +21,9 @@ public class EnumConstraintSample
     void MethodWithEnumConstraint<[EnumConstraint(typeof(MyEnum))] T>(T value)
     {
     }
+
+    public enum MyEnum
+    {
+        Value
+    }
 }
