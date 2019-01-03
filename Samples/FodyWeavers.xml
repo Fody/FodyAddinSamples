@@ -17,6 +17,7 @@
   <Caseless />
   <ConfigureAwait />
   <ExtraConstraints />
+  <Freezable />
   <InfoOf />
   <Janitor />
   <MethodTimer />

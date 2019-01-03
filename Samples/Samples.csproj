@@ -19,6 +19,7 @@
     <PackageReference Include="Caseless.Fody" Version="1.8.3" />
     <PackageReference Include="ExtraConstraints.Fody" Version="1.13.3" />
     <PackageReference Include="FluentValidation" Version="8.1.2" />
+    <PackageReference Include="Freezable.Fody" Version="1.9.3" />
     <PackageReference Include="Fody" Version="3.3.5" />
     <PackageReference Include="Fielder.Fody" Version="1.2.3" />
     <PackageReference Include="Serilog" Version="2.7.1" />
