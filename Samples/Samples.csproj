@@ -3,9 +3,6 @@
   <PropertyGroup>
     <TargetFrameworks>net472;netcoreapp2.2</TargetFrameworks>
   </PropertyGroup>
-  <ItemGroup>
-    <Compile Remove="AnotarLibLogSample\**" Condition="$(TargetFrameworks) == 'netcoreapp2.2'" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Anotar.LibLog.Fody" Version="4.6.7" />
