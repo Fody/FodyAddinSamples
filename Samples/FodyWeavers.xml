@@ -3,9 +3,6 @@
          VerifyIgnoreCodes="0x80131869"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="FodyWeavers.xsd">
-  <MethodTimer />
-  <ConfigureAwait />
-  <Janitor />
   <Anotar.Catel />
   <Anotar.Splat />
   <Anotar.Serilog />
@@ -15,5 +12,9 @@
   <Anotar.Custom />
   <Anotar.LibLog />
   <Anotar.CommonLogging />
+  <ConfigureAwait />
+  <Janitor />
+  <MethodTimer />
   <ModuleInit />
+  <Resourcer />
 </Weavers>

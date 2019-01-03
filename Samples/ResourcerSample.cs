@@ -6,7 +6,7 @@ public class ResourcerSample
     [Fact]
     public void Run()
     {
-        var fromResource = Resource.AsString("SampleResource.txt");
+        var fromResource = Resource.AsString("ResourcerSample.txt");
         Assert.Equal("Hello", fromResource);
     }
 }
