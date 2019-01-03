@@ -17,6 +17,7 @@
     <PackageReference Include="AsyncErrorHandler.Fody" Version="1.2.3" />
     <PackageReference Include="BasicFodyAddin.Fody" Version="1.1.4" />
     <PackageReference Include="ExtraConstraints.Fody" Version="1.13.3" />
+    <PackageReference Include="FluentValidation" Version="8.1.2" />
     <PackageReference Include="Fody" Version="3.3.5" />
     <PackageReference Include="Serilog" Version="2.7.1" />
     <PackageReference Include="MethodTimer.Fody" Version="2.2.2" />
@@ -41,5 +42,6 @@
     <EmbeddedResource Include="ResourcerSample.txt" />
     <PackageReference Include="Virtuosity.Fody" Version="1.21.3" />
     <PackageReference Include="Visualize.Fody" Version="1.1.4" />
+    <PackageReference Include="Validar.Fody" Version="1.7.4" />
   </ItemGroup>
 </Project>
