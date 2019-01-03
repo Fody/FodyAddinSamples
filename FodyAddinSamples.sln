@@ -2,8 +2,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 15.0.27130.2010
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PublicizeSample", "PublicizeSample\PublicizeSample.csproj", "{784796C0-7499-4093-9E64-D8AC3913CF54}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FielderSample", "FielderSample\FielderSample.csproj", "{620BF562-66FD-437F-9BD3-97A711E0D0C5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaselessSample", "CaselessSample\CaselessSample.csproj", "{F205624C-E61C-4FBF-8076-96206ECB825D}"
@@ -53,12 +51,6 @@ Global
 		ReleaseNetCore|Any CPU = ReleaseNetCore|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{784796C0-7499-4093-9E64-D8AC3913CF54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{784796C0-7499-4093-9E64-D8AC3913CF54}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{784796C0-7499-4093-9E64-D8AC3913CF54}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{784796C0-7499-4093-9E64-D8AC3913CF54}.Release|Any CPU.Build.0 = Release|Any CPU
-		{784796C0-7499-4093-9E64-D8AC3913CF54}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
-		{784796C0-7499-4093-9E64-D8AC3913CF54}.ReleaseNetCore|Any CPU.Build.0 = Release|Any CPU
 		{620BF562-66FD-437F-9BD3-97A711E0D0C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{620BF562-66FD-437F-9BD3-97A711E0D0C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{620BF562-66FD-437F-9BD3-97A711E0D0C5}.Release|Any CPU.ActiveCfg = Release|Any CPU

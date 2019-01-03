@@ -25,6 +25,7 @@
   <PropertyChanging />
   <PropertyChanged />
   <Resourcer />
+  <Publicize />
   <Virtuosity />
   <Visualize />
 </Weavers>

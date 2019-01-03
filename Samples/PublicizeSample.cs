@@ -8,7 +8,7 @@ public class PublicizeSample
     [Fact]
     public void Run()
     {
-        var targetType = typeof (Target);
+        var targetType = typeof (PublicizeTarget);
 
         Assert.True(targetType.IsPublic);
         var typeAttribute = GetEditorBrowsableAttribute(targetType);
@@ -25,14 +25,5 @@ public class PublicizeSample
     EditorBrowsableAttribute GetEditorBrowsableAttribute(MemberInfo memberInfo)
     {
         return (EditorBrowsableAttribute)memberInfo.GetCustomAttributes(typeof(EditorBrowsableAttribute), false).First();
-    }
-}
-
-class Target
-{
-// ReSharper disable UnusedMember.Local
-    void Method()
-// ReSharper restore UnusedMember.Local
-    {
     }
 }
