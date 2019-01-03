@@ -33,5 +33,6 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
     <PackageReference Include="Resourcer.Fody" Version="1.7.3" />
     <EmbeddedResource Include="ResourcerSample.txt" />
+    <PackageReference Include="Virtuosity.Fody" Version="1.21.3" />
   </ItemGroup>
 </Project>

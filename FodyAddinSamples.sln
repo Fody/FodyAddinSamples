@@ -6,8 +6,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyChangedSample", "Pr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertyChangingSample", "PropertyChangingSample\PropertyChangingSample.csproj", "{3A8FFC73-6FE5-4A41-A3BC-0FD3B940B503}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtuositySample", "VirtuositySample\VirtuositySample.csproj", "{E96A3336-ED6A-4E01-9A05-7799B8309517}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModuleInitSample", "ModuleInitSample\ModuleInitSample.csproj", "{BE0CC5E8-5D02-49D8-A36D-51A442E66536}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PublicizeSample", "PublicizeSample\PublicizeSample.csproj", "{784796C0-7499-4093-9E64-D8AC3913CF54}"
@@ -87,12 +85,6 @@ Global
 		{3A8FFC73-6FE5-4A41-A3BC-0FD3B940B503}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3A8FFC73-6FE5-4A41-A3BC-0FD3B940B503}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
 		{3A8FFC73-6FE5-4A41-A3BC-0FD3B940B503}.ReleaseNetCore|Any CPU.Build.0 = Release|Any CPU
-		{E96A3336-ED6A-4E01-9A05-7799B8309517}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E96A3336-ED6A-4E01-9A05-7799B8309517}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E96A3336-ED6A-4E01-9A05-7799B8309517}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E96A3336-ED6A-4E01-9A05-7799B8309517}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E96A3336-ED6A-4E01-9A05-7799B8309517}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
-		{E96A3336-ED6A-4E01-9A05-7799B8309517}.ReleaseNetCore|Any CPU.Build.0 = Release|Any CPU
 		{BE0CC5E8-5D02-49D8-A36D-51A442E66536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BE0CC5E8-5D02-49D8-A36D-51A442E66536}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE0CC5E8-5D02-49D8-A36D-51A442E66536}.Release|Any CPU.ActiveCfg = Release|Any CPU
