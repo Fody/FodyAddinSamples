@@ -27,7 +27,7 @@ public class ThrottleSample
             ThrottledMethod();
             Delay(5);
             Assert.Equal(0, throttledCalls);
-            Delay(20);
+            Delay(200);
             Assert.Equal(1, throttledCalls);
 
             dispatcher.BeginInvokeShutdown(DispatcherPriority.ApplicationIdle);
@@ -45,7 +45,7 @@ public class ThrottleSample
     }
 
 
-    [Throttled(typeof(TomsToolbox.Desktop.Throttle), 10)]
+    [Throttled(typeof(TomsToolbox.Desktop.Throttle), 100)]
     void ThrottledMethod()
     {
         Interlocked.Increment(ref throttledCalls);
