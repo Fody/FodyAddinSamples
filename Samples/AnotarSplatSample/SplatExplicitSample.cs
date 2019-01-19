@@ -10,7 +10,7 @@ namespace AnotarSplatSample
         {
             MyMethod();
 
-            Assert.Equal("SplatExplicitSample: Method: 'Void MyMethod()'. Line: ~18. TheMessage", LogCaptureBuilder.LastMessage);
+            Assert.Equal("Method: 'Void MyMethod()'. Line: ~18. TheMessage", LogCaptureBuilder.LastMessage);
         }
 
         static void MyMethod()
