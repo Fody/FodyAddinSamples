@@ -17,8 +17,7 @@ namespace AnotarSplatSample
 
         static IFullLogger GetLogger(Type arg)
         {
-            return new WrappingFullLogger(currentLogger, arg);
+            return new WrappingFullLogger(currentLogger);
         }
-
     }
 }
