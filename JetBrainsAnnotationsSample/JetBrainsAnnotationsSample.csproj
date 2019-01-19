@@ -15,7 +15,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="JetBrainsAnnotations.Fody" Version="2.10.0">
+    <PackageReference Include="JetBrainsAnnotations.Fody" Version="2.11.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
