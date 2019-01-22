@@ -24,6 +24,8 @@
         <xs:element name="Janitor" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="MethodTimer" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="ModuleInit" minOccurs="0" maxOccurs="1" type="xs:anyType" />
+        <xs:element name="ModuleWeaver" minOccurs="0" maxOccurs="1" type="xs:anyType" />
+        <xs:element name="NamedWeaver" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Obsolete" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Validar" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="PropertyChanging" minOccurs="0" maxOccurs="1" type="xs:anyType" />

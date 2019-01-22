@@ -23,6 +23,8 @@
   <Janitor />
   <MethodTimer />
   <ModuleInit />
+  <ModuleWeaver />
+  <NamedWeaver />
   <Obsolete />
   <Validar />
   <PropertyChanging />

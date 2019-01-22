@@ -1,0 +1,23 @@
+﻿using System.Collections.Generic;
+using System.Linq;
+using Fody;
+using Mono.Cecil;
+
+public class ModuleWeaver: BaseModuleWeaver
+{
+    public override void Execute()
+    {
+        var type = GetType();
+        var typeDefinition = new TypeDefinition(
+            @namespace: type.Assembly.GetName().Name,
+            name: $"TypeInjectedBy{type.Name}",
+            attributes: TypeAttributes.Public,
+            baseType: TypeSystem.ObjectReference);
+        ModuleDefinition.Types.Add(typeDefinition);
+    }
+
+    public override IEnumerable<string> GetAssembliesForScanning()
+    {
+        return Enumerable.Empty<string>();
+    }
+}
