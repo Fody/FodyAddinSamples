@@ -27,8 +27,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThrottleSample", "ThrottleS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatelSample", "CatelSample\CatelSample.csproj", "{8D381E80-E9BB-4B8E-AF8A-819C3534176C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncErrorHandlerWithRaygun", "AsyncErrorHandlerWithRaygun\AsyncErrorHandlerWithRaygun.csproj", "{BDCC4528-3433-4A5D-AE2C-4A369C16FFB1}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoPropertiesSample", "AutoPropertiesSample\AutoPropertiesSample.csproj", "{8FE75191-0079-452F-B837-962FD23220E7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeakEventHandlerSample", "WeakEventHandlerSample\WeakEventHandlerSample.csproj", "{578E811C-C350-4487-B3EE-1345FEC27B67}"
@@ -103,10 +101,6 @@ Global
 		{8D381E80-E9BB-4B8E-AF8A-819C3534176C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D381E80-E9BB-4B8E-AF8A-819C3534176C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8D381E80-E9BB-4B8E-AF8A-819C3534176C}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
-		{BDCC4528-3433-4A5D-AE2C-4A369C16FFB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BDCC4528-3433-4A5D-AE2C-4A369C16FFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BDCC4528-3433-4A5D-AE2C-4A369C16FFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BDCC4528-3433-4A5D-AE2C-4A369C16FFB1}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
 		{8FE75191-0079-452F-B837-962FD23220E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8FE75191-0079-452F-B837-962FD23220E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FE75191-0079-452F-B837-962FD23220E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
