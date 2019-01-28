@@ -2,11 +2,10 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Mindscape.Raygun4Net;
-using Xunit;
 
 public class AsyncErrorHandlerWithRaygun
 {
-    [Fact]
+    //[Fact]
     public async Task Run()
     {
         try

@@ -23,6 +23,7 @@
     <PackageReference Include="Freezable.Fody" Version="1.9.3" />
     <PackageReference Include="Fody" Version="3.3.5" />
     <PackageReference Include="Fielder.Fody" Version="1.2.3" />
+    <PackageReference Include="ReactiveUI.Fody" Version="9.8.23" />
     <PackageReference Include="Serilog" Version="2.8.0" />
     <PackageReference Include="MethodTimer.Fody" Version="2.3.0" />
     <PackageReference Include="ConfigureAwait.Fody" Version="3.0.0" />

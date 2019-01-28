@@ -29,6 +29,7 @@
   <Validar />
   <PropertyChanging />
   <PropertyChanged />
+  <ReactiveUI />
   <Resourcer />
   <Publicize />
   <Fielder />
