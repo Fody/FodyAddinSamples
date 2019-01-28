@@ -24,7 +24,6 @@ namespace AutoBindingRedirect
             var assembly = typeof(ModuleInitializer).Assembly;
             var uri = new UriBuilder(assembly.CodeBase);
             var path = Uri.UnescapeDataString(uri.Path);
-
             return Path.GetDirectoryName(path);
         }
     }
