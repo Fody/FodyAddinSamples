@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.Linq;
-using NUnit.Framework;
 using Vandelay;
 using VandelaySample;
+using Xunit;
 
 [assembly: Exporter(typeof(IExportable))]
 
@@ -36,28 +36,29 @@ namespace VandelaySample
             Vandelay.Importer.ImportMany<IExportable>("", new Foo());
     }
 
-    [TestFixture]
     public class Sample
     {
-        [Test]
+        [Fact]
         public void WithoutExport()
         {
-            var imports = Importer.WithoutExport;
+            var imports = Importer.WithoutExport.ToList();
 
-            Assert.That(imports, Is.Not.Null.Or.Empty);
-            Assert.That(imports, Has.Length.EqualTo(1));
+            Assert.NotNull(imports);
+            Assert.NotEmpty(imports);
+            Assert.Single(imports);
         }
 
-        [Test]
+        [Fact]
         public void WithExport()
         {
-            var imports = Importer.WithExport;
+            var imports = Importer.WithExport.ToList();
 
-            Assert.That(imports, Is.Not.Null.Or.Empty);
-            Assert.That(imports, Has.Length.EqualTo(2));
+            Assert.NotNull(imports);
+            Assert.NotEmpty(imports);
+            Assert.Equal(2, imports.Count);
 
             var withImport = imports.OfType<ExportableWithImport>().Single();
-            Assert.That(withImport.MyFoo, Is.Not.Null);
+            Assert.NotNull(withImport.MyFoo);
         }
     }
 }
