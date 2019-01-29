@@ -122,7 +122,6 @@ Global
 		{480773F7-4696-4B7E-BE33-11005417BE13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{480773F7-4696-4B7E-BE33-11005417BE13}.Release|Any CPU.Build.0 = Release|Any CPU
 		{480773F7-4696-4B7E-BE33-11005417BE13}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
-		{480773F7-4696-4B7E-BE33-11005417BE13}.ReleaseNetCore|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
