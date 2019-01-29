@@ -23,8 +23,6 @@
   <Janitor />
   <MethodTimer />
   <ModuleInit />
-  <ModuleWeaver />
-  <NamedWeaver />
   <Obsolete />
   <Validar />
   <PropertyChanging />
@@ -33,7 +31,7 @@
   <Resourcer />
   <Publicize />
   <Fielder />
-  <Vandelay />
+  <!--<Vandelay />-->
   <Virtuosity />
   <Visualize />
 </Weavers>
