@@ -13,7 +13,7 @@ namespace MimickSample
     public class Sample : IDisposable
     {
         [Autowire]
-        private SampleService service;
+        SampleService service;
 
         /// <summary>
         /// Configure the Mimick framework prior to the tests being run.
@@ -59,7 +59,7 @@ namespace MimickSample
         /// <summary>
         /// Runs the tests which check for valid configuration values.
         /// </summary>
-        private void RunConfigurationValues()
+        void RunConfigurationValues()
         {
             Assert.Equal("Mimick Sample", service.ApplicationName);
             Assert.Equal(1234, service.ApplicationId);
@@ -69,7 +69,7 @@ namespace MimickSample
         /// <summary>
         /// Runs the tests which check for valid constructor count.
         /// </summary>
-        private void RunConstructors()
+        void RunConstructors()
         {
             Assert.Equal(2, service.ConstructCount);
         }
@@ -77,7 +77,7 @@ namespace MimickSample
         /// <summary>
         /// Runs the tests which check whether interfaces are implemented correctly.
         /// </summary>
-        private void RunPropertyChange()
+        void RunPropertyChange()
         {
             var model = new SampleModel();
             var observable = model as INotifyPropertyChanged;
@@ -99,7 +99,7 @@ namespace MimickSample
         /// <summary>
         /// Runs the tests which check whether exception suppression works.
         /// </summary>
-        private void RunSuppress()
+        void RunSuppress()
         {
             var value = service.ThrowAndIgnore(new Exception());
 
@@ -109,7 +109,7 @@ namespace MimickSample
         /// <summary>
         /// Runs the tests which perform basic validation.
         /// </summary>
-        private void RunValidation()
+        void RunValidation()
         {
             Assert.Throws<ArgumentNullException>(() => service.CheckNotNull(null));
             service.CheckNotNull(new object());
