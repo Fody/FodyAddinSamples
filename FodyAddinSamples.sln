@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeakEventHandlerSample", "W
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToStringSample", "ToStringSample\ToStringSample.csproj", "{AF91A2D4-58D3-4772-A41A-7EF0139CD0F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MimickSample", "MimickSample\MimickSample.csproj", "{C5BDEAA2-7DB7-45B1-B403-CB0FE7908130}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weavers", "Weavers\Weavers.csproj", "{480773F7-4696-4B7E-BE33-11005417BE13}"
 EndProject
 Global
@@ -117,6 +119,12 @@ Global
 		{AF91A2D4-58D3-4772-A41A-7EF0139CD0F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF91A2D4-58D3-4772-A41A-7EF0139CD0F2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AF91A2D4-58D3-4772-A41A-7EF0139CD0F2}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
+		{C5BDEAA2-7DB7-45B1-B403-CB0FE7908130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5BDEAA2-7DB7-45B1-B403-CB0FE7908130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5BDEAA2-7DB7-45B1-B403-CB0FE7908130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5BDEAA2-7DB7-45B1-B403-CB0FE7908130}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5BDEAA2-7DB7-45B1-B403-CB0FE7908130}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
+		{C5BDEAA2-7DB7-45B1-B403-CB0FE7908130}.ReleaseNetCore|Any CPU.Build.0 = Release|Any CPU
 		{480773F7-4696-4B7E-BE33-11005417BE13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{480773F7-4696-4B7E-BE33-11005417BE13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{480773F7-4696-4B7E-BE33-11005417BE13}.Release|Any CPU.ActiveCfg = Release|Any CPU
