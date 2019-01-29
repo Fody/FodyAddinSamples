@@ -22,7 +22,6 @@
   <InfoOf />
   <Janitor />
   <MethodTimer />
-  <Mimick />
   <ModuleInit />
   <ModuleWeaver />
   <NamedWeaver />
