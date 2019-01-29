@@ -4,7 +4,9 @@
     <TargetFrameworks>net472;netcoreapp2.2</TargetFrameworks>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
-
+  <ItemGroup>
+    <Compile Remove="VandelaySample.cs" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Anotar.LibLog.Fody" Version="4.6.7" />
     <PackageReference Include="Anotar.NLog.Fody" Version="4.6.7" />
@@ -45,7 +47,7 @@
     <PackageReference Include="Splat" Version="6.1.7" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
     <PackageReference Include="System.ComponentModel.Composition" Version="4.5.0" />
-    <PackageReference Include="Vandelay.Fody" Version="0.6.1" />
+    <!--<PackageReference Include="Vandelay.Fody" Version="0.6.1" />-->
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
     <PackageReference Include="Resourcer.Fody" Version="1.7.3" />
