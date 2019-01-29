@@ -5,10 +5,6 @@
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
   <ItemGroup>
-    <Compile  Condition="'$(TargetFramework)'=='netcoreapp2.2'" Remove="InSolutionSample.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Anotar.LibLog.Fody" Version="4.6.7" />
     <PackageReference Include="Anotar.NLog.Fody" Version="4.6.7" />
     <PackageReference Include="Anotar.Custom.Fody" Version="4.6.7" />
