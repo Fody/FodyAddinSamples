@@ -59,7 +59,6 @@
         <xs:element name="ReactiveUI" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Resourcer" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Publicize" minOccurs="0" maxOccurs="1" type="xs:anyType" />
-        <xs:element name="Fielder" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Virtuosity" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Visualize" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="ModuleWeaver" minOccurs="0" maxOccurs="1" type="xs:anyType" />
