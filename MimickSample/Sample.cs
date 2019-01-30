@@ -8,7 +8,7 @@ using Xunit;
 namespace MimickSample
 {
     /// <summary>
-    /// A class containing the test needed 
+    /// A class containing the test needed
     /// </summary>
     public class Sample : IDisposable
     {
@@ -24,9 +24,11 @@ namespace MimickSample
             var components = framework.ComponentContext;
             var configuration = framework.ConfigurationContext;
 
-            var values = new Dictionary<string, string>();
+            var values = new Dictionary<string, string>
+            {
+                {"Message", "Hello world"}
+            };
 
-            values.Add("Message", "Hello world");
             configuration.Register(new KeyValueConfigurationSource(values));
 
             components.RegisterAssembly<Sample>();

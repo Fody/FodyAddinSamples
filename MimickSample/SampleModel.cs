@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Mimick;
+﻿using Mimick;
 
 namespace MimickSample
 {
@@ -13,8 +8,6 @@ namespace MimickSample
     [PropertyChanged]
     public class SampleModel
     {
-        #region Properties
-
         /// <summary>
         /// Gets or sets the identity.
         /// </summary>
@@ -30,7 +23,5 @@ namespace MimickSample
         /// </summary>
         [IgnoreChange]
         public object Tag { get; set; }
-
-        #endregion
     }
 }

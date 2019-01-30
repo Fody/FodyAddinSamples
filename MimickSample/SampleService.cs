@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Mimick;
 
 namespace MimickSample
@@ -13,12 +9,10 @@ namespace MimickSample
     [Component]
     public class SampleService
     {
-        private int count;
+        int count;
 
         [Value("{Message}")]
-        private string message;
-
-        #region Properties
+        string message;
 
         /// <summary>
         /// Gets the application name configured in the configuration class.
@@ -43,8 +37,6 @@ namespace MimickSample
         /// </summary>
         public int ConstructCount => count;
 
-        #endregion
-
         /// <summary>
         /// Checks whether the provided argument falls within the bounds of a short value.
         /// </summary>
@@ -62,7 +54,7 @@ namespace MimickSample
         /// </summary>
         /// <param name="data">The data.</param>
         public void CheckNotNull([NotNull] object data) { }
-        
+
         /// <summary>
         /// Gets the message configured in the key-value configuration source.
         /// </summary>
@@ -73,13 +65,13 @@ namespace MimickSample
         /// Invoked before the class constructor method body executes.
         /// </summary>
         [PreConstruct]
-        private void PreConstruct() => count++;
+        void PreConstruct() => count++;
 
         /// <summary>
         /// Invoked after the class constructor method body executes.
         /// </summary>
         [PostConstruct]
-        private void PostConstruct() => count++;
+        void PostConstruct() => count++;
 
         /// <summary>
         /// Throws an exception which should be consumed and ignored.
