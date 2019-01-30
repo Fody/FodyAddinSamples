@@ -9,8 +9,6 @@ namespace MimickSample
     [Component]
     public class SampleService
     {
-        int count;
-
         [Value("{Message}")]
         string message;
 
@@ -35,7 +33,7 @@ namespace MimickSample
         /// <summary>
         /// Gets the internal constructor count.
         /// </summary>
-        public int ConstructCount => count;
+        public int ConstructCount { get; private set; }
 
         /// <summary>
         /// Checks whether the provided argument falls within the bounds of a short value.
@@ -65,13 +63,13 @@ namespace MimickSample
         /// Invoked before the class constructor method body executes.
         /// </summary>
         [PreConstruct]
-        void PreConstruct() => count++;
+        void PreConstruct() => ConstructCount++;
 
         /// <summary>
         /// Invoked after the class constructor method body executes.
         /// </summary>
         [PostConstruct]
-        void PostConstruct() => count++;
+        void PostConstruct() => ConstructCount++;
 
         /// <summary>
         /// Throws an exception which should be consumed and ignored.
