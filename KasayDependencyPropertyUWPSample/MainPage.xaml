@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="KasayDependencyPropertyUWPSample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:KasayDependencyPropertyUWPSample"
+    xmlns:traditional="using:Sample.Traditional"
+    xmlns:control="using:Sample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel
+        Padding="20"
+        Spacing="20"
+        >
+        <traditional:DemoControl
+            BackgroundCircle="#A8D7C3"
+            TextCircle="T1"
+            Title="Title1"
+            Description="Description1"
+            />
+        <control:DemoControl
+            BackgroundCircle="BlueViolet"
+            TextCircle="T2"
+            Title="Title2"
+            Description="Description2"
+            />
+        <control:DemoControl
+            BackgroundCircle="#F5B56A"
+            TextCircle="T3"
+            Title="Title3"
+            Description="Description3"
+            />
+    </StackPanel>
+</Page>
