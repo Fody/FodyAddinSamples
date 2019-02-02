@@ -2,7 +2,7 @@
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 
-public sealed partial class DemoControl1 : UserControl
+public class DemoControl1 : UserControl
 {
     public static readonly DependencyProperty BackgroundCircleProperty
         = DependencyProperty.Register(

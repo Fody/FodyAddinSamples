@@ -2,7 +2,7 @@
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 
-public sealed partial class DemoControl2 : UserControl
+public class DemoControl2 : UserControl
 {
     [Bind] public Brush BackgroundCircle { get; set; }
 
