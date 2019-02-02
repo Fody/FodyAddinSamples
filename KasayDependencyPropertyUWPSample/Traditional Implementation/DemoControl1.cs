@@ -1,17 +1,16 @@
-﻿namespace Sample.Traditional
+﻿namespace KasayDependencyPropertyUWPSample
 {
-    using System;
     using Windows.UI.Xaml;
     using Windows.UI.Xaml.Controls;
     using Windows.UI.Xaml.Media;
 
-    public sealed partial class DemoControl : UserControl
+    public partial class DemoControl1 : UserControl
     {
         public static readonly DependencyProperty BackgroundCircleProperty
             = DependencyProperty.Register(
                 "BackgroundCircle",
                 typeof(Brush),
-                typeof(DemoControl),
+                typeof(DemoControl1),
                 null);
 
         public Brush BackgroundCircle
@@ -23,46 +22,44 @@
         public static readonly DependencyProperty TextCircleProperty
             = DependencyProperty.Register(
                 "TextCircle",
-                typeof(String),
-                typeof(DemoControl),
+                typeof(string),
+                typeof(DemoControl1),
                 null);
 
-        public String TextCircle
+        public string TextCircle
         {
-            get => (String)GetValue(TextCircleProperty);
+            get => (string)GetValue(TextCircleProperty);
             set => SetValue(TextCircleProperty, value);
         }
 
         public static readonly DependencyProperty TitleProperty
             = DependencyProperty.Register(
                 "Title",
-                typeof(String),
-                typeof(DemoControl),
+                typeof(string),
+                typeof(DemoControl1),
                 null);
 
-        public String Title
+        public string Title
         {
-            get => (String)GetValue(TitleProperty);
+            get => (string)GetValue(TitleProperty);
             set => SetValue(TitleProperty, value);
         }
 
         public static readonly DependencyProperty DescriptionProperty
             = DependencyProperty.Register(
                 "Description",
-                typeof(String),
-                typeof(DemoControl),
+                typeof(string),
+                typeof(DemoControl1),
                 null);
 
-        public String Description
+        public string Description
         {
-            get => (String)GetValue(DescriptionProperty);
+            get => (string)GetValue(DescriptionProperty);
             set => SetValue(DescriptionProperty, value);
         }
 
-        public DemoControl()
+        public DemoControl1()
         {
-            InitializeComponent();
-
             DataContext = this;
         }
     }
