@@ -4,7 +4,7 @@
     using Windows.UI.Xaml.Controls;
     using Windows.UI.Xaml.Media;
 
-    public partial class DemoControl1 : UserControl
+    public sealed partial class DemoControl1 : UserControl
     {
         public static readonly DependencyProperty BackgroundCircleProperty
             = DependencyProperty.Register(
@@ -60,6 +60,8 @@
 
         public DemoControl1()
         {
+            InitializeComponent();
+
             DataContext = this;
         }
     }

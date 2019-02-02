@@ -4,7 +4,7 @@
     using Windows.UI.Xaml.Controls;
     using Windows.UI.Xaml.Media;
 
-    public class DemoControl2 : UserControl
+    public sealed partial class DemoControl2 : UserControl
     {
         [Bind] public Brush BackgroundCircle { get; set; }
 
@@ -13,5 +13,10 @@
         [Bind] public string Title { get; set; }
 
         [Bind] public string Description { get; set; }
+
+        public DemoControl2()
+        {
+            InitializeComponent();
+        }
     }
 }
