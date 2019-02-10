@@ -4,6 +4,8 @@
     <TargetFrameworks>net472;netcoreapp2.2</TargetFrameworks>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
+  <PropertyGroup>
+    <WeaverRuntime Condition="$(MSBuildRuntimeType) != 'Core'">net46</WeaverRuntime>
     <WeaverRuntime Condition="$(MSBuildRuntimeType) == 'Core'">netstandard2.0</WeaverRuntime>
   </PropertyGroup>
   <ItemGroup>
