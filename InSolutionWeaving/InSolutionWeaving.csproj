@@ -4,9 +4,15 @@
     <TargetFrameworks>net472;netcoreapp2.2</TargetFrameworks>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
+  <PropertyGroup>
+    <WeaverRuntime Condition="$(MSBuildRuntimeType) != 'Core'">net46</WeaverRuntime>
+    <WeaverRuntime Condition="$(MSBuildRuntimeType) == 'Core'">netstandard2.0</WeaverRuntime>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Fody" Version="4.0.0" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
+    <WeaverFiles Include="$(SolutionDir)Weavers\bin\$(Configuration)\$(WeaverRuntime)\Weavers.dll"
+                 WeaverClassNames="ModuleWeaver;NamedWeaver" />
   </ItemGroup>
 </Project>
