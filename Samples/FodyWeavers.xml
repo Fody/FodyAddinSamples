@@ -18,7 +18,6 @@
   <ConfigureAwait />
   <EmptyConstructor />
   <ExtraConstraints />
-  <Freezable />
   <InfoOf />
   <Janitor />
   <MethodTimer />
