@@ -1,6 +1,7 @@
 ﻿using System;
 using AutoProperties;
 using Xunit;
+// ReSharper disable UnusedParameter.Local
 
 public class AutoPropertiesInterceptor
 {
