@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2026
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28606.126
 MinimumVisualStudioVersion = 15.0.27130.2010
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weavers", "Weavers\Weavers.csproj", "{480773F7-4696-4B7E-BE33-11005417BE13}"
 EndProject
@@ -35,9 +35,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeakEventHandlerSample", "W
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToStringSample", "ToStringSample\ToStringSample.csproj", "{AF91A2D4-58D3-4772-A41A-7EF0139CD0F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MimickSample", "MimickSample\MimickSample.csproj", "{C5BDEAA2-7DB7-45B1-B403-CB0FE7908130}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InSolutionWeaving", "InSolutionWeaving\InSolutionWeaving.csproj", "{6E5EB9C2-705E-48F2-9A53-7957F33540B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FC6E6AEA-BFCA-4E64-B8EE-5A4223EE75FB}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,6 +49,11 @@ Global
 		ReleaseNetCore|Any CPU = ReleaseNetCore|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{480773F7-4696-4B7E-BE33-11005417BE13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{480773F7-4696-4B7E-BE33-11005417BE13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{480773F7-4696-4B7E-BE33-11005417BE13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{480773F7-4696-4B7E-BE33-11005417BE13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{480773F7-4696-4B7E-BE33-11005417BE13}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
 		{0442EB29-A385-41FD-BBBF-936C562235A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0442EB29-A385-41FD-BBBF-936C562235A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0442EB29-A385-41FD-BBBF-936C562235A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -121,17 +129,6 @@ Global
 		{AF91A2D4-58D3-4772-A41A-7EF0139CD0F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF91A2D4-58D3-4772-A41A-7EF0139CD0F2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AF91A2D4-58D3-4772-A41A-7EF0139CD0F2}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
-		{C5BDEAA2-7DB7-45B1-B403-CB0FE7908130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C5BDEAA2-7DB7-45B1-B403-CB0FE7908130}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C5BDEAA2-7DB7-45B1-B403-CB0FE7908130}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C5BDEAA2-7DB7-45B1-B403-CB0FE7908130}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C5BDEAA2-7DB7-45B1-B403-CB0FE7908130}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
-		{C5BDEAA2-7DB7-45B1-B403-CB0FE7908130}.ReleaseNetCore|Any CPU.Build.0 = Release|Any CPU
-		{480773F7-4696-4B7E-BE33-11005417BE13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{480773F7-4696-4B7E-BE33-11005417BE13}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{480773F7-4696-4B7E-BE33-11005417BE13}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{480773F7-4696-4B7E-BE33-11005417BE13}.Release|Any CPU.Build.0 = Release|Any CPU
-		{480773F7-4696-4B7E-BE33-11005417BE13}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
 		{6E5EB9C2-705E-48F2-9A53-7957F33540B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6E5EB9C2-705E-48F2-9A53-7957F33540B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E5EB9C2-705E-48F2-9A53-7957F33540B0}.Release|Any CPU.ActiveCfg = Release|Any CPU

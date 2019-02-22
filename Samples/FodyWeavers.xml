@@ -21,6 +21,7 @@
   <InfoOf />
   <Janitor />
   <MethodTimer />
+  <Mimick />
   <ModuleInit />
   <Obsolete />
   <Validar />
