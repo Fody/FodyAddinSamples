@@ -5,7 +5,6 @@ namespace AnotarNServiceBusSample
 {
     public class LogCapture : ILoggerFactory, ILog
     {
-
         Action<string> action;
         public LogCapture(Action<string> action)
         {

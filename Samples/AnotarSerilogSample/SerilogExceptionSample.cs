@@ -26,6 +26,5 @@ namespace AnotarSerilogSample
         {
             throw new Exception("Foo");
         }
-
     }
 }

@@ -17,6 +17,5 @@ namespace AnotarNLogSample
         {
             LogTo.Debug("TheMessage");
         }
-
     }
 }

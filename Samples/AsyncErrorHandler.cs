@@ -5,6 +5,6 @@ public static class AsyncErrorHandler
 {
     public static void HandleException(Exception exception)
     {
-        Debug.WriteLine("Exception occurred: " + exception.Message);
+        Debug.WriteLine($"Exception occurred: {exception.Message}");
     }
 }

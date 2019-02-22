@@ -14,4 +14,3 @@ public class ConfigureAwaitSample
         Assert.NotEqual(Thread.CurrentThread.ManagedThreadId, beforeAwaitId);
     }
 }
-

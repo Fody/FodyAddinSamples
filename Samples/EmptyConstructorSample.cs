@@ -1,6 +1,7 @@
 ﻿using System;
 using Xunit;
 
+// ReSharper disable once UnusedParameter.Local
 public class EmptyConstructorSample
 {
     [Fact]
@@ -12,7 +13,6 @@ public class EmptyConstructorSample
 
     public class Target
     {
-// ReSharper disable once UnusedParameter.Local
         public Target(int foo)
         {
         }

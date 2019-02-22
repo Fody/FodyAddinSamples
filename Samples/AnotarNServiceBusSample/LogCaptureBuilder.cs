@@ -12,6 +12,5 @@ namespace AnotarNServiceBusSample
         {
             LogManager.UseFactory(new LogCapture(s => LastMessage = s));
         }
-
     }
 }

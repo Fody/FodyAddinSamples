@@ -20,6 +20,5 @@ namespace AnotarSerilogSample
         {
             LogTo.Debug("TheMessage");
         }
-
     }
 }

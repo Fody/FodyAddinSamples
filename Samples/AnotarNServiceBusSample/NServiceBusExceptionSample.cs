@@ -25,6 +25,5 @@ namespace AnotarNServiceBusSample
         {
             throw new Exception("Foo");
         }
-
     }
 }

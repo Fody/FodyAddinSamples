@@ -16,6 +16,5 @@ namespace AnotarSplatSample
         }
 
         public LogLevel Level { get; set; }
-
     }
 }

@@ -11,7 +11,6 @@ namespace AnotarCommonLoggingSample
         public static void Init()
         {
             LogManager.Adapter = new ActionAdapter();
-
         }
     }
 }

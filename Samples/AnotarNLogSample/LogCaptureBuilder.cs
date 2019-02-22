@@ -20,6 +20,5 @@ namespace AnotarNLogSample
             config.AddTarget("debugger", actionTarget);
             LogManager.Configuration = config;
         }
-
     }
 }

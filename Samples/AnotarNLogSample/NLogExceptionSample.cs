@@ -25,6 +25,5 @@ namespace AnotarNLogSample
         {
             throw new Exception("Foo");
         }
-
     }
 }
