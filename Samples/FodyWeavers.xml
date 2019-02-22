@@ -21,12 +21,12 @@
   <InfoOf />
   <Janitor />
   <MethodTimer />
-  <Mimick />
   <ModuleInit />
   <Obsolete />
   <Validar />
   <PropertyChanging />
   <PropertyChanged />
+  <Mimick />
   <ReactiveUI />
   <Resourcer />
   <Publicize />

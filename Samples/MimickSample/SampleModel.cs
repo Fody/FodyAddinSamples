@@ -1,12 +1,12 @@
-﻿using System.ComponentModel;
-using Mimick;
+﻿using Mimick;
 
 namespace MimickSample
 {
     /// <summary>
     /// A model class which introduces the property-changed interface.
     /// </summary>
-    public class SampleModel : INotifyPropertyChanged
+    [PropertyChanged]
+    public class SampleModel
     {
         /// <summary>
         /// Gets or sets the identity.
@@ -23,12 +23,5 @@ namespace MimickSample
         /// </summary>
         [IgnoreChange]
         public object Tag { get; set; }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void OnPropertyChanged(string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
     }
 }

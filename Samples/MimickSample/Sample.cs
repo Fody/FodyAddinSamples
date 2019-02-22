@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using Mimick;
 using Mimick.Configurations;
 using Xunit;
@@ -81,9 +82,10 @@ namespace MimickSample
         void RunPropertyChange()
         {
             var model = new SampleModel();
+            var observable = (INotifyPropertyChanged)model;
             var match = new List<string>();
 
-            model.PropertyChanged += (sender, e) => match.Add(e.PropertyName);
+            observable.PropertyChanged += (sender, e) => match.Add(e.PropertyName);
 
             model.Id = 1;
             model.Name = "Test";
