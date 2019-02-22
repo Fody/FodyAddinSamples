@@ -9,7 +9,7 @@ public class InfoOfSample
     [Fact]
     public void Run()
     {
-        Assert.NotNull(Info.OfMethod("InfoOfToReference", "InternalClass", "Method"));
+        Assert.NotNull(Info.OfMethod("Samples", "InternalClass", "Method"));
     }
 
     [Fact]
@@ -17,10 +17,10 @@ public class InfoOfSample
     {
         var stopwatch = Stopwatch.StartNew();
 
-        var methodInfo1 = Info.OfMethod("InfoOfToReference", "InternalClass", "Method");
+        var methodInfo1 = Info.OfMethod("Samples", "InternalClass", "Method");
         for (var i = 0; i < 10000; i++)
         {
-            var methodInfo = Info.OfMethod("InfoOfToReference", "InternalClass", "Method");
+            var methodInfo = Info.OfMethod("Samples", "InternalClass", "Method");
         }
         stopwatch.Stop();
         Debug.WriteLine(stopwatch.ElapsedMilliseconds);
@@ -31,11 +31,11 @@ public class InfoOfSample
     {
         var stopwatch = Stopwatch.StartNew();
 
-        var type1 = Type.GetType("InternalClass, InfoOfToReference");
+        var type1 = Type.GetType("InternalClass, Samples");
         var methodInfo1 = type1.GetMethod("Method", BindingFlags.NonPublic | BindingFlags.Instance);
         for (var i = 0; i < 10000; i++)
         {
-            var type = Type.GetType("InternalClass, InfoOfToReference");
+            var type = Type.GetType("InternalClass, Samples");
             var methodInfo = type.GetMethod("Method",BindingFlags.NonPublic| BindingFlags.Instance);
         }
         stopwatch.Stop();

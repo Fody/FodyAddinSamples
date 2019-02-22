@@ -50,6 +50,5 @@
     <PackageReference Include="Validar.Fody" Version="1.7.4" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
-    <ProjectReference Include="..\InfoOfToReference\InfoOfToReference.csproj" />
   </ItemGroup>
 </Project>
