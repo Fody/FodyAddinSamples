@@ -24,13 +24,13 @@
     <PackageReference Include="FluentValidation" Version="8.1.3" />
     <PackageReference Include="Fody" Version="4.0.2" />
     <PackageReference Include="ReactiveUI.Fody" Version="9.11.1" />
-    <PackageReference Include="MethodTimer.Fody" Version="2.3.0" />
+    <PackageReference Include="MethodTimer.Fody" Version="2.3.1" />
     <PackageReference Include="ConfigureAwait.Fody" Version="3.0.0" />
     <PackageReference Include="Catel.Core" Version="5.9.0" />
     <PackageReference Include="NLog" Version="4.5.11" />
     <PackageReference Include="log4net" Version="2.0.8" />
     <PackageReference Include="LibLog" Version="5.0.6" />
-    <PackageReference Include="Mimick.Fody" Version="1.0.1" />
+    <PackageReference Include="Mimick.Fody" Version="1.0.2" />
     <PackageReference Include="PropertyChanged.Fody" Version="2.6.0" />
     <PackageReference Include="PropertyChanging.Fody" Version="1.29.3" />
     <PackageReference Include="Publicize.Fody" Version="1.7.0" />
