@@ -4,7 +4,7 @@
     <TargetFrameworks>net472</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Fody" Version="4.0.2" />
+    <PackageReference Include="Fody" Version="4.1.0" />
     <PackageReference Include="PropertyChanged.Fody" Version="2.6.0" />
     <PackageReference Include="AutoProperties.Fody" Version="1.21.0" />
     <PackageReference Include="xunit" Version="2.4.1" />
