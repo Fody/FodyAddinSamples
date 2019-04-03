@@ -5,15 +5,15 @@
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Anotar.LibLog.Fody" Version="4.6.7" />
-    <PackageReference Include="Anotar.NLog.Fody" Version="4.6.7" />
-    <PackageReference Include="Anotar.Custom.Fody" Version="4.6.7" />
-    <PackageReference Include="Anotar.CommonLogging.Fody" Version="4.6.7" />
-    <PackageReference Include="Anotar.Splat.Fody" Version="4.6.7" />
-    <PackageReference Include="Anotar.Log4Net.Fody" Version="4.6.7" />
-    <PackageReference Include="Anotar.Catel.Fody" Version="4.6.7" />
-    <PackageReference Include="Anotar.NServiceBus.Fody" Version="4.6.7" />
-    <PackageReference Include="Anotar.Serilog.Fody" Version="4.6.7" />
+    <PackageReference Include="Anotar.LibLog.Fody" Version="4.8.1" />
+    <PackageReference Include="Anotar.NLog.Fody" Version="4.8.1" />
+    <PackageReference Include="Anotar.Custom.Fody" Version="4.8.1" />
+    <PackageReference Include="Anotar.CommonLogging.Fody" Version="4.8.1" />
+    <PackageReference Include="Anotar.Splat.Fody" Version="4.8.1" />
+    <PackageReference Include="Anotar.Log4Net.Fody" Version="4.8.1" />
+    <PackageReference Include="Anotar.Catel.Fody" Version="4.8.1" />
+    <PackageReference Include="Anotar.NServiceBus.Fody" Version="4.8.1" />
+    <PackageReference Include="Anotar.Serilog.Fody" Version="4.8.1" />
     <PackageReference Include="AsyncErrorHandler.Fody" Version="1.2.3" />
     <PackageReference Include="BasicFodyAddin.Fody" Version="1.1.4" />
     <PackageReference Include="Caseless.Fody" Version="1.8.3" />
@@ -21,31 +21,31 @@
     <PackageReference Include="Common.Logging" Version="3.4.1" />
     <PackageReference Include="EmptyConstructor.Fody" Version="1.4.4" />
     <PackageReference Include="ExtraConstraints.Fody" Version="1.13.3" />
-    <PackageReference Include="FluentValidation" Version="8.1.3" />
-    <PackageReference Include="Fody" Version="4.0.2" />
-    <PackageReference Include="ReactiveUI.Fody" Version="9.11.3" />
-    <PackageReference Include="MethodTimer.Fody" Version="2.3.2" />
-    <PackageReference Include="ConfigureAwait.Fody" Version="3.0.0" />
-    <PackageReference Include="Catel.Core" Version="5.9.0" />
-    <PackageReference Include="NLog" Version="4.5.11" />
+    <PackageReference Include="FluentValidation" Version="8.2.0" />
+    <PackageReference Include="Fody" Version="4.2.1" />
+    <PackageReference Include="ReactiveUI.Fody" Version="9.12.1" />
+    <PackageReference Include="MethodTimer.Fody" Version="2.3.3" />
+    <PackageReference Include="ConfigureAwait.Fody" Version="3.1.0" />
+    <PackageReference Include="Catel.Core" Version="5.10.0" />
+    <PackageReference Include="NLog" Version="4.6.2" />
     <PackageReference Include="log4net" Version="2.0.8" />
     <PackageReference Include="LibLog" Version="5.0.6" />
     <PackageReference Include="Mimick.Fody" Version="1.0.2" />
-    <PackageReference Include="PropertyChanged.Fody" Version="2.6.0" />
+    <PackageReference Include="PropertyChanged.Fody" Version="2.6.1" />
     <PackageReference Include="PropertyChanging.Fody" Version="1.29.3" />
     <PackageReference Include="Publicize.Fody" Version="1.7.0" />
     <PackageReference Include="Obsolete.Fody" Version="4.4.3" />
     <PackageReference Include="ModuleInit.Fody" Version="1.9.0" />
-    <PackageReference Include="NServiceBus" Version="7.1.6" />
+    <PackageReference Include="NServiceBus" Version="7.1.7" />
     <PackageReference Include="InfoOf.Fody" Version="1.4.3" />
     <PackageReference Include="Janitor.Fody" Version="1.6.8" />
-    <PackageReference Include="Splat" Version="6.1.7" />
+    <PackageReference Include="Splat" Version="7.0.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.0.1" />
     <PackageReference Include="Vandelay.Fody" Version="0.7.0" />
     <PackageReference Include="Resourcer.Fody" Version="1.7.3" />
     <EmbeddedResource Include="ResourcerSample.txt" />
     <PackageReference Include="Serilog" Version="2.8.0" />
-    <PackageReference Include="Virtuosity.Fody" Version="1.21.3" />
+    <PackageReference Include="Virtuosity.Fody" Version="2.0.0" />
     <PackageReference Include="Visualize.Fody" Version="1.1.4" />
     <PackageReference Include="Validar.Fody" Version="1.7.4" />
     <PackageReference Include="xunit" Version="2.4.1" />

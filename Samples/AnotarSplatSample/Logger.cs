@@ -10,7 +10,17 @@ namespace AnotarSplatSample
             LogCaptureBuilder.LastMessage = message;
         }
 
+        public void Write(Exception exception, string message, LogLevel logLevel)
+        {
+            LogCaptureBuilder.LastMessage = message;
+        }
+
         public void Write(string message, Type type, LogLevel logLevel)
+        {
+            LogCaptureBuilder.LastMessage = message;
+        }
+
+        public void Write(Exception exception, string message, Type type, LogLevel logLevel)
         {
             LogCaptureBuilder.LastMessage = message;
         }
