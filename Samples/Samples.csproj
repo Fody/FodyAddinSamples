@@ -2,7 +2,6 @@
 <Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
     <TargetFrameworks>net472;netcoreapp2.2</TargetFrameworks>
-    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Anotar.LibLog.Fody" Version="4.8.1" />
@@ -22,7 +21,7 @@
     <PackageReference Include="EmptyConstructor.Fody" Version="1.4.4" />
     <PackageReference Include="ExtraConstraints.Fody" Version="1.13.3" />
     <PackageReference Include="FluentValidation" Version="8.2.0" />
-    <PackageReference Include="Fody" Version="4.2.1" />
+    <PackageReference Include="Fody" Version="5.0.0-beta.4" />
     <PackageReference Include="ReactiveUI.Fody" Version="9.12.1" />
     <PackageReference Include="MethodTimer.Fody" Version="2.3.3" />
     <PackageReference Include="ConfigureAwait.Fody" Version="3.1.0" />

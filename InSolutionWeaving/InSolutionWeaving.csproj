@@ -2,14 +2,13 @@
 <Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
     <TargetFrameworks>net472;netcoreapp2.2</TargetFrameworks>
-    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
   <PropertyGroup>
-    <WeaverRuntime Condition="$(MSBuildRuntimeType) != 'Core'">net46</WeaverRuntime>
+    <WeaverRuntime Condition="$(MSBuildRuntimeType) != 'Core'">net472</WeaverRuntime>
     <WeaverRuntime Condition="$(MSBuildRuntimeType) == 'Core'">netstandard2.0</WeaverRuntime>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Fody" Version="4.2.1" />
+    <PackageReference Include="Fody" Version="5.0.0-beta.4" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
     <WeaverFiles Include="$(SolutionDir)Weavers\bin\$(Configuration)\$(WeaverRuntime)\Weavers.dll"
