@@ -18,10 +18,13 @@
     <PackageReference Include="Caseless.Fody" Version="1.8.3" />
     <PackageReference Include="Common.Logging.Core" Version="3.4.1" />
     <PackageReference Include="Common.Logging" Version="3.4.1" />
-    <PackageReference Include="EmptyConstructor.Fody" Version="1.4.4" />
+    <PackageReference Include="EmptyConstructor.Fody" Version="1.4.5" />
     <PackageReference Include="ExtraConstraints.Fody" Version="1.13.3" />
-    <PackageReference Include="FluentValidation" Version="8.2.0" />
-    <PackageReference Include="Fody" Version="5.0.0-beta.4" />
+    <PackageReference Include="FluentValidation" Version="8.2.2" />
+    <PackageReference Include="Fody" Version="5.0.0-beta.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="ReactiveUI.Fody" Version="9.12.1" />
     <PackageReference Include="MethodTimer.Fody" Version="2.3.3" />
     <PackageReference Include="ConfigureAwait.Fody" Version="3.1.0" />
