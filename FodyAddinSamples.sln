@@ -15,8 +15,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosturaAssemblyToReference"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NullGuardSample", "NullGuardSample\NullGuardSample.csproj", "{F82F7891-C5D2-4D02-A766-8ADEBAAE3DFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OldProjectFormat", "OldProjectFormat\OldProjectFormat.csproj", "{200CE2D2-FE22-48BF-8F58-58B3B7FC1549}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InlineILSample", "InlineILSample\InlineILSample.csproj", "{7931D18D-0C53-4037-9BDD-022BBD9BA1C2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JetBrainsAnnotationsSample", "JetBrainsAnnotationsSample\JetBrainsAnnotationsSample.csproj", "{FAE32BF7-275A-4268-B5F2-5E0942A1C01D}"
@@ -74,11 +72,6 @@ Global
 		{F82F7891-C5D2-4D02-A766-8ADEBAAE3DFF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F82F7891-C5D2-4D02-A766-8ADEBAAE3DFF}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
 		{F82F7891-C5D2-4D02-A766-8ADEBAAE3DFF}.ReleaseNetCore|Any CPU.Build.0 = Release|Any CPU
-		{200CE2D2-FE22-48BF-8F58-58B3B7FC1549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{200CE2D2-FE22-48BF-8F58-58B3B7FC1549}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{200CE2D2-FE22-48BF-8F58-58B3B7FC1549}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{200CE2D2-FE22-48BF-8F58-58B3B7FC1549}.Release|Any CPU.Build.0 = Release|Any CPU
-		{200CE2D2-FE22-48BF-8F58-58B3B7FC1549}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
 		{7931D18D-0C53-4037-9BDD-022BBD9BA1C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7931D18D-0C53-4037-9BDD-022BBD9BA1C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7931D18D-0C53-4037-9BDD-022BBD9BA1C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
