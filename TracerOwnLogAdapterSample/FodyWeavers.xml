@@ -1,8 +1,0 @@
-<Weavers VerifyAssembly="true">
-  <Tracer adapterAssembly="TracerOwnLogAdapter"
-          logManager="TracerOwnLogAdapter.Adapters.LogManagerAdapter"
-          logger="TracerOwnLogAdapter.Adapters.LoggerAdapter"
-          staticLogger="TracerOwnLogAdapter.MyLog">
-    <TraceOn class="public" method="public" />
-  </Tracer>
-</Weavers>
