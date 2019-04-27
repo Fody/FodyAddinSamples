@@ -1,17 +1,17 @@
-dotnet: 
-  - 2.2.202
-sudo: required
-language: csharp
-
 matrix:
   include:
     - os: linux
+      language: csharp
       dist: xenial
+      sudo: required
       mono: none
+      dotnet: 2.2.202
       script:
         - dotnet build /p:Configuration=ReleaseNetCore /p:Platform="Any CPU" --framework netcoreapp2.2
         - dotnet test --no-build --configuration ReleaseNetCore --framework netcoreapp2.2
     - os: osx
+      language: csharp
+      sudo: required
       mono: none
       script:
         - dotnet build /p:Configuration=ReleaseNetCore /p:Platform="Any CPU" --framework netcoreapp2.2
