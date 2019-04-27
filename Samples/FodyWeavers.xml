@@ -18,6 +18,7 @@
   <EmptyConstructor />
   <ExtraConstraints />
   <InfoOf />
+  <Ionad />
   <Janitor />
   <MethodTimer />
   <ModuleInit />
