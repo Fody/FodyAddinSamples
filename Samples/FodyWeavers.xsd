@@ -49,6 +49,7 @@
         <xs:element name="Ionad" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="InfoOf" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="ExtraConstraints" minOccurs="0" maxOccurs="1" type="xs:anyType" />
+        <xs:element name="Equatable" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="EmptyConstructor" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="ConfigureAwait" minOccurs="0" maxOccurs="1">
           <xs:complexType>
