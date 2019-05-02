@@ -14,7 +14,7 @@
   <AsyncErrorHandler />
   <BasicFodyAddin />
   <Caseless />
-  <ConfigureAwait />
+  <ConfigureAwait  ContinueOnCapturedContext="false" />
   <EmptyConstructor />
   <ExtraConstraints />
   <Equatable />
