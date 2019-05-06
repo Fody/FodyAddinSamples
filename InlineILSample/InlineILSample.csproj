@@ -3,7 +3,7 @@
     <TargetFrameworks>net472;netcoreapp2.2</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Fody" Version="5.0.3" />
+    <PackageReference Include="Fody" Version="5.0.5" />
     <PackageReference Include="InlineIL.Fody" Version="1.1.2" />
     <PackageReference Include="Xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
