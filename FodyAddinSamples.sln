@@ -38,6 +38,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Build.props = Directory.Build.props
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocalsInitSample", "LocalsInitSample\LocalsInitSample.csproj", "{DC05FD6E-9FEE-4BB9-910A-A305E61ED33C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -119,6 +121,12 @@ Global
 		{6E5EB9C2-705E-48F2-9A53-7957F33540B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E5EB9C2-705E-48F2-9A53-7957F33540B0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6E5EB9C2-705E-48F2-9A53-7957F33540B0}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
+		{DC05FD6E-9FEE-4BB9-910A-A305E61ED33C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC05FD6E-9FEE-4BB9-910A-A305E61ED33C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC05FD6E-9FEE-4BB9-910A-A305E61ED33C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC05FD6E-9FEE-4BB9-910A-A305E61ED33C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC05FD6E-9FEE-4BB9-910A-A305E61ED33C}.ReleaseNetCore|Any CPU.ActiveCfg = Release|Any CPU
+		{DC05FD6E-9FEE-4BB9-910A-A305E61ED33C}.ReleaseNetCore|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
