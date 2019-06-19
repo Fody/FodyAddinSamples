@@ -45,7 +45,7 @@
     <PackageReference Include="Resourcer.Fody" Version="1.7.3" />
     <EmbeddedResource Include="ResourcerSample.txt" />
     <PackageReference Include="Serilog" Version="2.8.0" />
-    <PackageReference Include="Virtuosity.Fody" Version="2.0.0" />
+    <PackageReference Include="Virtuosity.Fody" Version="3.0.0" />
     <PackageReference Include="Visualize.Fody" Version="1.1.4" />
     <PackageReference Include="Validar.Fody" Version="1.7.4" />
     <PackageReference Include="Xunit" Version="2.4.1" />
