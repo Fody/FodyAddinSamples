@@ -36,7 +36,7 @@
     <PackageReference Include="PropertyChanging.Fody" Version="1.29.3" />
     <PackageReference Include="Publicize.Fody" Version="1.7.0" />
     <PackageReference Include="Obsolete.Fody" Version="4.4.3" />
-    <PackageReference Include="ModuleInit.Fody" Version="1.9.0" />
+    <PackageReference Include="ModuleInit.Fody" Version="2.0.0" />
     <PackageReference Include="NServiceBus" Version="7.1.7" />
     <PackageReference Include="InfoOf.Fody" Version="1.4.3" />
     <PackageReference Include="Janitor.Fody" Version="1.6.8" />
