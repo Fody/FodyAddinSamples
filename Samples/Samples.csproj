@@ -38,7 +38,7 @@
     <PackageReference Include="Obsolete.Fody" Version="5.0.0" />
     <PackageReference Include="ModuleInit.Fody" Version="2.0.0" />
     <PackageReference Include="NServiceBus" Version="7.1.10" />
-    <PackageReference Include="InfoOf.Fody" Version="1.4.3" />
+    <PackageReference Include="InfoOf.Fody" Version="1.5.1" />
     <PackageReference Include="Janitor.Fody" Version="1.6.8" />
     <PackageReference Include="Splat" Version="8.0.5" />
     <PackageReference Include="Vandelay.Fody" Version="0.7.0" />
