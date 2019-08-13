@@ -27,7 +27,7 @@
     <PackageReference Include="ReactiveUI.Fody" Version="9.20.1" />
     <PackageReference Include="MethodTimer.Fody" Version="3.0.0" />
     <PackageReference Include="ConfigureAwait.Fody" Version="3.1.0" />
-    <PackageReference Include="Catel.Core" Version="5.11.1" />
+    <PackageReference Include="Catel.Core" Version="5.11.2" />
     <PackageReference Include="NLog" Version="4.6.6" />
     <PackageReference Include="log4net" Version="2.0.8" />
     <PackageReference Include="LibLog" Version="5.0.6" />
