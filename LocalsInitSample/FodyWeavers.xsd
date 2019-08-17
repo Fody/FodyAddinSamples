@@ -5,7 +5,13 @@
     <xs:complexType>
       <xs:all>
         <xs:element name="LocalsInit" minOccurs="0" maxOccurs="1">
-          <xs:complexType />
+          <xs:complexType>
+            <xs:attribute name="Default" type="xs:boolean">
+              <xs:annotation>
+                <xs:documentation>Defines the default value for the localsinit flag.</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+          </xs:complexType>
         </xs:element>
       </xs:all>
       <xs:attribute name="VerifyAssembly" type="xs:boolean">
