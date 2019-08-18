@@ -22,7 +22,7 @@
     <PackageReference Include="Equatable.Fody" Version="1.5.0" />
     <PackageReference Include="ExtraConstraints.Fody" Version="1.13.3" />
     <PackageReference Include="FluentValidation" Version="8.4.0" />
-    <PackageReference Include="Fody" Version="5.2.0" />
+    <PackageReference Include="Fody" Version="5.2.1-beta.1" />
     <PackageReference Include="Ionad.Fody" Version="2.0.1" />
     <PackageReference Include="ReactiveUI.Fody" Version="9.20.1" />
     <PackageReference Include="MethodTimer.Fody" Version="3.0.0" />
