@@ -4,10 +4,7 @@
     <TargetFrameworks>net472</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Fody" Version="5.2.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
+    <PackageReference Include="Fody" Version="5.2.1-beta.1" />
     <PackageReference Include="Throttle.Fody" Version="1.4.0" />
     <PackageReference Include="TomsToolbox.Desktop" Version="1.0.75" />
     <PackageReference Include="Xunit" Version="2.4.1" />
