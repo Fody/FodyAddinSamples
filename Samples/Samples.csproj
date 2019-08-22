@@ -12,7 +12,7 @@
     <PackageReference Include="Anotar.Log4Net.Fody" Version="5.0.0" />
     <PackageReference Include="Anotar.Catel.Fody" Version="5.0.0" />
     <PackageReference Include="Anotar.NServiceBus.Fody" Version="5.0.0" />
-    <PackageReference Include="Anotar.Serilog.Fody" Version="5.0.0" />
+    <PackageReference Include="Anotar.Serilog.Fody" Version="5.1.0" />
     <PackageReference Include="AsyncErrorHandler.Fody" Version="1.2.3" />
     <PackageReference Include="BasicFodyAddin.Fody" Version="1.1.4" />
     <PackageReference Include="Caseless.Fody" Version="1.8.3" />
