@@ -57,7 +57,15 @@
           </xs:complexType>
         </xs:element>
         <xs:element name="Caseless" minOccurs="0" maxOccurs="1" type="xs:anyType" />
-        <xs:element name="BasicFodyAddin" minOccurs="0" maxOccurs="1" type="xs:anyType" />
+        <xs:element name="BasicFodyAddin" minOccurs="0" maxOccurs="1">
+          <xs:complexType>
+            <xs:attribute name="Namespace" type="xs:string">
+              <xs:annotation>
+                <xs:documentation>Namespace to use for the injected type</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
         <xs:element name="AsyncErrorHandler" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Anotar.Splat" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Anotar.Serilog" minOccurs="0" maxOccurs="1" type="xs:anyType" />
