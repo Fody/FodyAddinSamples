@@ -1,7 +1,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.28721.148
-MinimumVisualStudioVersion = 16.0.28721.148
+VisualStudioVersion = 16.0.29201.188
+MinimumVisualStudioVersion = 16.0.29201.188
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weavers", "Weavers\Weavers.csproj", "{480773F7-4696-4B7E-BE33-11005417BE13}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples", "Samples\Samples.csproj", "{0442EB29-A385-41FD-BBBF-936C562235A8}"
