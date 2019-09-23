@@ -24,7 +24,7 @@
     <PackageReference Include="FluentValidation" Version="8.4.0" />
     <PackageReference Include="Fody" Version="6.0.0" PrivateAssets="All" />
     <PackageReference Include="Ionad.Fody" Version="2.1.0" />
-    <PackageReference Include="ReactiveUI.Fody" Version="10.2.2" />
+    <PackageReference Include="ReactiveUI.Fody" Version="10.3.1" />
     <PackageReference Include="MethodTimer.Fody" Version="3.1.0" />
     <PackageReference Include="ConfigureAwait.Fody" Version="3.2.0" />
     <PackageReference Include="Catel.Core" Version="5.11.2" />
