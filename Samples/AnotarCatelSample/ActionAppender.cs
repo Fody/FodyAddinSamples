@@ -3,7 +3,8 @@ using Catel.Logging;
 
 namespace AnotarCatelSample
 {
-    public class LogListener : LogListenerBase
+    public class LogListener :
+        LogListenerBase
     {
         public Action<string, LogEvent> Action;
 
