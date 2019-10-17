@@ -6,7 +6,8 @@ using FluentValidation.Results;
 
 namespace ValidarSample
 {
-    public class ValidationTemplate : IDataErrorInfo
+    public class ValidationTemplate :
+        IDataErrorInfo
     {
         INotifyPropertyChanged target;
 

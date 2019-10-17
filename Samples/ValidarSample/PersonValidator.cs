@@ -2,7 +2,8 @@ using FluentValidation;
 
 namespace ValidarSample
 {
-    public class PersonValidator : AbstractValidator<Person>
+    public class PersonValidator :
+        AbstractValidator<Person>
     {
         public PersonValidator()
         {

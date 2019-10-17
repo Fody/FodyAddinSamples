@@ -4,7 +4,8 @@ using Validar;
 namespace ValidarSample
 {
     [InjectValidation]
-    public class Person : INotifyPropertyChanged
+    public class Person :
+        INotifyPropertyChanged
     {
         public string GivenNames { get; set; }
         public string FamilyName { get; set; }
