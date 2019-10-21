@@ -5,15 +5,15 @@ matrix:
       dist: xenial
       sudo: required
       mono: none
-      dotnet: 2.2.202
+      dotnet: 3.0.100
       script:
-        - dotnet build /p:Configuration=ReleaseNetCore /p:Platform="Any CPU" --framework netcoreapp2.2
-        - dotnet test --no-build --configuration ReleaseNetCore --framework netcoreapp2.2
+        - dotnet build /p:Configuration=ReleaseNetCore /p:Platform="Any CPU" --framework netcoreapp3.0
+        - dotnet test --no-build --configuration ReleaseNetCore --framework netcoreapp3.0
     - os: osx
       language: csharp
       sudo: required
       mono: none
-      dotnet: 2.2.202
+      dotnet: 3.0.100
       script:
-        - dotnet build /p:Configuration=ReleaseNetCore /p:Platform="Any CPU" --framework netcoreapp2.2
-        - dotnet test --no-build --configuration ReleaseNetCore --framework netcoreapp2.2
+        - dotnet build /p:Configuration=ReleaseNetCore /p:Platform="Any CPU" --framework netcoreapp3.0
+        - dotnet test --no-build --configuration ReleaseNetCore --framework netcoreapp3.0
