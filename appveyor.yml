@@ -1,8 +1,6 @@
 image: Visual Studio 2019
 skip_commits:
   message: /doco|Merge pull request.*/
-install:
-- cmd: choco install dotnetcore-sdk
 before_build:
 - ps: nuget restore
 build:
