@@ -1,1 +1,0 @@
-﻿[assembly: Vandelay.Exporter(typeof(VandelaySample.IExportable))]
