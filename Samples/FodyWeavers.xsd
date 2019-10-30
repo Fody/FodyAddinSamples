@@ -6,7 +6,6 @@
       <xs:all>
         <xs:element name="Visualize" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Virtuosity" minOccurs="0" maxOccurs="1" type="xs:anyType" />
-        <xs:element name="Vandelay" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Validar" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Resourcer" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="ReactiveUI" minOccurs="0" maxOccurs="1" type="xs:anyType" />
@@ -43,7 +42,6 @@
         </xs:element>
         <xs:element name="Obsolete" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="ModuleInit" minOccurs="0" maxOccurs="1" type="xs:anyType" />
-        <xs:element name="Mimick" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="MethodTimer" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Janitor" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Ionad" minOccurs="0" maxOccurs="1" type="xs:anyType" />
