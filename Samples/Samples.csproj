@@ -25,7 +25,7 @@
     <PackageReference Include="Fody" Version="6.0.4" PrivateAssets="all" />
     <PackageReference Include="Ionad.Fody" Version="2.1.0" />
     <PackageReference Include="ReactiveUI.Fody" Version="10.5.7" />
-    <PackageReference Include="MethodTimer.Fody" Version="3.1.1" />
+    <PackageReference Include="MethodTimer.Fody" Version="3.1.2" />
     <PackageReference Include="ConfigureAwait.Fody" Version="3.3.1" />
     <PackageReference Include="Catel.Core" Version="5.11.2" />
     <PackageReference Include="NLog" Version="4.6.8" />
