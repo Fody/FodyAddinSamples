@@ -21,7 +21,7 @@
     <PackageReference Include="EmptyConstructor.Fody" Version="2.1.0" />
     <PackageReference Include="Equatable.Fody" Version="1.6.0" />
     <PackageReference Include="ExtraConstraints.Fody" Version="1.14.0" />
-    <PackageReference Include="FluentValidation" Version="8.5.1" />
+    <PackageReference Include="FluentValidation" Version="8.6.0" />
     <PackageReference Include="Fody" Version="6.0.5" PrivateAssets="all" />
     <PackageReference Include="Ionad.Fody" Version="2.2.0" />
     <PackageReference Include="ReactiveUI.Fody" Version="10.5.31" />
