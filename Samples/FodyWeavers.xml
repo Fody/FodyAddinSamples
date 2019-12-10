@@ -9,7 +9,6 @@
   <Anotar.NLog />
   <Anotar.Log4Net />
   <Anotar.Custom />
-  <Anotar.LibLog />
   <Anotar.CommonLogging />
   <AsyncErrorHandler />
   <BasicFodyAddin />
