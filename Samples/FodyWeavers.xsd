@@ -8,7 +8,6 @@
         <xs:element name="Virtuosity" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Validar" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Resourcer" minOccurs="0" maxOccurs="1" type="xs:anyType" />
-        <xs:element name="ReactiveUI" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Publicize" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="PropertyChanging" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="PropertyChanged" minOccurs="0" maxOccurs="1">

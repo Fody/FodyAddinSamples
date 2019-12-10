@@ -15,7 +15,8 @@ public class PropertyChangedSample
         Assert.Contains("FullName", propertyNotifications);
     }
 
-    public class Person : INotifyPropertyChanged
+    public class Person :
+        INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 

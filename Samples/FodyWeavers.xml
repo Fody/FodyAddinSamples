@@ -27,7 +27,6 @@
   <Validar />
   <PropertyChanging />
   <PropertyChanged />
-  <ReactiveUI />
   <Resourcer />
   <Publicize />
   <Virtuosity />
