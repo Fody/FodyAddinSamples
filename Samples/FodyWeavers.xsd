@@ -69,7 +69,6 @@
         <xs:element name="Anotar.NServiceBus" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Anotar.NLog" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Anotar.Log4Net" minOccurs="0" maxOccurs="1" type="xs:anyType" />
-        <xs:element name="Anotar.LibLog" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Anotar.Custom" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Anotar.CommonLogging" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Anotar.Catel" minOccurs="0" maxOccurs="1" type="xs:anyType" />
