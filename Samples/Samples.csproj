@@ -36,7 +36,7 @@
     <PackageReference Include="NServiceBus" Version="7.2.4" />
     <PackageReference Include="InfoOf.Fody" Version="1.6.0" />
     <PackageReference Include="Janitor.Fody" Version="1.8.0" />
-    <PackageReference Include="Splat" Version="9.4.1" />
+    <PackageReference Include="Splat" Version="9.4.5" />
     <PackageReference Include="Resourcer.Fody" Version="1.8.0" />
     <EmbeddedResource Include="Resource.txt" />
     <PackageReference Include="Serilog" Version="2.9.0" />
