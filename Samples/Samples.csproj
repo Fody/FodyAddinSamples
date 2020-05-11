@@ -6,7 +6,7 @@
   <ItemGroup>
     <PackageReference Include="Anotar.NLog.Fody" Version="5.1.2" />
     <PackageReference Include="Anotar.Custom.Fody" Version="5.1.2" />
-    <PackageReference Include="Anotar.CommonLogging.Fody" Version="5.1.1" />
+    <PackageReference Include="Anotar.CommonLogging.Fody" Version="5.1.2" />
     <PackageReference Include="Anotar.Splat.Fody" Version="5.1.1" />
     <PackageReference Include="Anotar.Log4Net.Fody" Version="5.1.1" />
     <PackageReference Include="Anotar.Catel.Fody" Version="5.1.1" />
