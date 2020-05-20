@@ -7,7 +7,6 @@
   <Anotar.Serilog />
   <Anotar.NServiceBus />
   <Anotar.NLog />
-  <Anotar.Log4Net />
   <Anotar.Custom />
   <Anotar.CommonLogging />
   <AsyncErrorHandler />
