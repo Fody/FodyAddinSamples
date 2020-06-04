@@ -1,5 +1,7 @@
 using System;
 
+[module:Interceptor]
+
 public static class Target
 {
     [Interceptor]

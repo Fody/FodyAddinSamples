@@ -1,20 +1,20 @@
-﻿using NUnit.Framework;
+﻿using Xunit;
 
-[TestFixture]
+[assembly: CollectionBehavior(DisableTestParallelization = true)]
+
 public class MethodDecoratorSample
 {
-
-    [Test]
+    [Fact]
     public void SimpleMethodSample()
     {
         InterceptionRecorder.Clear();
         Target.MyMethod();
-        Assert.IsTrue(InterceptionRecorder.OnEntryCalled);
-        Assert.IsTrue(InterceptionRecorder.OnExitCalled);
-        Assert.IsFalse(InterceptionRecorder.OnExceptionCalled);
+        Assert.True(InterceptionRecorder.OnEntryCalled);
+        Assert.True(InterceptionRecorder.OnExitCalled);
+        Assert.False(InterceptionRecorder.OnExceptionCalled);
     }
 
-    [Test]
+    [Fact]
     public void ExceptionMethodSample()
     {
         InterceptionRecorder.Clear();
@@ -25,8 +25,8 @@ public class MethodDecoratorSample
         catch
         {
         }
-        Assert.IsTrue(InterceptionRecorder.OnEntryCalled);
-        Assert.IsFalse(InterceptionRecorder.OnExitCalled);
-        Assert.IsTrue(InterceptionRecorder.OnExceptionCalled);
+        Assert.True(InterceptionRecorder.OnEntryCalled);
+        Assert.False(InterceptionRecorder.OnExitCalled);
+        Assert.True(InterceptionRecorder.OnExceptionCalled);
     }
 }
