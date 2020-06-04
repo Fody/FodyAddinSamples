@@ -1,14 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net48</TargetFrameworks>
+    <TargetFramework>net48</TargetFramework>
     <DocumentationFile>$(TargetDir)JetBrainsAnnotationsSample.xml</DocumentationFile>
     <DefineConstants>TRACE;DEBUG;JETBRAINS_ANNOTATIONS</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Fody" Version="6.2.0" PrivateAssets="all" />
-    <PackageReference Include="JetBrainsAnnotations.Fody" Version="2.16.0" />
-    <PackageReference Include="JetBrainsAnnotations.Fody" Version="2.16.0" />
+    <PackageReference Include="JetBrainsAnnotations.Fody" Version="2.16.0" PrivateAssets="all" />
     <PackageReference Include="JetBrains.Annotations" Version="2020.1.0" />
     <PackageReference Include="Xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.2" />
