@@ -3,7 +3,7 @@ using System.Threading;
 using System.Windows.Threading;
 using Throttle;
 using Xunit;
-using TomsToolbox.Desktop;
+using TomsToolbox.Wpf;
 
 public class ThrottleSample
 {
@@ -45,7 +45,7 @@ public class ThrottleSample
     }
 
 
-    [Throttled(typeof(TomsToolbox.Desktop.Throttle), 100)]
+    [Throttled(typeof(TomsToolbox.Wpf.Throttle), 100)]
     void ThrottledMethod()
     {
         Interlocked.Increment(ref throttledCalls);
