@@ -18,7 +18,7 @@
     <PackageReference Include="EmptyConstructor.Fody" Version="3.0.0" PrivateAssets="all" />
     <PackageReference Include="Equatable.Fody" Version="1.8.0" PrivateAssets="all" />
     <PackageReference Include="ExtraConstraints.Fody" Version="1.14.0" PrivateAssets="all" />
-    <PackageReference Include="FluentValidation" Version="8.6.2" />
+    <PackageReference Include="FluentValidation" Version="9.0.0" />
     <PackageReference Include="Fody" Version="6.2.0" PrivateAssets="all" />
     <PackageReference Include="Ionad.Fody" Version="2.2.0" PrivateAssets="all" />
     <PackageReference Include="MethodTimer.Fody" Version="3.1.2" PrivateAssets="all" />
