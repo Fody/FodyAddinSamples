@@ -6,16 +6,14 @@ using FluentValidation.Results;
 
 namespace ValidarSample
 {
-    public class ValidationTemplate :
-        IDataErrorInfo
+    public class ValidationTemplate<T> :
+        IDataErrorInfo where T: INotifyPropertyChanged
     {
-        INotifyPropertyChanged target;
-
-        public ValidationTemplate(INotifyPropertyChanged target)
+        public ValidationTemplate(T target)
         {
-            this.target = target;
             validator = ValidationFactory.GetValidator(target.GetType());
-            validationResult = validator.Validate(target);
+            context = new ValidationContext<T>(target);
+            result = validator.Validate(context);
             target.PropertyChanged += Validate;
         }
 
@@ -23,19 +21,20 @@ namespace ValidarSample
         {
             if (validator != null)
             {
-                validationResult = validator.Validate(target);
+                result = validator.Validate(context);
             }
         }
 
         IValidator validator;
-        ValidationResult validationResult;
+        ValidationResult result;
+        ValidationContext<T> context;
 
         public string Error
         {
             get
             {
-                var strings = validationResult.Errors.Select(x => x.ErrorMessage)
-                    .ToArray();
+                var strings = result.Errors
+                    .Select(x => x.ErrorMessage);
                 return string.Join(Environment.NewLine, strings);
             }
         }
@@ -44,9 +43,9 @@ namespace ValidarSample
         {
             get
             {
-                var strings = validationResult.Errors.Where(x => x.PropertyName == propertyName)
-                    .Select(x => x.ErrorMessage)
-                    .ToArray();
+                var strings = result.Errors
+                    .Where(x => x.PropertyName == propertyName)
+                    .Select(x => x.ErrorMessage);
                 return string.Join(Environment.NewLine, strings);
             }
         }
