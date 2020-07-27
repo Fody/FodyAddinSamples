@@ -4,6 +4,6 @@
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="FodyHelpers" Version="6.2.0" PrivateAssets="All" />
+    <PackageReference Include="FodyHelpers" Version="6.2.1" PrivateAssets="All" />
   </ItemGroup>
 </Project>
