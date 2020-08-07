@@ -6,7 +6,7 @@
     <PackageReference Include="Fody" Version="6.2.4" PrivateAssets="all" />
     <PackageReference Include="Xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.0" />
     <PackageReference Include="ToString.Fody" Version="1.11.0" PrivateAssets="all" />
   </ItemGroup>
 </Project>
