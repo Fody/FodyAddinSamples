@@ -2,15 +2,6 @@
          VerifyIgnoreCodes="0x80131869"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="FodyWeavers.xsd">
-  <Anotar.Catel />
-  <Anotar.Splat />
-  <Anotar.Serilog />
-  <Anotar.NServiceBus />
-  <Anotar.NLog />
-  <Anotar.Custom />
-  <Anotar.CommonLogging />
-  <AsyncErrorHandler />
-  <BasicFodyAddin />
   <Caseless />
   <ConfigureAwait  ContinueOnCapturedContext="false" />
   <EmptyConstructor />
