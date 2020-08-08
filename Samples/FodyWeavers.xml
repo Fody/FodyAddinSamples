@@ -13,9 +13,6 @@
   <MethodTimer />
   <ModuleInit />
   <Obsolete />
-  <Validar />
-  <PropertyChanging />
-  <PropertyChanged />
   <Resourcer />
   <Publicize />
   <Virtuosity />
