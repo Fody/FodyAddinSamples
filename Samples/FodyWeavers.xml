@@ -3,10 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="FodyWeavers.xsd">
   <Caseless />
-  <ConfigureAwait  ContinueOnCapturedContext="false" />
-  <EmptyConstructor />
-  <ExtraConstraints />
-  <Equatable />
   <InfoOf />
   <Ionad />
   <Janitor />
