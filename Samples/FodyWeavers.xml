@@ -4,7 +4,6 @@
          xsi:noNamespaceSchemaLocation="FodyWeavers.xsd">
   <Caseless />
   <InfoOf />
-  <Resourcer />
   <Virtuosity />
   <Visualize />
 </Weavers>
