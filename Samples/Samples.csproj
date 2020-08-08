@@ -8,8 +8,6 @@
     <PackageReference Include="Ionad.Fody" Version="2.2.0" PrivateAssets="all" />
     <PackageReference Include="MethodTimer.Fody" Version="3.1.2" PrivateAssets="all" />
     <PackageReference Include="Publicize.Fody" Version="1.8.0" PrivateAssets="all" />
-    <PackageReference Include="Obsolete.Fody" Version="5.2.1" PrivateAssets="all" />
-    <PackageReference Include="ModuleInit.Fody" Version="2.1.0" PrivateAssets="all" />
     <PackageReference Include="InfoOf.Fody" Version="2.0.1" />
     <PackageReference Include="Resourcer.Fody" Version="1.8.0" PrivateAssets="all" />
     <EmbeddedResource Include="Resource.txt" />
