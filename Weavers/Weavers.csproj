@@ -1,9 +1,0 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="FodyHelpers" Version="6.2.4" PrivateAssets="All" />
-  </ItemGroup>
-</Project>
