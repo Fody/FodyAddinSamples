@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using System.Diagnostics;
+using Xunit;
 // ReSharper disable UnusedVariable
 
 public class InfoOfSample
@@ -11,5 +12,11 @@ public class InfoOfSample
         {
             Info.OfMethod("Samples", "InternalClass", "Method");
         }
+    }
+}class InternalClass
+{
+    internal void Method()
+    {
+
     }
 }
