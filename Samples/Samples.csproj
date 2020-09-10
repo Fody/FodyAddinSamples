@@ -36,7 +36,7 @@
     <PackageReference Include="Splat" Version="9.5.37" />
     <PackageReference Include="Resourcer.Fody" Version="1.8.0" PrivateAssets="all" />
     <EmbeddedResource Include="Resource.txt" />
-    <PackageReference Include="Serilog" Version="2.9.0" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
     <PackageReference Include="Virtuosity.Fody" Version="3.1.0" PrivateAssets="all" />
     <PackageReference Include="Visualize.Fody" Version="1.2.0" PrivateAssets="all" />
     <PackageReference Include="Validar.Fody" Version="1.9.0" PrivateAssets="all" />
