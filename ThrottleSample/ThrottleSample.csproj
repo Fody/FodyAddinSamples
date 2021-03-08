@@ -3,7 +3,7 @@
     <TargetFramework>net48</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Fody" Version="6.3.0" PrivateAssets="all" />
+    <PackageReference Include="Fody" Version="6.4.0" PrivateAssets="all" />
     <PackageReference Include="Throttle.Fody" Version="1.7.0" PrivateAssets="all" />
     <PackageReference Include="TomsToolbox.Wpf" Version="2.3.2" />
     <PackageReference Include="Xunit" Version="2.4.1" />
