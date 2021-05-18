@@ -7,7 +7,7 @@ public class BasicFodyAddinSample
     public void Run()
     {
         var type = GetType().Assembly.GetType("Hello")!;
-        var instance = (dynamic) Activator.CreateInstance(type);
+        var instance = (dynamic) Activator.CreateInstance(type)!;
         Assert.Equal("Hello World", instance.World());
     }
 }

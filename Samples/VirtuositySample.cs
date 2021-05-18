@@ -5,7 +5,7 @@ public class VirtuositySample
     [Fact]
     public void Run()
     {
-        Assert.True(typeof(Target).GetProperty("Property").GetMethod.IsVirtual);
+        Assert.True(typeof(Target).GetProperty("Property")!.GetMethod.IsVirtual);
     }
 
     public class Target
