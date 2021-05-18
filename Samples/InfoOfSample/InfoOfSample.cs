@@ -31,11 +31,11 @@ public class InfoOfSample
     {
         var stopwatch = Stopwatch.StartNew();
 
-        var type1 = Type.GetType("InternalClass, Samples");
+        var type1 = Type.GetType("InternalClass, Samples")!;
         var methodInfo1 = type1.GetMethod("Method", BindingFlags.NonPublic | BindingFlags.Instance);
         for (var i = 0; i < 10000; i++)
         {
-            var type = Type.GetType("InternalClass, Samples");
+            var type = Type.GetType("InternalClass, Samples")!;
             var methodInfo = type.GetMethod("Method",BindingFlags.NonPublic| BindingFlags.Instance);
         }
         stopwatch.Stop();
