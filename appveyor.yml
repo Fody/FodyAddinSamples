@@ -1,6 +1,4 @@
 image: Visual Studio 2022
-skip_commits:
-  message: /docs|Merge pull request.*/
 before_build:
 - ps: nuget restore
 build:
