@@ -32,7 +32,7 @@
     <PackageReference Include="ModuleInit.Fody" Version="2.1.1" PrivateAssets="all" />
     <PackageReference Include="NServiceBus" Version="7.5.0" />
     <PackageReference Include="InfoOf.Fody" Version="2.1.0" />
-    <PackageReference Include="Janitor.Fody" Version="1.8.0" PrivateAssets="all" />
+    <PackageReference Include="Janitor.Fody" Version="1.9.0" PrivateAssets="all" />
     <PackageReference Include="Splat" Version="13.1.42" />
     <PackageReference Include="Resourcer.Fody" Version="1.8.0" PrivateAssets="all" />
     <EmbeddedResource Include="Resource.txt" />
