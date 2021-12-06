@@ -4,7 +4,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Fody" Version="6.6.0" PrivateAssets="all" />
-    <PackageReference Include="ReactiveUI" Version="17.0.1" />
+    <PackageReference Include="ReactiveUI" Version="17.1.6" />
     <PackageReference Include="ReactiveUI.Fody" Version="17.0.1" />
     <PackageReference Include="Xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3" />
