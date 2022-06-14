@@ -5,7 +5,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="PropertyChanged.Fody" Version="3.4.1" PrivateAssets="all" />
-    <PackageReference Include="Fody" Version="6.6.2" PrivateAssets="all" />
+    <PackageReference Include="Fody" Version="6.6.3" PrivateAssets="all" />
     <PackageReference Include="AutoProperties.Fody" Version="1.25.0" PrivateAssets="all" />
     <PackageReference Include="Xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5" />
