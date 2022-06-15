@@ -6,7 +6,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="BenchmarkDotNet" Version="0.13.1" />
-    <PackageReference Include="Fody" Version="6.6.2" PrivateAssets="all" />
+    <PackageReference Include="Fody" Version="6.6.3" PrivateAssets="all" />
     <PackageReference Include="LocalsInit.Fody" Version="1.1.0" PrivateAssets="all" />
   </ItemGroup>
 </Project>
