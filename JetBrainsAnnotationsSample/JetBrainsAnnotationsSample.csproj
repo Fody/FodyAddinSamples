@@ -8,7 +8,7 @@
     <PackageReference Include="Fody" Version="6.6.3" PrivateAssets="all" />
     <PackageReference Include="JetBrainsAnnotations.Fody" Version="2.17.0" PrivateAssets="all" />
     <PackageReference Include="JetBrains.Annotations" Version="2022.1.0" />
-    <PackageReference Include="Xunit" Version="2.4.1" />
+    <PackageReference Include="Xunit" Version="2.4.2" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.1" />
   </ItemGroup>
