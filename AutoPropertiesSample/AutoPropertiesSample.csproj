@@ -4,7 +4,7 @@
     <TargetFrameworks>net48;net5</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="PropertyChanged.Fody" Version="4.0.3" PrivateAssets="all" />
+    <PackageReference Include="PropertyChanged.Fody" Version="4.0.4" PrivateAssets="all" />
     <PackageReference Include="Fody" Version="6.6.3" PrivateAssets="all" />
     <PackageReference Include="AutoProperties.Fody" Version="1.25.0" PrivateAssets="all" />
     <PackageReference Include="Xunit" Version="2.4.2" />
