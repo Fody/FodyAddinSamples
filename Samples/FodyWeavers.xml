@@ -5,7 +5,6 @@
   <Anotar.Catel />
   <Anotar.Splat />
   <Anotar.Serilog />
-  <Anotar.NServiceBus />
   <Anotar.NLog />
   <Anotar.Custom />
   <Anotar.CommonLogging />

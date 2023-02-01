@@ -8,7 +8,6 @@
     <PackageReference Include="Anotar.Splat.Fody" Version="6.0.0" PrivateAssets="all" />
     <PackageReference Include="Anotar.CommonLogging.Fody" Version="6.0.0" PrivateAssets="all" />
     <PackageReference Include="Anotar.Catel.Fody" Version="6.0.0" PrivateAssets="all" />
-    <PackageReference Include="Anotar.NServiceBus.Fody" Version="6.0.0" PrivateAssets="all" />
     <PackageReference Include="Anotar.Serilog.Fody" Version="6.0.0" PrivateAssets="all" />
     <PackageReference Include="AsyncErrorHandler.Fody" Version="1.3.0" />
     <PackageReference Include="BasicFodyAddin.Fody" Version="1.2.0" PrivateAssets="all" />
@@ -30,7 +29,6 @@
     <PackageReference Include="Publicize.Fody" Version="1.8.0" PrivateAssets="all" />
     <PackageReference Include="Obsolete.Fody" Version="5.3.0" PrivateAssets="all" />
     <PackageReference Include="ModuleInit.Fody" Version="2.1.1" PrivateAssets="all" />
-    <PackageReference Include="NServiceBus" Version="7.8.0" />
     <PackageReference Include="InfoOf.Fody" Version="2.1.1" />
     <PackageReference Include="Janitor.Fody" Version="1.9.0" PrivateAssets="all" />
     <PackageReference Include="Splat" Version="14.6.8" />
