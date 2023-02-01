@@ -86,7 +86,6 @@
         <xs:element name="AsyncErrorHandler" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Anotar.Splat" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Anotar.Serilog" minOccurs="0" maxOccurs="1" type="xs:anyType" />
-        <xs:element name="Anotar.NServiceBus" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Anotar.NLog" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Anotar.Custom" minOccurs="0" maxOccurs="1" type="xs:anyType" />
         <xs:element name="Anotar.CommonLogging" minOccurs="0" maxOccurs="1" type="xs:anyType" />
