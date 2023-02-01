@@ -20,7 +20,7 @@ public class DelegateConstraintSample
         MethodWithDelegateConstraint<Action>(() => Debug.WriteLine("foo"));
     }
 
-    void MethodWithDelegateConstraint<[DelegateConstraint(typeof(Action))] T>(T value)
+    static void MethodWithDelegateConstraint<[DelegateConstraint(typeof(Action))] T>(T value)
     {
     }
 }
