@@ -1,29 +1,27 @@
-﻿using System;
-using Anotar.Splat;
+﻿using Anotar.Splat;
 using Xunit;
 
-namespace AnotarSplatSample
+namespace AnotarSplatSample;
+
+public class SplatExceptionSample
 {
-    public class SplatExceptionSample
+    [Fact]
+    public void Run()
     {
-        [Fact]
-        public void Run()
+        try
         {
-            try
-            {
-                MyMethod();
-            }
-            catch
-            {
-            }
-
-            Assert.NotEmpty(LogCaptureBuilder.LastMessage);
+            MyMethod();
+        }
+        catch
+        {
         }
 
-        [LogToDebugOnException]
-        static void MyMethod()
-        {
-            throw new Exception("Foo");
-        }
+        Assert.NotEmpty(LogCaptureBuilder.LastMessage);
+    }
+
+    [LogToDebugOnException]
+    static void MyMethod()
+    {
+        throw new("Foo");
     }
 }

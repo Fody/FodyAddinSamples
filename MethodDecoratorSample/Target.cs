@@ -1,5 +1,3 @@
-using System;
-
 [module:Interceptor]
 
 public static class Target
@@ -13,6 +11,6 @@ public static class Target
     [Interceptor]
     public static void MyExceptionMethod()
     {
-        throw new Exception("Foo");
+        throw new("Foo");
     }
 }

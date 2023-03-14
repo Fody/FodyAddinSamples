@@ -8,7 +8,7 @@ public class IonadSample
     [Fact]
     public void Run()
     {
-        DateTimeSubstitute.Current = new DateTime(2000, 1, 1);
+        DateTimeSubstitute.Current = new(2000, 1, 1);
         var time = DateTime.Now;
         Trace.WriteLine(time);
     }

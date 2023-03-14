@@ -1,4 +1,3 @@
-using System;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -24,7 +23,7 @@ public class AsyncErrorHandlerSample
         public async Task MethodWithThrow()
         {
             await Task.Delay(1);
-            throw new Exception("MyException");
+            throw new("MyException");
         }
     }
 }

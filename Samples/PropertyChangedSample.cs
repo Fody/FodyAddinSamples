@@ -9,7 +9,7 @@ public class PropertyChangedSample
     {
         var target = new Person();
         var propertyNotifications = new List<string>();
-        target.PropertyChanged += (sender, args) => propertyNotifications.Add(args.PropertyName);
+        target.PropertyChanged += (_, args) => propertyNotifications.Add(args.PropertyName);
         target.FamilyName = "Smith";
         Assert.Contains("FamilyName", propertyNotifications);
         Assert.Contains("FullName", propertyNotifications);

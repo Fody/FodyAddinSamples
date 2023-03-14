@@ -1,29 +1,27 @@
-﻿using System;
-using Anotar.NLog;
+﻿using Anotar.NLog;
 using Xunit;
 
-namespace AnotarNLogSample
+namespace AnotarNLogSample;
+
+public class NLogExceptionSample
 {
-    public class NLogExceptionSample
+    [Fact]
+    public void Run()
     {
-        [Fact]
-        public void Run()
+        try
         {
-            try
-            {
-                MyMethod();
-            }
-            catch
-            {
-            }
-
-            Assert.Equal("Exception occurred in 'Void MyMethod()'. ", LogCaptureBuilder.LastMessage);
+            MyMethod();
+        }
+        catch
+        {
         }
 
-        [LogToDebugOnException]
-        static void MyMethod()
-        {
-            throw new Exception("Foo");
-        }
+        Assert.Equal("Exception occurred in 'Void MyMethod()'. ", LogCaptureBuilder.LastMessage);
+    }
+
+    [LogToDebugOnException]
+    static void MyMethod()
+    {
+        throw new("Foo");
     }
 }

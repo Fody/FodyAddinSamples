@@ -1,21 +1,20 @@
 ﻿using Anotar.Splat;
 using Xunit;
 
-namespace AnotarSplatSample
+namespace AnotarSplatSample;
+
+public class SplatExplicitSample
 {
-    public class SplatExplicitSample
+    [Fact]
+    public void Run()
     {
-        [Fact]
-        public void Run()
-        {
-            MyMethod();
+        MyMethod();
 
-            Assert.Equal("Method: 'Void MyMethod()'. Line: ~18. TheMessage", LogCaptureBuilder.LastMessage);
-        }
+        Assert.Equal("Method: 'Void MyMethod()'. Line: ~18. TheMessage", LogCaptureBuilder.LastMessage);
+    }
 
-        static void MyMethod()
-        {
-            LogTo.Debug("TheMessage");
-        }
+    static void MyMethod()
+    {
+        LogTo.Debug("TheMessage");
     }
 }

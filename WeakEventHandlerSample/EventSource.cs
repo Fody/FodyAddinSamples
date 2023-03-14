@@ -1,16 +1,15 @@
 ﻿using System;
 
-namespace WeakEventHandlerSample
+namespace WeakEventHandlerSample;
+
+public class EventSource
 {
-    public class EventSource
+    public event EventHandler<EventArgs> Event;
+
+    public void OnEvent()
     {
-        public event EventHandler<EventArgs> Event;
-
-        public void OnEvent()
-        {
-            Event?.Invoke(this, EventArgs.Empty);
-        }
-
-        public bool HasEventHandlersAttached => Event != null;
+        Event?.Invoke(this, EventArgs.Empty);
     }
+
+    public bool HasEventHandlersAttached => Event != null;
 }

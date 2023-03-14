@@ -1,21 +1,20 @@
 ﻿using Anotar.NLog;
 using Xunit;
 
-namespace AnotarNLogSample
+namespace AnotarNLogSample;
+
+public class NLogExplicitSample
 {
-    public class NLogExplicitSample
+    [Fact]
+    public void Run()
     {
-        [Fact]
-        public void Run()
-        {
-            MyMethod();
+        MyMethod();
 
-            Assert.Equal("Method: 'Void MyMethod()'. Line: ~18. TheMessage", LogCaptureBuilder.LastMessage);
-        }
+        Assert.Equal("Method: 'Void MyMethod()'. Line: ~18. TheMessage", LogCaptureBuilder.LastMessage);
+    }
 
-        static void MyMethod()
-        {
-            LogTo.Debug("TheMessage");
-        }
+    static void MyMethod()
+    {
+        LogTo.Debug("TheMessage");
     }
 }

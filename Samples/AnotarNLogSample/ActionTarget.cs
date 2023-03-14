@@ -2,15 +2,14 @@
 using NLog;
 using NLog.Targets;
 
-namespace AnotarNLogSample
-{
-    public sealed class ActionTarget : Target
-    {
-        public Action<LogEventInfo> Action;
+namespace AnotarNLogSample;
 
-        protected override void Write(LogEventInfo logEvent)
-        {
-            Action(logEvent);
-        }
+public sealed class ActionTarget : Target
+{
+    public Action<LogEventInfo> Action;
+
+    protected override void Write(LogEventInfo logEvent)
+    {
+        Action(logEvent);
     }
 }

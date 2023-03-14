@@ -39,6 +39,6 @@ public class AutoPropertiesSample : INotifyPropertyChanged
     {
         numberOfPropertyChangedCalls += 1;
 
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        PropertyChanged?.Invoke(this, new(propertyName));
     }
 }

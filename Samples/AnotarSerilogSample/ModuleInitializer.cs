@@ -1,10 +1,9 @@
-﻿namespace AnotarSerilogSample
+﻿namespace AnotarSerilogSample;
+
+public static class ModuleInitializer
 {
-    public static class ModuleInitializer
+    public static void Initialize()
     {
-        public static void Initialize()
-        {
-            LogCaptureBuilder.Init();
-        }
+        LogCaptureBuilder.Init();
     }
 }

@@ -18,7 +18,7 @@ public class JanitorSample
 
         public Disposable()
         {
-            disposeTracker = new DisposeTracker();
+            disposeTracker = new();
         }
 
         public void Dispose()

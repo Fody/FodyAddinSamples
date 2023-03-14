@@ -8,7 +8,7 @@ public class Sample
     {
         var target = new Target();
         var property1Changed = false;
-        target.PropertyChanged+=(sender, args) => property1Changed = true;
+        target.PropertyChanged += (_, _) => property1Changed = true;
         target.Property1 = "New Value";
         Assert.True(property1Changed);
     }

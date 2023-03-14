@@ -17,7 +17,7 @@ public class DelegateConstraintSample
     [Fact]
     public void ValidDelegateConstraint()
     {
-        MethodWithDelegateConstraint<Action>(() => Debug.WriteLine("foo"));
+        MethodWithDelegateConstraint(() => Debug.WriteLine("foo"));
     }
 
     static void MethodWithDelegateConstraint<[DelegateConstraint(typeof(Action))] T>(T value)

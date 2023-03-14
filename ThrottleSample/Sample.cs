@@ -3,7 +3,6 @@ using System.Threading;
 using System.Windows.Threading;
 using Throttle;
 using Xunit;
-using TomsToolbox.Wpf;
 
 public class ThrottleSample
 {
@@ -39,7 +38,7 @@ public class ThrottleSample
     static void Delay(int timeSpan)
     {
         var frame = new DispatcherFrame();
-        var timer = new DispatcherTimer(TimeSpan.FromMilliseconds(timeSpan), DispatcherPriority.Normal, (sender, args) => frame.Continue = false, Dispatcher.CurrentDispatcher);
+        var timer = new DispatcherTimer(TimeSpan.FromMilliseconds(timeSpan), DispatcherPriority.Normal, (_, _) => frame.Continue = false, Dispatcher.CurrentDispatcher);
         timer.Start();
         Dispatcher.PushFrame(frame);
     }

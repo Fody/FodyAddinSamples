@@ -1,32 +1,31 @@
 ﻿using System;
 
-namespace WeakEventHandlerSample
+namespace WeakEventHandlerSample;
+
+public class EventSink
 {
-    public class EventSink
+    EventSource source;
+    Action<string> eventTracer;
+
+    public EventSink(EventSource source, Action<string> eventTracer)
     {
-        EventSource source;
-        Action<string> eventTracer;
+        this.source = source;
+        this.eventTracer = eventTracer;
+    }
 
-        public EventSink(EventSource source, Action<string> eventTracer)
-        {
-            this.source = source;
-            this.eventTracer = eventTracer;
-        }
+    public void Subscribe()
+    {
+        source.Event += Source_Event;
+    }
 
-        public void Subscribe()
-        {
-            source.Event += Source_Event;
-        }
+    public void Unsubscribe()
+    {
+        source.Event -= Source_Event;
+    }
 
-        public void Unsubscribe()
-        {
-            source.Event -= Source_Event;
-        }
-
-        [WeakEventHandler.MakeWeak]
-        void Source_Event(object sender, EventArgs e)
-        {
-            eventTracer("Event");
-        }
+    [WeakEventHandler.MakeWeak]
+    void Source_Event(object sender, EventArgs e)
+    {
+        eventTracer("Event");
     }
 }

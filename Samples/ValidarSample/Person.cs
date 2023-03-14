@@ -1,14 +1,13 @@
 ﻿using System.ComponentModel;
 using Validar;
 
-namespace ValidarSample
+namespace ValidarSample;
+
+[InjectValidation]
+public class Person :
+    INotifyPropertyChanged
 {
-    [InjectValidation]
-    public class Person :
-        INotifyPropertyChanged
-    {
-        public string GivenNames { get; set; }
-        public string FamilyName { get; set; }
-        public event PropertyChangedEventHandler PropertyChanged;
-    }
+    public string GivenNames { get; set; }
+    public string FamilyName { get; set; }
+    public event PropertyChangedEventHandler PropertyChanged;
 }
