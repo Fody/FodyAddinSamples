@@ -1,9 +1,9 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net48;net7.0</TargetFrameworks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Fody" Version="6.6.4" PrivateAssets="all" />
+    <PackageReference Include="Fody" Version="6.7.0" PrivateAssets="all" />
     <PackageReference Include="ReactiveUI" Version="18.4.20" />
     <PackageReference Include="ReactiveUI.Fody" Version="18.4.20" />
     <PackageReference Include="Xunit" Version="2.4.2" />
