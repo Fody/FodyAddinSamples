@@ -20,10 +20,10 @@
     <PackageReference Include="FluentValidation" Version="11.5.2" />
     <PackageReference Include="Fody" Version="6.8.0" PrivateAssets="all" />
     <PackageReference Include="Ionad.Fody" Version="2.2.0" PrivateAssets="all" />
-    <PackageReference Include="MethodTimer.Fody" Version="3.2.1" PrivateAssets="all" />
+    <PackageReference Include="MethodTimer.Fody" Version="3.2.2" PrivateAssets="all" />
     <PackageReference Include="ConfigureAwait.Fody" Version="3.3.2" PrivateAssets="all" />
     <PackageReference Include="Catel.Core" Version="5.12.22" />
-    <PackageReference Include="NLog" Version="5.1.4" />
+    <PackageReference Include="NLog" Version="5.2.0" />
     <PackageReference Include="PropertyChanged.Fody" Version="4.1.0" PrivateAssets="all" />
     <PackageReference Include="PropertyChanging.Fody" Version="1.30.3" PrivateAssets="all" />
     <PackageReference Include="Publicize.Fody" Version="1.8.0" PrivateAssets="all" />
@@ -34,7 +34,7 @@
     <PackageReference Include="Splat" Version="14.6.37" />
     <PackageReference Include="Resourcer.Fody" Version="1.8.1" PrivateAssets="all" />
     <EmbeddedResource Include="Resource.txt" />
-    <PackageReference Include="Serilog" Version="2.12.0" />
+    <PackageReference Include="Serilog" Version="3.0.1" />
     <PackageReference Include="Virtuosity.Fody" Version="3.1.1" PrivateAssets="all" />
     <PackageReference Include="Visualize.Fody" Version="1.2.0" PrivateAssets="all" />
     <PackageReference Include="Validar.Fody" Version="1.9.0" PrivateAssets="all" />
