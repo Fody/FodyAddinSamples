@@ -34,7 +34,7 @@ public class ValidationTemplate<T> :
         get
         {
             var strings = result.Errors
-                .Select(x => x.ErrorMessage);
+                .Select(_ => _.ErrorMessage);
             return string.Join(Environment.NewLine, strings);
         }
     }
@@ -44,8 +44,8 @@ public class ValidationTemplate<T> :
         get
         {
             var strings = result.Errors
-                .Where(x => x.PropertyName == propertyName)
-                .Select(x => x.ErrorMessage);
+                .Where(_ => _.PropertyName == propertyName)
+                .Select(_ => _.ErrorMessage);
             return string.Join(Environment.NewLine, strings);
         }
     }

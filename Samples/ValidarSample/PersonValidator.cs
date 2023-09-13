@@ -7,7 +7,7 @@ public class PersonValidator :
 {
     public PersonValidator()
     {
-        RuleFor(x => x.FamilyName).NotEmpty();
-        RuleFor(x => x.GivenNames).NotEmpty();
+        RuleFor(_ => _.FamilyName).NotEmpty();
+        RuleFor(_ => _.GivenNames).NotEmpty();
     }
 }

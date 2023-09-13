@@ -11,7 +11,7 @@ public class ReactiveUiSample
     {
         var target = new ReactiveViewModel();
         var notificationOccured = false;
-        target.WhenAnyValue(m => m.Property).Subscribe(_ => notificationOccured = true);
+        target.WhenAnyValue(_ => _.Property).Subscribe(_ => notificationOccured = true);
         Assert.True(notificationOccured);
     }
 
