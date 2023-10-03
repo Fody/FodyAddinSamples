@@ -20,7 +20,5 @@ public class ObsoleteSample
         Message = "Decided this class was a bad idea.",
         ReplacementTypeOrMember = "NewTargetClass",
         TreatAsErrorFromVersion = "3.0")]
-    public class TargetClass
-    {
-    }
+    public class TargetClass;
 }

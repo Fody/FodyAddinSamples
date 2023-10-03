@@ -10,7 +10,7 @@ public class AsyncErrorHandlerSample
         {
 
             var instance = new Target();
-            await instance.MethodWithThrow().ConfigureAwait(false);
+            await instance.MethodWithThrow();
             //run and have a look at the debug window
         }
         catch

@@ -22,7 +22,7 @@ public class PublicizeSample
         Assert.Equal(EditorBrowsableState.Advanced, methodAttribute.State);
     }
 
-    EditorBrowsableAttribute GetEditorBrowsableAttribute(MemberInfo memberInfo)
+    static EditorBrowsableAttribute GetEditorBrowsableAttribute(MemberInfo memberInfo)
     {
         return (EditorBrowsableAttribute)memberInfo.GetCustomAttributes(typeof(EditorBrowsableAttribute), false).First();
     }
