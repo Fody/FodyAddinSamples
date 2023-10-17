@@ -5,7 +5,7 @@
   <ItemGroup>
     <PackageReference Include="Fody" Version="6.8.0" PrivateAssets="all" />
     <PackageReference Include="InlineIL.Fody" Version="1.7.4" PrivateAssets="all" />
-    <PackageReference Include="Xunit" Version="2.5.2" />
+    <PackageReference Include="Xunit" Version="2.5.3" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.2" />
   </ItemGroup>
