@@ -32,6 +32,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FC6E6AEA-BFCA-4E64-B8EE-5A4223EE75FB}"
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
+		.editorconfig = .editorconfig
+		appveyor.yml = appveyor.yml
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocalsInitSample", "LocalsInitSample\LocalsInitSample.csproj", "{DC05FD6E-9FEE-4BB9-910A-A305E61ED33C}"
