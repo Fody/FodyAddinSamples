@@ -9,5 +9,7 @@
     <LangVersion>preview</LangVersion>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <ResolveAssemblyReferencesSilent>true</ResolveAssemblyReferencesSilent>
+    <NuGetAuditMode>all</NuGetAuditMode>
+    <NuGetAuditLevel>low</NuGetAuditLevel>
   </PropertyGroup>
 </Project>
