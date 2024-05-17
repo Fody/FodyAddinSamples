@@ -31,7 +31,7 @@
     <PackageReference Include="ModuleInit.Fody" Version="2.1.1" PrivateAssets="all" />
     <PackageReference Include="InfoOf.Fody" Version="2.1.1" />
     <PackageReference Include="Janitor.Fody" Version="1.9.0" PrivateAssets="all" />
-    <PackageReference Include="Splat" Version="14.8.12" />
+    <PackageReference Include="Splat" Version="15.1.1" />
     <PackageReference Include="Resourcer.Fody" Version="1.8.1" PrivateAssets="all" />
     <EmbeddedResource Include="Resource.txt" />
     <PackageReference Include="Serilog" Version="3.1.1" />
