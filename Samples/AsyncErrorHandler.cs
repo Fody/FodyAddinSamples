@@ -3,8 +3,6 @@ using System.Diagnostics;
 
 public static class AsyncErrorHandler
 {
-    public static void HandleException(Exception exception)
-    {
+    public static void HandleException(Exception exception) =>
         Debug.WriteLine($"Exception occurred: {exception.Message}");
-    }
 }

@@ -20,8 +20,6 @@ public class NLogExceptionSample
     }
 
     [LogToDebugOnException]
-    static void MyMethod()
-    {
+    static void MyMethod() =>
         throw new("Foo");
-    }
 }

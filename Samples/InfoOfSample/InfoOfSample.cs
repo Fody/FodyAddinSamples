@@ -7,10 +7,8 @@ using Xunit;
 public class InfoOfSample
 {
     [Fact]
-    public void Run()
-    {
+    public void Run() =>
         Assert.NotNull(Info.OfMethod("Samples", "InternalClass", "Method"));
-    }
 
     [Fact]
     public void PerfWithInfoOf()

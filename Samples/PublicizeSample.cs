@@ -22,8 +22,6 @@ public class PublicizeSample
         Assert.Equal(EditorBrowsableState.Advanced, methodAttribute.State);
     }
 
-    static EditorBrowsableAttribute GetEditorBrowsableAttribute(MemberInfo memberInfo)
-    {
-        return (EditorBrowsableAttribute)memberInfo.GetCustomAttributes(typeof(EditorBrowsableAttribute), false).First();
-    }
+    static EditorBrowsableAttribute GetEditorBrowsableAttribute(MemberInfo memberInfo) =>
+        (EditorBrowsableAttribute)memberInfo.GetCustomAttributes(typeof(EditorBrowsableAttribute), false).First();
 }

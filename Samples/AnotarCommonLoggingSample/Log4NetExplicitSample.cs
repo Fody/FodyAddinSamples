@@ -10,11 +10,9 @@ public class CommonLoggingExplicitSample
     {
         MyMethod();
 
-        Assert.Equal("Method: 'Void MyMethod()'. Line: ~18. TheMessage", LogCaptureBuilder.LastMessage);
+        Assert.Equal("Method: 'Void MyMethod()'. Line: ~17. TheMessage", LogCaptureBuilder.LastMessage);
     }
 
-    static void MyMethod()
-    {
+    static void MyMethod() =>
         LogTo.Debug("TheMessage");
-    }
 }

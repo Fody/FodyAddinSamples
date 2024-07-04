@@ -10,11 +10,9 @@ public class CustomExplicitSample
     {
         MyMethod();
 
-        Assert.Equal("Method: 'Void MyMethod()'. Line: ~18. TheMessage", Logger.LastMessage.Format);
+        Assert.Equal("Method: 'Void MyMethod()'. Line: ~17. TheMessage", Logger.LastMessage.Format);
     }
 
-    static void MyMethod()
-    {
+    static void MyMethod() =>
         LogTo.Debug("TheMessage");
-    }
 }

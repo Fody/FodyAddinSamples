@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using Fody;
 using Mono.Cecil;
 
@@ -16,8 +15,5 @@ public class ModuleWeaver: BaseModuleWeaver
         ModuleDefinition.Types.Add(typeDefinition);
     }
 
-    public override IEnumerable<string> GetAssembliesForScanning()
-    {
-        return Enumerable.Empty<string>();
-    }
+    public override IEnumerable<string> GetAssembliesForScanning() => [];
 }

@@ -1,7 +1,5 @@
 ﻿public class ClassInReferenceAssembly
 {
-    public static string SayHello()
-    {
-        return "Hello World";
-    }
+    public static string SayHello() =>
+        "Hello World";
 }

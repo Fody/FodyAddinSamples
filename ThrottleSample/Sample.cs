@@ -43,11 +43,8 @@ public class ThrottleSample
         Dispatcher.PushFrame(frame);
     }
 
-
     [Throttled(typeof(TomsToolbox.Wpf.Throttle), 100)]
-    void ThrottledMethod()
-    {
+    void ThrottledMethod() =>
         Interlocked.Increment(ref throttledCalls);
-    }
 }
 

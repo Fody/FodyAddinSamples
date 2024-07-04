@@ -10,13 +10,11 @@ public class CatelSample
     [ThreadStatic]
     public static string LastMessage;
 
-    static CatelSample()
-    {
+    static CatelSample() =>
         LogManager.AddListener(new LogListener
         {
             Action = (s, _) => { LastMessage = s; }
         });
-    }
 
     [Fact]
     public void RunException()
@@ -33,21 +31,17 @@ public class CatelSample
     }
 
     [LogToDebugOnException]
-    static void MyExceptionMethod()
-    {
+    static void MyExceptionMethod() =>
         throw new("Foo");
-    }
 
     [Fact]
     public void RunExplicit()
     {
         MyMethod();
 
-        Assert.Equal("Method: 'Void MyMethod()'. Line: ~51. TheMessage", LastMessage);
+        Assert.Equal("Method: 'Void MyMethod()'. Line: ~46. TheMessage", LastMessage);
     }
 
-    static void MyMethod()
-    {
+    static void MyMethod() =>
         LogTo.Debug("TheMessage");
-    }
 }

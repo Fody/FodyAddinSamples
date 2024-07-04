@@ -7,8 +7,6 @@ namespace AnotarSerilogSample;
 public sealed class EventSink : ILogEventSink
 {
     public Action<LogEvent> Action;
-    public void Emit(LogEvent logEvent)
-    {
+    public void Emit(LogEvent logEvent) =>
         Action(logEvent);
-    }
 }

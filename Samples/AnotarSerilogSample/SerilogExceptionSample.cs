@@ -21,8 +21,6 @@ public class SerilogExceptionSample
     }
 
     [LogToDebugOnException]
-    static void MyMethod()
-    {
+    static void MyMethod() =>
         throw new("Foo");
-    }
 }

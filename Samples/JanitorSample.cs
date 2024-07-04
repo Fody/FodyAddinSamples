@@ -16,10 +16,8 @@ public class JanitorSample
     {
         DisposeTracker disposeTracker;
 
-        public Disposable()
-        {
+        public Disposable() =>
             disposeTracker = new();
-        }
 
         public void Dispose()
         {
@@ -35,9 +33,7 @@ public class JanitorSample
     {
         public static bool HasDisposedBeenCalled;
 
-        public void Dispose()
-        {
+        public void Dispose() =>
             HasDisposedBeenCalled = true;
-        }
     }
 }

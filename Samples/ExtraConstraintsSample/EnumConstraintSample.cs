@@ -13,10 +13,8 @@ public class EnumConstraintSample
     }
 
     [Fact]
-    public void ValidEnumConstraint()
-    {
+    public void ValidEnumConstraint() =>
         MethodWithEnumConstraint(MyEnum.Value);
-    }
 
     // ReSharper disable once MemberCanBeMadeStatic.Local
     void MethodWithEnumConstraint<[EnumConstraint(typeof(MyEnum))] T>(T value)

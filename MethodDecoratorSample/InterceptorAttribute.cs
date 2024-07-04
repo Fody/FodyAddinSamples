@@ -9,18 +9,12 @@ public class InterceptorAttribute : Attribute, IMethodDecorator
     {
     }
 
-    public void OnEntry()
-    {
+    public void OnEntry() =>
         InterceptionRecorder.OnEntryCalled = true;
-    }
 
-    public void OnExit()
-    {
+    public void OnExit() =>
         InterceptionRecorder.OnExitCalled = true;
-    }
 
-    public void OnException(Exception exception)
-    {
+    public void OnException(Exception exception) =>
         InterceptionRecorder.OnExceptionCalled = true;
-    }
 }

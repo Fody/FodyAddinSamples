@@ -13,19 +13,13 @@ public class EventSink
         this.eventTracer = eventTracer;
     }
 
-    public void Subscribe()
-    {
+    public void Subscribe() =>
         source.Event += Source_Event;
-    }
 
-    public void Unsubscribe()
-    {
+    public void Unsubscribe() =>
         source.Event -= Source_Event;
-    }
 
     [WeakEventHandler.MakeWeak]
-    void Source_Event(object sender, EventArgs e)
-    {
+    void Source_Event(object sender, EventArgs e) =>
         eventTracer("Event");
-    }
 }

@@ -9,8 +9,6 @@ public static class Target
     }
 
     [Interceptor]
-    public static void MyExceptionMethod()
-    {
+    public static void MyExceptionMethod() =>
         throw new("Foo");
-    }
 }
