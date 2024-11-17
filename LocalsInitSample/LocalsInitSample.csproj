@@ -5,8 +5,8 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="BenchmarkDotNet" Version="0.13.12" />
-    <PackageReference Include="Fody" Version="6.8.1" PrivateAssets="all" />
+    <PackageReference Include="BenchmarkDotNet" Version="0.14.0" />
+    <PackageReference Include="Fody" Version="6.9.0" PrivateAssets="all" />
     <PackageReference Include="LocalsInit.Fody" Version="1.1.0" PrivateAssets="all" />
   </ItemGroup>
 </Project>

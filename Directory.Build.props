@@ -3,7 +3,8 @@
   <PropertyGroup>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <LangVersion>preview</LangVersion>
-    <NoWarn>CS0067,NU1701,CS0649</NoWarn>
+    <NoWarn>CS0067;NU1701;CS0649</NoWarn>
+    <NuGetAuditMode>direct</NuGetAuditMode>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
     <LangVersion>preview</LangVersion>
