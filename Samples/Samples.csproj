@@ -35,7 +35,7 @@
     <PackageReference Include="Resourcer.Fody" Version="1.8.1" PrivateAssets="all" />
     <EmbeddedResource Include="Resource.txt" />
     <PackageReference Include="Serilog" Version="4.1.0" />
-    <PackageReference Include="Virtuosity.Fody" Version="3.1.1" PrivateAssets="all" />
+    <PackageReference Include="Virtuosity.Fody" Version="3.1.2" PrivateAssets="all" />
     <PackageReference Include="Visualize.Fody" Version="1.2.0" PrivateAssets="all" />
     <PackageReference Include="Validar.Fody" Version="1.9.0" PrivateAssets="all" />
     <PackageReference Include="xunit" Version="2.9.2" />
