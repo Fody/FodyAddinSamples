@@ -8,6 +8,6 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" PrivateAssets="all" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
     <PackageReference Include="Catel.Fody" Version="4.9.0" PrivateAssets="all" />
-    <PackageReference Include="Catel.Core" Version="6.0.3" />
+    <PackageReference Include="Catel.Core" Version="6.0.4" />
   </ItemGroup>
 </Project>
