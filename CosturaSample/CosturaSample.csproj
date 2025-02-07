@@ -6,7 +6,7 @@
     <PackageReference Include="Costura.Fody" Version="5.7.0" PrivateAssets="all" />
     <PackageReference Include="Fody" Version="6.9.0" PrivateAssets="all" />
     <PackageReference Include="xunit" Version="2.9.2" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" PrivateAssets="all" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.0.2" PrivateAssets="all" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
     <ProjectReference Include="..\CosturaAssemblyToReference\CosturaAssemblyToReference.csproj" />
   </ItemGroup>
