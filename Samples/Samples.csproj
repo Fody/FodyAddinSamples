@@ -22,7 +22,7 @@
     <PackageReference Include="Ionad.Fody" Version="2.2.0" PrivateAssets="all" />
     <PackageReference Include="MethodTimer.Fody" Version="3.2.2" PrivateAssets="all" />
     <PackageReference Include="ConfigureAwait.Fody" Version="3.3.2" PrivateAssets="all" />
-    <PackageReference Include="Catel.Core" Version="6.0.3" />
+    <PackageReference Include="Catel.Core" Version="6.0.6" />
     <PackageReference Include="NLog" Version="5.4.0" />
     <PackageReference Include="PropertyChanged.Fody" Version="4.1.0" PrivateAssets="all" />
     <PackageReference Include="PropertyChanging.Fody" Version="1.30.3" PrivateAssets="all" />
