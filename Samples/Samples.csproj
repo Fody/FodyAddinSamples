@@ -25,7 +25,7 @@
     <PackageReference Include="Catel.Core" Version="6.0.3" />
     <PackageReference Include="NLog" Version="5.4.0" />
     <PackageReference Include="PropertyChanged.Fody" Version="4.1.0" PrivateAssets="all" />
-    <PackageReference Include="PropertyChanging.Fody" Version="1.30.3" PrivateAssets="all" />
+    <PackageReference Include="PropertyChanging.Fody" Version="1.31.0" PrivateAssets="all" />
     <PackageReference Include="Publicize.Fody" Version="1.8.0" PrivateAssets="all" />
     <PackageReference Include="Obsolete.Fody" Version="5.3.1" PrivateAssets="all" />
     <PackageReference Include="ModuleInit.Fody" Version="2.1.1" PrivateAssets="all" />
