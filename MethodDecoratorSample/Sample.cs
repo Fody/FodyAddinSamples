@@ -1,21 +1,20 @@
-﻿using Xunit;
 
-[assembly: CollectionBehavior(DisableTestParallelization = true)]
-
-public class MethodDecoratorSample
+// the tests share the static InterceptionRecorder state
+[NotInParallel]
+public class MethodDecoratorTests
 {
-    [Fact]
-    public void SimpleMethodSample()
+    [Test]
+    public async Task SimpleMethodSample()
     {
         InterceptionRecorder.Clear();
         Target.MyMethod();
-        Assert.True(InterceptionRecorder.OnEntryCalled);
-        Assert.True(InterceptionRecorder.OnExitCalled);
-        Assert.False(InterceptionRecorder.OnExceptionCalled);
+        await Assert.That(InterceptionRecorder.OnEntryCalled).IsTrue();
+        await Assert.That(InterceptionRecorder.OnExitCalled).IsTrue();
+        await Assert.That(InterceptionRecorder.OnExceptionCalled).IsFalse();
     }
 
-    [Fact]
-    public void ExceptionMethodSample()
+    [Test]
+    public async Task ExceptionMethodSample()
     {
         InterceptionRecorder.Clear();
         try
@@ -25,8 +24,8 @@ public class MethodDecoratorSample
         catch
         {
         }
-        Assert.True(InterceptionRecorder.OnEntryCalled);
-        Assert.False(InterceptionRecorder.OnExitCalled);
-        Assert.True(InterceptionRecorder.OnExceptionCalled);
+        await Assert.That(InterceptionRecorder.OnEntryCalled).IsTrue();
+        await Assert.That(InterceptionRecorder.OnExitCalled).IsFalse();
+        await Assert.That(InterceptionRecorder.OnExceptionCalled).IsTrue();
     }
 }

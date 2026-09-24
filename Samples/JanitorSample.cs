@@ -1,15 +1,14 @@
-﻿using System;
-using Xunit;
+using System;
 // ReSharper disable NotAccessedField.Local
 
 public class JanitorSample
 {
-    [Fact]
-    public void Run()
+    [Test]
+    public async Task Run()
     {
         var disposable = new Disposable();
         disposable.Dispose();
-        Assert.True(DisposeTracker.HasDisposedBeenCalled);
+        await Assert.That(DisposeTracker.HasDisposedBeenCalled).IsTrue();
     }
 
     public class Disposable : IDisposable

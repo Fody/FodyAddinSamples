@@ -1,9 +1,8 @@
-﻿using System.Diagnostics;
-using Xunit;
+using System.Diagnostics;
 
 public class VisualizeSample
 {
-    [Fact]
+    [Test]
     public void Run()
     {
         var person = new Person

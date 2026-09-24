@@ -1,10 +1,9 @@
-﻿using System.Diagnostics;
-using Xunit;
+using System.Diagnostics;
 
-public class ToStringSample
+public class ToStringTests
 {
-    [Fact]
-    public void Run()
+    [Test]
+    public async Task Run()
     {
         var target = new Person
                      {
@@ -13,7 +12,7 @@ public class ToStringSample
 
                      };
         Debug.WriteLine(target.ToString());
-        Assert.Equal("{T: \"Person\", GivenNames: \"John\", FamilyName: \"Smith\"}", target.ToString());
+        await Assert.That(target.ToString()).IsEqualTo("{T: \"Person\", GivenNames: \"John\", FamilyName: \"Smith\"}");
     }
 }
 

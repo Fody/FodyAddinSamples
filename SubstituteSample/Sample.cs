@@ -1,36 +1,35 @@
-﻿using System.Globalization;
+using System.Globalization;
 using System.Threading;
 
 using SubstituteSample.Properties;
 
-using Xunit;
 
 public class SubstituteSamples
 {
-    [Fact]
-    public void ResourceManager()
+    [Test]
+    public async Task ResourceManager()
     {
         var target = Resources.String1;
-        Assert.Equal("Override: String1 => English", target);
+        await Assert.That(target).IsEqualTo("Override: String1 => English");
 
         Resources.Culture = CultureInfo.GetCultureInfo("de-DE");
 
         target = Resources.String1;
-        Assert.Equal("Override: String1 => Deutsch", target);
+        await Assert.That(target).IsEqualTo("Override: String1 => Deutsch");
     }
 
-    [Fact]
-    public void ComponentResourceManager()
+    [Test]
+    public async Task ComponentResourceManager()
     {
         var target = new SampleForm();
 
-        Assert.Equal("Override: $this.Text => English", target.Text);
-        Assert.Equal("Override: label1.Text => Label", target.label1.Text);
+        await Assert.That(target.Text).IsEqualTo("Override: $this.Text => English");
+        await Assert.That(target.label1.Text).IsEqualTo("Override: label1.Text => Label");
 
         Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("de-DE");
         target = new SampleForm();
 
-        Assert.Equal("Override: $this.Text => Deutsch", target.Text);
-        Assert.Equal("Override: label1.Text => TextField", target.label1.Text);
+        await Assert.That(target.Text).IsEqualTo("Override: $this.Text => Deutsch");
+        await Assert.That(target.label1.Text).IsEqualTo("Override: label1.Text => TextField");
     }
 }

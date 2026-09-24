@@ -1,13 +1,12 @@
-﻿using System;
+using System;
 
 namespace WeakEventHandlerSample;
 
-using Xunit;
 
 public class Test
 {
-    [Fact]
-    public void ExplicitUnsubscribe()
+    [Test]
+    public async Task ExplicitUnsubscribe()
     {
         var lastEvent = (string)null;
 
@@ -17,15 +16,15 @@ public class Test
 
         source.OnEvent();
 
-        Assert.Null(lastEvent);
+        await Assert.That(lastEvent).IsNull();
 
         target.Subscribe();
 
-        Assert.True(source.HasEventHandlersAttached);
+        await Assert.That(source.HasEventHandlersAttached).IsTrue();
 
         source.OnEvent();
 
-        Assert.Equal("Event", lastEvent);
+        await Assert.That(lastEvent).IsEqualTo("Event");
 
         lastEvent = null;
 
@@ -33,16 +32,19 @@ public class Test
 
         source.OnEvent();
 
-        Assert.False(source.HasEventHandlersAttached);
-        Assert.Null(lastEvent);
+        await Assert.That(source.HasEventHandlersAttached).IsFalse();
+        await Assert.That(lastEvent).IsNull();
     }
 
-    [Fact]
-    public void TargetIsGarbageCollected()
+    [Test]
+    public async Task TargetIsGarbageCollected()
     {
         var lastEvent = (string)null;
 
         var source = new EventSource();
+        string beforeSubscribe = null;
+        var attached = false;
+        string afterSubscribe = null;
 
         void Inner()
         {
@@ -50,27 +52,31 @@ public class Test
 
             source.OnEvent();
 
-            Assert.Null(lastEvent);
+            beforeSubscribe = lastEvent;
 
             target.Subscribe();
 
-            Assert.True(source.HasEventHandlersAttached);
+            attached = source.HasEventHandlersAttached;
 
             source.OnEvent();
 
-            Assert.Equal("Event", lastEvent);
+            afterSubscribe = lastEvent;
 
             lastEvent = null;
         }
 
         Inner();
 
+        await Assert.That(beforeSubscribe).IsNull();
+        await Assert.That(attached).IsTrue();
+        await Assert.That(afterSubscribe).IsEqualTo("Event");
+
         GCCollect();
 
         source.OnEvent();
 
-        Assert.False(source.HasEventHandlersAttached);
-        Assert.Null(lastEvent);
+        await Assert.That(source.HasEventHandlersAttached).IsFalse();
+        await Assert.That(lastEvent).IsNull();
     }
 
     static void GCCollect()

@@ -1,16 +1,15 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Reflection;
-using Xunit;
 // ReSharper disable UnusedVariable
 
 public class InfoOfSample
 {
-    [Fact]
-    public void Run() =>
-        Assert.NotNull(Info.OfMethod("Samples", "InternalClass", "Method"));
+    [Test]
+    public async Task Run() =>
+        await Assert.That(Info.OfMethod("Samples", "InternalClass", "Method")).IsNotNull();
 
-    [Fact]
+    [Test]
     public void PerfWithInfoOf()
     {
         var stopwatch = Stopwatch.StartNew();
@@ -24,7 +23,7 @@ public class InfoOfSample
         Debug.WriteLine(stopwatch.ElapsedMilliseconds);
     }
 
-    [Fact]
+    [Test]
     public void PerfWithReflection()
     {
         var stopwatch = Stopwatch.StartNew();

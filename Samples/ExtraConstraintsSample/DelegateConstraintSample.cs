@@ -1,20 +1,19 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Security;
 using ExtraConstraints;
-using Xunit;
 // ReSharper disable UnusedParameter.Local
 
 public class DelegateConstraintSample
 {
-    [Fact]
-    public void InvalidDelegateConstraint()
+    [Test]
+    public async Task InvalidDelegateConstraint()
     {
-        var exception = Assert.Throws<VerificationException>(() => MethodWithDelegateConstraint(10));
-        Assert.Equal("Method DelegateConstraintSample.MethodWithDelegateConstraint: type argument 'System.Int32' violates the constraint of type parameter 'T'.", exception.Message);
+        var exception = await Assert.That(() => MethodWithDelegateConstraint(10)).Throws<VerificationException>();
+        await Assert.That(exception!.Message).IsEqualTo("Method DelegateConstraintSample.MethodWithDelegateConstraint: type argument 'System.Int32' violates the constraint of type parameter 'T'.");
     }
 
-    [Fact]
+    [Test]
     public void ValidDelegateConstraint() =>
         MethodWithDelegateConstraint(() => Debug.WriteLine("foo"));
 

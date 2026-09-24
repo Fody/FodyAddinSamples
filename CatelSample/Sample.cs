@@ -1,16 +1,15 @@
-﻿using Catel.Data;
-using Xunit;
+using Catel.Data;
 
 public class Sample
 {
-    [Fact]
-    public void Run()
+    [Test]
+    public async Task Run()
     {
         var target = new Target();
         var property1Changed = false;
         target.PropertyChanged += (_, _) => property1Changed = true;
         target.Property1 = "New Value";
-        Assert.True(property1Changed);
+        await Assert.That(property1Changed).IsTrue();
     }
 }
 

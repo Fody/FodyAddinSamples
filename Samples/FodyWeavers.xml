@@ -1,4 +1,4 @@
-﻿<Weavers VerifyAssembly="true"
+<Weavers VerifyAssembly="true"
          VerifyIgnoreCodes="0x80131869"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="FodyWeavers.xsd">
@@ -11,7 +11,6 @@
   <AsyncErrorHandler />
   <BasicFodyAddin />
   <Caseless />
-  <ConfigureAwait  ContinueOnCapturedContext="false" />
   <EmptyConstructor />
   <ExtraConstraints />
   <Equatable />

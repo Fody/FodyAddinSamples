@@ -1,10 +1,9 @@
-﻿using System;
-using Xunit;
+using System;
 
 public class Sample
 {
-    [Fact]
-    public void Run()
+    [Test]
+    public async Task Run()
     {
         var item = new MyStruct
         {
@@ -14,8 +13,8 @@ public class Sample
 
         ZeroInit.InitStruct(ref item);
 
-        Assert.Equal(0, item.Int);
-        Assert.Equal(Guid.Empty, item.Guid);
+        await Assert.That(item.Int).IsEqualTo(0);
+        await Assert.That(item.Guid).IsEqualTo(Guid.Empty);
     }
 
     struct MyStruct

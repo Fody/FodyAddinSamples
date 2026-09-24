@@ -1,14 +1,13 @@
-﻿using Xunit;
 
 public class InSolutionSample
 {
-    [Fact]
-    public void Run()
+    [Test]
+    public async Task Run()
     {
         var assembly = typeof(InSolutionSample).Assembly;
         var typeInjectedByModuleWeaver = assembly.GetType("Weavers.TypeInjectedByModuleWeaver");
-        Assert.NotNull(typeInjectedByModuleWeaver);
+        await Assert.That(typeInjectedByModuleWeaver).IsNotNull();
         var typeInjectedByNamedWeaver = assembly.GetType("Weavers.TypeInjectedByNamedWeaver");
-        Assert.NotNull(typeInjectedByNamedWeaver);
+        await Assert.That(typeInjectedByNamedWeaver).IsNotNull();
     }
 }

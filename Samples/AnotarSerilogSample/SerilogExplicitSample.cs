@@ -1,19 +1,20 @@
-﻿using Anotar.Serilog;
-using Xunit;
+using Anotar.Serilog;
 
 namespace AnotarSerilogSample;
 
+// the tests in this namespace share the static last logged message
+[NotInParallel]
 public class SerilogExplicitSample
 {
-    [Fact]
-    public void Run()
+    [Test]
+    public async Task Run()
     {
         MyMethod();
 
         var lastMessage = LogCaptureBuilder.LastMessage;
-        Assert.Equal("Void MyMethod()", lastMessage.MethodName());
-        Assert.Equal(20, lastMessage.LineNumber());
-        Assert.Equal("TheMessage", lastMessage.MessageTemplate.Text);
+        await Assert.That(lastMessage.MethodName()).IsEqualTo("Void MyMethod()");
+        await Assert.That(lastMessage.LineNumber()).IsEqualTo(21);
+        await Assert.That(lastMessage.MessageTemplate.Text).IsEqualTo("TheMessage");
     }
 
     static void MyMethod() =>

@@ -1,16 +1,17 @@
-﻿using Anotar.Custom;
-using Xunit;
+using Anotar.Custom;
 
 namespace AnotarCustomSample;
 
+// the tests in this namespace share the static last logged message
+[NotInParallel]
 public class CustomExplicitSample
 {
-    [Fact]
-    public void Run()
+    [Test]
+    public async Task Run()
     {
         MyMethod();
 
-        Assert.Equal("Method: 'Void MyMethod()'. Line: ~17. TheMessage", Logger.LastMessage.Format);
+        await Assert.That(Logger.LastMessage.Format).IsEqualTo("Method: 'Void MyMethod()'. Line: ~18. TheMessage");
     }
 
     static void MyMethod() =>

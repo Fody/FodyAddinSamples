@@ -1,12 +1,13 @@
-﻿using Anotar.CommonLogging;
-using Xunit;
+using Anotar.CommonLogging;
 
 namespace AnotarCommonLoggingSample;
 
+// the tests in this namespace share the static last logged message
+[NotInParallel]
 public class CommonLoggingExceptionSample
 {
-    [Fact]
-    public void Run()
+    [Test]
+    public async Task Run()
     {
         try
         {
@@ -16,7 +17,7 @@ public class CommonLoggingExceptionSample
         {
         }
 
-        Assert.Equal("Exception occurred in 'Void MyMethod()'. ", LogCaptureBuilder.LastMessage);
+        await Assert.That(LogCaptureBuilder.LastMessage).IsEqualTo("Exception occurred in 'Void MyMethod()'. ");
     }
 
     [LogToDebugOnException]

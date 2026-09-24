@@ -1,12 +1,13 @@
-﻿using Anotar.Custom;
-using Xunit;
+using Anotar.Custom;
 
 namespace AnotarCustomSample;
 
+// the tests in this namespace share the static last logged message
+[NotInParallel]
 public class CustomExceptionSample
 {
-    [Fact]
-    public void Run()
+    [Test]
+    public async Task Run()
     {
         try
         {
@@ -16,7 +17,7 @@ public class CustomExceptionSample
         {
         }
 
-        Assert.Equal("Exception occurred in 'Void MyMethod()'. ", Logger.LastMessage.Format);
+        await Assert.That(Logger.LastMessage.Format).IsEqualTo("Exception occurred in 'Void MyMethod()'. ");
     }
 
     [LogToDebugOnException]

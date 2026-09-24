@@ -1,12 +1,11 @@
-﻿using Xunit;
 
 public class CaselessSample
 {
-    [Fact]
-    public void Run()
+    [Test]
+    public async Task Run()
     {
         var string1 = "sample_string";
         var string2 = "Sample_String";
-        Assert.True(string2 == string1);
+        await Assert.That(string2 == string1).IsTrue();
     }
 }

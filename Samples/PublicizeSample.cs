@@ -1,25 +1,24 @@
-﻿using System.ComponentModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
-using Xunit;
 
 public class PublicizeSample
 {
-    [Fact]
-    public void Run()
+    [Test]
+    public async Task Run()
     {
         var targetType = typeof (PublicizeTarget);
 
-        Assert.True(targetType.IsPublic);
+        await Assert.That(targetType.IsPublic).IsTrue();
         var typeAttribute = GetEditorBrowsableAttribute(targetType);
-        Assert.NotNull(typeAttribute);
-        Assert.Equal(EditorBrowsableState.Advanced, typeAttribute.State);
+        await Assert.That(typeAttribute).IsNotNull();
+        await Assert.That(typeAttribute.State).IsEqualTo(EditorBrowsableState.Advanced);
 
         var methodInfo = targetType.GetMethod("Method");
-        Assert.True(methodInfo.IsPublic);
+        await Assert.That(methodInfo.IsPublic).IsTrue();
         var methodAttribute = GetEditorBrowsableAttribute(methodInfo);
-        Assert.NotNull(methodAttribute);
-        Assert.Equal(EditorBrowsableState.Advanced, methodAttribute.State);
+        await Assert.That(methodAttribute).IsNotNull();
+        await Assert.That(methodAttribute.State).IsEqualTo(EditorBrowsableState.Advanced);
     }
 
     static EditorBrowsableAttribute GetEditorBrowsableAttribute(MemberInfo memberInfo) =>

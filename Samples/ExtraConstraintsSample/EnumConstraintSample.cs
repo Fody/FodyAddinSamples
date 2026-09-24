@@ -1,18 +1,17 @@
 using System.Security;
 using ExtraConstraints;
-using Xunit;
 // ReSharper disable UnusedParameter.Local
 
 public class EnumConstraintSample
 {
-    [Fact]
-    public void InvalidEnumConstraint()
+    [Test]
+    public async Task InvalidEnumConstraint()
     {
-        var exception = Assert.Throws<VerificationException>(() => MethodWithEnumConstraint(10));
-        Assert.Equal("Method EnumConstraintSample.MethodWithEnumConstraint: type argument 'System.Int32' violates the constraint of type parameter 'T'.", exception.Message);
+        var exception = await Assert.That(() => MethodWithEnumConstraint(10)).Throws<VerificationException>();
+        await Assert.That(exception!.Message).IsEqualTo("Method EnumConstraintSample.MethodWithEnumConstraint: type argument 'System.Int32' violates the constraint of type parameter 'T'.");
     }
 
-    [Fact]
+    [Test]
     public void ValidEnumConstraint() =>
         MethodWithEnumConstraint(MyEnum.Value);
 

@@ -1,45 +1,50 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
+    <OutputType>Exe</OutputType>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Anotar.NLog.Fody" Version="6.0.0" PrivateAssets="all" />
-    <PackageReference Include="Anotar.Custom.Fody" Version="6.0.0" PrivateAssets="all" />
-    <PackageReference Include="Anotar.Splat.Fody" Version="6.0.0" PrivateAssets="all" />
-    <PackageReference Include="Anotar.CommonLogging.Fody" Version="6.0.0" PrivateAssets="all" />
-    <PackageReference Include="Anotar.Catel.Fody" Version="6.0.0" PrivateAssets="all" />
-    <PackageReference Include="Anotar.Serilog.Fody" Version="6.0.0" PrivateAssets="all" />
-    <PackageReference Include="AsyncErrorHandler.Fody" Version="1.3.0" />
-    <PackageReference Include="BasicFodyAddin.Fody" Version="1.2.0" PrivateAssets="all" />
-    <PackageReference Include="Caseless.Fody" Version="1.9.1" PrivateAssets="all" />
-    <PackageReference Include="Common.Logging.Core" Version="3.4.1" />
-    <PackageReference Include="Common.Logging" Version="3.4.1" />
-    <PackageReference Include="EmptyConstructor.Fody" Version="3.0.3" PrivateAssets="all" />
-    <PackageReference Include="Equatable.Fody" Version="1.9.0" PrivateAssets="all" />
-    <PackageReference Include="ExtraConstraints.Fody" Version="1.14.0" PrivateAssets="all" />
-    <PackageReference Include="FluentValidation" Version="11.11.0" />
-    <PackageReference Include="Fody" Version="6.9.3" PrivateAssets="all" />
-    <PackageReference Include="Ionad.Fody" Version="2.2.0" PrivateAssets="all" />
-    <PackageReference Include="MethodTimer.Fody" Version="3.2.3" PrivateAssets="all" />
-    <PackageReference Include="ConfigureAwait.Fody" Version="3.4.1" PrivateAssets="all" />
-    <PackageReference Include="Catel.Core" Version="6.0.3" />
-    <PackageReference Include="NLog" Version="5.4.0" />
-    <PackageReference Include="PropertyChanged.Fody" Version="4.1.0" PrivateAssets="all" />
-    <PackageReference Include="PropertyChanging.Fody" Version="1.30.3" PrivateAssets="all" />
-    <PackageReference Include="Publicize.Fody" Version="1.8.0" PrivateAssets="all" />
-    <PackageReference Include="Obsolete.Fody" Version="5.3.1" PrivateAssets="all" />
-    <PackageReference Include="ModuleInit.Fody" Version="2.1.1" PrivateAssets="all" />
-    <PackageReference Include="InfoOf.Fody" Version="2.2.0" />
-    <PackageReference Include="Janitor.Fody" Version="1.9.0" PrivateAssets="all" />
-    <PackageReference Include="Splat" Version="15.2.22" />
-    <PackageReference Include="Resourcer.Fody" Version="1.8.1" PrivateAssets="all" />
+    <PackageReference Include="Anotar.NLog.Fody" PrivateAssets="all" />
+    <PackageReference Include="Anotar.Custom.Fody" PrivateAssets="all" />
+    <PackageReference Include="Anotar.Splat.Fody" PrivateAssets="all" />
+    <PackageReference Include="Anotar.CommonLogging.Fody" PrivateAssets="all" />
+    <PackageReference Include="Anotar.Catel.Fody" PrivateAssets="all" />
+    <PackageReference Include="Anotar.Serilog.Fody" PrivateAssets="all" />
+    <PackageReference Include="AsyncErrorHandler.Fody" />
+    <PackageReference Include="BasicFodyAddin.Fody" PrivateAssets="all" />
+    <PackageReference Include="Caseless.Fody" PrivateAssets="all" />
+    <PackageReference Include="Common.Logging.Core" />
+    <PackageReference Include="Common.Logging" />
+    <PackageReference Include="EmptyConstructor.Fody" PrivateAssets="all" />
+    <PackageReference Include="Equatable.Fody" PrivateAssets="all" />
+    <PackageReference Include="ExtraConstraints.Fody" PrivateAssets="all" />
+    <PackageReference Include="FluentValidation" />
+    <PackageReference Include="Fody" PrivateAssets="all" />
+    <PackageReference Include="Ionad.Fody" PrivateAssets="all" />
+    <PackageReference Include="MethodTimer.Fody" PrivateAssets="all" />
+    <PackageReference Include="Catel.Core" />
+    <PackageReference Include="NLog" />
+    <PackageReference Include="PropertyChanged.Fody" PrivateAssets="all" />
+    <PackageReference Include="PropertyChanging.Fody" PrivateAssets="all" />
+    <PackageReference Include="Publicize.Fody" PrivateAssets="all" />
+    <PackageReference Include="Obsolete.Fody" PrivateAssets="all" />
+    <PackageReference Include="ModuleInit.Fody" PrivateAssets="all" />
+    <PackageReference Include="InfoOf.Fody" />
+    <PackageReference Include="Janitor.Fody" PrivateAssets="all" />
+    <PackageReference Include="Splat" />
+    <PackageReference Include="Resourcer.Fody" PrivateAssets="all" />
     <EmbeddedResource Include="Resource.txt" />
-    <PackageReference Include="Serilog" Version="4.1.0" />
-    <PackageReference Include="Virtuosity.Fody" Version="3.1.1" PrivateAssets="all" />
-    <PackageReference Include="Visualize.Fody" Version="1.2.0" PrivateAssets="all" />
-    <PackageReference Include="Validar.Fody" Version="1.9.0" PrivateAssets="all" />
-    <PackageReference Include="xunit" Version="2.9.2" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+    <PackageReference Include="Serilog" />
+    <PackageReference Include="Virtuosity.Fody" PrivateAssets="all" />
+    <PackageReference Include="Visualize.Fody" PrivateAssets="all" />
+    <PackageReference Include="Validar.Fody" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="TUnit.Core" />
+    <PackageReference Include="TUnit.Assertions" />
+    <PackageReference Include="TUnit.Engine" />
   </ItemGroup>
 </Project>

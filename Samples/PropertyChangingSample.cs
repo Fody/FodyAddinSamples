@@ -1,18 +1,17 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.ComponentModel;
-using Xunit;
 
 public class PropertyChangingSample
 {
-    [Fact]
-    public void Run()
+    [Test]
+    public async Task Run()
     {
         var target = new Person();
         var propertyNotifications = new List<string>();
         target.PropertyChanging += (_, args) => propertyNotifications.Add(args.PropertyName);
         target.FamilyName = "Smith";
-        Assert.Contains("FamilyName", propertyNotifications);
-        Assert.Contains("FullName", propertyNotifications);
+        await Assert.That(propertyNotifications).Contains("FamilyName");
+        await Assert.That(propertyNotifications).Contains("FullName");
     }
 
     public class Person : INotifyPropertyChanging

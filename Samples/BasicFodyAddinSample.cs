@@ -1,13 +1,12 @@
-﻿using System;
-using Xunit;
+using System;
 
 public class BasicFodyAddinSample
 {
-    [Fact]
-    public void Run()
+    [Test]
+    public async Task Run()
     {
         var type = GetType().Assembly.GetType("Hello")!;
         var instance = (dynamic) Activator.CreateInstance(type)!;
-        Assert.Equal("Hello World", instance.World());
+        await Assert.That((object) instance.World()).IsEqualTo("Hello World");
     }
 }

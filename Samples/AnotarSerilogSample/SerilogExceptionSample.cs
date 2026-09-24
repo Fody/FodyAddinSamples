@@ -1,12 +1,13 @@
-﻿using Anotar.Serilog;
-using Xunit;
+using Anotar.Serilog;
 
 namespace AnotarSerilogSample;
 
+// the tests in this namespace share the static last logged message
+[NotInParallel]
 public class SerilogExceptionSample
 {
-    [Fact]
-    public void Run()
+    [Test]
+    public async Task Run()
     {
         try
         {
@@ -17,7 +18,7 @@ public class SerilogExceptionSample
         }
 
         var actual = LogCaptureBuilder.LastMessage.MessageTemplate.Text;
-        Assert.Equal("Exception occurred in 'Void MyMethod()'. ", actual);
+        await Assert.That(actual).IsEqualTo("Exception occurred in 'Void MyMethod()'. ");
     }
 
     [LogToDebugOnException]

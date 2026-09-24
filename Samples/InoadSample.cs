@@ -1,11 +1,10 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using Ionad;
-using Xunit;
 
 public class IonadSample
 {
-    [Fact]
+    [Test]
     public void Run()
     {
         DateTimeSubstitute.Current = new(2000, 1, 1);

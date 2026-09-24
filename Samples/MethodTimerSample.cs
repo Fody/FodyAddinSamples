@@ -1,10 +1,9 @@
-﻿using System.Threading;
+using System.Threading;
 using MethodTimer;
-using Xunit;
 
 public class MethodTimerSample
 {
-    [Fact]
+    [Test]
     [Time]
     public void MyMethod() =>
         //Run and have a look in the debug window

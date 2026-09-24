@@ -1,6 +1,5 @@
-﻿using System;
+using System;
 using Equatable;
-using Xunit;
 
 public class EquatableSample
 {
@@ -11,22 +10,22 @@ public class EquatableSample
         public string Property { get; set; }
     }
 
-    [Fact]
-    public void Run()
+    [Test]
+    public async Task Run()
     {
         var left = new Target
         {
             Property = "Test",
         };
 
-        Assert.True(left is IEquatable<Target>);
+        await Assert.That(left is IEquatable<Target>).IsTrue();
 
         var right = new Target
         {
             Property = "Test",
         };
 
-        Assert.Equal(left, right);
-        Assert.Equal(left.GetHashCode(), right.GetHashCode());
+        await Assert.That(right).IsEqualTo(left);
+        await Assert.That(right.GetHashCode()).IsEqualTo(left.GetHashCode());
     }
 }

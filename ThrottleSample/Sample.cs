@@ -1,19 +1,20 @@
-﻿using System;
+using System;
 using System.Threading;
 using System.Windows.Threading;
 using Throttle;
-using Xunit;
 
-public class ThrottleSample
+public class ThrottleTests
 {
     int throttledCalls;
 
-    [Fact]
-    public void Run()
+    [Test]
+    public async Task Run()
     {
         var dispatcher = Dispatcher.CurrentDispatcher;
+        var callsBeforeDelay = -1;
+        var callsAfterDelay = -1;
 
-        dispatcher.BeginInvoke(() =>
+        _ = dispatcher.BeginInvoke(() =>
         {
             ThrottledMethod();
             Delay(5);
@@ -25,14 +26,17 @@ public class ThrottleSample
             Delay(5);
             ThrottledMethod();
             Delay(5);
-            Assert.Equal(0, throttledCalls);
+            callsBeforeDelay = throttledCalls;
             Delay(200);
-            Assert.Equal(1, throttledCalls);
+            callsAfterDelay = throttledCalls;
 
             dispatcher.BeginInvokeShutdown(DispatcherPriority.ApplicationIdle);
         });
 
         Dispatcher.Run();
+
+        await Assert.That(callsBeforeDelay).IsEqualTo(0);
+        await Assert.That(callsAfterDelay).IsEqualTo(1);
     }
 
     static void Delay(int timeSpan)

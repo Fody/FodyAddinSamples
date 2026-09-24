@@ -1,11 +1,10 @@
-﻿using System;
+using System;
 using System.Linq;
-using Xunit;
 
 public class ObsoleteSample
 {
-    [Fact]
-    public void Run()
+    [Test]
+    public async Task Run()
     {
         //ObsoleteExAttribute will have been converted to an ObsoleteAttribute
         var obsoleteAttribute = (ObsoleteAttribute) typeof(TargetClass)
@@ -13,7 +12,7 @@ public class ObsoleteSample
             .First();
 
         var expectedMessage = "Decided this class was a bad idea. Use `NewTargetClass` instead. Will be treated as an error from version 3.0.0. Will be removed in version 4.0.0.";
-        Assert.Equal(expectedMessage, obsoleteAttribute.Message);
+        await Assert.That(obsoleteAttribute.Message).IsEqualTo(expectedMessage);
     }
 
     [ObsoleteEx(

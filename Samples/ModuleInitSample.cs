@@ -1,11 +1,10 @@
-﻿using Xunit;
 
 public class ModuleInitSample
 {
-    [Fact]
-    public void Run() =>
+    [Test]
+    public async Task Run() =>
         //ModuleInitializer.Initialize will have been called when this assembly was loaded.
-        Assert.True(ModuleInitializer.InitializeCalled);
+        await Assert.That(ModuleInitializer.InitializeCalled).IsTrue();
 }
 
 public static class ModuleInitializer

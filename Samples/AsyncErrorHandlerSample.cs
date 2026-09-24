@@ -1,9 +1,8 @@
 using System.Threading.Tasks;
-using Xunit;
 
 public class AsyncErrorHandlerSample
 {
-    [Fact]
+    [Test]
     public async Task Run()
     {
         try

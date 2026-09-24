@@ -1,16 +1,17 @@
-﻿using Anotar.NLog;
-using Xunit;
+using Anotar.NLog;
 
 namespace AnotarNLogSample;
 
+// the tests in this namespace share the static last logged message
+[NotInParallel]
 public class NLogExplicitSample
 {
-    [Fact]
-    public void Run()
+    [Test]
+    public async Task Run()
     {
         MyMethod();
 
-        Assert.Equal("Method: 'Void MyMethod()'. Line: ~17. TheMessage", LogCaptureBuilder.LastMessage);
+        await Assert.That(LogCaptureBuilder.LastMessage).IsEqualTo("Method: 'Void MyMethod()'. Line: ~18. TheMessage");
     }
 
     static void MyMethod() =>

@@ -1,13 +1,13 @@
-﻿using System;
-using Xunit;
+using System;
 
-public class NullGuardSample
+public class NullGuardTests
 {
-    [Fact(Skip = "Explicit")]
-    public void Run()
+    [Test]
+    [Skip("Explicit")]
+    public async Task Run()
     {
         var targetClass = new TargetClass();
-        Assert.Throws<ArgumentNullException>(() => targetClass.Method(null));
+        await Assert.That(() => targetClass.Method(null)).Throws<ArgumentNullException>();
     }
 }
 

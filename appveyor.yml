@@ -9,3 +9,5 @@ build_script:
       ./dotnet-install.ps1 -JSonFile global.json -Architecture x64 -InstallDir 'C:\Program Files\dotnet'
 - dotnet build --configuration Release
 test: off
+test_script:
+- pwsh: .\runTests.ps1

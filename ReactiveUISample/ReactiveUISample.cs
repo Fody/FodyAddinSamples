@@ -1,18 +1,17 @@
-﻿using System;
+using System;
 using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
 using Splat;
-using Xunit;
 
 public class ReactiveUiSample
 {
-    [Fact]
-    public void Run()
+    [Test]
+    public async Task Run()
     {
         var target = new ReactiveViewModel();
         var notificationOccured = false;
         target.WhenAnyValue(_ => _.Property).Subscribe(_ => notificationOccured = true);
-        Assert.True(notificationOccured);
+        await Assert.That(notificationOccured).IsTrue();
     }
 
     public IEnableLogger Foo { get; set; }

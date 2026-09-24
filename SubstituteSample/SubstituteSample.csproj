@@ -1,14 +1,12 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
+    <OutputType>Exe</OutputType>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Fody" Version="6.8.0" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-    <PackageReference Include="Substitute.Fody" Version="1.6.0" PrivateAssets="all" />
-    <PackageReference Include="Xunit" Version="2.6.6" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="Fody" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CSharp" />
+    <PackageReference Include="Substitute.Fody" PrivateAssets="all" />
     <Reference Include="System.Windows.Forms" />
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -28,5 +26,16 @@
     <EmbeddedResource Update="SampleForm.resx">
       <DependentUpon>SampleForm.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="TUnit.Core" />
+    <PackageReference Include="TUnit.Assertions" />
+    <PackageReference Include="TUnit.Engine" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\ModuleInitializerAttribute.cs" Link="ModuleInitializerAttribute.cs" />
   </ItemGroup>
 </Project>
