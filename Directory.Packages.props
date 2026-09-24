@@ -34,7 +34,7 @@
     <PackageVersion Include="MethodTimer.Fody" Version="3.2.3" />
     <PackageVersion Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageVersion Include="ModuleInit.Fody" Version="2.1.1" />
-    <PackageVersion Include="NLog" Version="5.4.0" />
+    <PackageVersion Include="NLog" Version="6.2.1" />
     <PackageVersion Include="NullGuard.Fody" Version="3.1.1" />
     <PackageVersion Include="Obsolete.Fody" Version="5.3.1" />
     <PackageVersion Include="PropertyChanged.Fody" Version="4.1.0" />
