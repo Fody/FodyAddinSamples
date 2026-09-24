@@ -40,7 +40,7 @@
     <PackageVersion Include="PropertyChanged.Fody" Version="4.1.0" />
     <PackageVersion Include="PropertyChanging.Fody" Version="1.30.3" />
     <PackageVersion Include="Publicize.Fody" Version="1.8.0" />
-    <PackageVersion Include="ReactiveUI" Version="20.1.63" />
+    <PackageVersion Include="ReactiveUI" Version="24.2.0" />
     <PackageVersion Include="ReactiveUI.Fody" Version="19.5.41" />
     <PackageVersion Include="Resourcer.Fody" Version="1.8.1" />
     <PackageVersion Include="Serilog" Version="4.1.0" />
