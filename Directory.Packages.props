@@ -13,16 +13,16 @@
     <PackageVersion Include="BasicFodyAddin.Fody" Version="1.2.0" />
     <PackageVersion Include="BenchmarkDotNet" Version="0.15.8" />
     <PackageVersion Include="Caseless.Fody" Version="1.9.1" />
-    <PackageVersion Include="Catel.Core" Version="6.0.3" />
-    <PackageVersion Include="Catel.Fody" Version="4.9.0" />
+    <PackageVersion Include="Catel.Core" Version="7.0.1" />
+    <PackageVersion Include="Catel.Fody" Version="7.1.0" />
     <PackageVersion Include="Common.Logging" Version="3.4.1" />
     <PackageVersion Include="Common.Logging.Core" Version="3.4.1" />
     <PackageVersion Include="ConfigureAwait.Fody" Version="3.4.1" />
-    <PackageVersion Include="Costura.Fody" Version="5.7.0" />
+    <PackageVersion Include="Costura.Fody" Version="6.2.0" />
     <PackageVersion Include="EmptyConstructor.Fody" Version="3.0.3" />
     <PackageVersion Include="Equatable.Fody" Version="1.9.0" />
     <PackageVersion Include="ExtraConstraints.Fody" Version="1.14.0" />
-    <PackageVersion Include="FluentValidation" Version="11.11.0" />
+    <PackageVersion Include="FluentValidation" Version="12.1.1" />
     <PackageVersion Include="Fody" Version="6.9.3" />
     <PackageVersion Include="FodyHelpers" Version="6.9.3" />
     <PackageVersion Include="InfoOf.Fody" Version="2.2.0" />
@@ -34,27 +34,27 @@
     <PackageVersion Include="MethodTimer.Fody" Version="3.2.3" />
     <PackageVersion Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageVersion Include="ModuleInit.Fody" Version="2.1.1" />
-    <PackageVersion Include="NLog" Version="5.4.0" />
+    <PackageVersion Include="NLog" Version="6.2.1" />
     <PackageVersion Include="NullGuard.Fody" Version="3.1.1" />
     <PackageVersion Include="Obsolete.Fody" Version="5.3.1" />
     <PackageVersion Include="PropertyChanged.Fody" Version="4.1.0" />
-    <PackageVersion Include="PropertyChanging.Fody" Version="1.30.3" />
+    <PackageVersion Include="PropertyChanging.Fody" Version="1.31.0" />
     <PackageVersion Include="Publicize.Fody" Version="1.8.0" />
-    <PackageVersion Include="ReactiveUI" Version="20.1.63" />
-    <PackageVersion Include="ReactiveUI.Fody" Version="19.5.41" />
+    <PackageVersion Include="ReactiveUI" Version="24.2.0" />
+    <PackageVersion Include="ReactiveUI.SourceGenerators" Version="3.2.0" />
     <PackageVersion Include="Resourcer.Fody" Version="1.8.1" />
-    <PackageVersion Include="Serilog" Version="4.1.0" />
-    <PackageVersion Include="Splat" Version="15.2.22" />
-    <PackageVersion Include="Substitute.Fody" Version="1.6.0" />
+    <PackageVersion Include="Serilog" Version="4.4.0" />
+    <PackageVersion Include="Splat" Version="21.0.0" />
+    <PackageVersion Include="Substitute.Fody" Version="1.7.0" />
     <PackageVersion Include="Throttle.Fody" Version="1.7.0" />
-    <PackageVersion Include="TomsToolbox.Wpf" Version="2.22.0" />
+    <PackageVersion Include="TomsToolbox.Wpf" Version="2.24.0" />
     <PackageVersion Include="ToString.Fody" Version="1.11.1" />
     <!-- the TUnit metapackage is not used since it brings in a Mono.Cecil that conflicts with the Cecil used by Fody -->
     <PackageVersion Include="TUnit.Core" Version="1.69.0" />
     <PackageVersion Include="TUnit.Assertions" Version="1.69.0" />
     <PackageVersion Include="TUnit.Engine" Version="1.69.0" />
     <PackageVersion Include="Validar.Fody" Version="1.9.0" />
-    <PackageVersion Include="Virtuosity.Fody" Version="3.1.1" />
+    <PackageVersion Include="Virtuosity.Fody" Version="3.1.2" />
     <PackageVersion Include="Visualize.Fody" Version="1.2.0" />
     <PackageVersion Include="WeakEventHandler.Fody" Version="1.8.0" />
   </ItemGroup>
