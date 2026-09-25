@@ -50,9 +50,9 @@
     <PackageVersion Include="TomsToolbox.Wpf" Version="2.24.0" />
     <PackageVersion Include="ToString.Fody" Version="1.11.1" />
     <!-- the TUnit metapackage is not used since it brings in a Mono.Cecil that conflicts with the Cecil used by Fody -->
-    <PackageVersion Include="TUnit.Core" Version="1.69.0" />
+    <PackageVersion Include="TUnit.Core" Version="1.69.16" />
     <PackageVersion Include="TUnit.Assertions" Version="1.69.0" />
-    <PackageVersion Include="TUnit.Engine" Version="1.69.0" />
+    <PackageVersion Include="TUnit.Engine" Version="1.69.16" />
     <PackageVersion Include="Validar.Fody" Version="1.9.0" />
     <PackageVersion Include="Virtuosity.Fody" Version="3.1.2" />
     <PackageVersion Include="Visualize.Fody" Version="1.2.0" />
