@@ -40,8 +40,8 @@
     <PackageVersion Include="PropertyChanged.Fody" Version="4.1.0" />
     <PackageVersion Include="PropertyChanging.Fody" Version="1.31.0" />
     <PackageVersion Include="Publicize.Fody" Version="1.8.0" />
-    <PackageVersion Include="ReactiveUI" Version="24.2.0" />
-    <PackageVersion Include="ReactiveUI.SourceGenerators" Version="3.2.0" />
+    <PackageVersion Include="ReactiveUI" Version="24.3.0" />
+    <PackageVersion Include="ReactiveUI.SourceGenerators" Version="4.0.0" />
     <PackageVersion Include="Resourcer.Fody" Version="1.8.1" />
     <PackageVersion Include="Serilog" Version="4.4.0" />
     <PackageVersion Include="Splat" Version="21.0.0" />
@@ -50,9 +50,9 @@
     <PackageVersion Include="TomsToolbox.Wpf" Version="2.24.0" />
     <PackageVersion Include="ToString.Fody" Version="1.11.1" />
     <!-- the TUnit metapackage is not used since it brings in a Mono.Cecil that conflicts with the Cecil used by Fody -->
-    <PackageVersion Include="TUnit.Core" Version="1.69.0" />
-    <PackageVersion Include="TUnit.Assertions" Version="1.69.0" />
-    <PackageVersion Include="TUnit.Engine" Version="1.69.0" />
+    <PackageVersion Include="TUnit.Core" Version="1.69.16" />
+    <PackageVersion Include="TUnit.Assertions" Version="1.69.21" />
+    <PackageVersion Include="TUnit.Engine" Version="1.69.21" />
     <PackageVersion Include="Validar.Fody" Version="1.9.0" />
     <PackageVersion Include="Virtuosity.Fody" Version="3.1.2" />
     <PackageVersion Include="Visualize.Fody" Version="1.2.0" />
