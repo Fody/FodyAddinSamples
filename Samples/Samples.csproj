@@ -6,9 +6,7 @@
   <ItemGroup>
     <PackageReference Include="Anotar.NLog.Fody" PrivateAssets="all" />
     <PackageReference Include="Anotar.Custom.Fody" PrivateAssets="all" />
-    <PackageReference Include="Anotar.Splat.Fody" PrivateAssets="all" />
     <PackageReference Include="Anotar.CommonLogging.Fody" PrivateAssets="all" />
-    <PackageReference Include="Anotar.Catel.Fody" PrivateAssets="all" />
     <PackageReference Include="Anotar.Serilog.Fody" PrivateAssets="all" />
     <PackageReference Include="AsyncErrorHandler.Fody" />
     <PackageReference Include="BasicFodyAddin.Fody" PrivateAssets="all" />
@@ -22,7 +20,6 @@
     <PackageReference Include="Fody" PrivateAssets="all" />
     <PackageReference Include="Ionad.Fody" PrivateAssets="all" />
     <PackageReference Include="MethodTimer.Fody" PrivateAssets="all" />
-    <PackageReference Include="Catel.Core" />
     <PackageReference Include="NLog" />
     <PackageReference Include="PropertyChanged.Fody" PrivateAssets="all" />
     <PackageReference Include="PropertyChanging.Fody" PrivateAssets="all" />
@@ -31,7 +28,6 @@
     <PackageReference Include="ModuleInit.Fody" PrivateAssets="all" />
     <PackageReference Include="InfoOf.Fody" />
     <PackageReference Include="Janitor.Fody" PrivateAssets="all" />
-    <PackageReference Include="Splat" />
     <PackageReference Include="Resourcer.Fody" PrivateAssets="all" />
     <EmbeddedResource Include="Resource.txt" />
     <PackageReference Include="Serilog" />

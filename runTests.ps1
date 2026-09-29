@@ -14,7 +14,6 @@ $projects = @(
     'InSolutionWeaving\InSolutionWeaving.csproj',
     'MethodDecoratorSample\MethodDecoratorSample.csproj',
     'NullGuardSample\NullGuardSample.csproj',
-    'ReactiveUISample\ReactiveUISample.csproj',
     'Samples\Samples.csproj',
     'ThrottleSample\ThrottleSample.csproj',
     'ToStringSample\ToStringSample.csproj',

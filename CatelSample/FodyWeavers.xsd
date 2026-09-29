@@ -48,6 +48,13 @@
       </xs:documentation>
               </xs:annotation>
             </xs:attribute>
+            <xs:attribute name="DisableWarningsForAutoPropertyInitializers" type="xs:boolean">
+              <xs:annotation>
+                <xs:documentation>
+        Disables the warning that Catel.Fody generates when using auto property initalizers. The default value is <c>false</c>.
+      </xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
             <xs:attribute name="GeneratedPropertyDataAccessibility" type="xs:string">
               <xs:annotation>
                 <xs:documentation>
