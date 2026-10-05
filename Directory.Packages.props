@@ -42,7 +42,7 @@
     <PackageVersion Include="Serilog" Version="4.4.0" />
     <PackageVersion Include="Substitute.Fody" Version="1.7.0" />
     <PackageVersion Include="Throttle.Fody" Version="1.7.0" />
-    <PackageVersion Include="TomsToolbox.Wpf" Version="2.24.0" />
+    <PackageVersion Include="TomsToolbox.Wpf" Version="2.26.1" />
     <PackageVersion Include="ToString.Fody" Version="1.11.1" />
     <!-- the TUnit metapackage is not used since it brings in a Mono.Cecil that conflicts with the Cecil used by Fody -->
     <PackageVersion Include="TUnit.Core" Version="1.72.16" />
